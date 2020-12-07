@@ -48,15 +48,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo\Logica\Permisos.cs" />
-    <Compile Include="Modelo\Logica\Invitado.cs" />
+    <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Administrador.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Alumno.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\ONG.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Permisos.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Invitado.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Profesor.cs" />
     <Compile Include="Vistas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\Logica\Usuario.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vistas\Form1.resx">
@@ -86,10 +91,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Captura de pantalla %286%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Modelo\Querys\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
