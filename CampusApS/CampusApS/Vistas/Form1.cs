@@ -19,9 +19,8 @@ namespace CampusApS {
         private void Form1_Load(object sender, EventArgs e) {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 
-            UsuarioQuery us = new UsuarioQuery("alex", "patata", "alexrametespinosa@uma.es", new Administrador(), "0000", null, null);
-
-            Console.WriteLine("ortu es feo");
         }
+
+      
     }
 }

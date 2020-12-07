@@ -48,9 +48,10 @@
             this.xuiBanner1.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
             this.xuiBanner1.BorderColor = System.Drawing.Color.White;
             this.xuiBanner1.ForeColor = System.Drawing.Color.White;
-            this.xuiBanner1.Location = new System.Drawing.Point(431, 241);
+            this.xuiBanner1.Location = new System.Drawing.Point(575, 297);
+            this.xuiBanner1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiBanner1.Name = "xuiBanner1";
-            this.xuiBanner1.Size = new System.Drawing.Size(100, 20);
+            this.xuiBanner1.Size = new System.Drawing.Size(133, 25);
             this.xuiBanner1.TabIndex = 0;
             this.xuiBanner1.Text = "xuiBanner1";
             // 
@@ -67,9 +68,10 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(490, 138);
+            this.xuiButton1.Location = new System.Drawing.Point(653, 170);
+            this.xuiButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
+            this.xuiButton1.Size = new System.Drawing.Size(267, 62);
             this.xuiButton1.TabIndex = 2;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -82,9 +84,10 @@
             this.xuiCheckBox1.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
             this.xuiCheckBox1.Checked = false;
             this.xuiCheckBox1.ForeColor = System.Drawing.Color.White;
-            this.xuiCheckBox1.Location = new System.Drawing.Point(705, 241);
+            this.xuiCheckBox1.Location = new System.Drawing.Point(940, 297);
+            this.xuiCheckBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiCheckBox1.Name = "xuiCheckBox1";
-            this.xuiCheckBox1.Size = new System.Drawing.Size(100, 20);
+            this.xuiCheckBox1.Size = new System.Drawing.Size(133, 25);
             this.xuiCheckBox1.TabIndex = 3;
             this.xuiCheckBox1.Text = "xuiCheckBox1";
             this.xuiCheckBox1.TickThickness = 2;
@@ -92,9 +95,10 @@
             // xuiWidgetPanel1
             // 
             this.xuiWidgetPanel1.ControlsAsWidgets = false;
-            this.xuiWidgetPanel1.Location = new System.Drawing.Point(403, 425);
+            this.xuiWidgetPanel1.Location = new System.Drawing.Point(537, 523);
+            this.xuiWidgetPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiWidgetPanel1.Name = "xuiWidgetPanel1";
-            this.xuiWidgetPanel1.Size = new System.Drawing.Size(200, 100);
+            this.xuiWidgetPanel1.Size = new System.Drawing.Size(267, 123);
             this.xuiWidgetPanel1.TabIndex = 4;
             // 
             // xuiClock1
@@ -106,13 +110,14 @@
             this.xuiClock1.FilledSecondColor = System.Drawing.Color.DarkOrchid;
             this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
             this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.Location = new System.Drawing.Point(218, 202);
+            this.xuiClock1.Location = new System.Drawing.Point(291, 249);
+            this.xuiClock1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiClock1.Name = "xuiClock1";
             this.xuiClock1.ShowAmPm = false;
             this.xuiClock1.ShowHexagon = true;
             this.xuiClock1.ShowMinutesCircle = true;
             this.xuiClock1.ShowSecondsCircle = true;
-            this.xuiClock1.Size = new System.Drawing.Size(120, 130);
+            this.xuiClock1.Size = new System.Drawing.Size(160, 160);
             this.xuiClock1.TabIndex = 5;
             this.xuiClock1.Text = "xuiClock1";
             this.xuiClock1.UnfilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
@@ -125,9 +130,10 @@
             this.xuiCard1.Color1 = System.Drawing.Color.SlateGray;
             this.xuiCard1.Color2 = System.Drawing.Color.Black;
             this.xuiCard1.ForeColor = System.Drawing.Color.White;
-            this.xuiCard1.Location = new System.Drawing.Point(862, 241);
+            this.xuiCard1.Location = new System.Drawing.Point(1149, 297);
+            this.xuiCard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiCard1.Name = "xuiCard1";
-            this.xuiCard1.Size = new System.Drawing.Size(320, 170);
+            this.xuiCard1.Size = new System.Drawing.Size(427, 209);
             this.xuiCard1.TabIndex = 6;
             this.xuiCard1.Text = "xuiCard1";
             this.xuiCard1.Text1 = "Administrador";
@@ -149,9 +155,10 @@
             this.xuiBanner2.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
             this.xuiBanner2.BorderColor = System.Drawing.Color.White;
             this.xuiBanner2.ForeColor = System.Drawing.Color.White;
-            this.xuiBanner2.Location = new System.Drawing.Point(462, 175);
+            this.xuiBanner2.Location = new System.Drawing.Point(616, 215);
+            this.xuiBanner2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiBanner2.Name = "xuiBanner2";
-            this.xuiBanner2.Size = new System.Drawing.Size(100, 20);
+            this.xuiBanner2.Size = new System.Drawing.Size(133, 25);
             this.xuiBanner2.TabIndex = 0;
             this.xuiBanner2.Text = "xuiBanner2";
             // 
@@ -168,9 +175,10 @@
             this.xuiButton2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton2.Location = new System.Drawing.Point(726, 170);
+            this.xuiButton2.Location = new System.Drawing.Point(968, 209);
+            this.xuiButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiButton2.Name = "xuiButton2";
-            this.xuiButton2.Size = new System.Drawing.Size(200, 50);
+            this.xuiButton2.Size = new System.Drawing.Size(267, 62);
             this.xuiButton2.TabIndex = 1;
             this.xuiButton2.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -181,9 +189,10 @@
             this.xuiCard2.Color1 = System.Drawing.Color.DodgerBlue;
             this.xuiCard2.Color2 = System.Drawing.Color.LimeGreen;
             this.xuiCard2.ForeColor = System.Drawing.Color.White;
-            this.xuiCard2.Location = new System.Drawing.Point(417, 305);
+            this.xuiCard2.Location = new System.Drawing.Point(556, 375);
+            this.xuiCard2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiCard2.Name = "xuiCard2";
-            this.xuiCard2.Size = new System.Drawing.Size(320, 170);
+            this.xuiCard2.Size = new System.Drawing.Size(427, 209);
             this.xuiCard2.TabIndex = 2;
             this.xuiCard2.Text = "xuiCard2";
             this.xuiCard2.Text1 = "Administrador";
@@ -198,9 +207,10 @@
             this.xuiCheckBox2.CheckboxStyle = XanderUI.XUICheckBox.Style.Material;
             this.xuiCheckBox2.Checked = false;
             this.xuiCheckBox2.ForeColor = System.Drawing.Color.Black;
-            this.xuiCheckBox2.Location = new System.Drawing.Point(481, 59);
+            this.xuiCheckBox2.Location = new System.Drawing.Point(641, 73);
+            this.xuiCheckBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiCheckBox2.Name = "xuiCheckBox2";
-            this.xuiCheckBox2.Size = new System.Drawing.Size(100, 20);
+            this.xuiCheckBox2.Size = new System.Drawing.Size(133, 25);
             this.xuiCheckBox2.TabIndex = 3;
             this.xuiCheckBox2.Text = "xuiCheckBox2";
             this.xuiCheckBox2.TickThickness = 2;
@@ -212,11 +222,12 @@
             this.xuiCircleProgressBar1.FilledColorAlpha = 130;
             this.xuiCircleProgressBar1.FilledThickness = 40;
             this.xuiCircleProgressBar1.IsAnimated = false;
-            this.xuiCircleProgressBar1.Location = new System.Drawing.Point(138, 121);
+            this.xuiCircleProgressBar1.Location = new System.Drawing.Point(184, 149);
+            this.xuiCircleProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiCircleProgressBar1.Name = "xuiCircleProgressBar1";
             this.xuiCircleProgressBar1.Percentage = 63;
             this.xuiCircleProgressBar1.ShowText = true;
-            this.xuiCircleProgressBar1.Size = new System.Drawing.Size(200, 200);
+            this.xuiCircleProgressBar1.Size = new System.Drawing.Size(267, 246);
             this.xuiCircleProgressBar1.TabIndex = 4;
             this.xuiCircleProgressBar1.TextColor = System.Drawing.Color.Gray;
             this.xuiCircleProgressBar1.TextSize = 25;
@@ -232,13 +243,14 @@
             this.xuiClock2.FilledSecondColor = System.Drawing.Color.DarkOrchid;
             this.xuiClock2.Font = new System.Drawing.Font("Impact", 15F);
             this.xuiClock2.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock2.Location = new System.Drawing.Point(917, 338);
+            this.xuiClock2.Location = new System.Drawing.Point(1223, 416);
+            this.xuiClock2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiClock2.Name = "xuiClock2";
             this.xuiClock2.ShowAmPm = false;
             this.xuiClock2.ShowHexagon = true;
             this.xuiClock2.ShowMinutesCircle = true;
             this.xuiClock2.ShowSecondsCircle = true;
-            this.xuiClock2.Size = new System.Drawing.Size(120, 130);
+            this.xuiClock2.Size = new System.Drawing.Size(160, 160);
             this.xuiClock2.TabIndex = 5;
             this.xuiClock2.Text = "xuiClock2";
             this.xuiClock2.UnfilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
@@ -251,12 +263,13 @@
             this.xuiFormDesign1.ExitApplication = true;
             this.xuiFormDesign1.FormStyle = XanderUI.XUIFormDesign.Style.MacOS;
             this.xuiFormDesign1.Location = new System.Drawing.Point(0, 0);
+            this.xuiFormDesign1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiFormDesign1.MaterialBackColor = System.Drawing.Color.DodgerBlue;
             this.xuiFormDesign1.MaterialForeColor = System.Drawing.Color.White;
             this.xuiFormDesign1.Name = "xuiFormDesign1";
             this.xuiFormDesign1.ShowMaximize = true;
             this.xuiFormDesign1.ShowMinimize = true;
-            this.xuiFormDesign1.Size = new System.Drawing.Size(1435, 591);
+            this.xuiFormDesign1.Size = new System.Drawing.Size(1913, 727);
             this.xuiFormDesign1.TabIndex = 7;
             this.xuiFormDesign1.TitleText = "Form Name";
             // 
@@ -270,16 +283,18 @@
             this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiButton2);
             this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiBanner2);
             this.xuiFormDesign1.WorkingArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xuiFormDesign1.WorkingArea.Location = new System.Drawing.Point(0, 39);
+            this.xuiFormDesign1.WorkingArea.Location = new System.Drawing.Point(0, 48);
+            this.xuiFormDesign1.WorkingArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiFormDesign1.WorkingArea.Name = "WorkingArea";
-            this.xuiFormDesign1.WorkingArea.Size = new System.Drawing.Size(1435, 552);
+            this.xuiFormDesign1.WorkingArea.Size = new System.Drawing.Size(1913, 679);
             this.xuiFormDesign1.WorkingArea.TabIndex = 0;
+
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1435, 591);
+            this.ClientSize = new System.Drawing.Size(1913, 727);
             this.Controls.Add(this.xuiFormDesign1);
             this.Controls.Add(this.xuiCard1);
             this.Controls.Add(this.xuiClock1);
@@ -287,6 +302,7 @@
             this.Controls.Add(this.xuiCheckBox1);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.xuiBanner1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

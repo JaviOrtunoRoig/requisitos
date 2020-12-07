@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BDLibrary;
+using MySql.Data.MySqlClient;
 
 namespace CampusApS.Modelo.Querys
 {
@@ -42,9 +43,9 @@ namespace CampusApS.Modelo.Querys
        }
 
         public void registrarAdmin(string nomb, string contr, string correo, string cod, string nomRol){
-            SQLSERVERDB miBD = new SQLSERVERDB(BD_SERVER, BD_NAME);
+            BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE " + cod + ";")[0];
+            string[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE " + cod + ";");
 
             Console.WriteLine("aquí llega 3");
 
@@ -74,9 +75,9 @@ namespace CampusApS.Modelo.Querys
 
 
         public bool permitirNombre(string nom){
-            SQLSERVERDB miBD = new SQLSERVERDB(BD_SERVER, BD_NAME);
+            BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "';")[0];
+            string[] tupla  = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "';");
 
             return tupla.Length == 0;
         }
