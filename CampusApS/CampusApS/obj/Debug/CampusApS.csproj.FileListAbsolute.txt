@@ -25,3 +25,12 @@ C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\Campu
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Form1.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\bin\Debug\CampusApS.exe.config
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\obj\Debug\CampusApS.exe
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\obj\Debug\CampusApS.pdb
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\bin\Debug\CampusApS.exe
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\bin\Debug\CampusApS.pdb
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\obj\Debug\CampusApS.csprojResolveAssemblyReference.cache
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\obj\Debug\CampusApS.Form1.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\CampusApS\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache

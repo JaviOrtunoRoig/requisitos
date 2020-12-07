@@ -72,6 +72,60 @@
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\PantallaBienvenido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaBienvenido.designer.cs">
+      <DependentUpon>PantallaBienvenido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaLogin.designer.cs">
+      <DependentUpon>PantallaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaNoticias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaNoticias.designer.cs">
+      <DependentUpon>PantallaNoticias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaRecuperarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaRecuperarContrasena.designer.cs">
+      <DependentUpon>PantallaRecuperarContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroAdmin.Designer.cs">
+      <DependentUpon>PantallaRegistroAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroEstudiante.designer.cs">
+      <DependentUpon>PantallaRegistroEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroONG.designer.cs">
+      <DependentUpon>PantallaRegistroONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaRegistroProfesor.designer.cs">
+      <DependentUpon>PantallaRegistroProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaUsertype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaUsertype.designer.cs">
+      <DependentUpon>PantallaUsertype.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vistas\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +139,33 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\PantallaBienvenido.resx">
+      <DependentUpon>PantallaBienvenido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaLogin.resx">
+      <DependentUpon>PantallaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaNoticias.resx">
+      <DependentUpon>PantallaNoticias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaRecuperarContrasena.resx">
+      <DependentUpon>PantallaRecuperarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaRegistroAdmin.resx">
+      <DependentUpon>PantallaRegistroAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaRegistroEstudiante.resx">
+      <DependentUpon>PantallaRegistroEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaRegistroONG.resx">
+      <DependentUpon>PantallaRegistroONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaRegistroProfesor.resx">
+      <DependentUpon>PantallaRegistroProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaUsertype.resx">
+      <DependentUpon>PantallaUsertype.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
