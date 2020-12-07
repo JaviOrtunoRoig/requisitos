@@ -10,7 +10,7 @@ namespace CampusApS.Modelo.Querys
     class UsuarioQuery
     {
         private static string BD_SERVER = "ingreq2021-mysql.cobadwnzalab.eu-central-1.rds.amazonaws.com";
-        private static string BD_NAME = "Campus ApS";
+        private static string BD_NAME = "Campus ApS"; 
 
         private string username;
         private string password;
@@ -21,7 +21,7 @@ namespace CampusApS.Modelo.Querys
             Console.WriteLine("aquí llega 1");
             if(permitirNombre(nomb))
             {
-                Console.WriteLine("aquí llega 1.5");
+                Console.WriteLine("aquí llega 1.5 okmakey");
                 if(us.getRol().Equals("administrador")){
                     registrarAdmin(nomb, contr, correo, cod, us.getRol());
                     Console.WriteLine("aquí llega 2");
