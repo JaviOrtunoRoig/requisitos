@@ -11,7 +11,7 @@ namespace CampusApS.Modelo.Querys
     class UsuarioQuery
     {
         private static string BD_SERVER = "ingreq2021-mysql.cobadwnzalab.eu-central-1.rds.amazonaws.com";
-        private static string BD_NAME = "Campus ApS"; 
+        private static string BD_NAME = "apsgrupo06"; 
 
         private string username;
         private string password;
@@ -45,13 +45,13 @@ namespace CampusApS.Modelo.Querys
         public void registrarAdmin(string nomb, string contr, string correo, string cod, string nomRol){
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            string[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE " + cod + ";");
+            string[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE '" + cod + "';");
 
             Console.WriteLine("aquí llega 3");
 
             if(tupla.Length == 1){
-                miBD.Select("INSERT INTO `grupo06_mysql`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES (" + 
-                nomb + ", " + contr + ", " + correo + ", " + nomRol +");");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" + 
+                nomb + "', '" + contr + "', '" + correo + "', '" + nomRol +"');");
                 Console.WriteLine("aquí llega 4");
             }
             else

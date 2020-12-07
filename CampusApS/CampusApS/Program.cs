@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica;
+using CampusApS.Modelo.Querys;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +18,11 @@ namespace CampusApS {
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             Console.WriteLine("\n\n\n\n\n");
+
+            Administrador ad = new Administrador();
+
+            UsuarioQuery uq = new UsuarioQuery("David", "papa", "coorreo", ad, "0000", null, null);
+
         }
     }
 }
