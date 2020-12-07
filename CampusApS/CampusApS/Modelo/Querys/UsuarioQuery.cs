@@ -10,7 +10,7 @@ namespace CampusApS.Modelo.Querys
     class UsuarioQuery
     {
         private static string BD_SERVER = "ingreq2021-mysql.cobadwnzalab.eu-central-1.rds.amazonaws.com";
-        private static string BD_NAME = "apsgrupo06";
+        private static string BD_NAME = "Campus ApS";
 
         private string username;
         private string password;
@@ -18,23 +18,25 @@ namespace CampusApS.Modelo.Querys
         private string rol;
 
         public UsuarioQuery(string nomb, string contr, string correo, Usuario us, string cod, string reg, string expd){
-        
+            Console.WriteLine("aquí llega 1");
             if(permitirNombre(nomb))
             {
-                if(us.getRol.Equals("administrador")){
-                    registrarAdmin(nomb, contr, correo, cod, "admin");
+                Console.WriteLine("aquí llega 1.5");
+                if(us.getRol().Equals("administrador")){
+                    registrarAdmin(nomb, contr, correo, cod, us.getRol());
+                    Console.WriteLine("aquí llega 2");
                 }
             
-                if(us.getRol.Equals("ONG")){
+                if(us.getRol().Equals("ong")){
                     registrarONG(nomb, contr, correo, reg);
                 }
 
-                if(us.getRol.Equals("profesor")){
+                if(us.getRol().Equals("profesor")){
                     registrarProf(nomb, contr, correo, expd);
                 }
 
-                if(us.getRol.Equals("estudiante")){
-                    registrarEstud(nomb, contr, correo);
+                if(us.getRol().Equals("alumno")){
+                    registrarAlum(nomb, contr, correo);
                 }
             }
        }
@@ -44,9 +46,16 @@ namespace CampusApS.Modelo.Querys
 
             object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE " + cod + ";")[0];
 
+            Console.WriteLine("aquí llega 3");
+
             if(tupla.Length == 1){
                 miBD.Select("INSERT INTO `grupo06_mysql`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES (" + 
                 nomb + ", " + contr + ", " + correo + ", " + nomRol +");");
+                Console.WriteLine("aquí llega 4");
+            }
+            else
+            {
+                Console.WriteLine("Este codigo no es valido");
             }
 
         }
@@ -59,7 +68,7 @@ namespace CampusApS.Modelo.Querys
             
         }
 
-        public void registrarEstud(string nomb, string contr, string correo){
+        public void registrarAlum(string nomb, string contr, string correo){
             
         }
 
@@ -67,7 +76,7 @@ namespace CampusApS.Modelo.Querys
         public bool permitirNombre(string nom){
             SQLSERVERDB miBD = new SQLSERVERDB(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre LIKE " + nom + ";")[0];
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "';")[0];
 
             return tupla.Length == 0;
         }
