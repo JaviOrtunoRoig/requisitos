@@ -45,11 +45,11 @@ namespace CampusApS.Modelo.Querys
         public void registrarAdmin(string nomb, string contr, string correo, string cod, string nomRol){
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            string[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE '" + cod + "';");
+            object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE '" + cod + "';");
 
             Console.WriteLine("aquí llega 3");
 
-            if(tupla.Length == 1){
+            if(tupla[0] != null){
                 miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" + 
                 nomb + "', '" + contr + "', '" + correo + "', '" + nomRol +"');");
                 Console.WriteLine("aquí llega 4");
@@ -77,9 +77,9 @@ namespace CampusApS.Modelo.Querys
         public bool permitirNombre(string nom){
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            string[] tupla  = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "';");
+            object [] tupla  = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "';");
 
-            return tupla.Length == 0;
+            return tupla[0] == null;
         }
 
 

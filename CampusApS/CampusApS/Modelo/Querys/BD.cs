@@ -33,7 +33,7 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public string[] Select(string consulta)
+        public object [] Select(string consulta)
         {
             
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
@@ -41,16 +41,20 @@ namespace CampusApS.Modelo.Querys
                 conexionBD.Open(); //Abre la conexión
                 reader = comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
 
-                string[] datos = new string[50];
+                object[] datos = new object[10];
+                object[] resultado = new object[50];
                 int cont = 0;
-
                 while (reader.Read()) //Avanza MySqlDataReader al siguiente registro
                 {
-                    datos[cont] = reader.GetString(0) + "\n"; //Almacena cada registro con un salto de linea
+                    datos = new object[10];
+                    reader.GetValues(datos); //Almacena cada registro con un salto de linea
+                    resultado[cont] = datos;
                     cont++;
                 }
 
-                return datos;
+                conexionBD.Close();
+
+                return resultado;
             
         }
 
@@ -60,7 +64,8 @@ namespace CampusApS.Modelo.Querys
 
             MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
             comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
-            conexionBD.Open(); //Abre la conexión
+
+            conexionBD.Open();
 
             comando.ExecuteReader();
        
