@@ -55,6 +55,8 @@
     <Compile Include="Modelo\Logica\Usuarios\Permisos.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Invitado.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Profesor.cs" />
+    <Compile Include="Modelo\Querys\Rol.cs" />
+    <Compile Include="Modelo\Querys\Usuario.cs" />
     <Compile Include="Vistas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,7 +93,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modelo\Querys\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
