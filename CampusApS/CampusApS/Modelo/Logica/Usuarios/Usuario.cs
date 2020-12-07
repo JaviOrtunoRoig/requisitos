@@ -19,6 +19,6 @@ namespace CampusApS {
         void borrarActividadSocial();
 
         string getRol();
-
+        Permisos getPermisos();
     }
 }

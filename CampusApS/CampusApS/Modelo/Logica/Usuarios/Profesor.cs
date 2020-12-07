@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace CampusApS.Modelo.Logica {
     class Profesor : Usuario {
 
-        public const string rol = "profesor";
+        private const string rol = "profesor";
 
         private Permisos permisos;
 
@@ -55,6 +55,10 @@ namespace CampusApS.Modelo.Logica {
 
         public Permisos getPermisos() {
             return this.permisos;
+        }
+
+        public string getRol() {
+            return Profesor.rol;
         }
     }
 }
