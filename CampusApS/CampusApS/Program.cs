@@ -11,9 +11,11 @@ namespace CampusApS {
         /// </summary>
         [STAThread]
         static void Main() {
+            Console.WriteLine("\n\n\n\n\n");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            Console.WriteLine("\n\n\n\n\n");
         }
     }
 }

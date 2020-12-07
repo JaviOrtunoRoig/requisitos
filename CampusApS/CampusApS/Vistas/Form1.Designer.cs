@@ -31,13 +31,13 @@
             this.xuiClock1 = new XanderUI.XUIClock();
             this.xuiCard1 = new XanderUI.XUICard();
             this.WorkingArea = new System.Windows.Forms.Panel();
-            this.xuiFormDesign1 = new XanderUI.XUIFormDesign();
             this.xuiBanner2 = new XanderUI.XUIBanner();
             this.xuiButton2 = new XanderUI.XUIButton();
             this.xuiCard2 = new XanderUI.XUICard();
             this.xuiCheckBox2 = new XanderUI.XUICheckBox();
             this.xuiCircleProgressBar1 = new XanderUI.XUICircleProgressBar();
             this.xuiClock2 = new XanderUI.XUIClock();
+            this.xuiFormDesign1 = new XanderUI.XUIFormDesign();
             this.xuiFormDesign1.WorkingArea.SuspendLayout();
             this.xuiFormDesign1.SuspendLayout();
             this.SuspendLayout();
@@ -143,36 +143,6 @@
             this.WorkingArea.Size = new System.Drawing.Size(1435, 552);
             this.WorkingArea.TabIndex = 0;
             // 
-            // xuiFormDesign1
-            // 
-            this.xuiFormDesign1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xuiFormDesign1.ExitApplication = true;
-            this.xuiFormDesign1.FormStyle = XanderUI.XUIFormDesign.Style.MacOS;
-            this.xuiFormDesign1.Location = new System.Drawing.Point(0, 0);
-            this.xuiFormDesign1.MaterialBackColor = System.Drawing.Color.DodgerBlue;
-            this.xuiFormDesign1.MaterialForeColor = System.Drawing.Color.White;
-            this.xuiFormDesign1.Name = "xuiFormDesign1";
-            this.xuiFormDesign1.ShowMaximize = true;
-            this.xuiFormDesign1.ShowMinimize = true;
-            this.xuiFormDesign1.Size = new System.Drawing.Size(1435, 591);
-            this.xuiFormDesign1.TabIndex = 7;
-            this.xuiFormDesign1.TitleText = "Form Name";
-            // 
-            // xuiFormDesign1.WorkingArea
-            // 
-            this.xuiFormDesign1.WorkingArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiClock2);
-            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiCircleProgressBar1);
-            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiCheckBox2);
-            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiCard2);
-            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiButton2);
-            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiBanner2);
-            this.xuiFormDesign1.WorkingArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xuiFormDesign1.WorkingArea.Location = new System.Drawing.Point(0, 39);
-            this.xuiFormDesign1.WorkingArea.Name = "WorkingArea";
-            this.xuiFormDesign1.WorkingArea.Size = new System.Drawing.Size(1435, 552);
-            this.xuiFormDesign1.WorkingArea.TabIndex = 0;
-            // 
             // xuiBanner2
             // 
             this.xuiBanner2.BackColor = System.Drawing.Color.Transparent;
@@ -275,6 +245,36 @@
             this.xuiClock2.UnfilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             this.xuiClock2.UnfilledSecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
             // 
+            // xuiFormDesign1
+            // 
+            this.xuiFormDesign1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xuiFormDesign1.ExitApplication = true;
+            this.xuiFormDesign1.FormStyle = XanderUI.XUIFormDesign.Style.MacOS;
+            this.xuiFormDesign1.Location = new System.Drawing.Point(0, 0);
+            this.xuiFormDesign1.MaterialBackColor = System.Drawing.Color.DodgerBlue;
+            this.xuiFormDesign1.MaterialForeColor = System.Drawing.Color.White;
+            this.xuiFormDesign1.Name = "xuiFormDesign1";
+            this.xuiFormDesign1.ShowMaximize = true;
+            this.xuiFormDesign1.ShowMinimize = true;
+            this.xuiFormDesign1.Size = new System.Drawing.Size(1435, 591);
+            this.xuiFormDesign1.TabIndex = 7;
+            this.xuiFormDesign1.TitleText = "Form Name";
+            // 
+            // xuiFormDesign1.WorkingArea
+            // 
+            this.xuiFormDesign1.WorkingArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiClock2);
+            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiCircleProgressBar1);
+            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiCheckBox2);
+            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiCard2);
+            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiButton2);
+            this.xuiFormDesign1.WorkingArea.Controls.Add(this.xuiBanner2);
+            this.xuiFormDesign1.WorkingArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xuiFormDesign1.WorkingArea.Location = new System.Drawing.Point(0, 39);
+            this.xuiFormDesign1.WorkingArea.Name = "WorkingArea";
+            this.xuiFormDesign1.WorkingArea.Size = new System.Drawing.Size(1435, 552);
+            this.xuiFormDesign1.WorkingArea.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,13 +305,13 @@
         private XanderUI.XUIClock xuiClock1;
         private XanderUI.XUICard xuiCard1;
         private System.Windows.Forms.Panel WorkingArea;
-        private XanderUI.XUIFormDesign xuiFormDesign1;
-        private XanderUI.XUIClock xuiClock2;
-        private XanderUI.XUICircleProgressBar xuiCircleProgressBar1;
-        private XanderUI.XUICheckBox xuiCheckBox2;
-        private XanderUI.XUICard xuiCard2;
-        private XanderUI.XUIButton xuiButton2;
         private XanderUI.XUIBanner xuiBanner2;
+        private XanderUI.XUIButton xuiButton2;
+        private XanderUI.XUICard xuiCard2;
+        private XanderUI.XUICheckBox xuiCheckBox2;
+        private XanderUI.XUICircleProgressBar xuiCircleProgressBar1;
+        private XanderUI.XUIClock xuiClock2;
+        private XanderUI.XUIFormDesign xuiFormDesign1;
     }
 }
 

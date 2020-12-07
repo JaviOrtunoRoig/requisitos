@@ -1,7 +1,6 @@
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\bin\Debug\CampusApS.exe.config
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\bin\Debug\CampusApS.exe
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\bin\Debug\CampusApS.pdb
-D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\bin\Debug\XanderUI.dll
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\obj\Debug\CampusApS.csprojResolveAssemblyReference.cache
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\obj\Debug\CampusApS.Form1.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
