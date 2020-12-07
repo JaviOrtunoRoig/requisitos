@@ -21,19 +21,19 @@ namespace CampusApS.Modelo.Querys
         
             if(permitirNombre(nomb))
             {
-                if(us.Nombre.Equals("administrador")){
+                if(us.getRol.Equals("administrador")){
                     registrarAdmin(nomb, contr, correo, cod, "admin");
                 }
             
-                if(r.Nombre.Equals("ONG")){
+                if(us.getRol.Equals("ONG")){
                     registrarONG(nomb, contr, correo, reg);
                 }
 
-                if(r.Nombre.Equals("profesor")){
+                if(us.getRol.Equals("profesor")){
                     registrarProf(nomb, contr, correo, expd);
                 }
 
-                if(r.Nombre.Equals("estudiante")){
+                if(us.getRol.Equals("estudiante")){
                     registrarEstud(nomb, contr, correo);
                 }
             }

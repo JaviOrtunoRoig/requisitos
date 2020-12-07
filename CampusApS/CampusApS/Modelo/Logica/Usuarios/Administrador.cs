@@ -56,5 +56,10 @@ namespace CampusApS.Modelo.Logica {
         public Permisos getPermisos() {
             return this.permisos;
         }
+
+        public string Nombre{
+            get { return rol; }
+        }
+         
     }
 }
