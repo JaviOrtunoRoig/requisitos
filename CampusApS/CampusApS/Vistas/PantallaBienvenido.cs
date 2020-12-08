@@ -24,5 +24,12 @@ namespace CampusApS
             ventana.ShowDialog();
             this.Visible = true;
         }
+
+        private void bRegister_Click(object sender, EventArgs e) {
+            PantallaUsertype ventana = new PantallaUsertype();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
