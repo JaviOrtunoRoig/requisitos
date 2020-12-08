@@ -16,5 +16,20 @@ namespace CampusApS
         {
             InitializeComponent();
         }
+
+        private void bAdmin_Click(object sender, EventArgs e) {
+            PantallaRegistroAdmin ventana = new PantallaRegistroAdmin();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void bEstudiante_Click(object sender, EventArgs e) {
+            //Todo add pantalla estudiante
+            //Panta
+            this.Visible = false;
+            //ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

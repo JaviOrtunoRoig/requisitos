@@ -55,6 +55,7 @@
             this.bAdmin.TabIndex = 0;
             this.bAdmin.TextColor = System.Drawing.Color.DodgerBlue;
             this.bAdmin.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAdmin.Click += new System.EventHandler(this.bAdmin_Click);
             // 
             // bONG
             // 
@@ -95,6 +96,7 @@
             this.bEstudiante.TabIndex = 2;
             this.bEstudiante.TextColor = System.Drawing.Color.DodgerBlue;
             this.bEstudiante.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEstudiante.Click += new System.EventHandler(this.bEstudiante_Click);
             // 
             // bProfesor
             // 
@@ -125,7 +127,7 @@
             this.lbLogin.TabIndex = 4;
             this.lbLogin.Text = "¿Cómo quiere entrar en la aplicación?";
             // 
-            // PantallaLogin
+            // PantallaUsertype
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +137,7 @@
             this.Controls.Add(this.bEstudiante);
             this.Controls.Add(this.bONG);
             this.Controls.Add(this.bAdmin);
-            this.Name = "PantallaLogin";
+            this.Name = "PantallaUsertype";
             this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
