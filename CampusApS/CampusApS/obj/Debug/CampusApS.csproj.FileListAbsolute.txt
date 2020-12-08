@@ -58,3 +58,19 @@ D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\Ca
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe.config
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.exe
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.pdb
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.pdb
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csprojResolveAssemblyReference.cache
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaBienvenido.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaLogin.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaNoticias.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRecuperarContrasena.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroAdmin.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroONG.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache

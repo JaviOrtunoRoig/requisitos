@@ -49,9 +49,10 @@
             this.bAdmin.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bAdmin.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bAdmin.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAdmin.Location = new System.Drawing.Point(155, 143);
+            this.bAdmin.Location = new System.Drawing.Point(207, 176);
+            this.bAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bAdmin.Name = "bAdmin";
-            this.bAdmin.Size = new System.Drawing.Size(196, 50);
+            this.bAdmin.Size = new System.Drawing.Size(261, 62);
             this.bAdmin.TabIndex = 0;
             this.bAdmin.TextColor = System.Drawing.Color.DodgerBlue;
             this.bAdmin.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -70,12 +71,14 @@
             this.bONG.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bONG.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bONG.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bONG.Location = new System.Drawing.Point(507, 265);
+            this.bONG.Location = new System.Drawing.Point(676, 326);
+            this.bONG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bONG.Name = "bONG";
-            this.bONG.Size = new System.Drawing.Size(190, 50);
+            this.bONG.Size = new System.Drawing.Size(253, 62);
             this.bONG.TabIndex = 1;
             this.bONG.TextColor = System.Drawing.Color.DodgerBlue;
             this.bONG.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bONG.Click += new System.EventHandler(this.bONG_Click);
             // 
             // bEstudiante
             // 
@@ -90,9 +93,10 @@
             this.bEstudiante.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bEstudiante.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bEstudiante.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEstudiante.Location = new System.Drawing.Point(507, 143);
+            this.bEstudiante.Location = new System.Drawing.Point(676, 176);
+            this.bEstudiante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bEstudiante.Name = "bEstudiante";
-            this.bEstudiante.Size = new System.Drawing.Size(200, 50);
+            this.bEstudiante.Size = new System.Drawing.Size(267, 62);
             this.bEstudiante.TabIndex = 2;
             this.bEstudiante.TextColor = System.Drawing.Color.DodgerBlue;
             this.bEstudiante.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -111,32 +115,37 @@
             this.bProfesor.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bProfesor.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bProfesor.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bProfesor.Location = new System.Drawing.Point(151, 265);
+            this.bProfesor.Location = new System.Drawing.Point(201, 326);
+            this.bProfesor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bProfesor.Name = "bProfesor";
-            this.bProfesor.Size = new System.Drawing.Size(200, 50);
+            this.bProfesor.Size = new System.Drawing.Size(267, 62);
             this.bProfesor.TabIndex = 3;
             this.bProfesor.TextColor = System.Drawing.Color.DodgerBlue;
             this.bProfesor.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bProfesor.Click += new System.EventHandler(this.bProfesor_Click);
             // 
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
-            this.lbLogin.Location = new System.Drawing.Point(337, 58);
+            this.lbLogin.Location = new System.Drawing.Point(449, 71);
+            this.lbLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(185, 13);
+            this.lbLogin.Size = new System.Drawing.Size(248, 17);
             this.lbLogin.TabIndex = 4;
             this.lbLogin.Text = "¿Cómo quiere entrar en la aplicación?";
             // 
             // PantallaUsertype
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 434);
+            this.ClientSize = new System.Drawing.Size(1164, 534);
             this.Controls.Add(this.lbLogin);
             this.Controls.Add(this.bProfesor);
             this.Controls.Add(this.bEstudiante);
             this.Controls.Add(this.bONG);
             this.Controls.Add(this.bAdmin);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "PantallaUsertype";
             this.Name = "PantallaUsertype";
             this.Text = "CampusApS";
             this.ResumeLayout(false);
