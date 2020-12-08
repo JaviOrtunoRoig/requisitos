@@ -9,20 +9,40 @@ namespace CampusApS.Modelo.Logica.Registro_InicioSesion {
 
         private string password;
         private string confPassword;
-        private bool registroHaSidoCorrecto;
+        private string correo;
 
-        public Registrarse(string p1, string p2) {
+        private bool passwordIguales;
+        private bool correoCorrecto;
+
+
+        public Registrarse(string p1, string p2, string correo) {
             this.password = p1;
             this.confPassword = p2;
-            this.registroHaSidoCorrecto = false;
+            this.correo = correo;
+            this.passwordIguales = false;
+            this.correoCorrecto = false;
         }
 
-        public void comprobarPasswords() {
+        public bool getEstadoRegistro() {
+            comprobarPasswords();
+            comprobarCorreo();
+            return this.passwordIguales && this.correoCorrecto;
+        }
+
+        private void comprobarPasswords() {
             if (password.Equals(confPassword)) {
-                this.registroHaSidoCorrecto = true;
+                this.passwordIguales = true;
             }
         }
 
-        public bool getEstadoRegistro() { return this.registroHaSidoCorrecto; }
+        private void comprobarCorreo() {
+            if (this.correo.Contains("@hotmail.com") || this.correo.Contains("@hotmail.es") || this.correo.Contains("@gmail.com") || 
+                this.correo.Contains("@gmail.es") || this.correo.Contains("@outlook.com") || this.correo.Contains("@outlook.es") || 
+                this.correo.Contains("@uma.es") || ) {
+                this.correoCorrecto = true;
+            }
+        }
+
+        
     }
 }
