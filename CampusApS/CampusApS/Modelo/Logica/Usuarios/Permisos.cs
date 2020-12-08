@@ -51,5 +51,15 @@ namespace CampusApS.Modelo.Logica {
         public bool getPuedeBorrarActividadSocial() {
             return this.puedeBorrarActividadSocial;
         }
+
+        public bool getPuedeGenerarCodigoAdmin()
+        {
+            return this.puedeGenerarCodigoAdmin;
+        }
+
+        public bool getPuedeInscribirseCurso()
+        {
+            return this.puedeInscribirseCurso;
+        }
     }
 }
