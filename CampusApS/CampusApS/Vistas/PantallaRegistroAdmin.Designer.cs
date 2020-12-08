@@ -48,7 +48,6 @@
             this.lbEmail.Size = new System.Drawing.Size(93, 13);
             this.lbEmail.TabIndex = 0;
             this.lbEmail.Text = "Correo electrónico";
-            this.lbEmail.Click += new System.EventHandler(this.lbEmail_Click);
             // 
             // lbUsername
             // 
@@ -58,7 +57,6 @@
             this.lbUsername.Size = new System.Drawing.Size(98, 13);
             this.lbUsername.TabIndex = 1;
             this.lbUsername.Text = "Nombre de Usuario";
-            this.lbUsername.Click += new System.EventHandler(this.lbUsername_Click);
             // 
             // lbPassword
             // 
@@ -68,7 +66,6 @@
             this.lbPassword.Size = new System.Drawing.Size(61, 13);
             this.lbPassword.TabIndex = 2;
             this.lbPassword.Text = "Contraseña";
-            this.lbPassword.Click += new System.EventHandler(this.lbPassword_Click);
             // 
             // lbInvCode
             // 
@@ -85,7 +82,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(253, 20);
             this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -93,7 +89,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(253, 20);
             this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -144,7 +139,6 @@
             this.Controls.Add(this.lbEmail);
             this.Name = "PantallaRegistroAdmin";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.PantallaRegistroAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
