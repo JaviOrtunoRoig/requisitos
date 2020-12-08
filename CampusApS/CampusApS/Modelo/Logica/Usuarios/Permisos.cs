@@ -59,7 +59,7 @@ namespace CampusApS.Modelo.Logica {
 
         public bool getPuedeInscribirseCurso()
         {
-            return this.puedeInscribirseCurso;
+             return this.puedeInscribirseCurso;
         }
     }
 }
