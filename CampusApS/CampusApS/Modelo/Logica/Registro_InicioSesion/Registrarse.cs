@@ -38,7 +38,7 @@ namespace CampusApS.Modelo.Logica.Registro_InicioSesion {
         private void comprobarCorreo() {
             if (this.correo.Contains("@hotmail.com") || this.correo.Contains("@hotmail.es") || this.correo.Contains("@gmail.com") || 
                 this.correo.Contains("@gmail.es") || this.correo.Contains("@outlook.com") || this.correo.Contains("@outlook.es") || 
-                this.correo.Contains("@uma.es") || ) {
+                this.correo.Contains("@uma.es")) {
                 this.correoCorrecto = true;
             }
         }
