@@ -63,12 +63,6 @@
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Querys\Rol.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
-    <Compile Include="Vistas\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +71,12 @@
     </Compile>
     <Compile Include="Vistas\PantallaBienvenido.designer.cs">
       <DependentUpon>PantallaBienvenido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\PantallaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaInicio.Designer.cs">
+      <DependentUpon>PantallaInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PantallaLogin.cs">
       <SubType>Form</SubType>
@@ -120,9 +120,6 @@
     <Compile Include="Vistas\PantallaUsertype.designer.cs">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

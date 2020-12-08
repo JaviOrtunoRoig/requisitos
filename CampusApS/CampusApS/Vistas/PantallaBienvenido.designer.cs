@@ -104,6 +104,7 @@
             this.bInvitado.TabIndex = 3;
             this.bInvitado.TextColor = System.Drawing.Color.DodgerBlue;
             this.bInvitado.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bInvitado.Click += new System.EventHandler(this.bInvitado_Click);
             // 
             // lbRegister
             // 

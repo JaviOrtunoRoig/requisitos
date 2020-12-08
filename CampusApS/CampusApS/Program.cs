@@ -16,10 +16,8 @@ namespace CampusApS {
             Console.WriteLine("\n\n\n\n\n");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new PantallaBienvenido());
             Console.WriteLine("\n\n\n\n\n");
-
-
         }
     }
 }

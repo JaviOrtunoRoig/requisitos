@@ -27,11 +27,6 @@ namespace CampusApS
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void lbEmail_Click(object sender, EventArgs e)
         {
 

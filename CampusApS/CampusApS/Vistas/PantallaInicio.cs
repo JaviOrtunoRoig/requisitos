@@ -8,12 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS
-{
-    public partial class PantallaNoticias : Form
-    {
-        public PantallaNoticias()
-        {
+namespace CampusApS.Vistas {
+    public partial class PantallaInicio : Form {
+        public PantallaInicio() {
             InitializeComponent();
         }
     }

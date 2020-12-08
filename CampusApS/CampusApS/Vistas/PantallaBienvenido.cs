@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusApS.Vistas;
 
 namespace CampusApS
 {
@@ -15,6 +16,13 @@ namespace CampusApS
         public PantallaBienvenido()
         {
             InitializeComponent();
+        }
+
+        private void bInvitado_Click(object sender, EventArgs e) {
+            PantallaInicio ventana = new PantallaInicio();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
         }
     }
 }
