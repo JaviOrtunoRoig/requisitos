@@ -16,7 +16,7 @@ namespace CampusApS.Modelo.Logica {
         private Permisos permisos;
 
         public Invitado() {
-            this.permisos = new Permisos(false, false, false, false, false, false);
+            this.permisos = new Permisos(false, false, false, false, false, false, false, false);
         }
 
         public void crearCurso() {

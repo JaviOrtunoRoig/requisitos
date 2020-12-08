@@ -19,9 +19,6 @@ namespace CampusApS {
             Application.Run(new Form1());
             Console.WriteLine("\n\n\n\n\n");
 
-            Administrador ad = new Administrador();
-
-            UsuarioQuery uq = new UsuarioQuery("David", "papa", "coorreo", ad, "0000", null, null);
 
         }
     }

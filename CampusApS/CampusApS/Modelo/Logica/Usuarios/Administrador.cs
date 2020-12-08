@@ -13,7 +13,7 @@ namespace CampusApS.Modelo.Logica {
         private Permisos permisos;
 
         public Administrador() {
-            permisos = new Permisos(true, true, true, true, true, true);
+            permisos = new Permisos(true, true, true, true, true, true, true, true);
         }
 
 

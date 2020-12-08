@@ -14,14 +14,18 @@ namespace CampusApS.Modelo.Logica {
         private bool puedeBorrarForo;
         private bool puedeCrearActividadSocial;
         private bool puedeBorrarActividadSocial;
+        private bool puedeGenerarCodigoAdmin;
+        private bool puedeInscribirseCurso;
 
-        public Permisos(bool crearCurso, bool borrarCurso, bool crearForo, bool borrarForo, bool crearActividadSocial, bool borrarActivisadSocial) {
+        public Permisos(bool crearCurso, bool borrarCurso, bool crearForo, bool borrarForo, bool crearActividadSocial, bool borrarActivisadSocial, bool codigoAdmin, bool inscribirseCurso) {
             this.puedeCrearCurso = crearCurso;
             this.puedeBorrarCurso = borrarCurso;
             this.puedeCrearForo = crearForo;
             this.puedeBorrarForo = borrarForo;
             this.puedeCrearActividadSocial = crearActividadSocial;
             this.puedeBorrarActividadSocial = borrarActivisadSocial;
+            this.puedeGenerarCodigoAdmin = codigoAdmin;
+            this.puedeInscribirseCurso = inscribirseCurso;
         }
 
         public bool getPuedeCrearCurso() {

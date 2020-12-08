@@ -13,7 +13,7 @@ namespace CampusApS.Modelo.Logica {
         private Permisos permisos;
 
         public Alumno() {
-            this.permisos = new Permisos(false, false, false, false, false, false);
+            this.permisos = new Permisos(false, false, false, false, false, false, false, true);
         }
 
         public void crearCurso() {
