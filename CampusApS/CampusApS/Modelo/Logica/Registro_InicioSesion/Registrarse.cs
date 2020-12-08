@@ -9,13 +9,11 @@ namespace CampusApS.Modelo.Logica.Registro_InicioSesion {
 
         private string password;
         private string confPassword;
-        private string codigoRecuperacion;
         private bool registroHaSidoCorrecto;
 
-        public Registrarse(string p1, string p2, string codRecuperacion) {
+        public Registrarse(string p1, string p2) {
             this.password = p1;
             this.confPassword = p2;
-            this.codigoRecuperacion = codRecuperacion;
             this.registroHaSidoCorrecto = false;
         }
 

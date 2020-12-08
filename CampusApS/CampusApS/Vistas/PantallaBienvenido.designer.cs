@@ -64,6 +64,7 @@
             this.bLogin.TabIndex = 1;
             this.bLogin.TextColor = System.Drawing.Color.DodgerBlue;
             this.bLogin.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
             // 
             // bRegister
             // 

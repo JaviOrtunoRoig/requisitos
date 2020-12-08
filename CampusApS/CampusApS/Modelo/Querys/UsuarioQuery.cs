@@ -81,8 +81,5 @@ namespace CampusApS.Modelo.Querys
 
             return tupla[0] == null;
         }
-
-
-
     }
 }
