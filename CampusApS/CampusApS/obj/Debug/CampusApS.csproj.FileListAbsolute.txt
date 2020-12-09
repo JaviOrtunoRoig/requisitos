@@ -80,3 +80,19 @@ C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\D
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroONG.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe.config
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.exe
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.pdb
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.pdb
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csprojResolveAssemblyReference.cache
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaBienvenido.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaLogin.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaNoticias.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRecuperarContrasena.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroAdmin.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroONG.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache

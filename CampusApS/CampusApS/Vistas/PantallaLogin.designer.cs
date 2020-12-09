@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaLogin));
             this.lbCorreoUser = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
-            this.tbCorreo = new System.Windows.Forms.TextBox();
-            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tCorreo = new System.Windows.Forms.TextBox();
+            this.tPassword = new System.Windows.Forms.TextBox();
             this.bConfirmar = new System.Windows.Forms.Button();
             this.bRecuperar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -54,19 +55,20 @@
             this.lbPassword.TabIndex = 1;
             this.lbPassword.Text = "Constraseña";
             // 
-            // tbCorreo
+            // tCorreo
             // 
-            this.tbCorreo.Location = new System.Drawing.Point(246, 83);
-            this.tbCorreo.Name = "tbCorreo";
-            this.tbCorreo.Size = new System.Drawing.Size(257, 20);
-            this.tbCorreo.TabIndex = 2;
+            this.tCorreo.Location = new System.Drawing.Point(246, 83);
+            this.tCorreo.Name = "tCorreo";
+            this.tCorreo.Size = new System.Drawing.Size(257, 20);
+            this.tCorreo.TabIndex = 2;
             // 
-            // tbPassword
+            // tPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(246, 160);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(257, 20);
-            this.tbPassword.TabIndex = 3;
+            this.tPassword.Location = new System.Drawing.Point(246, 160);
+            this.tPassword.Name = "tPassword";
+            this.tPassword.PasswordChar = '*';
+            this.tPassword.Size = new System.Drawing.Size(257, 20);
+            this.tPassword.TabIndex = 3;
             // 
             // bConfirmar
             // 
@@ -93,12 +95,13 @@
             this.ClientSize = new System.Drawing.Size(734, 323);
             this.Controls.Add(this.bRecuperar);
             this.Controls.Add(this.bConfirmar);
-            this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.tbCorreo);
+            this.Controls.Add(this.tPassword);
+            this.Controls.Add(this.tCorreo);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbCorreoUser);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaLogin";
-            this.Text = "PantallaLogin";
+            this.Text = "Iniciar Sesión";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,8 +111,8 @@
 
         private System.Windows.Forms.Label lbCorreoUser;
         private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.TextBox tbCorreo;
-        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox tCorreo;
+        private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.Button bConfirmar;
         private System.Windows.Forms.Button bRecuperar;
     }

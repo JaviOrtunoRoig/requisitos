@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaRegistroAdmin));
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(37, 85);
+            this.lbEmail.Location = new System.Drawing.Point(62, 85);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(93, 13);
             this.lbEmail.TabIndex = 0;
@@ -54,7 +55,7 @@
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(37, 148);
+            this.lbUsername.Location = new System.Drawing.Point(62, 148);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(98, 13);
             this.lbUsername.TabIndex = 1;
@@ -63,7 +64,7 @@
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(37, 213);
+            this.lbPassword.Location = new System.Drawing.Point(62, 213);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(61, 13);
             this.lbPassword.TabIndex = 2;
@@ -72,7 +73,7 @@
             // lbInvCode
             // 
             this.lbInvCode.AutoSize = true;
-            this.lbInvCode.Location = new System.Drawing.Point(37, 341);
+            this.lbInvCode.Location = new System.Drawing.Point(62, 341);
             this.lbInvCode.Name = "lbInvCode";
             this.lbInvCode.Size = new System.Drawing.Size(104, 13);
             this.lbInvCode.TabIndex = 3;
@@ -80,21 +81,21 @@
             // 
             // tCorreo
             // 
-            this.tCorreo.Location = new System.Drawing.Point(40, 101);
+            this.tCorreo.Location = new System.Drawing.Point(65, 101);
             this.tCorreo.Name = "tCorreo";
             this.tCorreo.Size = new System.Drawing.Size(253, 20);
             this.tCorreo.TabIndex = 4;
             // 
             // tNombre
             // 
-            this.tNombre.Location = new System.Drawing.Point(40, 164);
+            this.tNombre.Location = new System.Drawing.Point(65, 164);
             this.tNombre.Name = "tNombre";
             this.tNombre.Size = new System.Drawing.Size(253, 20);
             this.tNombre.TabIndex = 5;
             // 
             // tPassword
             // 
-            this.tPassword.Location = new System.Drawing.Point(40, 229);
+            this.tPassword.Location = new System.Drawing.Point(65, 229);
             this.tPassword.Name = "tPassword";
             this.tPassword.PasswordChar = '*';
             this.tPassword.Size = new System.Drawing.Size(253, 20);
@@ -102,7 +103,7 @@
             // 
             // tCodigoInvitacion
             // 
-            this.tCodigoInvitacion.Location = new System.Drawing.Point(40, 357);
+            this.tCodigoInvitacion.Location = new System.Drawing.Point(65, 357);
             this.tCodigoInvitacion.Name = "tCodigoInvitacion";
             this.tCodigoInvitacion.Size = new System.Drawing.Size(253, 20);
             this.tCodigoInvitacion.TabIndex = 7;
@@ -110,7 +111,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 33);
+            this.label1.Location = new System.Drawing.Point(37, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 13);
             this.label1.TabIndex = 8;
@@ -118,7 +119,7 @@
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(311, 416);
+            this.bConfirmar.Location = new System.Drawing.Point(306, 416);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
             this.bConfirmar.TabIndex = 9;
@@ -129,7 +130,7 @@
             // lConfPassword
             // 
             this.lConfPassword.AutoSize = true;
-            this.lConfPassword.Location = new System.Drawing.Point(37, 277);
+            this.lConfPassword.Location = new System.Drawing.Point(62, 277);
             this.lConfPassword.Name = "lConfPassword";
             this.lConfPassword.Size = new System.Drawing.Size(107, 13);
             this.lConfPassword.TabIndex = 10;
@@ -137,7 +138,7 @@
             // 
             // tConfPassword
             // 
-            this.tConfPassword.Location = new System.Drawing.Point(40, 293);
+            this.tConfPassword.Location = new System.Drawing.Point(65, 293);
             this.tConfPassword.Name = "tConfPassword";
             this.tConfPassword.PasswordChar = '*';
             this.tConfPassword.Size = new System.Drawing.Size(253, 20);
@@ -147,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 451);
+            this.ClientSize = new System.Drawing.Size(393, 451);
             this.Controls.Add(this.tConfPassword);
             this.Controls.Add(this.lConfPassword);
             this.Controls.Add(this.bConfirmar);
@@ -160,6 +161,7 @@
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.lbEmail);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaRegistroAdmin";
             this.Text = "Registro administrador";
             this.ResumeLayout(false);

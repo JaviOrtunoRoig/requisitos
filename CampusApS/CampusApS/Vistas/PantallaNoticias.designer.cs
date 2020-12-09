@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaNoticias));
             this.bNoticias = new System.Windows.Forms.Button();
             this.bForos = new System.Windows.Forms.Button();
             this.bCursos = new System.Windows.Forms.Button();
-            this.bActSoc = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.bActSociales = new System.Windows.Forms.Button();
+            this.lbNoticias = new System.Windows.Forms.ListBox();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
@@ -63,22 +64,22 @@
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
             // 
-            // bActSoc
+            // bActSociales
             // 
-            this.bActSoc.Location = new System.Drawing.Point(1004, 34);
-            this.bActSoc.Name = "bActSoc";
-            this.bActSoc.Size = new System.Drawing.Size(138, 23);
-            this.bActSoc.TabIndex = 3;
-            this.bActSoc.Text = "Actividades Sociales";
-            this.bActSoc.UseVisualStyleBackColor = true;
+            this.bActSociales.Location = new System.Drawing.Point(1004, 34);
+            this.bActSociales.Name = "bActSociales";
+            this.bActSociales.Size = new System.Drawing.Size(138, 23);
+            this.bActSociales.TabIndex = 3;
+            this.bActSociales.Text = "Actividades Sociales";
+            this.bActSociales.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbNoticias
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(234, 144);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(598, 303);
-            this.listBox1.TabIndex = 4;
+            this.lbNoticias.FormattingEnabled = true;
+            this.lbNoticias.Location = new System.Drawing.Point(234, 144);
+            this.lbNoticias.Name = "lbNoticias";
+            this.lbNoticias.Size = new System.Drawing.Size(598, 303);
+            this.lbNoticias.TabIndex = 4;
             // 
             // calendario
             // 
@@ -92,13 +93,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 630);
             this.Controls.Add(this.calendario);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.bActSoc);
+            this.Controls.Add(this.lbNoticias);
+            this.Controls.Add(this.bActSociales);
             this.Controls.Add(this.bCursos);
             this.Controls.Add(this.bForos);
             this.Controls.Add(this.bNoticias);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaNoticias";
-            this.Text = "PantallaNoticias";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
 
         }
@@ -108,8 +110,8 @@
         private System.Windows.Forms.Button bNoticias;
         private System.Windows.Forms.Button bForos;
         private System.Windows.Forms.Button bCursos;
-        private System.Windows.Forms.Button bActSoc;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button bActSociales;
+        private System.Windows.Forms.ListBox lbNoticias;
         private System.Windows.Forms.MonthCalendar calendario;
     }
 }

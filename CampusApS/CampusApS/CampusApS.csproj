@@ -167,8 +167,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Content Include="Resources\Images\ApS.ico" />
+    <Content Include="Resources\Images\IconoAdmin.jpg" />
+    <Content Include="Resources\Images\IconoAlumno.png" />
+    <Content Include="Resources\Images\IconoONG.png" />
+    <Content Include="Resources\Images\IconoProfesor.png" />
+    <Content Include="Resources\Images\Invitado.png" />
+    <Content Include="Resources\Images\Login.png" />
+    <Content Include="Resources\Images\Registro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
