@@ -32,8 +32,8 @@ namespace CampusApS
             if (registro.getEstadoRegistro()) {
                 UsuarioQuery bd = new UsuarioQuery();
                 bd.registrarAdmin(nombre, password, correo, codAdmin, user);
-            } else {
-                MessageBox.Show("Error en los campos");
+                MessageBox.Show("Administrador registrado satisfactoriamente!!");
+                this.Close();
             }
         }
     }

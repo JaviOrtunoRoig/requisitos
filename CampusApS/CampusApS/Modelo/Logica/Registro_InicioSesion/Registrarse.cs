@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CampusApS.Modelo.Logica.Registro_InicioSesion {
     class Registrarse {
@@ -32,14 +33,26 @@ namespace CampusApS.Modelo.Logica.Registro_InicioSesion {
         private void comprobarPasswords() {
             if (password.Equals(confPassword)) {
                 this.passwordIguales = true;
+            } else {
+                MessageBox.Show("Las contraseñas no coinciden");
             }
         }
 
         private void comprobarCorreo() {
             if (this.correo.Contains("@hotmail.com") || this.correo.Contains("@hotmail.es") || this.correo.Contains("@gmail.com") || 
-                this.correo.Contains("@gmail.es") || this.correo.Contains("@outlook.com") || this.correo.Contains("@outlook.es") || 
+                this.correo.Contains("@gmail.es") || this.correo.Contains("@outlook.com") || this.correo.Contains("@outlook.es") ||
                 this.correo.Contains("@uma.es")) {
                 this.correoCorrecto = true;
+            } else {
+                MessageBox.Show("El correo tiene que tener uno de los siguientes dominios: \n " +
+                "\t @hotmail.com" +
+                "\n\t @hotmail.es" +
+                "\n\t @gmail.com" +
+                "\n\t @gmail.es" +
+                "\n\t @outlook.com" +
+                "\n\t @outlook.es" +
+                "\n\t @uma.es"
+                );
             }
         }
 

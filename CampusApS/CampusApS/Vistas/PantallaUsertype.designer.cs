@@ -67,6 +67,7 @@
             this.xuiButton1.TabIndex = 5;
             this.xuiButton1.TextColor = System.Drawing.Color.Black;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.Click += new System.EventHandler(this.bEstudiante_Click);
             // 
             // bProfesor
             // 

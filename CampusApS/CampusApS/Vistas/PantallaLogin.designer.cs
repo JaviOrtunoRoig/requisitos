@@ -40,11 +40,11 @@
             // lbCorreoUser
             // 
             this.lbCorreoUser.AutoSize = true;
-            this.lbCorreoUser.Location = new System.Drawing.Point(273, 57);
+            this.lbCorreoUser.Location = new System.Drawing.Point(321, 58);
             this.lbCorreoUser.Name = "lbCorreoUser";
-            this.lbCorreoUser.Size = new System.Drawing.Size(192, 13);
+            this.lbCorreoUser.Size = new System.Drawing.Size(93, 13);
             this.lbCorreoUser.TabIndex = 0;
-            this.lbCorreoUser.Text = "Correo electrónico o nombre de usuario";
+            this.lbCorreoUser.Text = "Correo electrónico";
             // 
             // lbPassword
             // 
@@ -78,6 +78,7 @@
             this.bConfirmar.TabIndex = 4;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
+            this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
             // 
             // bRecuperar
             // 
@@ -87,6 +88,7 @@
             this.bRecuperar.TabIndex = 5;
             this.bRecuperar.Text = "Recuperar la contraseña";
             this.bRecuperar.UseVisualStyleBackColor = true;
+            this.bRecuperar.Click += new System.EventHandler(this.bRecuperar_Click);
             // 
             // PantallaLogin
             // 

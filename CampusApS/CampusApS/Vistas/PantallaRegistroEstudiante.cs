@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica;
+using CampusApS.Modelo.Logica.Registro_InicioSesion;
+using CampusApS.Modelo.Querys;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +18,22 @@ namespace CampusApS
         public PantallaRegistroEstudiante()
         {
             InitializeComponent();
+        }
+
+        private void bConfirmar_Click(object sender, EventArgs e) {
+            string correo = tCorreo.Text;
+            string nombre = tNombre.Text;
+            string password = tPassword.Text;
+            string confPassword = tConfPassword.Text;
+            Usuario user = new Alumno();
+
+            Registrarse registro = new Registrarse(password, confPassword, correo);
+            if (registro.getEstadoRegistro()) {
+                UsuarioQuery bd = new UsuarioQuery();
+                bd.registrarAlum(nombre, password, correo, user);
+                MessageBox.Show("Alumno registrado satisfactoriamente!!");
+                this.Close();
+            } 
         }
     }
 }

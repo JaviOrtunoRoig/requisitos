@@ -22,30 +22,31 @@ namespace CampusApS
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
 
         private void bEstudiante_Click(object sender, EventArgs e) {
-            //Todo add pantalla estudiante
-            //Panta
+            PantallaRegistroEstudiante ventana = new PantallaRegistroEstudiante();
             this.Visible = false;
-            //ventana.ShowDialog();
+            ventana.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
 
-        private void bProfesor_Click(object sender, EventArgs e)
-        {
+        private void bProfesor_Click(object sender, EventArgs e) {
             PantallaRegistroProfesor ventana = new PantallaRegistroProfesor();
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
 
-        private void bONG_Click(object sender, EventArgs e)
-        {
+        private void bONG_Click(object sender, EventArgs e) {
             PantallaRegistroONG ventana = new PantallaRegistroONG();
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
     }
 }
