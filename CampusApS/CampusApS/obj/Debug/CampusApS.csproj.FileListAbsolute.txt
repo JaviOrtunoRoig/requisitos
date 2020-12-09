@@ -13,7 +13,6 @@ C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\D
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.pdb
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csprojResolveAssemblyReference.cache
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Form1.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe.config
@@ -73,3 +72,11 @@ C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requ
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\Pr_CampusAPS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.Cache
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaBienvenido.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaLogin.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaNoticias.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRecuperarContrasena.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroAdmin.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroONG.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
