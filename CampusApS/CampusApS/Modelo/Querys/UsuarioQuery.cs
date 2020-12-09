@@ -110,12 +110,16 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
-        public bool iniciarSesion(string correo, string contr)
+        public bool iniciarSesion(string nom, string contr)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
-            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE correo = '" + correo + "' AND contraseña = '" + contr + "';");
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "' AND contraseña = '" + contr + "';");
 
-            return tupla[0] != null;
+            object [] tupla2 = miBD.Select("SELECT contraseña FROM usuario WHERE nombre = '" + nom + "';");
+
+            string contraseña = (string)((object[])(tupla2[0]))[0];
+
+            return tupla[0] != null && contraseña.Equals(contr);
         }
     }
 }
