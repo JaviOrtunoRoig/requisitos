@@ -33,7 +33,7 @@ namespace CampusApS.Modelo.Querys
                 }
 
                 if(us.getRol().Equals("profesor")){
-                    registrarProf(nomb, contr, correo, expd);
+                   registrarProf(nomb, contr, correo, expd);
                 }
 
                 if(us.getRol().Equals("alumno")){
