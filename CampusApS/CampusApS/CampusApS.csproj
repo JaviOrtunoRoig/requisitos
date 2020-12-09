@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CampusApS</RootNamespace>
     <AssemblyName>CampusApS</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -62,8 +62,8 @@
     <Compile Include="Modelo\Querys\BD.cs" />
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Querys\Rol.cs" />
-    <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
+    <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\PantallaBienvenido.cs">
