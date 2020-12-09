@@ -30,8 +30,8 @@ namespace CampusApS
 
             Registrarse registro = new Registrarse(password, confPassword, correo);
             if (registro.getEstadoRegistro()) {
-                UsuarioQuery bd = new UsuarioQuery(nombre, password, correo, user, codAdmin, null, null);
-                bd.registrarAdmin(nombre, password, correo, codAdmin, user.getRol());
+                UsuarioQuery bd = new UsuarioQuery();
+                bd.registrarAdmin(nombre, password, correo, codAdmin, user);
             } else {
                 MessageBox.Show("Error en los campos");
             }
