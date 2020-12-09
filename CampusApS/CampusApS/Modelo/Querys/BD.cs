@@ -56,6 +56,7 @@ namespace CampusApS.Modelo.Querys
                     cont++;
                 }
 
+
                 conexionBD.Close(); 
 
             }
