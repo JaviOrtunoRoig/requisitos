@@ -23,9 +23,9 @@ namespace CampusApS.Modelo.Querys
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE " + cod + ";");
+                object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo = " + cod + ";");
 
-                if (tupla[0] == null)
+                if (tupla[0] != null)
                 {
                    
                     miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
@@ -47,7 +47,7 @@ namespace CampusApS.Modelo.Querys
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                object[] tupla = miBD.Select("SELECT * FROM facmedicina WHERE nExp LIKE '" + expd + "';");
+                object[] tupla = miBD.Select("SELECT * FROM facmedicina WHERE nExp = '" + expd + "';");
 
                 if (tupla[0] != null)
                 {
@@ -70,7 +70,7 @@ namespace CampusApS.Modelo.Querys
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                object[] tupla = miBD.Select("SELECT * FROM ong WHERE nRegistro LIKE '" + reg + "';");
+                object[] tupla = miBD.Select("SELECT * FROM ong WHERE nRegistro = '" + reg + "';");
 
                 if (tupla[0] != null)
                 {
