@@ -13,66 +13,94 @@ namespace CampusApS.Modelo.Querys
         private static string BD_SERVER = "ingreq2021-mysql.cobadwnzalab.eu-central-1.rds.amazonaws.com";
         private static string BD_NAME = "apsgrupo06"; 
 
-        private string username;
-        private string password;
-        private string email;
-        private string rol;
+        public UsuarioQuery()
+        {
 
-        public UsuarioQuery(string nomb, string contr, string correo, Usuario us, string cod, string reg, string expd){
-            Console.WriteLine("aquí llega 1");
-            if(permitirNombre(nomb))
+        }
+
+        public void registrarAdmin(string nomb, string contr, string correo, string cod, Usuario us){
+            if (permitirNombre(nomb))
             {
-                Console.WriteLine("aquí llega 1.5 okmakey");
-                if(us.getRol().Equals("administrador")){
-                    registrarAdmin(nomb, contr, correo, cod, us.getRol());
-                    Console.WriteLine("aquí llega 2");
+                BD miBD = new BD(BD_SERVER, BD_NAME);
+
+                object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE " + cod + ";");
+
+                if (tupla[0] == null)
+                {
+                    Console.WriteLine(tupla[0]);
+                   miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
+                   nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
                 }
-            
-                if(us.getRol().Equals("ong")){
-                    registrarONG(nomb, contr, correo, reg);
+                else
+                {
+                    Console.WriteLine("Este codigo no es valido");
                 }
-
-                if(us.getRol().Equals("profesor")){
-                   registrarProf(nomb, contr, correo, expd);
-                }
-
-                if(us.getRol().Equals("alumno")){
-                    registrarAlum(nomb, contr, correo);
-                }
-            }
-       }
-
-        public void registrarAdmin(string nomb, string contr, string correo, string cod, string nomRol){
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT * FROM codadmin WHERE codigo LIKE '" + cod + "';");
-
-            Console.WriteLine("aquí llega 3");
-
-            if(tupla[0] != null){
-                miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" + 
-                nomb + "', '" + contr + "', '" + correo + "', '" + nomRol +"');");
-                Console.WriteLine("aquí llega 4");
             }
             else
             {
-                Console.WriteLine("Este codigo no es valido");
+                Console.WriteLine("Este nombre no es valido");
             }
-
         }
 
-        public void registrarProf(string nomb, string contr, string correo, string expd){
-            
+        public void registrarProf(string nomb, string contr, string correo, string expd, Usuario us){
+            if (permitirNombre(nomb))
+            {
+                BD miBD = new BD(BD_SERVER, BD_NAME);
+
+                object[] tupla = miBD.Select("SELECT * FROM facmedicina WHERE nExp LIKE '" + expd + "';");
+
+                if (tupla[0] != null)
+                {
+                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
+                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
+                }
+                else
+                {
+                    Console.WriteLine("Este codigo no es valido");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Este nombre no es valido");
+            }
         }
 
-        public void registrarONG(string nomb, string contr, string correo, string reg){
-            
-        }
+        public void registrarONG(string nomb, string contr, string correo, string reg, Usuario us){
+            if (permitirNombre(nomb))
+            {
+                BD miBD = new BD(BD_SERVER, BD_NAME);
 
-        public void registrarAlum(string nomb, string contr, string correo){
-            
-        }
+                object[] tupla = miBD.Select("SELECT * FROM ong WHERE nRegistro LIKE '" + reg + "';");
 
+                if (tupla[0] != null)
+                {
+                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
+                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
+                }
+                else
+                {
+                    Console.WriteLine("Este codigo no es valido");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Este nombre no es valido");
+            }
+        }
+     
+
+        public void registrarAlum(string nomb, string contr, string correo, Usuario us){
+            if (permitirNombre(nomb))
+            {
+                BD miBD = new BD(BD_SERVER, BD_NAME);
+                miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
+                nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
+                
+            } else 
+            {
+                Console.WriteLine("Ese nombre no es valido");
+            }
+        }
 
         public bool permitirNombre(string nom){
             BD miBD = new BD(BD_SERVER, BD_NAME);
@@ -80,6 +108,14 @@ namespace CampusApS.Modelo.Querys
             object [] tupla  = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nom + "';");
 
             return tupla[0] == null;
+        }
+
+        public bool iniciarSesion(string correo, string contr)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE correo = '" + correo + "' AND contraseña = '" + contr + "';");
+
+            return tupla[0] != null;
         }
     }
 }
