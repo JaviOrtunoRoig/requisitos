@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace CampusApS.Modelo.Querys
 {
@@ -35,14 +36,17 @@ namespace CampusApS.Modelo.Querys
 
         public object [] Select(string consulta)
         {
-            
+            object[] resultado = new object[50];
+
+            try
+            {
+
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
                 comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                 conexionBD.Open(); //Abre la conexión
                 reader = comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
 
                 object[] datos = new object[10];
-                object[] resultado = new object[50];
                 int cont = 0;
                 while (reader.Read()) //Avanza MySqlDataReader al siguiente registro
                 {
@@ -52,9 +56,15 @@ namespace CampusApS.Modelo.Querys
                     cont++;
                 }
 
-                conexionBD.Close();
+                conexionBD.Close(); 
 
-                return resultado;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            return resultado;
             
         }
 
@@ -62,13 +72,46 @@ namespace CampusApS.Modelo.Querys
         public void Insert(string consulta)
         {
 
-            MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
-            comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+            try
+            {
 
-            conexionBD.Open();
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
 
-            comando.ExecuteReader();
-       
+                conexionBD.Open();
+
+                comando.ExecuteReader();
+
+                conexionBD.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        public void Delete(string consulta)
+        {
+
+            try
+            {
+
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+
+                conexionBD.Open();
+
+                comando.ExecuteReader();
+
+                conexionBD.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
  
