@@ -32,18 +32,20 @@
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbInvCode = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tCorreo = new System.Windows.Forms.TextBox();
+            this.tNombre = new System.Windows.Forms.TextBox();
+            this.tPassword = new System.Windows.Forms.TextBox();
+            this.tCodigoInvitacion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bConfirmar = new System.Windows.Forms.Button();
+            this.lConfPassword = new System.Windows.Forms.Label();
+            this.tConfPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(37, 99);
+            this.lbEmail.Location = new System.Drawing.Point(37, 85);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(93, 13);
             this.lbEmail.TabIndex = 0;
@@ -52,7 +54,7 @@
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(37, 172);
+            this.lbUsername.Location = new System.Drawing.Point(37, 148);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(98, 13);
             this.lbUsername.TabIndex = 1;
@@ -61,7 +63,7 @@
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(37, 242);
+            this.lbPassword.Location = new System.Drawing.Point(37, 213);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(61, 13);
             this.lbPassword.TabIndex = 2;
@@ -70,39 +72,40 @@
             // lbInvCode
             // 
             this.lbInvCode.AutoSize = true;
-            this.lbInvCode.Location = new System.Drawing.Point(37, 312);
+            this.lbInvCode.Location = new System.Drawing.Point(37, 341);
             this.lbInvCode.Name = "lbInvCode";
             this.lbInvCode.Size = new System.Drawing.Size(104, 13);
             this.lbInvCode.TabIndex = 3;
             this.lbInvCode.Text = "Código de Invitación";
             // 
-            // textBox1
+            // tCorreo
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 20);
-            this.textBox1.TabIndex = 4;
+            this.tCorreo.Location = new System.Drawing.Point(40, 101);
+            this.tCorreo.Name = "tCorreo";
+            this.tCorreo.Size = new System.Drawing.Size(253, 20);
+            this.tCorreo.TabIndex = 4;
             // 
-            // textBox2
+            // tNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 188);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 20);
-            this.textBox2.TabIndex = 5;
+            this.tNombre.Location = new System.Drawing.Point(40, 164);
+            this.tNombre.Name = "tNombre";
+            this.tNombre.Size = new System.Drawing.Size(253, 20);
+            this.tNombre.TabIndex = 5;
             // 
-            // textBox3
+            // tPassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(40, 258);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(253, 20);
-            this.textBox3.TabIndex = 6;
+            this.tPassword.Location = new System.Drawing.Point(40, 229);
+            this.tPassword.Name = "tPassword";
+            this.tPassword.PasswordChar = '*';
+            this.tPassword.Size = new System.Drawing.Size(253, 20);
+            this.tPassword.TabIndex = 6;
             // 
-            // textBox4
+            // tCodigoInvitacion
             // 
-            this.textBox4.Location = new System.Drawing.Point(40, 328);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(253, 20);
-            this.textBox4.TabIndex = 7;
+            this.tCodigoInvitacion.Location = new System.Drawing.Point(40, 357);
+            this.tCodigoInvitacion.Name = "tCodigoInvitacion";
+            this.tCodigoInvitacion.Size = new System.Drawing.Size(253, 20);
+            this.tCodigoInvitacion.TabIndex = 7;
             // 
             // label1
             // 
@@ -121,24 +124,44 @@
             this.bConfirmar.TabIndex = 9;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
+            this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
+            // 
+            // lConfPassword
+            // 
+            this.lConfPassword.AutoSize = true;
+            this.lConfPassword.Location = new System.Drawing.Point(37, 277);
+            this.lConfPassword.Name = "lConfPassword";
+            this.lConfPassword.Size = new System.Drawing.Size(107, 13);
+            this.lConfPassword.TabIndex = 10;
+            this.lConfPassword.Text = "Confirmar contraseña";
+            // 
+            // tConfPassword
+            // 
+            this.tConfPassword.Location = new System.Drawing.Point(40, 293);
+            this.tConfPassword.Name = "tConfPassword";
+            this.tConfPassword.PasswordChar = '*';
+            this.tConfPassword.Size = new System.Drawing.Size(253, 20);
+            this.tConfPassword.TabIndex = 11;
             // 
             // PantallaRegistroAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 451);
+            this.Controls.Add(this.tConfPassword);
+            this.Controls.Add(this.lConfPassword);
             this.Controls.Add(this.bConfirmar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tCodigoInvitacion);
+            this.Controls.Add(this.tPassword);
+            this.Controls.Add(this.tNombre);
+            this.Controls.Add(this.tCorreo);
             this.Controls.Add(this.lbInvCode);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.lbEmail);
             this.Name = "PantallaRegistroAdmin";
-            this.Text = "Form2";
+            this.Text = "Registro administrador";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,11 +173,13 @@
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.Label lbInvCode;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tCorreo;
+        private System.Windows.Forms.TextBox tNombre;
+        private System.Windows.Forms.TextBox tPassword;
+        private System.Windows.Forms.TextBox tCodigoInvitacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bConfirmar;
+        private System.Windows.Forms.Label lConfPassword;
+        private System.Windows.Forms.TextBox tConfPassword;
     }
 }
