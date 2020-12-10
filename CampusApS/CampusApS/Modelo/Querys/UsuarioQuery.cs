@@ -59,7 +59,7 @@ namespace CampusApS.Modelo.Querys
                 }
                 else
                 {
-                    Console.WriteLine("Este codigo no es valido");
+                    Console.WriteLine("Este numero de expediente no es valido");
                 }
             }
             else
@@ -83,7 +83,7 @@ namespace CampusApS.Modelo.Querys
                 }
                 else
                 {
-                    Console.WriteLine("Este codigo no es valido");
+                    Console.WriteLine("Este numero de registro no es valido");
                 }
             }
             else
@@ -201,6 +201,23 @@ namespace CampusApS.Modelo.Querys
             {
                 MessageBox.Show("Este usuario no existe, por favor compruebe de nuevo el nombre del usuario");
             }
+        }
+
+        public string getUsuario(string nomb)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT rol FROM usuario WHERE nombre = " + nomb + ";");
+
+            if (tupla[0] != null)
+            {
+                return (string)tupla[0];
+            }
+            else
+            {
+                return ("Este usuario no existe, por favor compruebe de nuevo");
+            }
+
         }
     }
 }
