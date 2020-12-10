@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS.Modelo.Logica {
+namespace CampusApS.Modelo.Logica.Usuarios {
     class ONG : Usuario {
 
         private const string rol = "ong";

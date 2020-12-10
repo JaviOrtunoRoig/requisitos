@@ -1,4 +1,6 @@
-﻿using CampusApS.Modelo.Querys;
+﻿using CampusApS.Modelo.Logica;
+using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,13 +22,30 @@ namespace CampusApS
 
         private void bConfirmar_Click(object sender, EventArgs e) {
             UsuarioQuery user = new UsuarioQuery();
-            bool usuarioCorrecto = user.iniciarSesion(tCorreo.Text, tPassword.Text);
+            bool usuarioCorrecto = user.iniciarSesion(tNombre.Text, tPassword.Text);
+
             if (usuarioCorrecto) {
-                PantallaNoticias ventana = new PantallaNoticias();
-                this.Visible = false;
-                ventana.ShowDialog();
-                this.Visible = true;
-                this.Close();
+                string rolUsuario = user.getUsuario(tNombre.Text);
+
+                if (rolUsuario != null) {
+                    Usuario usuario;
+                    if (rolUsuario.Equals("administrador")) {
+                        usuario = new Administrador(tNombre.Text); 
+                    } else if (rolUsuario.Equals("alumno")) {
+                        usuario = new Alumno(tNombre.Text); 
+                    } else if (rolUsuario.Equals("profesor")) {
+                        usuario = new Profesor(tNombre.Text); 
+                    } else {
+                        usuario = new ONG(tNombre.Text); 
+                    }
+
+                    PantallaNoticias ventana = new PantallaNoticias(usuario);
+                    this.Visible = false;
+                    ventana.ShowDialog();
+                    this.Visible = true;
+                    this.Close();
+                }
+
             } else {
                 MessageBox.Show("Datos incorrectos");
             }

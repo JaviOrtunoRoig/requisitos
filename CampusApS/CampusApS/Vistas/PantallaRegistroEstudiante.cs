@@ -1,4 +1,4 @@
-﻿using CampusApS.Modelo.Logica;
+﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Logica.Registro_InicioSesion;
 using CampusApS.Modelo.Querys;
 using System;
@@ -25,7 +25,7 @@ namespace CampusApS
             string nombre = tNombre.Text;
             string password = tPassword.Text;
             string confPassword = tConfPassword.Text;
-            Usuario user = new Alumno();
+            Usuario user = new Alumno(nombre);
 
             Registrarse registro = new Registrarse(password, confPassword, correo);
             if (registro.getEstadoRegistro()) {

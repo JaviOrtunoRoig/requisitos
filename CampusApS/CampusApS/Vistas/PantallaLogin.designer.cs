@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaLogin));
             this.lbCorreoUser = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
-            this.tCorreo = new System.Windows.Forms.TextBox();
+            this.tNombre = new System.Windows.Forms.TextBox();
             this.tPassword = new System.Windows.Forms.TextBox();
             this.bConfirmar = new System.Windows.Forms.Button();
             this.bRecuperar = new System.Windows.Forms.Button();
@@ -55,12 +55,12 @@
             this.lbPassword.TabIndex = 1;
             this.lbPassword.Text = "Constraseña";
             // 
-            // tCorreo
+            // tNombre
             // 
-            this.tCorreo.Location = new System.Drawing.Point(246, 83);
-            this.tCorreo.Name = "tCorreo";
-            this.tCorreo.Size = new System.Drawing.Size(257, 20);
-            this.tCorreo.TabIndex = 2;
+            this.tNombre.Location = new System.Drawing.Point(246, 83);
+            this.tNombre.Name = "tNombre";
+            this.tNombre.Size = new System.Drawing.Size(257, 20);
+            this.tNombre.TabIndex = 2;
             // 
             // tPassword
             // 
@@ -98,7 +98,7 @@
             this.Controls.Add(this.bRecuperar);
             this.Controls.Add(this.bConfirmar);
             this.Controls.Add(this.tPassword);
-            this.Controls.Add(this.tCorreo);
+            this.Controls.Add(this.tNombre);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbCorreoUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -113,7 +113,7 @@
 
         private System.Windows.Forms.Label lbCorreoUser;
         private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.TextBox tCorreo;
+        private System.Windows.Forms.TextBox tNombre;
         private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.Button bConfirmar;
         private System.Windows.Forms.Button bRecuperar;

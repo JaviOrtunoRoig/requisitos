@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 using CampusApS.Modelo.Logica;
 
-namespace CampusApS.Modelo.Logica {
-    class Permisos {
+namespace CampusApS.Modelo.Logica.Usuarios {
+    public class Permisos {
         private bool puedeCrearCurso;
         private bool puedeBorrarCurso;
         private bool puedeCrearForo;

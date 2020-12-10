@@ -8,7 +8,7 @@ using CampusApS.Modelo.Logica;
 using System.Windows.Forms;
 
 
-namespace CampusApS.Modelo.Logica {
+namespace CampusApS.Modelo.Logica.Usuarios {
     class Invitado : Usuario {
 
         private const string rol = "invitado";

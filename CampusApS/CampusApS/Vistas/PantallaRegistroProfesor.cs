@@ -1,4 +1,4 @@
-﻿using CampusApS.Modelo.Logica;
+﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Logica.Registro_InicioSesion;
 using CampusApS.Modelo.Querys;
 using System;
@@ -22,12 +22,14 @@ namespace CampusApS
 
         private void bConfirmar_Click(object sender, EventArgs e)
         {
+
+            //TODO: comprobar cuando este la base de datos actualizada con num expediente
             String nombre = tNombre.Text;
             String correo = tCorreo.Text;
             String password = tPassword.Text;
             String confPassword = tPassword.Text;
             String nExpediente = tNumExp.Text;
-            Usuario user = new Profesor();
+            Usuario user = new Profesor(nombre);
 
             Registrarse registro = new Registrarse(password, confPassword, correo);
             if (registro.getEstadoRegistro())

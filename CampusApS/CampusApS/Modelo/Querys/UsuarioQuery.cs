@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BDLibrary;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using CampusApS.Modelo.Logica.Usuarios;
 
 namespace CampusApS.Modelo.Querys
 {
@@ -146,7 +147,7 @@ namespace CampusApS.Modelo.Querys
 
             if (!permitirNombre(nom) && existeContraseña(contr))
             {
-                miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (nombre = " + nom + " AND contraseña = " + contr + ");");
+                miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (nombre = '" + nom + "' AND contraseña = '" + contr + "');");
                 res = true;
             }
             else if (permitirNombre(nom))
@@ -207,15 +208,16 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT rol FROM usuario WHERE nombre = " + nomb + ";");
+            object[] tupla = miBD.Select("SELECT rol FROM usuario WHERE nombre = '" + nomb + "';");
 
             if (tupla[0] != null)
             {
-                return (string)tupla[0];
+                return tupla[0].ToString();
             }
             else
             {
-                return ("Este usuario no existe, por favor compruebe de nuevo");
+                MessageBox.Show("Este usuario no existe, por favor compruebe de nuevo");
+                return null;
             }
 
         }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 using CampusApS.Modelo.Logica;
 
-namespace CampusApS {
-    interface Usuario {
+namespace CampusApS.Modelo.Logica.Usuarios {
+    public interface Usuario {
 
         void crearCurso();
         void borrarCurso();
