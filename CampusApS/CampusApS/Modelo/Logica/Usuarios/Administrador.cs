@@ -10,10 +10,12 @@ namespace CampusApS.Modelo.Logica {
 
         private const string rol = "administrador";
 
+        private string nombre;
         private Permisos permisos;
 
-        public Administrador() {
+        public Administrador(string nombre) {
             permisos = new Permisos(true, true, true, true, true, true, true, true);
+            this.nombre = nombre;
         }
 
 

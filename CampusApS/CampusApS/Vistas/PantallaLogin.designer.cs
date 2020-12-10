@@ -42,9 +42,9 @@
             this.lbCorreoUser.AutoSize = true;
             this.lbCorreoUser.Location = new System.Drawing.Point(321, 58);
             this.lbCorreoUser.Name = "lbCorreoUser";
-            this.lbCorreoUser.Size = new System.Drawing.Size(93, 13);
+            this.lbCorreoUser.Size = new System.Drawing.Size(98, 13);
             this.lbCorreoUser.TabIndex = 0;
-            this.lbCorreoUser.Text = "Correo electrónico";
+            this.lbCorreoUser.Text = "Nombre de Usuario";
             // 
             // lbPassword
             // 

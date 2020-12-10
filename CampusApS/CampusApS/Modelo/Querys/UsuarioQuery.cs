@@ -186,18 +186,20 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public string recuperContrasena(string nomb){
+        public void recuperarContrasena(string nomb){
+
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
             object[] tupla = miBD.Select("SELECT contraseña FROM usuario WHERE nombre = " + nomb + ";");
 
             if (tupla[0] != null)
             {
-                return (string)tupla[0];
+                MessageBox.Show("Se ha enviado un correo con la contraseña");
+                //return (string)tupla[0];
             }
             else
             {
-                return ("Este usuario no existe, por favor compruebe de nuevo");
+                MessageBox.Show("Este usuario no existe, por favor compruebe de nuevo el nombre del usuario");
             }
         }
     }

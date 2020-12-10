@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CampusApS.Modelo.Querys;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,9 @@ namespace CampusApS
 
         private void bConfirmar_Click(object sender, EventArgs e)
         {
-
+            string nombre = tNombre.Text;
+            UsuarioQuery bd = new UsuarioQuery();
+            bd.recuperarContrasena(nombre);
         }
     }
 }

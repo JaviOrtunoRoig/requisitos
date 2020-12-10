@@ -30,34 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaRecuperarContrasena));
             this.label1 = new System.Windows.Forms.Label();
-            this.tCorreo = new System.Windows.Forms.TextBox();
+            this.tNombre = new System.Windows.Forms.TextBox();
             this.bConfirmar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(46, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 17);
+            this.label1.Size = new System.Drawing.Size(161, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Introduzca su correo electrónico";
+            this.label1.Text = "Introduzca su nombre de usuario";
             // 
-            // tCorreo
+            // tNombre
             // 
-            this.tCorreo.Location = new System.Drawing.Point(65, 87);
-            this.tCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tCorreo.Name = "tCorreo";
-            this.tCorreo.Size = new System.Drawing.Size(341, 22);
-            this.tCorreo.TabIndex = 3;
+            this.tNombre.Location = new System.Drawing.Point(49, 71);
+            this.tNombre.Name = "tNombre";
+            this.tNombre.Size = new System.Drawing.Size(257, 20);
+            this.tNombre.TabIndex = 3;
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(361, 146);
-            this.bConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bConfirmar.Location = new System.Drawing.Point(271, 119);
             this.bConfirmar.Name = "bConfirmar";
-            this.bConfirmar.Size = new System.Drawing.Size(100, 28);
+            this.bConfirmar.Size = new System.Drawing.Size(75, 23);
             this.bConfirmar.TabIndex = 5;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
@@ -65,14 +62,13 @@
             // 
             // PantallaRecuperarContrasena
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 190);
+            this.ClientSize = new System.Drawing.Size(358, 154);
             this.Controls.Add(this.bConfirmar);
-            this.Controls.Add(this.tCorreo);
+            this.Controls.Add(this.tNombre);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PantallaRecuperarContrasena";
             this.Text = "Recuperar Contraseña";
             this.ResumeLayout(false);
@@ -83,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tCorreo;
+        private System.Windows.Forms.TextBox tNombre;
         private System.Windows.Forms.Button bConfirmar;
     }
 }
