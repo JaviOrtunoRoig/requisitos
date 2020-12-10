@@ -20,5 +20,6 @@ namespace CampusApS {
 
         string getRol();
         Permisos getPermisos();
+        string getNombre();
     }
 }

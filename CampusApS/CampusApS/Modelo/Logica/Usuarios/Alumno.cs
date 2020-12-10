@@ -10,10 +10,12 @@ namespace CampusApS.Modelo.Logica {
 
         private const string rol = "alumno";
 
+        private string nombre;
         private Permisos permisos;
 
-        public Alumno() {
+        public Alumno(string nombre) {
             this.permisos = new Permisos(false, false, false, false, false, false, false, true);
+            this.nombre = nombre;
         }
 
         public void crearCurso() {
@@ -58,6 +60,10 @@ namespace CampusApS.Modelo.Logica {
 
         public string getRol() {
             return Alumno.rol;
+        }
+
+        public string getNombre() {
+            return this.nombre;
         }
     }
 }

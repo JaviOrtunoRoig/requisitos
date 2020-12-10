@@ -35,6 +35,7 @@
             this.bActSociales = new System.Windows.Forms.Button();
             this.lbNoticias = new System.Windows.Forms.ListBox();
             this.calendario = new System.Windows.Forms.MonthCalendar();
+            this.bDarse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bNoticias
@@ -87,11 +88,22 @@
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 5;
             // 
+            // bDarse
+            // 
+            this.bDarse.Location = new System.Drawing.Point(1047, 218);
+            this.bDarse.Name = "bDarse";
+            this.bDarse.Size = new System.Drawing.Size(75, 40);
+            this.bDarse.TabIndex = 6;
+            this.bDarse.Text = "Darse de baja";
+            this.bDarse.UseVisualStyleBackColor = true;
+            this.bDarse.Click += new System.EventHandler(this.bDarse_Click);
+            // 
             // PantallaNoticias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 630);
+            this.Controls.Add(this.bDarse);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.lbNoticias);
             this.Controls.Add(this.bActSociales);
@@ -113,5 +125,6 @@
         private System.Windows.Forms.Button bActSociales;
         private System.Windows.Forms.ListBox lbNoticias;
         private System.Windows.Forms.MonthCalendar calendario;
+        private System.Windows.Forms.Button bDarse;
     }
 }

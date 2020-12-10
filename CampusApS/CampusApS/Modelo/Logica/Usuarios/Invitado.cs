@@ -13,10 +13,12 @@ namespace CampusApS.Modelo.Logica {
 
         private const string rol = "invitado";
 
+        private string nombre;
         private Permisos permisos;
 
-        public Invitado() {
+        public Invitado(string nombre) {
             this.permisos = new Permisos(false, false, false, false, false, false, false, false);
+            this.nombre = nombre;
         }
 
         public void crearCurso() {
@@ -61,6 +63,10 @@ namespace CampusApS.Modelo.Logica {
 
         public string getRol() {
             return Invitado.rol;
+        }
+
+        public string getNombre() {
+            return this.nombre;
         }
     }
 }

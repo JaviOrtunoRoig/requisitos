@@ -62,5 +62,9 @@ namespace CampusApS.Modelo.Logica {
         public string getRol() {
             return Administrador.rol;
         }
+
+        public string getNombre() {
+            return this.nombre;
+        }
     }
 }
