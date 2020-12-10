@@ -16,5 +16,10 @@ namespace CampusApS
         {
             InitializeComponent();
         }
+
+        private void bConfirmar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
