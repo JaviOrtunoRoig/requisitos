@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BDLibrary;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace CampusApS.Modelo.Querys
 {
@@ -116,6 +117,15 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
+        public bool existeContraseña(string contr)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE contraseña = '" + contr + "';");
+
+            return tupla[0] != null;
+        }
+
         public bool iniciarSesion(string nom, string contr)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
@@ -128,10 +138,27 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] != null && contraseña.Equals(contr);
         }
 
-        public void darseBaja(string correo, string contr)
+        public bool darseBaja(string nom, string contr)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
-            miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (correo = " + correo + " AND contraseña = " + contr + ");");
+
+            bool res = false;
+
+            if (!permitirNombre(nom) && existeContraseña(contr))
+            {
+                miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (nombre = " + nom + " AND contraseña = " + contr + ");");
+                res = true;
+            }
+            else if (permitirNombre(nom))
+            {
+                MessageBox.Show("El nombre es incorrecto");
+
+            } else if(!existeContraseña(contr)) {
+
+                MessageBox.Show("La contraseña es incorrecta");
+            }
+
+            return res;
         }
 
         public void codigoAdmin()
@@ -154,15 +181,24 @@ namespace CampusApS.Modelo.Querys
             else
             {
                 miBD.Insert("INSERT INTO `apsgrupo06`.`codadmin` (`codigo`) VALUES (" + sb.ToString() + ");");
+                MessageBox.Show("El codigo es: " + sb.ToString());
             }
 
         }
 
-        public string recuperContrasena(string correo){
+        public string recuperContrasena(string nomb){
             BD miBD = new BD(BD_SERVER, BD_NAME);
-            object[] tupla = miBD.Select("SELECT contraseña FROM usuario WHERE correo = " + correo + ";");
 
-            return (string) tupla[0];
+            object[] tupla = miBD.Select("SELECT contraseña FROM usuario WHERE nombre = " + nomb + ";");
+
+            if (tupla[0] != null)
+            {
+                return (string)tupla[0];
+            }
+            else
+            {
+                return ("Este usuario no existe, por favor compruebe de nuevo");
+            }
         }
     }
 }
