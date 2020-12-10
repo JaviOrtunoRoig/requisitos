@@ -134,9 +134,18 @@ namespace CampusApS.Modelo.Querys
 
             object[] tupla2 = miBD.Select("SELECT contraseña FROM usuario WHERE nombre = '" + nom + "';");
 
-            string contraseña = (string)((object[])(tupla2[0]))[0];
+            if(tupla2[0] != null)
+            {
+                string contraseña = (string)((object[])(tupla2[0]))[0];
 
-            return tupla[0] != null && contraseña.Equals(contr);
+                return tupla[0] != null && contraseña.Equals(contr);
+            }
+            else
+            {
+                return false;
+            }
+
+     
         }
 
         public bool darseBaja(string nom, string contr)
