@@ -46,108 +46,121 @@
             // lbNumONG
             // 
             this.lbNumONG.AutoSize = true;
-            this.lbNumONG.Location = new System.Drawing.Point(42, 363);
+            this.lbNumONG.Location = new System.Drawing.Point(56, 447);
+            this.lbNumONG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNumONG.Name = "lbNumONG";
-            this.lbNumONG.Size = new System.Drawing.Size(149, 13);
+            this.lbNumONG.Size = new System.Drawing.Size(201, 17);
             this.lbNumONG.TabIndex = 19;
             this.lbNumONG.Text = "Numero de registro de la ONG";
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(42, 229);
+            this.lbPassword.Location = new System.Drawing.Point(56, 282);
+            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(61, 13);
+            this.lbPassword.Size = new System.Drawing.Size(81, 17);
             this.lbPassword.TabIndex = 18;
             this.lbPassword.Text = "Contraseña";
             // 
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(42, 159);
+            this.lbUsername.Location = new System.Drawing.Point(56, 196);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(98, 13);
+            this.lbUsername.Size = new System.Drawing.Size(131, 17);
             this.lbUsername.TabIndex = 17;
             this.lbUsername.Text = "Nombre de Usuario";
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(42, 86);
+            this.lbEmail.Location = new System.Drawing.Point(56, 106);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(93, 13);
+            this.lbEmail.Size = new System.Drawing.Size(124, 17);
             this.lbEmail.TabIndex = 16;
             this.lbEmail.Text = "Correo electrónico";
             // 
             // tNumRegONG
             // 
-            this.tNumRegONG.Location = new System.Drawing.Point(45, 379);
+            this.tNumRegONG.Location = new System.Drawing.Point(60, 466);
+            this.tNumRegONG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tNumRegONG.Name = "tNumRegONG";
-            this.tNumRegONG.Size = new System.Drawing.Size(253, 20);
+            this.tNumRegONG.Size = new System.Drawing.Size(336, 22);
             this.tNumRegONG.TabIndex = 23;
             // 
             // tPassword
             // 
-            this.tPassword.Location = new System.Drawing.Point(45, 245);
+            this.tPassword.Location = new System.Drawing.Point(60, 302);
+            this.tPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tPassword.Name = "tPassword";
             this.tPassword.PasswordChar = '*';
-            this.tPassword.Size = new System.Drawing.Size(253, 20);
+            this.tPassword.Size = new System.Drawing.Size(336, 22);
             this.tPassword.TabIndex = 22;
             // 
             // tNombre
             // 
-            this.tNombre.Location = new System.Drawing.Point(45, 175);
+            this.tNombre.Location = new System.Drawing.Point(60, 215);
+            this.tNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tNombre.Name = "tNombre";
-            this.tNombre.Size = new System.Drawing.Size(253, 20);
+            this.tNombre.Size = new System.Drawing.Size(336, 22);
             this.tNombre.TabIndex = 21;
             // 
             // tCorreo
             // 
-            this.tCorreo.Location = new System.Drawing.Point(45, 102);
+            this.tCorreo.Location = new System.Drawing.Point(60, 126);
+            this.tCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tCorreo.Name = "tCorreo";
-            this.tCorreo.Size = new System.Drawing.Size(253, 20);
+            this.tCorreo.Size = new System.Drawing.Size(336, 22);
             this.tCorreo.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 36);
+            this.label1.Location = new System.Drawing.Point(32, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 13);
+            this.label1.Size = new System.Drawing.Size(238, 17);
             this.label1.TabIndex = 24;
             this.label1.Text = "¡Bienvenido, nuevo usuario de ONG!";
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(277, 439);
+            this.bConfirmar.Location = new System.Drawing.Point(369, 540);
+            this.bConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bConfirmar.Name = "bConfirmar";
-            this.bConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.bConfirmar.Size = new System.Drawing.Size(100, 28);
             this.bConfirmar.TabIndex = 25;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
+            this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
             // 
             // tConfPassword
             // 
-            this.tConfPassword.Location = new System.Drawing.Point(45, 313);
+            this.tConfPassword.Location = new System.Drawing.Point(60, 385);
+            this.tConfPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tConfPassword.Name = "tConfPassword";
             this.tConfPassword.PasswordChar = '*';
-            this.tConfPassword.Size = new System.Drawing.Size(253, 20);
+            this.tConfPassword.Size = new System.Drawing.Size(336, 22);
             this.tConfPassword.TabIndex = 27;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 297);
+            this.label2.Location = new System.Drawing.Point(56, 366);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 13);
+            this.label2.Size = new System.Drawing.Size(146, 17);
             this.label2.TabIndex = 26;
             this.label2.Text = "Confirmar Contraseña";
             // 
             // PantallaRegistroONG
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 474);
+            this.ClientSize = new System.Drawing.Size(485, 583);
             this.Controls.Add(this.tConfPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bConfirmar);
@@ -161,6 +174,7 @@
             this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.lbEmail);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PantallaRegistroONG";
             this.Text = "Registro usuario de ONG";
             this.ResumeLayout(false);
