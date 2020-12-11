@@ -118,6 +118,73 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
+        public bool permitirCurso(string nom)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT * FROM curso WHERE nombreCurso = '" + nom + "';");
+
+            return tupla[0] == null;
+        }
+
+        public bool permitirAS(string nom)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT * FROM actividadsocial WHERE nombreAS = '" + nom + "';");
+
+            return tupla[0] == null;
+        }
+
+
+        public void insertarCurso(string nombreCurso, string nombreUsuario)
+        {
+            if (permitirCurso(nombreCurso))
+            {
+                BD miBD = new BD(BD_SERVER, BD_NAME);
+                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`) VALUES ('" +
+                nombreCurso + "', '" + nombreUsuario + "');");
+
+            }
+            else
+            {
+                MessageBox.Show("Nombre de curso ya escogido");
+            }
+        }
+
+        public void borrarCurso(string nombreCurso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            miBD.Delete("DELETE FROM `apsgrupo06`.`curso` WHERE (nombreCurso = '" + nombreCurso + "');");
+            
+        }
+
+        public void borrarAS(string nombreAS)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            miBD.Delete("DELETE FROM `apsgrupo06`.`actividadsocial` WHERE (nombreAS = '" + nombreAS + "');");
+
+        }
+
+        public void insertarAS(string nombreAS, string nombreUsuario)
+        {
+            if (permitirAS(nombreAS))
+            {
+                BD miBD = new BD(BD_SERVER, BD_NAME);
+                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`) VALUES ('" +
+                nombreAS + "', '" + nombreUsuario + "');");
+
+            }
+            else
+            {
+                MessageBox.Show("Nombre de actividad social ya escogido");
+            }
+        }
+
+
+
         public bool existeContraseña(string contr)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
