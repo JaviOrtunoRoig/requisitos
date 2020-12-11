@@ -297,5 +297,79 @@ namespace CampusApS.Modelo.Querys
             }
 
         }
+
+
+        public List<String> getCursos(string usuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombreCurso FROM curso WHERE usuario = '" + usuario + "';");
+
+            List<String> list = new List<String>();
+
+            if(tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+
+                    string nombre = (string)((object[])(tupla[0]))[cont];
+
+                    if (nombre != null)
+                    {
+                        list.Add(nombre);
+                        cont++;
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public List<String> getAS(string usuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombreAS FROM actividadsocial WHERE usuario = '" + usuario + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+
+                    string nombre = (string)((object[])(tupla[0]))[cont];
+
+                    if (nombre != null)
+                    {
+                        list.Add(nombre);
+                        cont++;
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
     }
 }
