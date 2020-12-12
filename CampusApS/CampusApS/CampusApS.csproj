@@ -203,6 +203,7 @@
     <Content Include="Resources\Images\IconoProfesor.png" />
     <Content Include="Resources\Images\Invitado.png" />
     <Content Include="Resources\Images\Login.png" />
+    <None Include="Resources\Images\Papelera.png" />
     <Content Include="Resources\Images\Registro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
