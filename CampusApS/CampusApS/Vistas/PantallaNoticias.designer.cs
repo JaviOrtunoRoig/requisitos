@@ -101,7 +101,7 @@
             this.bBaja.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bBaja.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(91, 520);
+            this.bBaja.Location = new System.Drawing.Point(942, 388);
             this.bBaja.Name = "bBaja";
             this.bBaja.Size = new System.Drawing.Size(200, 50);
             this.bBaja.TabIndex = 6;
