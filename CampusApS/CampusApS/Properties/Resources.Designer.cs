@@ -133,6 +133,16 @@ namespace CampusApS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Papelera {
+            get {
+                object obj = ResourceManager.GetObject("Papelera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Registro {
             get {
                 object obj = ResourceManager.GetObject("Registro", resourceCulture);

@@ -36,11 +36,16 @@
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.lbActSociales = new System.Windows.Forms.ListBox();
             this.bBaja = new XanderUI.XUIButton();
+            this.bAnadirAct = new XanderUI.XUIButton();
+            this.bEliminarAct = new XanderUI.XUIButton();
+            this.bPapelera = new XanderUI.XUIButton();
+            this.bParticiparAct = new XanderUI.XUIButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bActSociales
             // 
-            this.bActSociales.Location = new System.Drawing.Point(1003, 35);
+            this.bActSociales.Location = new System.Drawing.Point(1013, 12);
             this.bActSociales.Name = "bActSociales";
             this.bActSociales.Size = new System.Drawing.Size(138, 23);
             this.bActSociales.TabIndex = 11;
@@ -49,7 +54,7 @@
             // 
             // bCursos
             // 
-            this.bCursos.Location = new System.Drawing.Point(881, 35);
+            this.bCursos.Location = new System.Drawing.Point(891, 12);
             this.bCursos.Name = "bCursos";
             this.bCursos.Size = new System.Drawing.Size(126, 23);
             this.bCursos.TabIndex = 10;
@@ -58,7 +63,7 @@
             // 
             // bForos
             // 
-            this.bForos.Location = new System.Drawing.Point(758, 35);
+            this.bForos.Location = new System.Drawing.Point(768, 12);
             this.bForos.Name = "bForos";
             this.bForos.Size = new System.Drawing.Size(127, 23);
             this.bForos.TabIndex = 9;
@@ -67,7 +72,7 @@
             // 
             // bNoticias
             // 
-            this.bNoticias.Location = new System.Drawing.Point(637, 35);
+            this.bNoticias.Location = new System.Drawing.Point(647, 12);
             this.bNoticias.Name = "bNoticias";
             this.bNoticias.Size = new System.Drawing.Size(127, 23);
             this.bNoticias.TabIndex = 8;
@@ -76,14 +81,14 @@
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(926, 145);
+            this.calendario.Location = new System.Drawing.Point(917, 177);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 12;
             // 
             // lbActSociales
             // 
             this.lbActSociales.FormattingEnabled = true;
-            this.lbActSociales.Location = new System.Drawing.Point(234, 145);
+            this.lbActSociales.Location = new System.Drawing.Point(266, 177);
             this.lbActSociales.Name = "lbActSociales";
             this.lbActSociales.Size = new System.Drawing.Size(598, 303);
             this.lbActSociales.TabIndex = 13;
@@ -109,11 +114,106 @@
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
+            // bAnadirAct
+            // 
+            this.bAnadirAct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirAct.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirAct.ButtonImage")));
+            this.bAnadirAct.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bAnadirAct.ButtonText = "Añadir una actividad social";
+            this.bAnadirAct.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirAct.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirAct.CornerRadius = 5;
+            this.bAnadirAct.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirAct.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bAnadirAct.Location = new System.Drawing.Point(917, 380);
+            this.bAnadirAct.Name = "bAnadirAct";
+            this.bAnadirAct.Size = new System.Drawing.Size(192, 23);
+            this.bAnadirAct.TabIndex = 15;
+            this.bAnadirAct.TextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bEliminarAct
+            // 
+            this.bEliminarAct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarAct.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarAct.ButtonImage")));
+            this.bEliminarAct.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bEliminarAct.ButtonText = "Eliminar una actividad social";
+            this.bEliminarAct.ClickBackColor = System.Drawing.Color.Firebrick;
+            this.bEliminarAct.ClickTextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarAct.CornerRadius = 5;
+            this.bEliminarAct.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarAct.HoverBackgroundColor = System.Drawing.Color.Firebrick;
+            this.bEliminarAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bEliminarAct.Location = new System.Drawing.Point(917, 409);
+            this.bEliminarAct.Name = "bEliminarAct";
+            this.bEliminarAct.Size = new System.Drawing.Size(192, 23);
+            this.bEliminarAct.TabIndex = 16;
+            this.bEliminarAct.TextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bPapelera
+            // 
+            this.bPapelera.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bPapelera.ButtonImage = global::CampusApS.Properties.Resources.Papelera;
+            this.bPapelera.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.bPapelera.ButtonText = "";
+            this.bPapelera.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.bPapelera.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.CornerRadius = 5;
+            this.bPapelera.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bPapelera.Location = new System.Drawing.Point(1065, 438);
+            this.bPapelera.Name = "bPapelera";
+            this.bPapelera.Size = new System.Drawing.Size(44, 42);
+            this.bPapelera.TabIndex = 17;
+            this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bParticiparAct
+            // 
+            this.bParticiparAct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bParticiparAct.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bParticiparAct.ButtonImage")));
+            this.bParticiparAct.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bParticiparAct.ButtonText = "Participar en una actividad social";
+            this.bParticiparAct.ClickBackColor = System.Drawing.Color.DimGray;
+            this.bParticiparAct.ClickTextColor = System.Drawing.Color.DimGray;
+            this.bParticiparAct.CornerRadius = 5;
+            this.bParticiparAct.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bParticiparAct.HoverBackgroundColor = System.Drawing.Color.DimGray;
+            this.bParticiparAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bParticiparAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bParticiparAct.Location = new System.Drawing.Point(917, 351);
+            this.bParticiparAct.Name = "bParticiparAct";
+            this.bParticiparAct.Size = new System.Drawing.Size(192, 23);
+            this.bParticiparAct.TabIndex = 18;
+            this.bParticiparAct.TextColor = System.Drawing.Color.DimGray;
+            this.bParticiparAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(258, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(383, 48);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "ACTIVIDADES SOCIALES";
+            // 
             // PantallaActividadesSociales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1163, 631);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bParticiparAct);
+            this.Controls.Add(this.bPapelera);
+            this.Controls.Add(this.bEliminarAct);
+            this.Controls.Add(this.bAnadirAct);
             this.Controls.Add(this.bBaja);
             this.Controls.Add(this.lbActSociales);
             this.Controls.Add(this.calendario);
@@ -124,6 +224,7 @@
             this.Name = "PantallaActividadesSociales";
             this.Text = "PantallaActividadesSociales";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,5 +237,10 @@
         private System.Windows.Forms.MonthCalendar calendario;
         private System.Windows.Forms.ListBox lbActSociales;
         private XanderUI.XUIButton bBaja;
+        private XanderUI.XUIButton bAnadirAct;
+        private XanderUI.XUIButton bEliminarAct;
+        private XanderUI.XUIButton bPapelera;
+        private XanderUI.XUIButton bParticiparAct;
+        private System.Windows.Forms.Label label1;
     }
 }

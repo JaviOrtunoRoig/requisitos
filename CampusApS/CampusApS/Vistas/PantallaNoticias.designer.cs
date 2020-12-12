@@ -36,11 +36,15 @@
             this.lbNoticias = new System.Windows.Forms.ListBox();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.bBaja = new XanderUI.XUIButton();
+            this.bPapelera = new XanderUI.XUIButton();
+            this.bEliminarNoticia = new XanderUI.XUIButton();
+            this.bAnadirNoticia = new XanderUI.XUIButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bNoticias
             // 
-            this.bNoticias.Location = new System.Drawing.Point(634, 34);
+            this.bNoticias.Location = new System.Drawing.Point(644, 12);
             this.bNoticias.Name = "bNoticias";
             this.bNoticias.Size = new System.Drawing.Size(127, 23);
             this.bNoticias.TabIndex = 0;
@@ -49,7 +53,7 @@
             // 
             // bForos
             // 
-            this.bForos.Location = new System.Drawing.Point(755, 34);
+            this.bForos.Location = new System.Drawing.Point(765, 12);
             this.bForos.Name = "bForos";
             this.bForos.Size = new System.Drawing.Size(127, 23);
             this.bForos.TabIndex = 1;
@@ -58,7 +62,7 @@
             // 
             // bCursos
             // 
-            this.bCursos.Location = new System.Drawing.Point(878, 34);
+            this.bCursos.Location = new System.Drawing.Point(888, 12);
             this.bCursos.Name = "bCursos";
             this.bCursos.Size = new System.Drawing.Size(126, 23);
             this.bCursos.TabIndex = 2;
@@ -67,7 +71,7 @@
             // 
             // bActSociales
             // 
-            this.bActSociales.Location = new System.Drawing.Point(1000, 34);
+            this.bActSociales.Location = new System.Drawing.Point(1010, 12);
             this.bActSociales.Name = "bActSociales";
             this.bActSociales.Size = new System.Drawing.Size(138, 23);
             this.bActSociales.TabIndex = 3;
@@ -77,14 +81,14 @@
             // lbNoticias
             // 
             this.lbNoticias.FormattingEnabled = true;
-            this.lbNoticias.Location = new System.Drawing.Point(235, 144);
+            this.lbNoticias.Location = new System.Drawing.Point(271, 181);
             this.lbNoticias.Name = "lbNoticias";
             this.lbNoticias.Size = new System.Drawing.Size(598, 303);
             this.lbNoticias.TabIndex = 4;
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(930, 144);
+            this.calendario.Location = new System.Drawing.Point(916, 181);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 5;
             // 
@@ -109,11 +113,85 @@
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
+            // bPapelera
+            // 
+            this.bPapelera.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bPapelera.ButtonImage = global::CampusApS.Properties.Resources.Papelera;
+            this.bPapelera.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.bPapelera.ButtonText = "";
+            this.bPapelera.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.bPapelera.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.CornerRadius = 5;
+            this.bPapelera.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bPapelera.Location = new System.Drawing.Point(1064, 413);
+            this.bPapelera.Name = "bPapelera";
+            this.bPapelera.Size = new System.Drawing.Size(44, 42);
+            this.bPapelera.TabIndex = 21;
+            this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bEliminarNoticia
+            // 
+            this.bEliminarNoticia.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarNoticia.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarNoticia.ButtonImage")));
+            this.bEliminarNoticia.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bEliminarNoticia.ButtonText = "Eliminar una noticia";
+            this.bEliminarNoticia.ClickBackColor = System.Drawing.Color.Firebrick;
+            this.bEliminarNoticia.ClickTextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarNoticia.CornerRadius = 5;
+            this.bEliminarNoticia.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarNoticia.HoverBackgroundColor = System.Drawing.Color.Firebrick;
+            this.bEliminarNoticia.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarNoticia.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bEliminarNoticia.Location = new System.Drawing.Point(916, 384);
+            this.bEliminarNoticia.Name = "bEliminarNoticia";
+            this.bEliminarNoticia.Size = new System.Drawing.Size(192, 23);
+            this.bEliminarNoticia.TabIndex = 20;
+            this.bEliminarNoticia.TextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarNoticia.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bAnadirNoticia
+            // 
+            this.bAnadirNoticia.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirNoticia.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirNoticia.ButtonImage")));
+            this.bAnadirNoticia.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bAnadirNoticia.ButtonText = "Añadir una noticia";
+            this.bAnadirNoticia.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirNoticia.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirNoticia.CornerRadius = 5;
+            this.bAnadirNoticia.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirNoticia.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirNoticia.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirNoticia.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bAnadirNoticia.Location = new System.Drawing.Point(916, 355);
+            this.bAnadirNoticia.Name = "bAnadirNoticia";
+            this.bAnadirNoticia.Size = new System.Drawing.Size(192, 23);
+            this.bAnadirNoticia.TabIndex = 19;
+            this.bAnadirNoticia.TextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirNoticia.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(263, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 48);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "NOTICIAS";
+            // 
             // PantallaNoticias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 630);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bPapelera);
+            this.Controls.Add(this.bEliminarNoticia);
+            this.Controls.Add(this.bAnadirNoticia);
             this.Controls.Add(this.bBaja);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.lbNoticias);
@@ -125,6 +203,7 @@
             this.Name = "PantallaNoticias";
             this.Text = "CampusApS";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -137,5 +216,9 @@
         private System.Windows.Forms.ListBox lbNoticias;
         private System.Windows.Forms.MonthCalendar calendario;
         private XanderUI.XUIButton bBaja;
+        private XanderUI.XUIButton bPapelera;
+        private XanderUI.XUIButton bEliminarNoticia;
+        private XanderUI.XUIButton bAnadirNoticia;
+        private System.Windows.Forms.Label label1;
     }
 }
