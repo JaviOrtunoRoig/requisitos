@@ -35,7 +35,7 @@
             this.bActSociales = new System.Windows.Forms.Button();
             this.lbNoticias = new System.Windows.Forms.ListBox();
             this.calendario = new System.Windows.Forms.MonthCalendar();
-            this.bDarse = new System.Windows.Forms.Button();
+            this.bBaja = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // bNoticias
@@ -88,22 +88,32 @@
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 5;
             // 
-            // bDarse
+            // bBaja
             // 
-            this.bDarse.Location = new System.Drawing.Point(1047, 218);
-            this.bDarse.Name = "bDarse";
-            this.bDarse.Size = new System.Drawing.Size(75, 40);
-            this.bDarse.TabIndex = 6;
-            this.bDarse.Text = "Darse de baja";
-            this.bDarse.UseVisualStyleBackColor = true;
-            this.bDarse.Click += new System.EventHandler(this.bDarse_Click);
+            this.bBaja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
+            this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.bBaja.ButtonText = "Button";
+            this.bBaja.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.bBaja.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bBaja.CornerRadius = 5;
+            this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.bBaja.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bBaja.Location = new System.Drawing.Point(91, 520);
+            this.bBaja.Name = "bBaja";
+            this.bBaja.Size = new System.Drawing.Size(200, 50);
+            this.bBaja.TabIndex = 6;
+            this.bBaja.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // PantallaNoticias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 630);
-            this.Controls.Add(this.bDarse);
+            this.Controls.Add(this.bBaja);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.lbNoticias);
             this.Controls.Add(this.bActSociales);
@@ -125,6 +135,6 @@
         private System.Windows.Forms.Button bActSociales;
         private System.Windows.Forms.ListBox lbNoticias;
         private System.Windows.Forms.MonthCalendar calendario;
-        private System.Windows.Forms.Button bDarse;
+        private XanderUI.XUIButton bBaja;
     }
 }
