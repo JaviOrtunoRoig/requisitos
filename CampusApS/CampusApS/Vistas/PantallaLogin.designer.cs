@@ -34,7 +34,7 @@
             this.tNombre = new System.Windows.Forms.TextBox();
             this.tPassword = new System.Windows.Forms.TextBox();
             this.bConfirmar = new System.Windows.Forms.Button();
-            this.bRecuperar = new System.Windows.Forms.Button();
+            this.bRecuperarPass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbCorreoUser
@@ -80,22 +80,22 @@
             this.bConfirmar.UseVisualStyleBackColor = true;
             this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
             // 
-            // bRecuperar
+            // bRecuperarPass
             // 
-            this.bRecuperar.Location = new System.Drawing.Point(362, 228);
-            this.bRecuperar.Name = "bRecuperar";
-            this.bRecuperar.Size = new System.Drawing.Size(141, 23);
-            this.bRecuperar.TabIndex = 5;
-            this.bRecuperar.Text = "Recuperar la contraseña";
-            this.bRecuperar.UseVisualStyleBackColor = true;
-            this.bRecuperar.Click += new System.EventHandler(this.bRecuperar_Click);
+            this.bRecuperarPass.Location = new System.Drawing.Point(362, 228);
+            this.bRecuperarPass.Name = "bRecuperarPass";
+            this.bRecuperarPass.Size = new System.Drawing.Size(141, 23);
+            this.bRecuperarPass.TabIndex = 5;
+            this.bRecuperarPass.Text = "Recuperar la contraseña";
+            this.bRecuperarPass.UseVisualStyleBackColor = true;
+            this.bRecuperarPass.Click += new System.EventHandler(this.bRecuperar_Click);
             // 
             // PantallaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 323);
-            this.Controls.Add(this.bRecuperar);
+            this.Controls.Add(this.bRecuperarPass);
             this.Controls.Add(this.bConfirmar);
             this.Controls.Add(this.tPassword);
             this.Controls.Add(this.tNombre);
@@ -116,6 +116,6 @@
         private System.Windows.Forms.TextBox tNombre;
         private System.Windows.Forms.TextBox tPassword;
         private System.Windows.Forms.Button bConfirmar;
-        private System.Windows.Forms.Button bRecuperar;
+        private System.Windows.Forms.Button bRecuperarPass;
     }
 }
