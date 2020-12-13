@@ -66,6 +66,12 @@
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\ForosQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
+    <Compile Include="Vistas\ConfirmarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConfirmarPassword.Designer.cs">
+      <DependentUpon>ConfirmarPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\CreacionRecursos\CrearActividadSocial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     <Compile Include="Vistas\PantallaForos.Designer.cs">
       <DependentUpon>PantallaForos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\ConfirmarPassword.resx">
+      <DependentUpon>ConfirmarPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\CrearActividadSocial.resx">
       <DependentUpon>CrearActividadSocial.cs</DependentUpon>
     </EmbeddedResource>

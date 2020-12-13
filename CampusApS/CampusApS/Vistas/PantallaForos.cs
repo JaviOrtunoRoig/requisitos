@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,18 @@ namespace CampusApS.Vistas
 {
     public partial class PantallaForos : Form
     {
-        public PantallaForos()
+
+        Usuario usuario;
+
+        public PantallaForos(Usuario user)
         {
             InitializeComponent();
+            this.usuario = user;
+        }
+
+        private void bBaja_Click(object sender, EventArgs e) {
+            ConfirmarPassword ventana = new ConfirmarPassword(usuario);
+            ventana.ShowDialog();
         }
     }
 }

@@ -182,6 +182,7 @@
             this.bBaja.TabIndex = 29;
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
             // 
             // PantallaForos
             // 

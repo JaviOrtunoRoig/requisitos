@@ -50,8 +50,8 @@ namespace CampusApS
         }
 
         private void bBaja_Click(object sender, EventArgs e) {
-            //TODO: Terminar de implmentar el darse de baja cuando este la vista
-
+            ConfirmarPassword ventana = new ConfirmarPassword(usuario);
+            ventana.ShowDialog();
         }
 
         private void bAnadirCurso_Click(object sender, EventArgs e) {
