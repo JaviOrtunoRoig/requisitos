@@ -15,9 +15,12 @@ namespace CampusApS.Modelo.Logica.Usuarios {
         private bool puedeCrearActividadSocial;
         private bool puedeBorrarActividadSocial;
         private bool puedeGenerarCodigoAdmin;
-        private bool puedeInscribirseCurso;
+        private bool puedeParticiparCurso;
+        private bool puedeParticiparActividadsocial;
 
-        public Permisos(bool crearCurso, bool borrarCurso, bool crearForo, bool borrarForo, bool crearActividadSocial, bool borrarActivisadSocial, bool codigoAdmin, bool inscribirseCurso) {
+        public Permisos(bool crearCurso, bool borrarCurso, bool crearForo, bool borrarForo, bool crearActividadSocial, bool borrarActivisadSocial, bool codigoAdmin, bool inscribirseCurso,
+            bool participarActividadSocial) {
+
             this.puedeCrearCurso = crearCurso;
             this.puedeBorrarCurso = borrarCurso;
             this.puedeCrearForo = crearForo;
@@ -25,7 +28,8 @@ namespace CampusApS.Modelo.Logica.Usuarios {
             this.puedeCrearActividadSocial = crearActividadSocial;
             this.puedeBorrarActividadSocial = borrarActivisadSocial;
             this.puedeGenerarCodigoAdmin = codigoAdmin;
-            this.puedeInscribirseCurso = inscribirseCurso;
+            this.puedeParticiparCurso = inscribirseCurso;
+            this.puedeParticiparActividadsocial = participarActividadSocial;
         }
 
         public bool getPuedeCrearCurso() {
@@ -57,9 +61,13 @@ namespace CampusApS.Modelo.Logica.Usuarios {
             return this.puedeGenerarCodigoAdmin;
         }
 
-        public bool getPuedeInscribirseCurso()
+        public bool getPuedeParticiparCurso()
         {
-            return this.puedeInscribirseCurso;
+            return this.puedeParticiparCurso;
+        }
+
+        public bool getPuedeParticiparActividadSocial() {
+            return this.puedeParticiparActividadsocial;
         }
     }
 }
