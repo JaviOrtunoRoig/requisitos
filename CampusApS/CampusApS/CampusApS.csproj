@@ -67,6 +67,12 @@
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\ForosQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
+    <Compile Include="Vistas\ActividadSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ActividadSocial.Designer.cs">
+      <DependentUpon>ActividadSocial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\CreacionRecursos\ConfirmarPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +103,17 @@
     <Compile Include="Vistas\CreacionRecursos\CrearNoticia.Designer.cs">
       <DependentUpon>CrearNoticia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\curso.cs">
+    <Compile Include="Vistas\Curso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\curso.Designer.cs">
-      <DependentUpon>curso.cs</DependentUpon>
+    <Compile Include="Vistas\Curso.Designer.cs">
+      <DependentUpon>Curso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Foro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Foro.Designer.cs">
+      <DependentUpon>Foro.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PantallaActividadesSociales.cs">
       <SubType>Form</SubType>
@@ -177,6 +189,9 @@
     <Compile Include="Vistas\PantallaForos.Designer.cs">
       <DependentUpon>PantallaForos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\ActividadSocial.resx">
+      <DependentUpon>ActividadSocial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\ConfirmarPassword.resx">
       <DependentUpon>ConfirmarPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +206,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\CrearNoticia.resx">
       <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Curso.resx">
+      <DependentUpon>Curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Foro.resx">
+      <DependentUpon>Foro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\PantallaActividadesSociales.resx">
       <DependentUpon>PantallaActividadesSociales.cs</DependentUpon>

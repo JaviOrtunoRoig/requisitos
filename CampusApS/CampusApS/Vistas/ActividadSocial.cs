@@ -8,9 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS.Vistas {
-    public partial class Curso : Form {
-        public Curso() {
+namespace CampusApS.Vistas
+{
+    public partial class ActividadSocial : Form
+    {
+        public ActividadSocial()
+        {
             InitializeComponent();
         }
     }
