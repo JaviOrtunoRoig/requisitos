@@ -59,9 +59,12 @@
     <Compile Include="Modelo\Logica\Usuarios\Permisos.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Invitado.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Profesor.cs" />
+    <Compile Include="Modelo\Querys\ActividadSocialQuery.cs" />
     <Compile Include="Modelo\Querys\BD.cs" />
+    <Compile Include="Modelo\Querys\CursoQuery.cs" />
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
+    <Compile Include="Modelo\Querys\ForosQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
     <Compile Include="Vistas\CrearCurso.cs">
       <SubType>Form</SubType>

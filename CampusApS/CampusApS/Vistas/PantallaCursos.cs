@@ -31,7 +31,7 @@ namespace CampusApS
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
-            UsuarioQuery BD = new UsuarioQuery();
+            CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getAllCursos();
         }
 
@@ -57,17 +57,17 @@ namespace CampusApS
         private void bAnadirCurso_Click(object sender, EventArgs e) {
             CrearCurso ventana = new CrearCurso(usuario);
             ventana.ShowDialog();
-            UsuarioQuery BD = new UsuarioQuery();
+            CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getAllCursos();
         }
 
         private void bEliminarCurso_Click(object sender, EventArgs e) {
-            UsuarioQuery BD = new UsuarioQuery();
+            CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {
-            UsuarioQuery BD = new UsuarioQuery();
+            CursoQuery BD = new CursoQuery();
             string curso = lbCursos.SelectedItem.ToString();
             BD.borrarCurso(curso);
             lbCursos.DataSource = BD.getAllCursos();

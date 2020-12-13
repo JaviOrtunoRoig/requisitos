@@ -21,7 +21,7 @@ namespace CampusApS.Vistas {
         }
 
         private void bConfirmar_Click(object sender, EventArgs e) {
-            UsuarioQuery BD = new UsuarioQuery();
+            CursoQuery BD= new CursoQuery();
             BD.insertarCurso(tNombreCurso.Text, usuario.getNombre());
             this.Close();
         }
