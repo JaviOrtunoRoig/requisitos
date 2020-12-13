@@ -26,8 +26,12 @@ namespace CampusApS
         }
 
         private void PantallaCursos_Load(object sender, EventArgs e) {
-            
-            this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
+            if (usuario.GetType() == typeof(Administrador) || usuario.GetType() == typeof(Alumno) || usuario.GetType() == typeof(ONG)) {
+                this.bParticiparCurso.Visible = true; //TODO: aniaidr bool en usuario para ver si se puede participar
+            } else {
+                this.bParticiparCurso.Visible = false;
+            }
+
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
 
@@ -53,18 +57,6 @@ namespace CampusApS
         private void bBaja_Click(object sender, EventArgs e) {
             //TODO: Terminar de implmentar el darse de baja cuando este la vista
 
-        }
-
-        private void bAnadirCurso_Click(object sender, EventArgs e) {
-            CrearCurso ventana = new CrearCurso(usuario);
-            ventana.ShowDialog();
-            UsuarioQuery BD = new UsuarioQuery();
-            lbCursos.DataSource = BD.getAllCursos();
-        }
-
-        private void bEliminarCurso_Click(object sender, EventArgs e) {
-            UsuarioQuery BD = new UsuarioQuery();
-            lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
         }
 
     }
