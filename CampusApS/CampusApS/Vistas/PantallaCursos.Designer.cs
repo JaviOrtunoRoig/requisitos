@@ -51,6 +51,7 @@
             this.bActSociales.TabIndex = 7;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -78,6 +79,7 @@
             this.bNoticias.TabIndex = 4;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // calendario
             // 
@@ -92,7 +94,6 @@
             this.lbCursos.Name = "lbCursos";
             this.lbCursos.Size = new System.Drawing.Size(598, 303);
             this.lbCursos.TabIndex = 9;
-            this.lbCursos.SelectedIndexChanged += new System.EventHandler(this.lbCursos_SelectedIndexChanged);
             // 
             // bBaja
             // 
@@ -114,6 +115,7 @@
             this.bBaja.TabIndex = 10;
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
             // 
             // label1
             // 
@@ -164,6 +166,7 @@
             this.bPapelera.TabIndex = 23;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bEliminarCurso
             // 
@@ -184,6 +187,7 @@
             this.bEliminarCurso.TabIndex = 22;
             this.bEliminarCurso.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarCurso.Click += new System.EventHandler(this.bEliminarCurso_Click);
             // 
             // bAnadirCurso
             // 
@@ -204,6 +208,7 @@
             this.bAnadirCurso.TabIndex = 21;
             this.bAnadirCurso.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirCurso.Click += new System.EventHandler(this.bAnadirCurso_Click);
             // 
             // PantallaCursos
             // 
@@ -223,7 +228,9 @@
             this.Controls.Add(this.bForos);
             this.Controls.Add(this.bNoticias);
             this.Name = "PantallaCursos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PantallaCursos";
+            this.Load += new System.EventHandler(this.PantallaCursos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

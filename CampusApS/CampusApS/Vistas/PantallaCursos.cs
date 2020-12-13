@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
+using CampusApS.Vistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +15,63 @@ namespace CampusApS
 {
     public partial class PantallaCursos : Form
     {
-        public PantallaCursos()
+
+        private Usuario usuario;
+
+
+        public PantallaCursos(Usuario usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
         }
 
-        private void lbCursos_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void PantallaCursos_Load(object sender, EventArgs e) {
+            
+            this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
+            this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
+            this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            this.bPapelera.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            CursoQuery BD = new CursoQuery();
+            lbCursos.DataSource = BD.getAllCursos();
+        }
+
+        private void bNoticias_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaNoticias ventana = new PantallaNoticias(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bActSociales_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bBaja_Click(object sender, EventArgs e) {
+            //TODO: Terminar de implmentar el darse de baja cuando este la vista
 
         }
+
+        private void bAnadirCurso_Click(object sender, EventArgs e) {
+            CrearCurso ventana = new CrearCurso(usuario);
+            ventana.ShowDialog();
+            CursoQuery BD = new CursoQuery();
+            lbCursos.DataSource = BD.getAllCursos();
+        }
+
+        private void bEliminarCurso_Click(object sender, EventArgs e) {
+            CursoQuery BD = new CursoQuery();
+            lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
+        }
+
+        private void bPapelera_Click(object sender, EventArgs e) {
+            CursoQuery BD = new CursoQuery();
+            string curso = lbCursos.SelectedItem.ToString();
+            BD.borrarCurso(curso);
+            lbCursos.DataSource = BD.getAllCursos();
+        }
+
     }
 }

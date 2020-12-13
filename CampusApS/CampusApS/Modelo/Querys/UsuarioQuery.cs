@@ -185,155 +185,13 @@ namespace CampusApS.Modelo.Querys
 
         #endregion DarseDeBaja
 
-        #region Cursos
-
-        public bool permitirCurso(string nom)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT * FROM curso WHERE nombreCurso = '" + nom + "';");
-
-            return tupla[0] == null;
-        }
-
-        public void insertarCurso(string nombreCurso, string nombreUsuario)
-        {
-            if (permitirCurso(nombreCurso))
-            {
-                BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`) VALUES ('" +
-                nombreCurso + "', '" + nombreUsuario + "');");
-
-            }
-            else
-            {
-                MessageBox.Show("Nombre de curso ya escogido");
-            }
-        }
-
-        public void borrarCurso(string nombreCurso)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            miBD.Delete("DELETE FROM `apsgrupo06`.`curso` WHERE (nombreCurso = '" + nombreCurso + "');");
-            
-        }
-
-        public List<String> getCursos(string usuario)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT nombreCurso FROM curso WHERE usuario = '" + usuario + "';");
-
-            List<String> list = new List<String>();
-
-            if (tupla[0] != null)
-            {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-
-
-                    string nombre = (string)((object[])(tupla[0]))[cont];
-
-                    if (nombre != null)
-                    {
-                        list.Add(nombre);
-                        cont++;
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
-            }
-
-            return list;
-        }
-
-        #endregion Cursos
-
-        #region ActividadesSociales
-
-        public bool permitirAS(string nom)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT * FROM actividadsocial WHERE nombreAS = '" + nom + "';");
-
-            return tupla[0] == null;
-        }
-
-        public void borrarAS(string nombreAS)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            miBD.Delete("DELETE FROM `apsgrupo06`.`actividadsocial` WHERE (nombreAS = '" + nombreAS + "');");
-
-        }
-
-        public void insertarAS(string nombreAS, string nombreUsuario)
-        {
-            if (permitirAS(nombreAS))
-            {
-                BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`) VALUES ('" +
-                nombreAS + "', '" + nombreUsuario + "');");
-
-            }
-            else
-            {
-                MessageBox.Show("Nombre de actividad social ya escogido");
-            }
-        }
-
-        public List<String> getAS(string usuario)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT nombreAS FROM actividadsocial WHERE usuario = '" + usuario + "';");
-
-            List<String> list = new List<String>();
-
-            if (tupla[0] != null)
-            {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-
-
-                    string nombre = (string)((object[])(tupla[0]))[cont];
-
-                    if (nombre != null)
-                    {
-                        list.Add(nombre);
-                        cont++;
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
-            }
-
-            return list;
-        }
-
-        #endregion ActividadesSociales
+   
 
         #region CodigoAdmin
 
         public void codigoAdmin()
         {
-            StringBuilder sb = null;
+            StringBuilder sb = new StringBuilder("");
             Random rnd = new Random();
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
@@ -389,7 +247,7 @@ namespace CampusApS.Modelo.Querys
 
             if (tupla[0] != null)
             {
-                return tupla[0].ToString();
+                return (string)((object[])(tupla[0]))[0];
             }
             else
             {
