@@ -61,7 +61,6 @@
     <Compile Include="Modelo\Logica\Usuarios\Profesor.cs" />
     <Compile Include="Modelo\Querys\BD.cs" />
     <Compile Include="Modelo\Querys\Error.cs" />
-    <Compile Include="Modelo\Querys\Rol.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
     <Compile Include="Vistas\PantallaActividadesSociales.cs">

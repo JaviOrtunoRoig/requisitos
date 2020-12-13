@@ -387,7 +387,6 @@ namespace CampusApS.Modelo.Querys
 
             object[] tupla = miBD.Select("SELECT rol FROM usuario WHERE nombre = '" + nomb + "';");
 
-            //TODO: q devueva bien el objeto
             if (tupla[0] != null)
             {
                 return (string)((object[])(tupla[0]))[0];
