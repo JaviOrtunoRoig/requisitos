@@ -19,6 +19,7 @@ namespace CampusApS {
             Application.Run(new PantallaBienvenido());
             Console.WriteLine("\n\n\n\n\n");
 
+
            }
     }
 }

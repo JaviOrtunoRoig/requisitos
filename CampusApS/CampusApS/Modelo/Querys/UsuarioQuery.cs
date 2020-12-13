@@ -236,13 +236,19 @@ namespace CampusApS.Modelo.Querys
                 while (!stop && cont < tupla.Length)
                 {
 
-
-                    string nombre = (string)((object[])(tupla[cont]))[0];
-
-                    if (nombre != null)
+                    if (tupla[cont] != null)
                     {
-                        list.Add(nombre);
-                        cont++;
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
                     }
                     else
                     {
@@ -293,6 +299,31 @@ namespace CampusApS.Modelo.Querys
             return list;
         }
 
+
+        public void inscribirseCurso(string nombreUsuario, string nombreCurso)
+        {
+            if(noInscrito(nombreUsuario, nombreCurso))
+            {
+                BD miBD = new BD(BD_SERVER, BD_NAME);
+
+                miBD.Insert("INSERT INTO `apsgrupo06`.`usuario_curso` (`nombreCurso`, `nombreUsuario`) VALUES ('" +
+                nombreCurso + "', '" + nombreUsuario + "');");
+
+            }
+            else
+            {
+                MessageBox.Show("Este usuario ya está inscrito en el curso");
+            }
+        }
+
+        private bool noInscrito(string nombreUsuario, string nombreCurso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT * FROM usuario_curso WHERE nombreCurso = '" + nombreCurso + "' and nombreUsuario = '" + nombreUsuario + "';");
+
+            return tupla[0] == null;
+        }
 
 
         #endregion Cursos
@@ -348,13 +379,20 @@ namespace CampusApS.Modelo.Querys
                 while (!stop && cont < tupla.Length)
                 {
 
-
-                    string nombre = (string)((object[])(tupla[cont]))[0];
-
-                    if (nombre != null)
+                    if (tupla[cont] != null)
                     {
-                        list.Add(nombre);
-                        cont++;
+
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
                     }
                     else
                     {
