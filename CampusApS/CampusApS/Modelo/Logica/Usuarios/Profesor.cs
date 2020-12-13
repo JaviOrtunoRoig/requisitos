@@ -14,7 +14,7 @@ namespace CampusApS.Modelo.Logica.Usuarios {
         private Permisos permisos;
 
         public Profesor(string nombre) {
-            permisos = new Permisos(true, true, true, true, true, true, false, false, false);
+            permisos = new Permisos(true, true, true, true, true, true, false, false);
             this.nombre = nombre;
         }
 

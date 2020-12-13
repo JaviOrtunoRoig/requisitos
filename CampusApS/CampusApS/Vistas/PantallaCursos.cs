@@ -26,8 +26,12 @@ namespace CampusApS
         }
 
         private void PantallaCursos_Load(object sender, EventArgs e) {
-            
-            this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
+            if (usuario.GetType() == typeof(Administrador) || usuario.GetType() == typeof(Alumno) || usuario.GetType() == typeof(ONG)) {
+                this.bParticiparCurso.Visible = true; //TODO: aniaidr bool en usuario para ver si se puede participar
+            } else {
+                this.bParticiparCurso.Visible = false;
+            }
+
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();

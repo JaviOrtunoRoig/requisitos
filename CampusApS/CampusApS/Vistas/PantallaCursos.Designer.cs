@@ -187,7 +187,6 @@
             this.bEliminarCurso.TabIndex = 22;
             this.bEliminarCurso.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bEliminarCurso.Click += new System.EventHandler(this.bEliminarCurso_Click);
             // 
             // bAnadirCurso
             // 
@@ -208,7 +207,6 @@
             this.bAnadirCurso.TabIndex = 21;
             this.bAnadirCurso.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bAnadirCurso.Click += new System.EventHandler(this.bAnadirCurso_Click);
             // 
             // PantallaCursos
             // 
