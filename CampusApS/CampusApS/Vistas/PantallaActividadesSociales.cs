@@ -40,5 +40,10 @@ namespace CampusApS.Vistas
             //TODO: Terminar de implmentar el darse de baja cuando este la vista
 
         }
+
+        private void lbActSociales_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

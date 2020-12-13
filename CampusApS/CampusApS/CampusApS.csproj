@@ -59,15 +59,36 @@
     <Compile Include="Modelo\Logica\Usuarios\Permisos.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Invitado.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Profesor.cs" />
+    <Compile Include="Modelo\Querys\ActividadSocialQuery.cs" />
     <Compile Include="Modelo\Querys\BD.cs" />
+    <Compile Include="Modelo\Querys\CursoQuery.cs" />
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
+    <Compile Include="Modelo\Querys\ForosQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
-    <Compile Include="Vistas\CrearCurso.cs">
+    <Compile Include="Vistas\CreacionRecursos\CrearActividadSocial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\CrearCurso.Designer.cs">
+    <Compile Include="Vistas\CreacionRecursos\CrearActividadSocial.Designer.cs">
+      <DependentUpon>CrearActividadSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CreacionRecursos\CrearCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CreacionRecursos\CrearCurso.Designer.cs">
       <DependentUpon>CrearCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CreacionRecursos\CrearForo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CreacionRecursos\CrearForo.Designer.cs">
+      <DependentUpon>CrearForo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.Designer.cs">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PantallaActividadesSociales.cs">
       <SubType>Form</SubType>
@@ -137,8 +158,23 @@
     <Compile Include="Vistas\Login_Registro\PantallaUsertype.designer.cs">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\CrearCurso.resx">
+    <Compile Include="Vistas\PantallaForos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\PantallaForos.Designer.cs">
+      <DependentUpon>PantallaForos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearActividadSocial.resx">
+      <DependentUpon>CrearActividadSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearCurso.resx">
       <DependentUpon>CrearCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearForo.resx">
+      <DependentUpon>CrearForo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearNoticia.resx">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\PantallaActividadesSociales.resx">
       <DependentUpon>PantallaActividadesSociales.cs</DependentUpon>
@@ -182,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Login_Registro\PantallaUsertype.resx">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\PantallaForos.resx">
+      <DependentUpon>PantallaForos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

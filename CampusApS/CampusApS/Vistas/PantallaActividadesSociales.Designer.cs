@@ -94,6 +94,7 @@
             this.lbActSociales.Name = "lbActSociales";
             this.lbActSociales.Size = new System.Drawing.Size(598, 303);
             this.lbActSociales.TabIndex = 13;
+            this.lbActSociales.SelectedIndexChanged += new System.EventHandler(this.lbActSociales_SelectedIndexChanged);
             // 
             // bBaja
             // 
@@ -224,9 +225,10 @@
             this.Controls.Add(this.bCursos);
             this.Controls.Add(this.bForos);
             this.Controls.Add(this.bNoticias);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaActividadesSociales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PantallaActividadesSociales";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 
