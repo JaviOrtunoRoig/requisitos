@@ -390,7 +390,7 @@ namespace CampusApS.Modelo.Querys
             //TODO: q devueva bien el objeto
             if (tupla[0] != null)
             {
-                return (string) tupla[0].ToString();
+                return (string)((object[])(tupla[0]))[0];
             }
             else
             {
