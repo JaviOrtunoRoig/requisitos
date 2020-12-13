@@ -52,6 +52,7 @@ namespace CampusApS
         private void bBaja_Click(object sender, EventArgs e) {
             ConfirmarPassword ventana = new ConfirmarPassword(usuario);
             ventana.ShowDialog();
+            this.Close();
         }
 
         private void bAnadirCurso_Click(object sender, EventArgs e) {
@@ -79,6 +80,26 @@ namespace CampusApS
             } else {
                 this.bEliminarCurso.TextColor = Color.Firebrick;
                 this.bEliminarCurso.BackgroundColor = Color.White;
+            }
+        }
+
+        private void lbCursos_DoubleClick(object sender, EventArgs e) {
+            this.Visible = false;
+            PantallaCursos ventana = new PantallaCursos(usuario);
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void bParticiparCurso_Click(object sender, EventArgs e) {
+            CursoQuery BD = new CursoQuery();
+            if (lbCursos.SelectedItem != null) {
+                BD.inscribirseCurso(this.usuario.getNombre(), (string) lbCursos.SelectedItem);
+                this.Visible = false;
+                PantallaCursos ventana = new PantallaCursos(usuario);
+                ventana.ShowDialog();
+                this.Visible = true;
+            } else {
+                MessageBox.Show("No hay ningún curso seleccionado");
             }
         }
 

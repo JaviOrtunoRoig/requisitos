@@ -26,6 +26,7 @@ namespace CampusApS.Vistas {
                 UsuarioQuery bd = new UsuarioQuery();
                 bd.darseBaja(usuario.getNombre(), tPassword.Text);
             }
+            this.Close();
         }
     }
 }

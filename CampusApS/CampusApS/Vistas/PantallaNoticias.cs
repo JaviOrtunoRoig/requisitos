@@ -41,6 +41,7 @@ namespace CampusApS
         private void bBaja_Click(object sender, EventArgs e) {
             ConfirmarPassword ventana = new ConfirmarPassword(usuario);
             ventana.ShowDialog();
+            this.Close();
         }
 
         private void PantallaNoticias_Load(object sender, EventArgs e) {

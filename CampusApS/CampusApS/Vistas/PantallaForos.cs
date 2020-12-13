@@ -25,6 +25,7 @@ namespace CampusApS.Vistas
         private void bBaja_Click(object sender, EventArgs e) {
             ConfirmarPassword ventana = new ConfirmarPassword(usuario);
             ventana.ShowDialog();
+            this.Close();
         }
     }
 }

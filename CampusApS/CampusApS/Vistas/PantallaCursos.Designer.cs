@@ -92,8 +92,9 @@
             this.lbCursos.FormattingEnabled = true;
             this.lbCursos.Location = new System.Drawing.Point(268, 180);
             this.lbCursos.Name = "lbCursos";
-            this.lbCursos.Size = new System.Drawing.Size(598, 303);
+            this.lbCursos.Size = new System.Drawing.Size(504, 134);
             this.lbCursos.TabIndex = 9;
+            this.lbCursos.DoubleClick += new System.EventHandler(this.lbCursos_DoubleClick);
             // 
             // bBaja
             // 
@@ -146,6 +147,7 @@
             this.bParticiparCurso.TabIndex = 24;
             this.bParticiparCurso.TextColor = System.Drawing.Color.DimGray;
             this.bParticiparCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bParticiparCurso.Click += new System.EventHandler(this.bParticiparCurso_Click);
             // 
             // bPapelera
             // 
