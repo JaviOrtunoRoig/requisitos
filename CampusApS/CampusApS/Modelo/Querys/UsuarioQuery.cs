@@ -191,7 +191,7 @@ namespace CampusApS.Modelo.Querys
 
         public void codigoAdmin()
         {
-            StringBuilder sb = null;
+            StringBuilder sb = new StringBuilder("");
             Random rnd = new Random();
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
