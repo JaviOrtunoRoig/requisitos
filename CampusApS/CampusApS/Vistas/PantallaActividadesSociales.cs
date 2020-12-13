@@ -37,13 +37,15 @@ namespace CampusApS.Vistas
         }
 
         private void bBaja_Click(object sender, EventArgs e) {
-            //TODO: Terminar de implmentar el darse de baja cuando este la vista
-
+            ConfirmarPassword ventana = new ConfirmarPassword(usuario);
+            ventana.ShowDialog();
         }
 
-        private void lbActSociales_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
+            ventana.ShowDialog();
         }
     }
 }

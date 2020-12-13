@@ -70,6 +70,7 @@
             this.bForos.TabIndex = 5;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -92,8 +93,9 @@
             this.lbCursos.FormattingEnabled = true;
             this.lbCursos.Location = new System.Drawing.Point(268, 180);
             this.lbCursos.Name = "lbCursos";
-            this.lbCursos.Size = new System.Drawing.Size(598, 303);
+            this.lbCursos.Size = new System.Drawing.Size(504, 134);
             this.lbCursos.TabIndex = 9;
+            this.lbCursos.DoubleClick += new System.EventHandler(this.lbCursos_DoubleClick);
             // 
             // bBaja
             // 
@@ -146,6 +148,7 @@
             this.bParticiparCurso.TabIndex = 24;
             this.bParticiparCurso.TextColor = System.Drawing.Color.DimGray;
             this.bParticiparCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bParticiparCurso.Click += new System.EventHandler(this.bParticiparCurso_Click);
             // 
             // bPapelera
             // 
@@ -170,7 +173,7 @@
             // 
             // bEliminarCurso
             // 
-            this.bEliminarCurso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarCurso.BackgroundColor = System.Drawing.Color.White;
             this.bEliminarCurso.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarCurso.ButtonImage")));
             this.bEliminarCurso.ButtonStyle = XanderUI.XUIButton.Style.Invert;
             this.bEliminarCurso.ButtonText = "Eliminar un curso";
@@ -179,7 +182,7 @@
             this.bEliminarCurso.CornerRadius = 5;
             this.bEliminarCurso.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bEliminarCurso.HoverBackgroundColor = System.Drawing.Color.Firebrick;
-            this.bEliminarCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarCurso.HoverTextColor = System.Drawing.Color.White;
             this.bEliminarCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bEliminarCurso.Location = new System.Drawing.Point(918, 411);
             this.bEliminarCurso.Name = "bEliminarCurso";

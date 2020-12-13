@@ -59,6 +59,7 @@
             this.bForos.TabIndex = 1;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bCursos
             // 
@@ -114,6 +115,7 @@
             this.bBaja.TabIndex = 11;
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
             // 
             // bPapelera
             // 
@@ -205,6 +207,7 @@
             this.Name = "PantallaNoticias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
+            this.Load += new System.EventHandler(this.PantallaNoticias_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

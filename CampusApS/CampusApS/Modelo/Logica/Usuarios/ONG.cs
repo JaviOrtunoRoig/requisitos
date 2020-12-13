@@ -14,7 +14,7 @@ namespace CampusApS.Modelo.Logica.Usuarios {
         private Permisos permisos;
 
         public ONG(string nombre) {
-            permisos = new Permisos(false, false, true, true, true, true, false, false, false);
+            permisos = new Permisos(false, false, true, true, true, true, false, false, false, true);
             this.nombre = nombre;
         }
 
