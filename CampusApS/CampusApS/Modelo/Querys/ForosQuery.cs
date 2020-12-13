@@ -34,7 +34,7 @@ namespace CampusApS.Modelo.Querys
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo, usuario, general`) VALUES ('" + nomF + "', '" + nomU + "', '1');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`) VALUES ('" + nomF + "', '" + nomU + "', b'1');");
             }
             else
             {
@@ -48,9 +48,9 @@ namespace CampusApS.Modelo.Querys
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo, usuario, general`) VALUES ('" + nomF + "', '" + nomU + "', '0');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`) VALUES ('" + nomF + "', '" + nomU + "', b'0');");
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`foro_curso` (`nombreForo, nombreCurso`) VALUES ('" + nomF + "', '" + nomC + ");");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`foro_curso` (`nombreForo`, `nombreCurso`) VALUES ('" + nomF + "', '" + nomC + ");");
             }
             else
             {

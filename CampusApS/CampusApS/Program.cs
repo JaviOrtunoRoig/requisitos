@@ -16,12 +16,9 @@ namespace CampusApS {
             Console.WriteLine("\n\n\n\n\n");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new PantallaBienvenido());
+            Application.Run(new PantallaBienvenido());
             Console.WriteLine("\n\n\n\n\n");
 
-            ForosQuery fq = new ForosQuery();
-
-            fq.insertarForoGeneral("debateLoL", "alex");
            }
     }
 }
