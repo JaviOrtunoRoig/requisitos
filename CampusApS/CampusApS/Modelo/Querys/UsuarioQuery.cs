@@ -187,7 +187,7 @@ namespace CampusApS.Modelo.Querys
 
         #region Cursos
 
-        public bool permitirCurso(string nom)
+        private bool permitirCurso(string nom)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
@@ -219,7 +219,7 @@ namespace CampusApS.Modelo.Querys
             
         }
 
-        public List<String> getCursos(string usuario)
+        public List<String> getCursosCreador(string usuario)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
@@ -259,7 +259,7 @@ namespace CampusApS.Modelo.Querys
 
         #region ActividadesSociales
 
-        public bool permitirAS(string nom)
+        private bool permitirAS(string nom)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
@@ -291,7 +291,7 @@ namespace CampusApS.Modelo.Querys
             }
         }
 
-        public List<String> getAS(string usuario)
+        public List<String> getASCreador(string usuario)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
