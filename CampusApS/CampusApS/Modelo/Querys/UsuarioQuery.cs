@@ -237,7 +237,7 @@ namespace CampusApS.Modelo.Querys
                 {
 
 
-                    string nombre = (string)((object[])(tupla[0]))[cont];
+                    string nombre = (string)((object[])(tupla[cont]))[0];
 
                     if (nombre != null)
                     {
@@ -272,7 +272,7 @@ namespace CampusApS.Modelo.Querys
                 while (!stop && cont < tupla.Length)
                 {
 
-                    string nombre = (string)((object[])(tupla[0]))[cont];
+                    string nombre = (string)((object[])(tupla[cont]))[0];
 
                     if (nombre != null)
                     {
@@ -346,7 +346,7 @@ namespace CampusApS.Modelo.Querys
                 {
 
 
-                    string nombre = (string)((object[])(tupla[0]))[cont];
+                    string nombre = (string)((object[])(tupla[cont]))[0];
 
                     if (nombre != null)
                     {
