@@ -46,82 +46,73 @@
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(91, 267);
-            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPassword.Location = new System.Drawing.Point(68, 217);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(81, 17);
+            this.lbPassword.Size = new System.Drawing.Size(61, 13);
             this.lbPassword.TabIndex = 5;
             this.lbPassword.Text = "Contraseña";
             // 
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(91, 181);
-            this.lbUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbUsername.Location = new System.Drawing.Point(68, 147);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(131, 17);
+            this.lbUsername.Size = new System.Drawing.Size(98, 13);
             this.lbUsername.TabIndex = 4;
             this.lbUsername.Text = "Nombre de Usuario";
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(91, 91);
-            this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbEmail.Location = new System.Drawing.Point(68, 74);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(124, 17);
+            this.lbEmail.Size = new System.Drawing.Size(93, 13);
             this.lbEmail.TabIndex = 3;
             this.lbEmail.Text = "Correo electrónico";
             // 
             // tNumExp
             // 
-            this.tNumExp.Location = new System.Drawing.Point(95, 458);
-            this.tNumExp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tNumExp.Location = new System.Drawing.Point(71, 372);
             this.tNumExp.Name = "tNumExp";
-            this.tNumExp.Size = new System.Drawing.Size(336, 22);
+            this.tNumExp.Size = new System.Drawing.Size(253, 20);
             this.tNumExp.TabIndex = 11;
             // 
             // tPassword
             // 
-            this.tPassword.Location = new System.Drawing.Point(95, 287);
-            this.tPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tPassword.Location = new System.Drawing.Point(71, 233);
             this.tPassword.Name = "tPassword";
             this.tPassword.PasswordChar = '*';
-            this.tPassword.Size = new System.Drawing.Size(336, 22);
+            this.tPassword.Size = new System.Drawing.Size(253, 20);
             this.tPassword.TabIndex = 10;
             // 
             // tNombre
             // 
-            this.tNombre.Location = new System.Drawing.Point(95, 201);
-            this.tNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tNombre.Location = new System.Drawing.Point(71, 163);
             this.tNombre.Name = "tNombre";
-            this.tNombre.Size = new System.Drawing.Size(336, 22);
+            this.tNombre.Size = new System.Drawing.Size(253, 20);
             this.tNombre.TabIndex = 9;
             // 
             // tCorreo
             // 
-            this.tCorreo.Location = new System.Drawing.Point(95, 111);
-            this.tCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tCorreo.Location = new System.Drawing.Point(71, 90);
             this.tCorreo.Name = "tCorreo";
-            this.tCorreo.Size = new System.Drawing.Size(336, 22);
+            this.tCorreo.Size = new System.Drawing.Size(253, 20);
             this.tCorreo.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(31, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 17);
+            this.label1.Size = new System.Drawing.Size(143, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "¡Bienvenido, nuevo profesor!";
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(419, 532);
-            this.bConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bConfirmar.Location = new System.Drawing.Point(314, 432);
             this.bConfirmar.Name = "bConfirmar";
-            this.bConfirmar.Size = new System.Drawing.Size(100, 28);
+            this.bConfirmar.Size = new System.Drawing.Size(75, 23);
             this.bConfirmar.TabIndex = 14;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
@@ -130,37 +121,34 @@
             // lbNumExp
             // 
             this.lbNumExp.AutoSize = true;
-            this.lbNumExp.Location = new System.Drawing.Point(91, 438);
-            this.lbNumExp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNumExp.Location = new System.Drawing.Point(68, 356);
             this.lbNumExp.Name = "lbNumExp";
-            this.lbNumExp.Size = new System.Drawing.Size(152, 17);
+            this.lbNumExp.Size = new System.Drawing.Size(115, 13);
             this.lbNumExp.TabIndex = 15;
             this.lbNumExp.Text = "Numero de Expediente";
             // 
             // tConfPassword
             // 
-            this.tConfPassword.Location = new System.Drawing.Point(95, 374);
-            this.tConfPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tConfPassword.Location = new System.Drawing.Point(71, 304);
             this.tConfPassword.Name = "tConfPassword";
             this.tConfPassword.PasswordChar = '*';
-            this.tConfPassword.Size = new System.Drawing.Size(336, 22);
+            this.tConfPassword.Size = new System.Drawing.Size(253, 20);
             this.tConfPassword.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(91, 354);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(68, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 17);
+            this.label2.Size = new System.Drawing.Size(108, 13);
             this.label2.TabIndex = 23;
             this.label2.Text = "Confirmar Contraseña";
             // 
             // PantallaRegistroProfesor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 575);
+            this.ClientSize = new System.Drawing.Size(401, 467);
             this.Controls.Add(this.tConfPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbNumExp);
@@ -174,8 +162,8 @@
             this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.lbEmail);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PantallaRegistroProfesor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Registro profesor";
             this.ResumeLayout(false);
             this.PerformLayout();

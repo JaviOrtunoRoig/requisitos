@@ -51,6 +51,7 @@
             this.bActSociales.TabIndex = 7;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -78,6 +79,7 @@
             this.bNoticias.TabIndex = 4;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // calendario
             // 
@@ -92,7 +94,6 @@
             this.lbCursos.Name = "lbCursos";
             this.lbCursos.Size = new System.Drawing.Size(598, 303);
             this.lbCursos.TabIndex = 9;
-            this.lbCursos.SelectedIndexChanged += new System.EventHandler(this.lbCursos_SelectedIndexChanged);
             // 
             // bBaja
             // 
@@ -114,6 +115,7 @@
             this.bBaja.TabIndex = 10;
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
             // 
             // label1
             // 
@@ -223,7 +225,9 @@
             this.Controls.Add(this.bForos);
             this.Controls.Add(this.bNoticias);
             this.Name = "PantallaCursos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PantallaCursos";
+            this.Load += new System.EventHandler(this.PantallaCursos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

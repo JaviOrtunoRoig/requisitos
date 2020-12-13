@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CampusApS.Vistas;
+using CampusApS.Modelo.Logica.Usuarios;
 
 namespace CampusApS
 {
@@ -19,7 +20,8 @@ namespace CampusApS
         }
 
         private void bInvitado_Click(object sender, EventArgs e) {
-            PantallaInicio ventana = new PantallaInicio();
+            Usuario usuario = new Invitado();
+            PantallaNoticias ventana = new PantallaNoticias(usuario);
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;

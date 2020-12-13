@@ -147,6 +147,7 @@
             this.Controls.Add(this.bAdmin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaUsertype";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
