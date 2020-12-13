@@ -30,7 +30,8 @@ namespace CampusApS
             this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
-            this.bPapelera.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            this.bPapelera.Visible = false;
+            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja(); ;
             CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getAllCursos();
         }
@@ -39,6 +40,13 @@ namespace CampusApS
             this.Visible = false;
             this.Close();
             PantallaNoticias ventana = new PantallaNoticias(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
             ventana.ShowDialog();
         }
 
@@ -63,7 +71,7 @@ namespace CampusApS
         }
 
         private void bEliminarCurso_Click(object sender, EventArgs e) {
-
+            this.bPapelera.Visible = true;
             this.bEliminarCurso.BackgroundColor = Color.Gray;
             this.bEliminarCurso.TextColor = Color.White;
 
@@ -77,16 +85,17 @@ namespace CampusApS
                 string curso = lbCursos.SelectedItem.ToString();
                 BD.borrarCurso(curso);
                 lbCursos.DataSource = BD.getAllCursos();
-            } else {
-                this.bEliminarCurso.TextColor = Color.Firebrick;
-                this.bEliminarCurso.BackgroundColor = Color.White;
-            }
+            } 
+
+            this.bEliminarCurso.TextColor = Color.Firebrick;
+            this.bEliminarCurso.BackgroundColor = Color.White;
+            this.bPapelera.Visible = false;
         }
 
         private void lbCursos_DoubleClick(object sender, EventArgs e) {
+            //TODO: Ir a la pantalla de cursos cuando este implementada, y pasarle un objeto Curso
             this.Visible = false;
-            PantallaCursos ventana = new PantallaCursos(usuario);
-            ventana.ShowDialog();
+            //ventana.ShowDialog();
             this.Visible = true;
         }
 
@@ -102,6 +111,5 @@ namespace CampusApS
                 MessageBox.Show("No hay ningún curso seleccionado");
             }
         }
-
     }
 }

@@ -30,6 +30,13 @@ namespace CampusApS
             PantallaCursos ventana = new PantallaCursos(usuario);
             ventana.ShowDialog();
         }
+        
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
+            ventana.ShowDialog();
+        }
 
         private void bActSociales_Click(object sender, EventArgs e) {
             this.Visible = false;
@@ -45,7 +52,7 @@ namespace CampusApS
         }
 
         private void PantallaNoticias_Load(object sender, EventArgs e) {
-            //TODO: cambiar la visibilidad si piden añadir o eliminar noticias
+            //UNCHECKED: cambiar la visibilidad si piden añadir o eliminar noticias
             this.bAnadirNoticia.Visible = false;
             this.bEliminarNoticia.Visible = false;
             this.bPapelera.Visible = false;

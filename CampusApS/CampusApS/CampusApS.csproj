@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\Logica\Recursos\Foro.cs" />
     <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Administrador.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Alumno.cs" />
@@ -95,6 +96,12 @@
     </Compile>
     <Compile Include="Vistas\CreacionRecursos\CrearNoticia.Designer.cs">
       <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\curso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\curso.Designer.cs">
+      <DependentUpon>curso.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PantallaActividadesSociales.cs">
       <SubType>Form</SubType>

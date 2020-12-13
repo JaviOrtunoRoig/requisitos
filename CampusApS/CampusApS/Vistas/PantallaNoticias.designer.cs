@@ -59,6 +59,7 @@
             this.bForos.TabIndex = 1;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bCursos
             // 

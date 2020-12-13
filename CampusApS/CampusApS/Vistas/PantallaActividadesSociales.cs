@@ -41,9 +41,11 @@ namespace CampusApS.Vistas
             ventana.ShowDialog();
         }
 
-        private void lbActSociales_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
+            ventana.ShowDialog();
         }
     }
 }
