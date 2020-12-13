@@ -30,8 +30,7 @@ namespace CampusApS
             this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
-
-            //TODO: Diferencia entre papelera y eliminar curso this.bPapelera.Visible = false;
+            this.bPapelera.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             UsuarioQuery BD = new UsuarioQuery();
             lbCursos.DataSource = BD.getAllCursos();
         }
@@ -65,6 +64,13 @@ namespace CampusApS
         private void bEliminarCurso_Click(object sender, EventArgs e) {
             UsuarioQuery BD = new UsuarioQuery();
             lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
+        }
+
+        private void bPapelera_Click(object sender, EventArgs e) {
+            UsuarioQuery BD = new UsuarioQuery();
+            string curso = lbCursos.SelectedItem.ToString();
+            BD.borrarCurso(curso);
+            lbCursos.DataSource = BD.getAllCursos();
         }
 
     }
