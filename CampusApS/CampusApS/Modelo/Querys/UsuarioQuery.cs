@@ -168,6 +168,8 @@ namespace CampusApS.Modelo.Querys
 
             if (!permitirNombre(nom) && existeContraseña(contr))
             {
+                miBD.Delete("DELETE FROM `apsgrupo06`.`usuario_curso` WHERE (nombreUsuario = '" + nom + "');");
+
                 miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (nombre = '" + nom + "' AND contraseña = '" + contr + "');");
                 res = true;
             }

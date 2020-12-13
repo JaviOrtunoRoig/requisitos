@@ -50,6 +50,7 @@
             this.bActSociales.TabIndex = 7;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -59,6 +60,7 @@
             this.bCursos.TabIndex = 6;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
+            this.bCursos.Click += new System.EventHandler(this.bCursos_Click);
             // 
             // bForos
             // 
@@ -77,6 +79,7 @@
             this.bNoticias.TabIndex = 4;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // label1
             // 
@@ -121,6 +124,7 @@
             this.bPapelera.TabIndex = 28;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bEliminarForo
             // 
@@ -141,6 +145,7 @@
             this.bEliminarForo.TabIndex = 27;
             this.bEliminarForo.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarForo.Click += new System.EventHandler(this.bEliminarForo_Click);
             // 
             // bAnadirForo
             // 
@@ -161,6 +166,7 @@
             this.bAnadirForo.TabIndex = 26;
             this.bAnadirForo.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirForo.Click += new System.EventHandler(this.bAnadirForo_Click);
             // 
             // bBaja
             // 
@@ -182,6 +188,7 @@
             this.bBaja.TabIndex = 29;
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
             // 
             // PantallaForos
             // 
@@ -203,6 +210,7 @@
             this.Name = "PantallaForos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
+            this.Load += new System.EventHandler(this.PantallaForos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

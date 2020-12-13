@@ -70,6 +70,7 @@
             this.bForos.TabIndex = 9;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -94,7 +95,6 @@
             this.lbActSociales.Name = "lbActSociales";
             this.lbActSociales.Size = new System.Drawing.Size(598, 303);
             this.lbActSociales.TabIndex = 13;
-            this.lbActSociales.SelectedIndexChanged += new System.EventHandler(this.lbActSociales_SelectedIndexChanged);
             // 
             // bBaja
             // 

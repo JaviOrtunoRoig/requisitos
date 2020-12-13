@@ -24,16 +24,17 @@ namespace CampusApS
             this.usuario = usuario;
         }
 
-        private void bDarse_Click(object sender, EventArgs e) {
-            //TODO: Terminar de implmentar el darse de baja cuando este la vista
-            UsuarioQuery bd = new UsuarioQuery();
-            //bd.darseBaja(usuario.getNombre(), "1");
-        }
-
         private void bCursos_Click(object sender, EventArgs e) {
             this.Visible = false;
             this.Close();
             PantallaCursos ventana = new PantallaCursos(usuario);
+            ventana.ShowDialog();
+        }
+        
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
             ventana.ShowDialog();
         }
 
@@ -42,6 +43,20 @@ namespace CampusApS
             this.Close();
             PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuario);
             ventana.ShowDialog();
+        }
+
+        private void bBaja_Click(object sender, EventArgs e) {
+            ConfirmarPassword ventana = new ConfirmarPassword(usuario);
+            ventana.ShowDialog();
+            this.Close();
+        }
+
+        private void PantallaNoticias_Load(object sender, EventArgs e) {
+            //UNCHECKED: cambiar la visibilidad si piden añadir o eliminar noticias
+            this.bAnadirNoticia.Visible = false;
+            this.bEliminarNoticia.Visible = false;
+            this.bPapelera.Visible = false;
+            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja();
         }
     }
 }
