@@ -96,7 +96,7 @@ namespace CampusApS.Modelo.Querys
             return list;
         }
 
-        public List<String> getAllAS(string usuario)
+        public List<String> getAllAS()
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 

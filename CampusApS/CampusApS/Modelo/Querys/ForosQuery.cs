@@ -50,7 +50,7 @@ namespace CampusApS.Modelo.Querys
 
                 miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`) VALUES ('" + nomF + "', '" + nomU + "', b'0');");
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`foro_curso` (`nombreForo`, `nombreCurso`) VALUES ('" + nomF + "', '" + nomC + ");");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`foro_curso` (`nombreForo`, `nombreCurso`) VALUES ('" + nomF + "', '" + nomC + "');");
             }
             else
             {
@@ -68,16 +68,16 @@ namespace CampusApS.Modelo.Querys
         public void borrarForoCurso(string nom)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
-            miBD.Delete("DELETE FROM `apsgrupo06`.`foro` WHERE (nombreForo = '" + nom + "');");
-
             miBD.Delete("DELETE FROM `apsgrupo06`.`foro_curso` WHERE (nombreForo = '" + nom + "');");
+
+            miBD.Delete("DELETE FROM `apsgrupo06`.`foro` WHERE (nombreForo = '" + nom + "');");
         }
 
         public List<String> getAllForoGeneral()
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombreForo FROM foro WHERE general = '1';");
+            object[] tupla = miBD.Select("SELECT nombreForo FROM foro WHERE general = b'1';");
 
             List<String> list = new List<String>();
 
@@ -159,49 +159,7 @@ namespace CampusApS.Modelo.Querys
 
         } 
 
-        public List<String> getAllForoCurso()
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT nombreForo FROM foro_curso;");
-
-            List<String> list = new List<String>();
-
-            if (tupla[0] != null)
-            {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-
-                    if (tupla[cont] != null)
-                    {
-                        string nombre = (string)((object[])(tupla[cont]))[0];
-
-                        if (nombre != null)
-                        {
-                            list.Add(nombre);
-                            cont++;
-                        }
-                        else
-                        {
-                            stop = true;
-                        }
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
-            }
-
-            return list;
-        }
-
-        public List<String> getCursoForoCurso(string nomCur)
+        public List<String> getForoCurso(string nomCur)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
