@@ -1,4 +1,5 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,9 @@ namespace CampusApS
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             //TODO: Diferencia entre papelera y eliminar curso this.bPapelera.Visible = false;
+
+            UsuarioQuery BD = new UsuarioQuery();
+            lbCursos.DataSource = BD.getCursos(usuario.getNombre());
         }
 
         private void bNoticias_Click(object sender, EventArgs e) {
