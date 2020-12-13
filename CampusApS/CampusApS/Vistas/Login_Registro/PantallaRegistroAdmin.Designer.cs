@@ -163,6 +163,7 @@
             this.Controls.Add(this.lbEmail);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaRegistroAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro administrador";
             this.ResumeLayout(false);
             this.PerformLayout();

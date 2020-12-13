@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
+using CampusApS.Vistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,20 @@ namespace CampusApS
             //TODO: Terminar de implmentar el darse de baja cuando este la vista
             UsuarioQuery bd = new UsuarioQuery();
             //bd.darseBaja(usuario.getNombre(), "1");
+        }
+
+        private void bCursos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaCursos ventana = new PantallaCursos(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bActSociales_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuario);
+            ventana.ShowDialog();
         }
     }
 }

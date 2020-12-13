@@ -78,22 +78,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\PantallaBienvenido.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaBienvenido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaBienvenido.designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaBienvenido.designer.cs">
       <DependentUpon>PantallaBienvenido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaInicio.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaInicio.Designer.cs">
-      <DependentUpon>PantallaInicio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\PantallaLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\PantallaLogin.designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaLogin.designer.cs">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PantallaNoticias.cs">
@@ -102,40 +96,40 @@
     <Compile Include="Vistas\PantallaNoticias.designer.cs">
       <DependentUpon>PantallaNoticias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaRecuperarContrasena.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRecuperarContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaRecuperarContrasena.designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRecuperarContrasena.designer.cs">
       <DependentUpon>PantallaRecuperarContrasena.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroAdmin.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroAdmin.Designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroAdmin.Designer.cs">
       <DependentUpon>PantallaRegistroAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroEstudiante.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroEstudiante.Designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroEstudiante.Designer.cs">
       <DependentUpon>PantallaRegistroEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroONG.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroONG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroONG.designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroONG.designer.cs">
       <DependentUpon>PantallaRegistroONG.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroProfesor.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaRegistroProfesor.designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaRegistroProfesor.designer.cs">
       <DependentUpon>PantallaRegistroProfesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaUsertype.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaUsertype.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaUsertype.designer.cs">
+    <Compile Include="Vistas\Login_Registro\PantallaUsertype.designer.cs">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Vistas\PantallaActividadesSociales.resx">
@@ -154,31 +148,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vistas\PantallaBienvenido.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaBienvenido.resx">
       <DependentUpon>PantallaBienvenido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaLogin.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\PantallaNoticias.resx">
       <DependentUpon>PantallaNoticias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaRecuperarContrasena.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaRecuperarContrasena.resx">
       <DependentUpon>PantallaRecuperarContrasena.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaRegistroAdmin.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaRegistroAdmin.resx">
       <DependentUpon>PantallaRegistroAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaRegistroEstudiante.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaRegistroEstudiante.resx">
       <DependentUpon>PantallaRegistroEstudiante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaRegistroONG.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaRegistroONG.resx">
       <DependentUpon>PantallaRegistroONG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaRegistroProfesor.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaRegistroProfesor.resx">
       <DependentUpon>PantallaRegistroProfesor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaUsertype.resx">
+    <EmbeddedResource Include="Vistas\Login_Registro\PantallaUsertype.resx">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

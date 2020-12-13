@@ -68,6 +68,7 @@
             this.bCursos.TabIndex = 2;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
+            this.bCursos.Click += new System.EventHandler(this.bCursos_Click);
             // 
             // bActSociales
             // 
@@ -77,6 +78,7 @@
             this.bActSociales.TabIndex = 3;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // lbNoticias
             // 
@@ -201,6 +203,7 @@
             this.Controls.Add(this.bNoticias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaNoticias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Vistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +14,45 @@ namespace CampusApS
 {
     public partial class PantallaCursos : Form
     {
-        public PantallaCursos()
+
+        private Usuario usuario;
+
+
+        public PantallaCursos(Usuario usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
         }
 
-        private void lbCursos_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void PantallaCursos_Load(object sender, EventArgs e) {
+            if (usuario.GetType() == typeof(Administrador) || usuario.GetType() == typeof(Alumno) || usuario.GetType() == typeof(ONG)) {
+                this.bParticiparCurso.Visible = true; //TODO: aniaidr bool en usuario para ver si se puede participar
+            } else {
+                this.bParticiparCurso.Visible = false;
+            }
+            this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
+            this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            //TODO: Diferencia entre papelera y eliminar curso this.bPapelera.Visible = false;
+        }
+
+        private void bNoticias_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaNoticias ventana = new PantallaNoticias(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bActSociales_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bBaja_Click(object sender, EventArgs e) {
+            //TODO: Terminar de implmentar el darse de baja cuando este la vista
 
         }
+
     }
 }

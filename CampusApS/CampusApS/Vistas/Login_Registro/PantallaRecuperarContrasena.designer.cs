@@ -70,6 +70,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaRecuperarContrasena";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperar Contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();

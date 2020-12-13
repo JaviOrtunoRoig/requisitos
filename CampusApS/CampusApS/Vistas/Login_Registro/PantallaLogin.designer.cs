@@ -103,6 +103,7 @@
             this.Controls.Add(this.lbCorreoUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
             this.ResumeLayout(false);
             this.PerformLayout();
