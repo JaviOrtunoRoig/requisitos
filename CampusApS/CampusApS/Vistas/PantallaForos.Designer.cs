@@ -104,6 +104,7 @@
             this.lbForos.Name = "lbForos";
             this.lbForos.Size = new System.Drawing.Size(598, 303);
             this.lbForos.TabIndex = 23;
+            this.lbForos.DoubleClick += new System.EventHandler(this.lbForos_DoubleClick);
             // 
             // bPapelera
             // 
