@@ -127,3 +127,9 @@ C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\Campu
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CrearCurso.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaActividadesSociales.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaCursos.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CrearCurso.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaActividadesSociales.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearActividadSocial.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearForo.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearNoticia.resources
+E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaForos.resources
