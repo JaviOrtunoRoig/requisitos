@@ -18,7 +18,7 @@ namespace CampusApS.Modelo.Logica.Usuarios {
         void crearActividadSocial();
         void borrarActividadSocial();
 
-        string getRol();
+         string getRol();
         Permisos getPermisos();
         string getNombre();
     }
