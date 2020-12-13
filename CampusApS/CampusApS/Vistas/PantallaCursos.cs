@@ -31,12 +31,13 @@ namespace CampusApS
             } else {
                 this.bParticiparCurso.Visible = false;
             }
+
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
-            //TODO: Diferencia entre papelera y eliminar curso this.bPapelera.Visible = false;
 
+            //TODO: Diferencia entre papelera y eliminar curso this.bPapelera.Visible = false;
             UsuarioQuery BD = new UsuarioQuery();
-            lbCursos.DataSource = BD.getCursos(usuario.getNombre());
+            lbCursos.DataSource = BD.getAllCursos();
         }
 
         private void bNoticias_Click(object sender, EventArgs e) {
