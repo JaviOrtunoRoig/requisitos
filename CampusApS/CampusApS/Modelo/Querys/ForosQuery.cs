@@ -157,7 +157,7 @@ namespace CampusApS.Modelo.Querys
 
             return list;
 
-        }
+        } 
 
         public List<String> getAllForoCurso()
         {
