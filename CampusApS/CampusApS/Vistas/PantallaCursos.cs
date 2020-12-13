@@ -62,15 +62,24 @@ namespace CampusApS
         }
 
         private void bEliminarCurso_Click(object sender, EventArgs e) {
+
+            this.bEliminarCurso.BackgroundColor = Color.Gray;
+            this.bEliminarCurso.TextColor = Color.White;
+
             CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {
             CursoQuery BD = new CursoQuery();
-            string curso = lbCursos.SelectedItem.ToString();
-            BD.borrarCurso(curso);
-            lbCursos.DataSource = BD.getAllCursos();
+            if (lbCursos.SelectedItem != null) {
+                string curso = lbCursos.SelectedItem.ToString();
+                BD.borrarCurso(curso);
+                lbCursos.DataSource = BD.getAllCursos();
+            } else {
+                this.bEliminarCurso.TextColor = Color.Firebrick;
+                this.bEliminarCurso.BackgroundColor = Color.White;
+            }
         }
 
     }

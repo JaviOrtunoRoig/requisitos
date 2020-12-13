@@ -170,7 +170,7 @@
             // 
             // bEliminarCurso
             // 
-            this.bEliminarCurso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarCurso.BackgroundColor = System.Drawing.Color.White;
             this.bEliminarCurso.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarCurso.ButtonImage")));
             this.bEliminarCurso.ButtonStyle = XanderUI.XUIButton.Style.Invert;
             this.bEliminarCurso.ButtonText = "Eliminar un curso";
@@ -179,7 +179,7 @@
             this.bEliminarCurso.CornerRadius = 5;
             this.bEliminarCurso.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bEliminarCurso.HoverBackgroundColor = System.Drawing.Color.Firebrick;
-            this.bEliminarCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarCurso.HoverTextColor = System.Drawing.Color.White;
             this.bEliminarCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bEliminarCurso.Location = new System.Drawing.Point(918, 411);
             this.bEliminarCurso.Name = "bEliminarCurso";

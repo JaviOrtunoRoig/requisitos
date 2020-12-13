@@ -44,7 +44,7 @@ namespace CampusApS
         }
 
         private void PantallaNoticias_Load(object sender, EventArgs e) {
-            //Todo: cambiar la visivilidad si piden añadir o eliminar noticias
+            //TODO: cambiar la visibilidad si piden añadir o eliminar noticias
             this.bAnadirNoticia.Visible = false;
             this.bEliminarNoticia.Visible = false;
             this.bPapelera.Visible = false;
