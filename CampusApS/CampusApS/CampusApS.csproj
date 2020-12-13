@@ -63,6 +63,12 @@
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
+    <Compile Include="Vistas\CrearCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CrearCurso.Designer.cs">
+      <DependentUpon>CrearCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\PantallaActividadesSociales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="Vistas\Login_Registro\PantallaUsertype.designer.cs">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\CrearCurso.resx">
+      <DependentUpon>CrearCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\PantallaActividadesSociales.resx">
       <DependentUpon>PantallaActividadesSociales.cs</DependentUpon>
     </EmbeddedResource>
