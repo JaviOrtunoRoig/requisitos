@@ -34,6 +34,8 @@
             this.tDescActSocial = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bConfirmar = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tNombreActSocial
@@ -71,18 +73,36 @@
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(231, 226);
+            this.bConfirmar.Location = new System.Drawing.Point(231, 292);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
             this.bConfirmar.TabIndex = 8;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(30, 236);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 49;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 13);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Asocia la actividad social a una fecha";
+            // 
             // CrearActividadSocial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 261);
+            this.ClientSize = new System.Drawing.Size(318, 327);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.bConfirmar);
             this.Controls.Add(this.tDescActSocial);
             this.Controls.Add(this.label2);
@@ -104,5 +124,7 @@
         private System.Windows.Forms.TextBox tDescActSocial;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bConfirmar;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
     }
 }
