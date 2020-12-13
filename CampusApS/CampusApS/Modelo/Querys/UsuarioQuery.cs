@@ -271,16 +271,19 @@ namespace CampusApS.Modelo.Querys
 
                 while (!stop && cont < tupla.Length)
                 {
+                    if (tupla[cont] != null) {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
 
-                    string nombre = (string)((object[])(tupla[cont]))[0];
-
-                    if (nombre != null)
-                    {
-                        list.Add(nombre);
-                        cont++;
-                    }
-                    else
-                    {
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    } else {
                         stop = true;
                     }
 
