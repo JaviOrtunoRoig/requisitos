@@ -74,6 +74,7 @@
             this.bActSociales.TabIndex = 36;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -83,6 +84,7 @@
             this.bCursos.TabIndex = 35;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
+            this.bCursos.Click += new System.EventHandler(this.bCursos_Click);
             // 
             // bForos
             // 
@@ -92,6 +94,7 @@
             this.bForos.TabIndex = 34;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -101,6 +104,7 @@
             this.bNoticias.TabIndex = 33;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // label1
             // 
