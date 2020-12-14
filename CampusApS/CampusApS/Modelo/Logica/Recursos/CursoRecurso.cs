@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CampusApS.Modelo.Logica.Recursos {
-    public class ForoRecurso {
+    public class CursoRecurso {
 
         private string nombre;
         private string descripcion;
 
-        public ForoRecurso(string nombre) {
+        public CursoRecurso(string nombre) {
             this.nombre = nombre;
         }
 
-        public ForoRecurso(string nombre, string descripcion) {
+        public CursoRecurso(string nombre, string descripcion) {
             this.nombre = nombre;
             this.descripcion = descripcion;
         }
