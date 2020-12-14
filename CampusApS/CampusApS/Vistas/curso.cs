@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +12,14 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas {
     public partial class Curso : Form {
-        public Curso() {
+
+        Usuario usuario;
+        CursoRecurso cursoRecurso; 
+
+        public Curso(Usuario user, CursoRecurso curRec) {
             InitializeComponent();
+            this.usuario = user;
+            this.cursoRecurso = curRec;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using CampusApS.Modelo.Logica.Usuarios;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
 using System;
@@ -93,9 +94,12 @@ namespace CampusApS
         }
 
         private void lbCursos_DoubleClick(object sender, EventArgs e) {
-            //TODO: Ir a la pantalla de cursos cuando este implementada, y pasarle un objeto Curso
+            CursoQuery query = new CursoQuery();
+            CursoRecurso cursoRecurso = new CursoRecurso((string) lbCursos.SelectedItem);
+            cursoRecurso.setDescripcion(query.getDescripcionCurso((string) lbCursos.SelectedItem));
+            Curso ventana = new Curso(usuario, cursoRecurso);
             this.Visible = false;
-            //ventana.ShowDialog();
+            ventana.ShowDialog();
             this.Visible = true;
         }
 

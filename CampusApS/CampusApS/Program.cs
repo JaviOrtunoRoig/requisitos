@@ -18,8 +18,6 @@ namespace CampusApS {
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PantallaBienvenido());
             Console.WriteLine("\n\n\n\n\n");
-
-            
            }
     }
 }
