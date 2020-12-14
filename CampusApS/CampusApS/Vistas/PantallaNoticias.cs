@@ -22,6 +22,10 @@ namespace CampusApS
         {
             InitializeComponent();
             this.usuario = usuario;
+
+            if (usuario.GetType() != typeof(Administrador)) {
+                this.bInvitar.Visible = false;
+            }
         }
 
         private void bCursos_Click(object sender, EventArgs e) {
@@ -57,6 +61,11 @@ namespace CampusApS
             this.bEliminarNoticia.Visible = false;
             this.bPapelera.Visible = false;
             this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja();
+        }
+
+        private void xuiButton1_Click(object sender, EventArgs e) {
+            UsuarioQuery bd = new UsuarioQuery();
+            bd.codigoAdmin();
         }
     }
 }

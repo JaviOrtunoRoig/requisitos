@@ -74,7 +74,7 @@ namespace CampusApS.Vistas
             this.bEliminarForo.TextColor = Color.White;
 
             ForosQuery BD = new ForosQuery();
-            lbForos.DataSource = BD.getAllForoGeneral();
+            lbForos.DataSource = BD.getCreadorForoGeneral(usuario.getNombre());
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {
@@ -96,7 +96,7 @@ namespace CampusApS.Vistas
                 Foro ventana = new Foro(usuario, foroRecurso);
                 this.Visible = false;
                 ventana.ShowDialog();
-                this.Visible = true;
+                this.Close();
             }
         }
 

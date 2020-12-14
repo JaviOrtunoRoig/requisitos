@@ -85,11 +85,11 @@ namespace CampusApS
             if (lbCursos.SelectedItem != null) {
                 string curso = lbCursos.SelectedItem.ToString();
                 BD.borrarCurso(curso);
-                lbCursos.DataSource = BD.getAllCursos();
             } 
 
             this.bEliminarCurso.TextColor = Color.Firebrick;
             this.bEliminarCurso.BackgroundColor = Color.White;
+            this.lbCursos.DataSource = BD.getAllCursos();
             this.bPapelera.Visible = false;
         }
 
@@ -100,7 +100,7 @@ namespace CampusApS
             Curso ventana = new Curso(usuario, cursoRecurso);
             this.Visible = false;
             ventana.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
 
         private void bParticiparCurso_Click(object sender, EventArgs e) {

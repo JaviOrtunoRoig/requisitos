@@ -34,6 +34,32 @@ namespace CampusApS.Vistas
             this.lDescripción.Text = foroRecurso.getdescripcion();
         }
 
+        private void bNoticias_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaNoticias ventana = new PantallaNoticias(usuario);
+            ventana.ShowDialog();
+        }
 
+        private void bCursos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaCursos ventana = new PantallaCursos(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bActSociales_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuario);
+            ventana.ShowDialog();
+        }
     }
 }

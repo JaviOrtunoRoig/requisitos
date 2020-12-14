@@ -50,7 +50,7 @@ namespace CampusApS.Modelo.Querys
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
                 miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`, `descripcion`) VALUES ('"
-                + nomF + "', '" + nomU + "', b'0', " + des + ");");
+                + nomF + "', '" + nomU + "', b'0', '" + des + "');");
 
                 miBD.Insert("INSERT INTO `apsgrupo06`.`foro_curso` (`nombreForo`, `nombreCurso`) VALUES ('" + nomF + "', '" + nomC + "');");
             }
@@ -222,43 +222,32 @@ namespace CampusApS.Modelo.Querys
             return nombre;
         }
 
-        public List<String> getDescrpcionForoCurso(string nomCur)
-        {
+        public List<String> getCreadorForoCurso(string nomCur, string us) {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombreForo FROM foro_curso WHERE nombreCurso = '" + nomCur + "';");
+            object[] tupla = miBD.Select("SELECT F.nombreForo " +
+                                         "FROM foro F, foro_curso FC " +
+                                         "WHERE F.nombreForo = FC.nombreForo AND F.usuario = '" + us + "' AND FC.nombreCurso = '" + nomCur + "';");
 
             List<String> list = new List<String>();
 
-            if (tupla[0] != null)
-            {
+            if (tupla[0] != null) {
 
                 int cont = 0;
                 bool stop = false;
 
-                while (!stop && cont < tupla.Length)
-                {
+                while (!stop && cont < tupla.Length) {
 
-                    if (tupla[cont] != null)
-                    {
+                    if (tupla[cont] != null) {
                         string nombre = (string)((object[])(tupla[cont]))[0];
 
-                        if (nombre != null)
-                        {
-                            object[] aux = miBD.Select("SELECT descripcion FROM foro WHERE nombre = '" + nombre + "' AND general = b'0';");
-
-                            String des = (string)((object[])(aux[cont]))[0];
-
-                            list.Add(des);
+                        if (nombre != null) {
+                            list.Add(nombre);
                             cont++;
-                        }
-                        else
-                        {
+                        } else {
                             stop = true;
                         }
-                    }
-                    else
-                    {
+                    } else {
                         stop = true;
                     }
 
@@ -267,9 +256,5 @@ namespace CampusApS.Modelo.Querys
 
             return list;
         }
-
-
-
-
     }
 }
