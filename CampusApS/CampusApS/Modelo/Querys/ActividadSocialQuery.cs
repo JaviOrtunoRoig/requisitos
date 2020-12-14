@@ -38,13 +38,13 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public void insertarAS(string nombreAS, string nombreUsuario)
+        public void insertarAS(string nombreAS, string nombreUsuario, string des)
         {
             if (permitirAS(nombreAS))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`) VALUES ('" +
-                nombreAS + "', '" + nombreUsuario + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`, `descripcion`) VALUES ('" +
+                nombreAS + "', '" + nombreUsuario + "', '" + des + "');");
 
             }
             else
@@ -101,6 +101,92 @@ namespace CampusApS.Modelo.Querys
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
             object[] tupla = miBD.Select("SELECT nombreAS FROM actividadsocial;");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public List<String> getAllDescrpcionAS()
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM actividadsocial;");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public List<String> getDescripcionASCreador(string usuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM actividadsocial WHERE usuario = '" + usuario + "';");
 
             List<String> list = new List<String>();
 

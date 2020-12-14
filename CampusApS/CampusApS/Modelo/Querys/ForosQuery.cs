@@ -29,12 +29,13 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
-        public void insertarForoGeneral(string nomF, string nomU){
+        public void insertarForoGeneral(string nomF, string nomU, string des){
             if(permitirForo(nomF))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`) VALUES ('" + nomF + "', '" + nomU + "', b'1');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`, `descripcion`) VALUES ('" 
+                    + nomF + "', '" + nomU + "', b'1', " + des + ");");
             }
             else
             {
@@ -42,13 +43,14 @@ namespace CampusApS.Modelo.Querys
             }
         }
 
-        public void insertarForoCurso(string nomF, string nomU, string nomC)
+        public void insertarForoCurso(string nomF, string nomU, string nomC, string des)
         {
             if (permitirForo(nomF))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`) VALUES ('" + nomF + "', '" + nomU + "', b'0');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`, `descripcion`) VALUES ('"
+                + nomF + "', '" + nomU + "', b'0', " + des + ");");
 
                 miBD.Insert("INSERT INTO `apsgrupo06`.`foro_curso` (`nombreForo`, `nombreCurso`) VALUES ('" + nomF + "', '" + nomC + "');");
             }
@@ -120,7 +122,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombreForo FROM foro WHERE usuario = '" + nomUs + "' AND general = '1';");
+            object[] tupla = miBD.Select("SELECT nombreForo FROM foro WHERE usuario = '" + nomUs + "' AND general = b'1';");
 
             List<String> list = new List<String>();
 
@@ -200,6 +202,140 @@ namespace CampusApS.Modelo.Querys
 
             return list;
         }
+
+        public List<String> getAllDescripcionesForoGeneral()
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE general = b'1';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+
+        }
+
+        public List<String> getCreadorDescrpcionesForoGeneral(string nomUs)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE usuario = '" + nomUs + "' AND general = b'1';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+
+        }
+
+        public List<String> getDescrpcionForoCurso(string nomCur)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombreForo FROM foro_curso WHERE nombreCurso = '" + nomCur + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            object[] aux = miBD.Select("SELECT descripcion FROM foro WHERE nombre = '" + nombre + "' AND general = b'0';");
+
+                            String des = (string)((object[])(aux[cont]))[0];
+
+                            list.Add(des);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+
 
 
     }

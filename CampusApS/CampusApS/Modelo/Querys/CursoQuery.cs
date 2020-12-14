@@ -29,13 +29,13 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
-        public void insertarCurso(string nombreCurso, string nombreUsuario)
+        public void insertarCurso(string nombreCurso, string nombreUsuario, string des)
         {
             if (permitirCurso(nombreCurso))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`) VALUES ('" +
-                nombreCurso + "', '" + nombreUsuario + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`, `descripcion`) VALUES ('" +
+                nombreCurso + "', '" + nombreUsuario + "', '" + des + "');");
 
             }
             else
@@ -164,6 +164,89 @@ namespace CampusApS.Modelo.Querys
             {
                 MessageBox.Show("Este usuario ya está inscrito en el curso");
             }
+        }
+
+        public List<String> getAllDescripcionCursos()
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM curso ;");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public List<String> getDescripcionCursosCreador(string usuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM curso WHERE usuario = '" + usuario + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
         }
 
         private bool noInscrito(string nombreUsuario, string nombreCurso)
