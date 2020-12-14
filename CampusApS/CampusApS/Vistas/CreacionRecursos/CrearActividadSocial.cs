@@ -23,14 +23,7 @@ namespace CampusApS.Vistas.CreacionRecursos
             this.usuario = user;
         }
 
-        private void CrearForo_Load(object sender, EventArgs e)
-        {
-            //UNCHECKED: mirar si hace falta lo de la descipcion
-            this.label2.Visible = false;
-            this.tDescActSocial.Visible = false;
-        }
-
-        private void bConfirmar_Click(object sender, EventArgs e)
+        private void bConfirmar_Click_1(object sender, EventArgs e)
         {
             ActividadSocialQuery BD = new ActividadSocialQuery();
             BD.insertarAS(tNombreActSocial.Text, usuario.getNombre());

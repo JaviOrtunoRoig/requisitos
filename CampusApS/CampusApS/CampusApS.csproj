@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\Logica\Recursos\ActividadSocialRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\ForoRecurso.cs" />
     <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Administrador.cs" />

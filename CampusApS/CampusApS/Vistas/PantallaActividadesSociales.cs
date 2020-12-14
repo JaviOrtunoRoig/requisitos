@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
+using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Vistas;
 using CampusApS.Vistas.CreacionRecursos;
 using System;
@@ -92,10 +93,14 @@ namespace CampusApS.Vistas
 
         private void lbActSociales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //TODO: Ir a la pantalla de actividades sociales cuando este implementada, y pasarle un objeto ActividadSocial
-            this.Visible = false;
-            //ventana.ShowDialog();
-            this.Visible = true;
+            if (lbActSociales.SelectedItem != null)
+            {
+                ActividadSocialRecurso actSocialRecurso = new ActividadSocialRecurso((string)lbActSociales.SelectedItem);
+                ActividadSocial ventana = new ActividadSocial();
+                this.Visible = false;
+                ventana.ShowDialog();
+                this.Visible = true;
+            }
         }
 
 
