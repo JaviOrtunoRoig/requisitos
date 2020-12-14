@@ -203,90 +203,23 @@ namespace CampusApS.Modelo.Querys
             return list;
         }
 
-        public List<String> getDescripcioForoGeneral(string nombreForo)
+        public String getDescripcionForo(string foro)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE general = '1' and nombreForo = '" + nombreForo + "'" + ";");
-
-            List<String> list = new List<String>();
-
-            if (tupla[0] != null)
-            {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-
-                    if (tupla[cont] != null)
-                    {
-                        string nombre = (string)((object[])(tupla[cont]))[0];
-
-                        if (nombre != null)
-                        {
-                            list.Add(nombre);
-                            cont++;
-                        }
-                        else
-                        {
-                            stop = true;
-                        }
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
-            }
-
-            return list;
-
-        }
-
-        public List<String> getCreadorDescrpcionesForoGeneral(string nomUs)
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
-
-            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE usuario = '" + nomUs + "' AND general = b'1';");
-
-            List<String> list = new List<String>();
+            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE nombreForo = '" + foro + "';");
+            string nombre = "";
 
             if (tupla[0] != null)
             {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-
-                    if (tupla[cont] != null)
-                    {
-                        string nombre = (string)((object[])(tupla[cont]))[0];
-
-                        if (nombre != null)
-                        {
-                            list.Add(nombre);
-                            cont++;
-                        }
-                        else
-                        {
-                            stop = true;
-                        }
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
+                nombre = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Foro no disponible");
             }
 
-            return list;
-
+            return nombre;
         }
 
         public List<String> getDescrpcionForoCurso(string nomCur)
