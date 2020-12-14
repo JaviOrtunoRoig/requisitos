@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CampusApS.Modelo.Logica.Recursos
 {
-    class ActividadSocialRecurso
+    public class ActividadSocialRecurso
     {
         private string nombre;
         private string descripcion;
@@ -30,6 +30,10 @@ namespace CampusApS.Modelo.Logica.Recursos
         public string getdescripcion()
         {
             return this.descripcion;
+        }
+
+        public void setDescripcion(string descripcion) {
+            this.descripcion = descripcion;
         }
     }
 }

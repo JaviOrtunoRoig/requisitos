@@ -106,9 +106,13 @@ namespace CampusApS.Vistas
         }
 
         private void lbActSociales_DoubleClick(object sender, EventArgs e) {
-            if (lbActSociales.SelectedItem != null) {
-
-            }
+            ActividadSocialQuery query = new ActividadSocialQuery();
+            ActividadSocialRecurso ASRecurso = new ActividadSocialRecurso((string)lbActSociales.SelectedItem);
+            ASRecurso.setDescripcion(query.getDescripcionAS((string)lbActSociales.SelectedItem));
+            ActividadSocial ventana = new ActividadSocial(usuario, ASRecurso);
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Close();
         }
     }
 }
