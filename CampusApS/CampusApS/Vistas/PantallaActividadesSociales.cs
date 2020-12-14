@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
+using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Vistas;
 using CampusApS.Vistas.CreacionRecursos;
 using System;
@@ -82,22 +83,36 @@ namespace CampusApS.Vistas
             {
                 string curso = lbActSociales.SelectedItem.ToString();
                 BD.borrarAS(curso);
-                lbActSociales.DataSource = BD.getAllAS();
             }
 
+            this.lbActSociales.DataSource = BD.getAllAS();
             this.bEliminarAct.TextColor = Color.Firebrick;
             this.bEliminarAct.BackgroundColor = Color.White;
             this.bPapelera.Visible = false;
         }
 
-        private void lbActSociales_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //TODO: Ir a la pantalla de actividades sociales cuando este implementada, y pasarle un objeto ActividadSocial
-            this.Visible = false;
-            //ventana.ShowDialog();
-            this.Visible = true;
+    
+
+        private void PantallaActividadesSociales_Load(object sender, EventArgs e) {
+            this.bParticiparAct.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
+            this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
+            this.bEliminarAct.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            this.bPapelera.Visible = false;
+            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja();
+            this.bParticiparAct.Visible = false;
+
+            ActividadSocialQuery BD = new ActividadSocialQuery();
+            lbActSociales.DataSource = BD.getAllAS();
         }
 
-
+        private void lbActSociales_DoubleClick(object sender, EventArgs e) {
+            ActividadSocialQuery query = new ActividadSocialQuery();
+            ActividadSocialRecurso ASRecurso = new ActividadSocialRecurso((string)lbActSociales.SelectedItem);
+            ASRecurso.setDescripcion(query.getDescripcionAS((string)lbActSociales.SelectedItem));
+            ActividadSocial ventana = new ActividadSocial(usuario, ASRecurso);
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Close();
+        }
     }
 }

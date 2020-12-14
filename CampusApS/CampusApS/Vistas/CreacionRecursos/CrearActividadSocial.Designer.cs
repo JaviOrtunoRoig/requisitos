@@ -79,6 +79,7 @@
             this.bConfirmar.TabIndex = 8;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
+            this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click_1);
             // 
             // dateTimePicker1
             // 
@@ -112,6 +113,7 @@
             this.Name = "CrearActividadSocial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Actividad Social";
+            this.Load += new System.EventHandler(this.CrearActividadSocial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
