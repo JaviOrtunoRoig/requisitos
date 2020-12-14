@@ -30,12 +30,12 @@
             this.bForos = new System.Windows.Forms.Button();
             this.bNoticias = new System.Windows.Forms.Button();
             this.calendario = new System.Windows.Forms.MonthCalendar();
-            this.bBaja = new XanderUI.XUIButton();
             this.label2 = new System.Windows.Forms.Label();
             this.lbForos = new System.Windows.Forms.ListBox();
             this.bPapelera = new XanderUI.XUIButton();
             this.bEliminarForo = new XanderUI.XUIButton();
             this.bAnadirForo = new XanderUI.XUIButton();
+            this.lDescripcion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -95,32 +95,11 @@
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 25;
             // 
-            // bBaja
-            // 
-            this.bBaja.BackgroundColor = System.Drawing.Color.White;
-            this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
-            this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.bBaja.ButtonText = "Darse de baja";
-            this.bBaja.ClickBackColor = System.Drawing.Color.Black;
-            this.bBaja.ClickTextColor = System.Drawing.Color.Black;
-            this.bBaja.CornerRadius = 5;
-            this.bBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
-            this.bBaja.HoverTextColor = System.Drawing.Color.White;
-            this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(12, 595);
-            this.bBaja.Name = "bBaja";
-            this.bBaja.Size = new System.Drawing.Size(161, 22);
-            this.bBaja.TabIndex = 26;
-            this.bBaja.TextColor = System.Drawing.Color.Black;
-            this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(276, 184);
+            this.label2.Location = new System.Drawing.Point(276, 247);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(55, 21);
@@ -130,10 +109,11 @@
             // lbForos
             // 
             this.lbForos.FormattingEnabled = true;
-            this.lbForos.Location = new System.Drawing.Point(280, 208);
+            this.lbForos.Location = new System.Drawing.Point(280, 271);
             this.lbForos.Name = "lbForos";
             this.lbForos.Size = new System.Drawing.Size(555, 134);
             this.lbForos.TabIndex = 28;
+            this.lbForos.DoubleClick += new System.EventHandler(this.lbForos_DoubleClick);
             // 
             // bPapelera
             // 
@@ -154,6 +134,7 @@
             this.bPapelera.TabIndex = 31;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bEliminarForo
             // 
@@ -174,6 +155,7 @@
             this.bEliminarForo.TabIndex = 30;
             this.bEliminarForo.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarForo.Click += new System.EventHandler(this.bEliminarForo_Click);
             // 
             // bAnadirForo
             // 
@@ -194,18 +176,28 @@
             this.bAnadirForo.TabIndex = 29;
             this.bAnadirForo.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirForo.Click += new System.EventHandler(this.bAnadirForo_Click);
+            // 
+            // lDescripcion
+            // 
+            this.lDescripcion.AutoSize = true;
+            this.lDescripcion.Location = new System.Drawing.Point(277, 168);
+            this.lDescripcion.Name = "lDescripcion";
+            this.lDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lDescripcion.TabIndex = 32;
+            this.lDescripcion.Text = "Descripcion";
             // 
             // Curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 629);
+            this.Controls.Add(this.lDescripcion);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarForo);
             this.Controls.Add(this.bAnadirForo);
             this.Controls.Add(this.lbForos);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bBaja);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.bActSociales);
             this.Controls.Add(this.bCursos);
@@ -216,6 +208,7 @@
             this.Name = "Curso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
+            this.Load += new System.EventHandler(this.Curso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,11 +222,11 @@
         private System.Windows.Forms.Button bForos;
         private System.Windows.Forms.Button bNoticias;
         private System.Windows.Forms.MonthCalendar calendario;
-        private XanderUI.XUIButton bBaja;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lbForos;
         private XanderUI.XUIButton bPapelera;
         private XanderUI.XUIButton bEliminarForo;
         private XanderUI.XUIButton bAnadirForo;
+        private System.Windows.Forms.Label lDescripcion;
     }
 }
