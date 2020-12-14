@@ -166,59 +166,21 @@ namespace CampusApS.Modelo.Querys
             }
         }
 
-        public List<String> getAllDescripcionCursos()
-        {
-            BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT descripcion FROM curso ;");
-
-            List<String> list = new List<String>();
-
-            if (tupla[0] != null)
-            {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-                    if (tupla[cont] != null)
-                    {
-                        string nombre = (string)((object[])(tupla[cont]))[0];
-
-                        if (nombre != null)
-                        {
-                            list.Add(nombre);
-                            cont++;
-                        }
-                        else
-                        {
-                            stop = true;
-                        }
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
-            }
-
-            return list;
-        }
-
-        public String getDescripcionCursosCreador(string curso)
+        public String getDescripcionCurso(string curso)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
             object[] tupla = miBD.Select("SELECT descripcion FROM curso WHERE nombreCurso = '" + curso + "';");
-            string nombre = null;
+            string nombre = ""; 
 
             if (tupla[0] != null)
             {
-                    nombre = (string)((object[])(tupla[0]))[0];
-            } else {
-                MessageBox.Show("Curso no encontrado");
+                nombre = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Curso no disponible");
             }
 
             return nombre;

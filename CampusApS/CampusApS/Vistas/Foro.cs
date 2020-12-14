@@ -28,7 +28,7 @@ namespace CampusApS.Vistas
 
         private void Foro_Load(object sender, EventArgs e) {
             ForosQuery query = new ForosQuery();
-            this.foroRecurso.setDescripcion(query.getDescripcioForoGeneral(foroRecurso.getNombre()).First());
+            this.foroRecurso.setDescripcion(query.getDescripcionForo(foroRecurso.getNombre()));
 
             this.label1.Text = foroRecurso.getNombre();
             this.lDescripción.Text = foroRecurso.getdescripcion();
