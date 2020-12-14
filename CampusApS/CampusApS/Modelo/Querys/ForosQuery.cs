@@ -225,7 +225,9 @@ namespace CampusApS.Modelo.Querys
         public List<String> getCreadorForoCurso(string nomCur, string us) {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombreForo FROM foro_curso WHERE nombreCurso = '" + nomCur + "';");
+            object[] tupla = miBD.Select("SELECT F.nombreForo " +
+                                         "FROM foro F, foro_curso FC " +
+                                         "WHERE F.nombreForo = FC.nombreForo AND F.usuario = '" + us + "' AND FC.nombreCurso = '" + nomCur + "';");
 
             List<String> list = new List<String>();
 
@@ -240,11 +242,7 @@ namespace CampusApS.Modelo.Querys
                         string nombre = (string)((object[])(tupla[cont]))[0];
 
                         if (nombre != null) {
-                            object[] aux = miBD.Select("SELECT nombreForo FROM foro WHERE nombreForo = '"
-                                + nombre + "' AND usuario = '" + us + "';");
-
-                            string nom = (string)((object[])(aux[0]))[0];
-                            list.Add(nom);
+                            list.Add(nombre);
                             cont++;
                         } else {
                             stop = true;
