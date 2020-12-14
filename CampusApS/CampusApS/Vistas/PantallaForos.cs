@@ -1,4 +1,5 @@
-﻿using CampusApS.Modelo.Logica.Usuarios;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas.CreacionRecursos;
 using System;
@@ -87,6 +88,16 @@ namespace CampusApS.Vistas
             this.bEliminarForo.TextColor = Color.Firebrick;
             this.bEliminarForo.BackgroundColor = Color.White;
             this.bPapelera.Visible = false;
+        }
+
+        private void lbForos_DoubleClick(object sender, EventArgs e) {
+            if (lbForos.SelectedItem != null) {
+                ForoRecurso foroRecurso = new ForoRecurso((string) lbForos.SelectedItem); 
+                Foro ventana = new Foro();
+                this.Visible = false;
+                ventana.ShowDialog();
+                this.Visible = true;
+            }
         }
 
     }

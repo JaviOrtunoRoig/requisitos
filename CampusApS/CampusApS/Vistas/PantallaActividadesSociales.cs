@@ -1,4 +1,7 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
+using CampusApS.Vistas;
+using CampusApS.Vistas.CreacionRecursos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace CampusApS.Vistas
 {
@@ -47,5 +51,53 @@ namespace CampusApS.Vistas
             PantallaForos ventana = new PantallaForos(usuario);
             ventana.ShowDialog();
         }
+
+        private void bParticiparAct_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bAnadirAct_Click(object sender, EventArgs e)
+        {
+            CrearActividadSocial ventana = new CrearActividadSocial(usuario);
+            ventana.ShowDialog();
+            ActividadSocialQuery BD = new ActividadSocialQuery();
+            lbActSociales.DataSource = BD.getAllAS();
+        }
+
+        private void bEliminarAct_Click(object sender, EventArgs e)
+        {
+            this.bPapelera.Visible = true;
+            this.bEliminarAct.BackgroundColor = Color.Gray;
+            this.bEliminarAct.TextColor = Color.White;
+
+            ActividadSocialQuery BD = new ActividadSocialQuery();
+            lbActSociales.DataSource = BD.getASCreador(usuario.getNombre());
+        }
+
+        private void bPapelera_Click(object sender, EventArgs e)
+        {
+            ActividadSocialQuery BD = new ActividadSocialQuery();
+            if (lbActSociales.SelectedItem != null)
+            {
+                string curso = lbActSociales.SelectedItem.ToString();
+                BD.borrarAS(curso);
+                lbActSociales.DataSource = BD.getAllAS();
+            }
+
+            this.bEliminarAct.TextColor = Color.Firebrick;
+            this.bEliminarAct.BackgroundColor = Color.White;
+            this.bPapelera.Visible = false;
+        }
+
+        private void lbActSociales_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //TODO: Ir a la pantalla de actividades sociales cuando este implementada, y pasarle un objeto ActividadSocial
+            this.Visible = false;
+            //ventana.ShowDialog();
+            this.Visible = true;
+        }
+
+
     }
 }
