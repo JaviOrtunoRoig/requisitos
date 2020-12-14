@@ -35,7 +35,7 @@ namespace CampusApS.Modelo.Querys
                 BD miBD = new BD(BD_SERVER, BD_NAME);
 
                 miBD.Insert("INSERT INTO `apsgrupo06`.`foro` (`nombreForo`, `usuario`, `general`, `descripcion`) VALUES ('" 
-                    + nomF + "', '" + nomU + "', b'1', " + des + ");");
+                    + nomF + "', '" + nomU + "', b'1', '" + des + "');");
             }
             else
             {
@@ -203,11 +203,11 @@ namespace CampusApS.Modelo.Querys
             return list;
         }
 
-        public List<String> getAllDescripcionesForoGeneral()
+        public List<String> getDescripcioForoGeneral(string nombreForo)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE general = b'1';");
+            object[] tupla = miBD.Select("SELECT descripcion FROM foro WHERE general = '1' and nombreForo = '" + nombreForo + "'" + ";");
 
             List<String> list = new List<String>();
 

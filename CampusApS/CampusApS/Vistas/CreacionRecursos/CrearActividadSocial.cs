@@ -33,7 +33,7 @@ namespace CampusApS.Vistas.CreacionRecursos
         private void bConfirmar_Click(object sender, EventArgs e)
         {
             ActividadSocialQuery BD = new ActividadSocialQuery();
-            BD.insertarAS(tNombreActSocial.Text, usuario.getNombre());
+            //BD.insertarAS(tNombreActSocial.Text, usuario.getNombre());
             this.Close();
         }
     }

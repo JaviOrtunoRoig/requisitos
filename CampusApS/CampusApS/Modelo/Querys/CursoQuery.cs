@@ -207,46 +207,21 @@ namespace CampusApS.Modelo.Querys
             return list;
         }
 
-        public List<String> getDescripcionCursosCreador(string usuario)
+        public String getDescripcionCursosCreador(string curso)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT descripcion FROM curso WHERE usuario = '" + usuario + "';");
-
-            List<String> list = new List<String>();
+            object[] tupla = miBD.Select("SELECT descripcion FROM curso WHERE nombreCurso = '" + curso + "';");
+            string nombre = null;
 
             if (tupla[0] != null)
             {
-
-                int cont = 0;
-                bool stop = false;
-
-                while (!stop && cont < tupla.Length)
-                {
-
-                    if (tupla[cont] != null)
-                    {
-                        string nombre = (string)((object[])(tupla[cont]))[0];
-
-                        if (nombre != null)
-                        {
-                            list.Add(nombre);
-                            cont++;
-                        }
-                        else
-                        {
-                            stop = true;
-                        }
-                    }
-                    else
-                    {
-                        stop = true;
-                    }
-
-                }
+                    nombre = (string)((object[])(tupla[0]))[0];
+            } else {
+                MessageBox.Show("Curso no encontrado");
             }
 
-            return list;
+            return nombre;
         }
 
         private bool noInscrito(string nombreUsuario, string nombreCurso)

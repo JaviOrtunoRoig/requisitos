@@ -162,6 +162,7 @@
             this.Name = "Foro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
+            this.Load += new System.EventHandler(this.Foro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

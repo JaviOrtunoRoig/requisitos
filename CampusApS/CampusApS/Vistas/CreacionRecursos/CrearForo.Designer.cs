@@ -93,7 +93,6 @@
             this.Name = "CrearForo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Foro";
-            this.Load += new System.EventHandler(this.CrearForo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

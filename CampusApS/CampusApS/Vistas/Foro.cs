@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,25 @@ namespace CampusApS.Vistas
 {
     public partial class Foro : Form
     {
-        public Foro()
+
+        ForoRecurso foroRecurso;
+        Usuario usuario;
+
+        public Foro(Usuario user, ForoRecurso f)
         {
             InitializeComponent();
+            this.usuario = user;
+            this.foroRecurso = f;
         }
+
+        private void Foro_Load(object sender, EventArgs e) {
+            ForosQuery query = new ForosQuery();
+            this.foroRecurso.setDescripcion(query.getDescripcioForoGeneral(foroRecurso.getNombre()).First());
+
+            this.label1.Text = foroRecurso.getNombre();
+            this.lDescripción.Text = foroRecurso.getdescripcion();
+        }
+
+
     }
 }

@@ -23,15 +23,9 @@ namespace CampusApS.Vistas.CreacionRecursos
             this.usuario = user;
         }
 
-        private void CrearForo_Load(object sender, EventArgs e) {
-            //UNCHECKED: mirar si hace falta lo de la descipcion
-            this.label2.Visible = false;
-            this.tDescForo.Visible = false;
-        }
-
         private void bConfirmar_Click(object sender, EventArgs e) {
             ForosQuery BD = new ForosQuery();
-            BD.insertarForoGeneral(tTituloForo.Text, usuario.getNombre());
+            BD.insertarForoGeneral(tTituloForo.Text, usuario.getNombre(), tDescForo.Text);
             this.Close();
         }
     }
