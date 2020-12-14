@@ -1,4 +1,5 @@
-﻿using CampusApS.Modelo.Logica.Usuarios;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace CampusApS.Vistas.CreacionRecursos
     {
 
         Usuario usuario;
+        CursoRecurso cursoRecurso;
 
         public CrearForo(Usuario user)
         {
@@ -23,10 +25,23 @@ namespace CampusApS.Vistas.CreacionRecursos
             this.usuario = user;
         }
 
+        public CrearForo(Usuario user, CursoRecurso curso) {
+            InitializeComponent();
+            this.usuario = user;
+            this.cursoRecurso = curso;
+        }
+
         private void bConfirmar_Click(object sender, EventArgs e) {
-            ForosQuery BD = new ForosQuery();
-            BD.insertarForoGeneral(tTituloForo.Text, usuario.getNombre(), tDescForo.Text);
-            this.Close();
+
+            if (this.cursoRecurso == null) {
+                ForosQuery BD = new ForosQuery();
+                BD.insertarForoGeneral(tTituloForo.Text, usuario.getNombre(), tDescForo.Text);
+                this.Close();
+            } else {
+                ForosQuery BD = new ForosQuery();
+                BD.insertarForoCurso(tTituloForo.Text, usuario.getNombre(), this.cursoRecurso.getNombre(), tDescForo.Text);
+                this.Close();
+            }
         }
     }
 }

@@ -38,7 +38,6 @@
             this.bNoticias = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lDescripción = new System.Windows.Forms.Label();
-            this.bBaja = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // lbHilos
@@ -74,6 +73,7 @@
             this.bActSociales.TabIndex = 36;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -83,6 +83,7 @@
             this.bCursos.TabIndex = 35;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
+            this.bCursos.Click += new System.EventHandler(this.bCursos_Click);
             // 
             // bForos
             // 
@@ -92,6 +93,7 @@
             this.bForos.TabIndex = 34;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -101,6 +103,7 @@
             this.bNoticias.TabIndex = 33;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // label1
             // 
@@ -122,33 +125,11 @@
             this.lDescripción.TabIndex = 40;
             this.lDescripción.Text = "Descripción del foro";
             // 
-            // bBaja
-            // 
-            this.bBaja.BackgroundColor = System.Drawing.Color.White;
-            this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
-            this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.bBaja.ButtonText = "Darse de baja";
-            this.bBaja.ClickBackColor = System.Drawing.Color.Black;
-            this.bBaja.ClickTextColor = System.Drawing.Color.Black;
-            this.bBaja.CornerRadius = 5;
-            this.bBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
-            this.bBaja.HoverTextColor = System.Drawing.Color.White;
-            this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(12, 594);
-            this.bBaja.Name = "bBaja";
-            this.bBaja.Size = new System.Drawing.Size(161, 22);
-            this.bBaja.TabIndex = 41;
-            this.bBaja.TextColor = System.Drawing.Color.Black;
-            this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
             // Foro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 628);
-            this.Controls.Add(this.bBaja);
             this.Controls.Add(this.lDescripción);
             this.Controls.Add(this.lbHilos);
             this.Controls.Add(this.label2);
@@ -179,6 +160,5 @@
         private System.Windows.Forms.Button bNoticias;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lDescripción;
-        private XanderUI.XUIButton bBaja;
     }
 }
