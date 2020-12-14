@@ -29,5 +29,10 @@ namespace CampusApS.Vistas.CreacionRecursos
             BD.insertarAS(tNombreActSocial.Text, usuario.getNombre());
             this.Close();
         }
+
+        private void CrearActividadSocial_Load(object sender, EventArgs e) {
+            this.label3.Visible = false;
+            this.dateTimePicker1.Visible = false;
+        }
     }
 }
