@@ -29,13 +29,13 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
-        public void insertarCurso(string nombreCurso, string nombreUsuario)
+        public void insertarCurso(string nombreCurso, string nombreUsuario, string des)
         {
             if (permitirCurso(nombreCurso))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`) VALUES ('" +
-                nombreCurso + "', '" + nombreUsuario + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`, `descripcion`) VALUES ('" +
+                nombreCurso + "', '" + nombreUsuario + "', '" + des + "');");
 
             }
             else
@@ -164,6 +164,26 @@ namespace CampusApS.Modelo.Querys
             {
                 MessageBox.Show("Este usuario ya está inscrito en el curso");
             }
+        }
+
+
+        public String getDescripcionCurso(string curso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM curso WHERE nombreCurso = '" + curso + "';");
+            string nombre = ""; 
+
+            if (tupla[0] != null)
+            {
+                nombre = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Curso no disponible");
+            }
+
+            return nombre;
         }
 
         private bool noInscrito(string nombreUsuario, string nombreCurso)

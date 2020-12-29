@@ -1,4 +1,5 @@
-﻿using CampusApS.Modelo.Logica.Usuarios;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
 using System;
@@ -30,7 +31,8 @@ namespace CampusApS
             this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
-            this.bPapelera.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            this.bPapelera.Visible = false;
+            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja(); ;
             CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getAllCursos();
         }
@@ -42,6 +44,13 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
+        private void bForos_Click(object sender, EventArgs e) {
+            this.Visible = false;
+            this.Close();
+            PantallaForos ventana = new PantallaForos(usuario);
+            ventana.ShowDialog();
+        }
+
         private void bActSociales_Click(object sender, EventArgs e) {
             this.Visible = false;
             this.Close();
@@ -50,8 +59,9 @@ namespace CampusApS
         }
 
         private void bBaja_Click(object sender, EventArgs e) {
-            //TODO: Terminar de implmentar el darse de baja cuando este la vista
-
+            ConfirmarPassword ventana = new ConfirmarPassword(usuario);
+            ventana.ShowDialog();
+            this.Close();
         }
 
         private void bAnadirCurso_Click(object sender, EventArgs e) {
@@ -62,16 +72,48 @@ namespace CampusApS
         }
 
         private void bEliminarCurso_Click(object sender, EventArgs e) {
+            this.bPapelera.Visible = true;
+            this.bEliminarCurso.BackgroundColor = Color.Gray;
+            this.bEliminarCurso.TextColor = Color.White;
+
             CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {
             CursoQuery BD = new CursoQuery();
-            string curso = lbCursos.SelectedItem.ToString();
-            BD.borrarCurso(curso);
-            lbCursos.DataSource = BD.getAllCursos();
+            if (lbCursos.SelectedItem != null) {
+                string curso = lbCursos.SelectedItem.ToString();
+                BD.borrarCurso(curso);
+            } 
+
+            this.bEliminarCurso.TextColor = Color.Firebrick;
+            this.bEliminarCurso.BackgroundColor = Color.White;
+            this.lbCursos.DataSource = BD.getAllCursos();
+            this.bPapelera.Visible = false;
         }
 
+        private void lbCursos_DoubleClick(object sender, EventArgs e) {
+            CursoQuery query = new CursoQuery();
+            CursoRecurso cursoRecurso = new CursoRecurso((string) lbCursos.SelectedItem);
+            cursoRecurso.setDescripcion(query.getDescripcionCurso((string) lbCursos.SelectedItem));
+            Curso ventana = new Curso(usuario, cursoRecurso);
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Close();
+        }
+
+        private void bParticiparCurso_Click(object sender, EventArgs e) {
+            CursoQuery BD = new CursoQuery();
+            if (lbCursos.SelectedItem != null) {
+                BD.inscribirseCurso(this.usuario.getNombre(), (string) lbCursos.SelectedItem);
+                this.Visible = false;
+                PantallaCursos ventana = new PantallaCursos(usuario);
+                ventana.ShowDialog();
+                this.Visible = true;
+            } else {
+                MessageBox.Show("No hay ningún curso seleccionado");
+            }
+        }
     }
 }

@@ -38,13 +38,13 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public void insertarAS(string nombreAS, string nombreUsuario)
+        public void insertarAS(string nombreAS, string nombreUsuario, string des)
         {
             if (permitirAS(nombreAS))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`) VALUES ('" +
-                nombreAS + "', '" + nombreUsuario + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`, `descripcion`) VALUES ('" +
+                nombreAS + "', '" + nombreUsuario + "', '" + des + "');");
 
             }
             else
@@ -137,6 +137,25 @@ namespace CampusApS.Modelo.Querys
             }
 
             return list;
+        }
+
+        public String getDescripcionAS(string AS)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM actividadsocial WHERE nombreAS = '" + AS + "';");
+            string nombre = "";
+
+            if (tupla[0] != null)
+            {
+                nombre = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Actividad Social no disponible");
+            }
+
+            return nombre;
         }
     }
 }

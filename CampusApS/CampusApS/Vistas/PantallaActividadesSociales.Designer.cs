@@ -70,6 +70,7 @@
             this.bForos.TabIndex = 9;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -94,7 +95,7 @@
             this.lbActSociales.Name = "lbActSociales";
             this.lbActSociales.Size = new System.Drawing.Size(598, 303);
             this.lbActSociales.TabIndex = 13;
-            this.lbActSociales.SelectedIndexChanged += new System.EventHandler(this.lbActSociales_SelectedIndexChanged);
+            this.lbActSociales.DoubleClick += new System.EventHandler(this.lbActSociales_DoubleClick);
             // 
             // bBaja
             // 
@@ -137,6 +138,7 @@
             this.bAnadirAct.TabIndex = 15;
             this.bAnadirAct.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirAct.Click += new System.EventHandler(this.bAnadirAct_Click);
             // 
             // bEliminarAct
             // 
@@ -157,6 +159,7 @@
             this.bEliminarAct.TabIndex = 16;
             this.bEliminarAct.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarAct.Click += new System.EventHandler(this.bEliminarAct_Click);
             // 
             // bPapelera
             // 
@@ -177,6 +180,7 @@
             this.bPapelera.TabIndex = 17;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bParticiparAct
             // 
@@ -197,6 +201,7 @@
             this.bParticiparAct.TabIndex = 18;
             this.bParticiparAct.TextColor = System.Drawing.Color.DimGray;
             this.bParticiparAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bParticiparAct.Click += new System.EventHandler(this.bParticiparAct_Click);
             // 
             // label1
             // 
@@ -229,6 +234,7 @@
             this.Name = "PantallaActividadesSociales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
+            this.Load += new System.EventHandler(this.PantallaActividadesSociales_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

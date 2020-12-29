@@ -40,6 +40,7 @@
             this.bEliminarNoticia = new XanderUI.XUIButton();
             this.bAnadirNoticia = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.bInvitar = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // bNoticias
@@ -59,6 +60,7 @@
             this.bForos.TabIndex = 1;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bCursos
             // 
@@ -114,6 +116,7 @@
             this.bBaja.TabIndex = 11;
             this.bBaja.TextColor = System.Drawing.Color.Black;
             this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
             // 
             // bPapelera
             // 
@@ -185,11 +188,34 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "NOTICIAS";
             // 
+            // bInvitar
+            // 
+            this.bInvitar.BackgroundColor = System.Drawing.Color.White;
+            this.bInvitar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bInvitar.ButtonImage")));
+            this.bInvitar.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.bInvitar.ButtonText = "Invitar a un Administrador";
+            this.bInvitar.ClickBackColor = System.Drawing.Color.Black;
+            this.bInvitar.ClickTextColor = System.Drawing.Color.Black;
+            this.bInvitar.CornerRadius = 5;
+            this.bInvitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.bInvitar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bInvitar.HoverBackgroundColor = System.Drawing.Color.Black;
+            this.bInvitar.HoverTextColor = System.Drawing.Color.White;
+            this.bInvitar.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bInvitar.Location = new System.Drawing.Point(12, 568);
+            this.bInvitar.Name = "bInvitar";
+            this.bInvitar.Size = new System.Drawing.Size(233, 22);
+            this.bInvitar.TabIndex = 23;
+            this.bInvitar.TextColor = System.Drawing.Color.Black;
+            this.bInvitar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bInvitar.Click += new System.EventHandler(this.xuiButton1_Click);
+            // 
             // PantallaNoticias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 630);
+            this.Controls.Add(this.bInvitar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarNoticia);
@@ -205,6 +231,7 @@
             this.Name = "PantallaNoticias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
+            this.Load += new System.EventHandler(this.PantallaNoticias_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +250,6 @@
         private XanderUI.XUIButton bEliminarNoticia;
         private XanderUI.XUIButton bAnadirNoticia;
         private System.Windows.Forms.Label label1;
+        private XanderUI.XUIButton bInvitar;
     }
 }

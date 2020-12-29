@@ -77,6 +77,7 @@
             this.bConfirmar.TabIndex = 6;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
+            this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
             // 
             // CrearForo
             // 
