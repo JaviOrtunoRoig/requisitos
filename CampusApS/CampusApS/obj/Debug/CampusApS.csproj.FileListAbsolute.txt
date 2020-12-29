@@ -160,3 +160,11 @@ C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\D
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Curso.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Foro.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaForos.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ActividadSocial.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ConfirmarPassword.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearActividadSocial.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearForo.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearNoticia.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Curso.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Foro.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaForos.resources
