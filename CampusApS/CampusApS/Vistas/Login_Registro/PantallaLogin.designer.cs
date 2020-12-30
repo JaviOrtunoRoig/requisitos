@@ -40,41 +40,46 @@
             // lbCorreoUser
             // 
             this.lbCorreoUser.AutoSize = true;
-            this.lbCorreoUser.Location = new System.Drawing.Point(321, 58);
+            this.lbCorreoUser.Location = new System.Drawing.Point(428, 71);
+            this.lbCorreoUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCorreoUser.Name = "lbCorreoUser";
-            this.lbCorreoUser.Size = new System.Drawing.Size(98, 13);
+            this.lbCorreoUser.Size = new System.Drawing.Size(131, 17);
             this.lbCorreoUser.TabIndex = 0;
             this.lbCorreoUser.Text = "Nombre de Usuario";
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(334, 135);
+            this.lbPassword.Location = new System.Drawing.Point(445, 166);
+            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(66, 13);
+            this.lbPassword.Size = new System.Drawing.Size(81, 17);
             this.lbPassword.TabIndex = 1;
-            this.lbPassword.Text = "Constraseña";
+            this.lbPassword.Text = "Contraseña";
             // 
             // tNombre
             // 
-            this.tNombre.Location = new System.Drawing.Point(246, 83);
+            this.tNombre.Location = new System.Drawing.Point(328, 102);
+            this.tNombre.Margin = new System.Windows.Forms.Padding(4);
             this.tNombre.Name = "tNombre";
-            this.tNombre.Size = new System.Drawing.Size(257, 20);
+            this.tNombre.Size = new System.Drawing.Size(341, 22);
             this.tNombre.TabIndex = 2;
             // 
             // tPassword
             // 
-            this.tPassword.Location = new System.Drawing.Point(246, 160);
+            this.tPassword.Location = new System.Drawing.Point(328, 197);
+            this.tPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tPassword.Name = "tPassword";
             this.tPassword.PasswordChar = '*';
-            this.tPassword.Size = new System.Drawing.Size(257, 20);
+            this.tPassword.Size = new System.Drawing.Size(341, 22);
             this.tPassword.TabIndex = 3;
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(246, 228);
+            this.bConfirmar.Location = new System.Drawing.Point(328, 281);
+            this.bConfirmar.Margin = new System.Windows.Forms.Padding(4);
             this.bConfirmar.Name = "bConfirmar";
-            this.bConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.bConfirmar.Size = new System.Drawing.Size(100, 28);
             this.bConfirmar.TabIndex = 4;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
@@ -82,9 +87,10 @@
             // 
             // bRecuperarPass
             // 
-            this.bRecuperarPass.Location = new System.Drawing.Point(362, 228);
+            this.bRecuperarPass.Location = new System.Drawing.Point(483, 281);
+            this.bRecuperarPass.Margin = new System.Windows.Forms.Padding(4);
             this.bRecuperarPass.Name = "bRecuperarPass";
-            this.bRecuperarPass.Size = new System.Drawing.Size(141, 23);
+            this.bRecuperarPass.Size = new System.Drawing.Size(188, 28);
             this.bRecuperarPass.TabIndex = 5;
             this.bRecuperarPass.Text = "Recuperar la contraseña";
             this.bRecuperarPass.UseVisualStyleBackColor = true;
@@ -92,9 +98,9 @@
             // 
             // PantallaLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 323);
+            this.ClientSize = new System.Drawing.Size(1044, 477);
             this.Controls.Add(this.bRecuperarPass);
             this.Controls.Add(this.bConfirmar);
             this.Controls.Add(this.tPassword);
@@ -102,6 +108,7 @@
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbCorreoUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PantallaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
