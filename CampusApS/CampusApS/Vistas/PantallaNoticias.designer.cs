@@ -85,32 +85,34 @@
             // lbNoticias
             // 
             this.lbNoticias.FormattingEnabled = true;
-            this.lbNoticias.Location = new System.Drawing.Point(271, 181);
+            this.lbNoticias.Location = new System.Drawing.Point(354, 164);
             this.lbNoticias.Name = "lbNoticias";
-            this.lbNoticias.Size = new System.Drawing.Size(598, 303);
+            this.lbNoticias.Size = new System.Drawing.Size(564, 303);
             this.lbNoticias.TabIndex = 4;
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(916, 181);
+            this.calendario.Location = new System.Drawing.Point(974, 181);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 5;
             // 
             // bBaja
             // 
             this.bBaja.BackgroundColor = System.Drawing.Color.White;
+            this.bBaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
             this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
             this.bBaja.ButtonText = "Darse de baja";
             this.bBaja.ClickBackColor = System.Drawing.Color.Black;
             this.bBaja.ClickTextColor = System.Drawing.Color.Black;
             this.bBaja.CornerRadius = 5;
+            this.bBaja.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bBaja.HoverTextColor = System.Drawing.Color.White;
             this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(12, 596);
+            this.bBaja.Location = new System.Drawing.Point(12, 578);
             this.bBaja.Name = "bBaja";
             this.bBaja.Size = new System.Drawing.Size(161, 22);
             this.bBaja.TabIndex = 11;
@@ -120,7 +122,7 @@
             // 
             // bPapelera
             // 
-            this.bPapelera.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bPapelera.BackgroundColor = System.Drawing.Color.Transparent;
             this.bPapelera.ButtonImage = global::CampusApS.Properties.Resources.Papelera;
             this.bPapelera.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bPapelera.ButtonText = "";
@@ -131,7 +133,7 @@
             this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bPapelera.Location = new System.Drawing.Point(1064, 413);
+            this.bPapelera.Location = new System.Drawing.Point(1122, 413);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(44, 42);
             this.bPapelera.TabIndex = 21;
@@ -151,7 +153,7 @@
             this.bEliminarNoticia.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarNoticia.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarNoticia.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarNoticia.Location = new System.Drawing.Point(916, 384);
+            this.bEliminarNoticia.Location = new System.Drawing.Point(974, 384);
             this.bEliminarNoticia.Name = "bEliminarNoticia";
             this.bEliminarNoticia.Size = new System.Drawing.Size(192, 23);
             this.bEliminarNoticia.TabIndex = 20;
@@ -171,7 +173,7 @@
             this.bAnadirNoticia.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirNoticia.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bAnadirNoticia.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAnadirNoticia.Location = new System.Drawing.Point(916, 355);
+            this.bAnadirNoticia.Location = new System.Drawing.Point(974, 355);
             this.bAnadirNoticia.Name = "bAnadirNoticia";
             this.bAnadirNoticia.Size = new System.Drawing.Size(192, 23);
             this.bAnadirNoticia.TabIndex = 19;
@@ -181,8 +183,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(263, 86);
+            this.label1.Location = new System.Drawing.Point(346, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 48);
             this.label1.TabIndex = 22;
@@ -197,12 +200,13 @@
             this.bInvitar.ClickBackColor = System.Drawing.Color.Black;
             this.bInvitar.ClickTextColor = System.Drawing.Color.Black;
             this.bInvitar.CornerRadius = 5;
+            this.bInvitar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bInvitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.bInvitar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bInvitar.HoverBackgroundColor = System.Drawing.Color.Black;
-            this.bInvitar.HoverTextColor = System.Drawing.Color.White;
+            this.bInvitar.HoverTextColor = System.Drawing.Color.Transparent;
             this.bInvitar.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bInvitar.Location = new System.Drawing.Point(12, 568);
+            this.bInvitar.Location = new System.Drawing.Point(12, 550);
             this.bInvitar.Name = "bInvitar";
             this.bInvitar.Size = new System.Drawing.Size(233, 22);
             this.bInvitar.TabIndex = 23;
@@ -214,7 +218,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 630);
+            this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.bInvitar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bPapelera);

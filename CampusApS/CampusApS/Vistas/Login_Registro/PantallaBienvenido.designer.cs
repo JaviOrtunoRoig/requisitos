@@ -41,7 +41,9 @@ namespace CampusApS
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(159, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(477, 45);
@@ -52,10 +54,11 @@ namespace CampusApS
             // lbRegister
             // 
             this.lbRegister.AutoSize = true;
-            this.lbRegister.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegister.BackColor = System.Drawing.Color.Transparent;
+            this.lbRegister.Font = new System.Drawing.Font("Calibri Light", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegister.Location = new System.Drawing.Point(462, 132);
             this.lbRegister.Name = "lbRegister";
-            this.lbRegister.Size = new System.Drawing.Size(199, 19);
+            this.lbRegister.Size = new System.Drawing.Size(228, 19);
             this.lbRegister.TabIndex = 4;
             this.lbRegister.Text = "¿No estás registrado todavía?";
             // 
@@ -129,7 +132,9 @@ namespace CampusApS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 409);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::CampusApS.Properties.Resources.Registro1;
+            this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.lbRegister);
             this.Controls.Add(this.bInvitado);
             this.Controls.Add(this.bRegister);
