@@ -91,9 +91,9 @@
             // lbCursos
             // 
             this.lbCursos.FormattingEnabled = true;
-            this.lbCursos.Location = new System.Drawing.Point(268, 180);
+            this.lbCursos.Location = new System.Drawing.Point(375, 180);
             this.lbCursos.Name = "lbCursos";
-            this.lbCursos.Size = new System.Drawing.Size(504, 134);
+            this.lbCursos.Size = new System.Drawing.Size(446, 134);
             this.lbCursos.TabIndex = 9;
             this.lbCursos.DoubleClick += new System.EventHandler(this.lbCursos_DoubleClick);
             // 
@@ -111,7 +111,7 @@
             this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bBaja.HoverTextColor = System.Drawing.Color.White;
             this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(12, 596);
+            this.bBaja.Location = new System.Drawing.Point(12, 577);
             this.bBaja.Name = "bBaja";
             this.bBaja.Size = new System.Drawing.Size(161, 22);
             this.bBaja.TabIndex = 10;
@@ -122,8 +122,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(260, 83);
+            this.label1.Location = new System.Drawing.Point(367, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 48);
             this.label1.TabIndex = 20;
@@ -152,22 +153,22 @@
             // 
             // bPapelera
             // 
-            this.bPapelera.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bPapelera.BackgroundColor = System.Drawing.Color.Transparent;
             this.bPapelera.ButtonImage = global::CampusApS.Properties.Resources.Papelera;
             this.bPapelera.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bPapelera.ButtonText = "";
-            this.bPapelera.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.bPapelera.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.ClickBackColor = System.Drawing.Color.Transparent;
+            this.bPapelera.ClickTextColor = System.Drawing.Color.Transparent;
             this.bPapelera.CornerRadius = 5;
             this.bPapelera.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.HoverBackgroundColor = System.Drawing.Color.Transparent;
+            this.bPapelera.HoverTextColor = System.Drawing.Color.Transparent;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bPapelera.Location = new System.Drawing.Point(1066, 440);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(44, 42);
             this.bPapelera.TabIndex = 23;
-            this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.TextColor = System.Drawing.Color.Transparent;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
@@ -217,7 +218,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 630);
+            this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.bParticiparCurso);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarCurso);

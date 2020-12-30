@@ -69,6 +69,11 @@
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\ForosQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\ActividadSocial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,14 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Vistas\Login_Registro\PantallaBienvenido.resx">
       <DependentUpon>PantallaBienvenido.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,14 +276,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Resources\Fondo.jpg" />
     <Content Include="Resources\Images\ApS.ico" />
-    <Content Include="Resources\Images\IconoAdmin.jpg" />
+    <Content Include="Resources\Images\Fondo.jpg" />
+    <None Include="Resources\Images\IconoAdmin.png" />
     <Content Include="Resources\Images\IconoAlumno.png" />
     <Content Include="Resources\Images\IconoONG.png" />
     <Content Include="Resources\Images\IconoProfesor.png" />
     <Content Include="Resources\Images\Invitado.png" />
     <Content Include="Resources\Images\Login.png" />
     <None Include="Resources\Images\Papelera.png" />
+    <Content Include="Resources\Images\Registro.jpg" />
     <Content Include="Resources\Images\Registro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
