@@ -41,6 +41,7 @@
             this.bAnadirNoticia = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
             this.bInvitar = new XanderUI.XUIButton();
+            this.xuiCard1 = new XanderUI.XUICard();
             this.SuspendLayout();
             // 
             // bNoticias
@@ -214,12 +215,28 @@
             this.bInvitar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bInvitar.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
+            // xuiCard1
+            // 
+            this.xuiCard1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiCard1.Color1 = System.Drawing.Color.Gray;
+            this.xuiCard1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.xuiCard1.ForeColor = System.Drawing.Color.White;
+            this.xuiCard1.Location = new System.Drawing.Point(12, 71);
+            this.xuiCard1.Name = "xuiCard1";
+            this.xuiCard1.Size = new System.Drawing.Size(294, 163);
+            this.xuiCard1.TabIndex = 24;
+            this.xuiCard1.Text = "xuiCard1";
+            this.xuiCard1.Text1 = "Tipo de usuario";
+            this.xuiCard1.Text2 = "Nombre del usuario";
+            this.xuiCard1.Text3 = "num expediente";
+            // 
             // PantallaNoticias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.xuiCard1);
             this.Controls.Add(this.bInvitar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bPapelera);
@@ -256,5 +273,6 @@
         private XanderUI.XUIButton bAnadirNoticia;
         private System.Windows.Forms.Label label1;
         private XanderUI.XUIButton bInvitar;
+        private XanderUI.XUICard xuiCard1;
     }
 }
