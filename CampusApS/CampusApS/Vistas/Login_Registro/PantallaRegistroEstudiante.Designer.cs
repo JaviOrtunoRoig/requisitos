@@ -44,6 +44,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(22, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 13);
@@ -56,11 +57,12 @@
             this.tPassword.Name = "tPassword";
             this.tPassword.PasswordChar = '*';
             this.tPassword.Size = new System.Drawing.Size(253, 20);
-            this.tPassword.TabIndex = 24;
+            this.tPassword.TabIndex = 28;
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
+            this.lbPassword.ForeColor = System.Drawing.Color.White;
             this.lbPassword.Location = new System.Drawing.Point(57, 232);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(61, 13);
@@ -77,6 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(57, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 13);
@@ -88,11 +91,12 @@
             this.tNombre.Location = new System.Drawing.Point(60, 170);
             this.tNombre.Name = "tNombre";
             this.tNombre.Size = new System.Drawing.Size(253, 20);
-            this.tNombre.TabIndex = 28;
+            this.tNombre.TabIndex = 27;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(57, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 13);
@@ -110,6 +114,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(57, 304);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 13);
@@ -118,6 +123,7 @@
             // 
             // bConfirmar
             // 
+            this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bConfirmar.Location = new System.Drawing.Point(314, 390);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
@@ -130,6 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(401, 425);
             this.Controls.Add(this.bConfirmar);
             this.Controls.Add(this.tConfPassword);
@@ -141,6 +148,7 @@
             this.Controls.Add(this.tPassword);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaRegistroEstudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

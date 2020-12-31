@@ -46,6 +46,7 @@
             // lbNumONG
             // 
             this.lbNumONG.AutoSize = true;
+            this.lbNumONG.ForeColor = System.Drawing.Color.White;
             this.lbNumONG.Location = new System.Drawing.Point(42, 363);
             this.lbNumONG.Name = "lbNumONG";
             this.lbNumONG.Size = new System.Drawing.Size(149, 13);
@@ -55,6 +56,7 @@
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
+            this.lbPassword.ForeColor = System.Drawing.Color.White;
             this.lbPassword.Location = new System.Drawing.Point(42, 229);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(61, 13);
@@ -64,6 +66,7 @@
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
+            this.lbUsername.ForeColor = System.Drawing.Color.White;
             this.lbUsername.Location = new System.Drawing.Point(42, 159);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(98, 13);
@@ -73,6 +76,7 @@
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
+            this.lbEmail.ForeColor = System.Drawing.Color.White;
             this.lbEmail.Location = new System.Drawing.Point(42, 86);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(93, 13);
@@ -84,7 +88,7 @@
             this.tNumRegONG.Location = new System.Drawing.Point(45, 379);
             this.tNumRegONG.Name = "tNumRegONG";
             this.tNumRegONG.Size = new System.Drawing.Size(253, 20);
-            this.tNumRegONG.TabIndex = 23;
+            this.tNumRegONG.TabIndex = 24;
             // 
             // tPassword
             // 
@@ -111,6 +115,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(24, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 13);
@@ -119,6 +124,7 @@
             // 
             // bConfirmar
             // 
+            this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bConfirmar.Location = new System.Drawing.Point(277, 439);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
@@ -133,11 +139,12 @@
             this.tConfPassword.Name = "tConfPassword";
             this.tConfPassword.PasswordChar = '*';
             this.tConfPassword.Size = new System.Drawing.Size(253, 20);
-            this.tConfPassword.TabIndex = 27;
+            this.tConfPassword.TabIndex = 23;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(42, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 13);
@@ -148,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(364, 474);
             this.Controls.Add(this.tConfPassword);
             this.Controls.Add(this.label2);
@@ -161,6 +169,7 @@
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.lbEmail);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaRegistroONG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

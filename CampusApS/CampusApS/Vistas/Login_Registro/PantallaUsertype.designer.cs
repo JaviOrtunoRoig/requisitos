@@ -56,6 +56,7 @@
             this.xuiButton1.ClickBackColor = System.Drawing.Color.Black;
             this.xuiButton1.ClickTextColor = System.Drawing.Color.Black;
             this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.xuiButton1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.Black;
@@ -78,6 +79,7 @@
             this.bProfesor.ClickBackColor = System.Drawing.Color.Black;
             this.bProfesor.ClickTextColor = System.Drawing.Color.Black;
             this.bProfesor.CornerRadius = 5;
+            this.bProfesor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bProfesor.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bProfesor.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bProfesor.HoverBackgroundColor = System.Drawing.Color.Black;
@@ -100,6 +102,7 @@
             this.bONG.ClickBackColor = System.Drawing.Color.Black;
             this.bONG.ClickTextColor = System.Drawing.Color.Black;
             this.bONG.CornerRadius = 5;
+            this.bONG.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bONG.Font = new System.Drawing.Font("Bahnschrift Condensed", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bONG.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bONG.HoverBackgroundColor = System.Drawing.Color.Black;
@@ -122,6 +125,7 @@
             this.bAdmin.ClickBackColor = System.Drawing.Color.Black;
             this.bAdmin.ClickTextColor = System.Drawing.Color.Black;
             this.bAdmin.CornerRadius = 5;
+            this.bAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bAdmin.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bAdmin.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.bAdmin.HoverBackgroundColor = System.Drawing.Color.Black;
@@ -139,12 +143,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(873, 434);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.lbLogin);
             this.Controls.Add(this.bProfesor);
             this.Controls.Add(this.bONG);
             this.Controls.Add(this.bAdmin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaUsertype";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

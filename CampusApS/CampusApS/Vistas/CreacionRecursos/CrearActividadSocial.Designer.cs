@@ -48,6 +48,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(27, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 13);
@@ -65,6 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(27, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 13);
@@ -73,6 +75,7 @@
             // 
             // bConfirmar
             // 
+            this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bConfirmar.Location = new System.Drawing.Point(231, 292);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
@@ -91,6 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(27, 220);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(186, 13);
@@ -101,6 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(318, 327);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
@@ -109,6 +114,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tNombreActSocial);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CrearActividadSocial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
