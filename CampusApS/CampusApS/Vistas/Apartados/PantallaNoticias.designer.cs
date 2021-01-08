@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bInvitar = new XanderUI.XUIButton();
             this.carta = new XanderUI.XUICard();
+            this.bOpciones = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // bNoticias
@@ -237,12 +238,34 @@
             this.carta.Text2 = "Nombre del usuario";
             this.carta.Text3 = "num expediente";
             // 
+            // bOpciones
+            // 
+            this.bOpciones.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bOpciones.ButtonImage = global::CampusApS.Properties.Resources.opciones;
+            this.bOpciones.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.bOpciones.ButtonText = "";
+            this.bOpciones.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.bOpciones.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bOpciones.CornerRadius = 5;
+            this.bOpciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bOpciones.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
+            this.bOpciones.Location = new System.Drawing.Point(104, 465);
+            this.bOpciones.Name = "bOpciones";
+            this.bOpciones.Size = new System.Drawing.Size(69, 62);
+            this.bOpciones.TabIndex = 25;
+            this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // PantallaNoticias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.bInvitar);
             this.Controls.Add(this.label1);
@@ -282,5 +305,6 @@
         private System.Windows.Forms.Label label1;
         private XanderUI.XUIButton bInvitar;
         private XanderUI.XUICard carta;
+        private XanderUI.XUIButton bOpciones;
     }
 }
