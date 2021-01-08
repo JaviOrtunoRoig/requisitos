@@ -23,7 +23,6 @@ namespace CampusApS
         private void bConfirmar_Click(object sender, EventArgs e)
         {
 
-            //TODO: comprobar cuando este la base de datos actualizada con num expediente
             String nombre = tNombre.Text;
             String correo = tCorreo.Text;
             String password = tPassword.Text;
