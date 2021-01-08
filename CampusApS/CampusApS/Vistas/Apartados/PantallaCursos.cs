@@ -83,7 +83,16 @@ namespace CampusApS
             this.bEliminarCurso.TextColor = Color.White;
 
             CursoQuery BD = new CursoQuery();
-            lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
+
+            if(usuario.getRol().Equals("administrador"))
+            {
+                lbCursos.DataSource = BD.getAllCursos();
+            }
+            else
+            {
+                lbCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
+            }
+            
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {
