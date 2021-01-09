@@ -241,6 +241,13 @@ namespace CampusApS.Modelo.Querys
 
         #region OtrosMetodos
 
+        public void updateNombreUsuario(string nom, string newNom)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            miBD.Update("UPDATE apsgrupo06.usuario SET nombre = '" + newNom + "' " +
+            "WHERE (nombre = '" + nom + "');");
+        }
+
         public string getUsuario(string nomb)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
