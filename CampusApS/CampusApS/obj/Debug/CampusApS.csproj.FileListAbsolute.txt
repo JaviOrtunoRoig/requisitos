@@ -166,17 +166,9 @@ C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\Campu
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearNoticia.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Curso.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Foro.resources
-<<<<<<< HEAD
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.CambiarNombre.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisActividadesSociales.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisCursos.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Opciones.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaForos.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaActividadesSociales.resources
-=======
-C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaForos.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.CambiarNombre.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisActividadesSociales.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisCursos.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Opciones.resources
->>>>>>> master
