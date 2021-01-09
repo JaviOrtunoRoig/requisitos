@@ -64,5 +64,10 @@ namespace CampusApS.Vistas
             this.label1.Text = this.AS.getNombre();
             this.lDescripción.Text = this.AS.getdescripcion();
         }
+
+        private void bOpciones_Click(object sender, EventArgs e) {
+            //TODO: Implementar
+
+        }
     }
 }

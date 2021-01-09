@@ -1,6 +1,7 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,6 +73,12 @@ namespace CampusApS
         private void xuiButton1_Click(object sender, EventArgs e) {
             UsuarioQuery bd = new UsuarioQuery();
             bd.codigoAdmin();
+        }
+
+        private void bOpciones_Click(object sender, EventArgs e)
+        {
+            Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
         }
     }
 }

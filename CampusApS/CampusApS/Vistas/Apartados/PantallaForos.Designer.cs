@@ -1,4 +1,4 @@
-﻿namespace CampusApS.Vistas
+﻿namespace CampusApS
 {
     partial class PantallaForos
     {
@@ -39,7 +39,6 @@
             this.bPapelera = new XanderUI.XUIButton();
             this.bEliminarForo = new XanderUI.XUIButton();
             this.bAnadirForo = new XanderUI.XUIButton();
-            this.bBaja = new XanderUI.XUIButton();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
             this.SuspendLayout();
@@ -179,29 +178,6 @@
             this.bAnadirForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bAnadirForo.Click += new System.EventHandler(this.bAnadirForo_Click);
             // 
-            // bBaja
-            // 
-            this.bBaja.BackgroundColor = System.Drawing.Color.White;
-            this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
-            this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.bBaja.ButtonText = "Darse de baja";
-            this.bBaja.ClickBackColor = System.Drawing.Color.Black;
-            this.bBaja.ClickTextColor = System.Drawing.Color.Black;
-            this.bBaja.CornerRadius = 5;
-            this.bBaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
-            this.bBaja.HoverTextColor = System.Drawing.Color.White;
-            this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(12, 588);
-            this.bBaja.Name = "bBaja";
-            this.bBaja.Size = new System.Drawing.Size(161, 22);
-            this.bBaja.TabIndex = 29;
-            this.bBaja.TextColor = System.Drawing.Color.Black;
-            this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bBaja.Click += new System.EventHandler(this.bBaja_Click);
-            // 
             // carta
             // 
             this.carta.BackColor = System.Drawing.Color.Transparent;
@@ -231,12 +207,13 @@
             this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(113, 447);
+            this.bOpciones.Location = new System.Drawing.Point(25, 538);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(69, 62);
             this.bOpciones.TabIndex = 53;
             this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
             // PantallaForos
             // 
@@ -246,7 +223,6 @@
             this.ClientSize = new System.Drawing.Size(1184, 700);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
-            this.Controls.Add(this.bBaja);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarForo);
             this.Controls.Add(this.bAnadirForo);
@@ -280,7 +256,6 @@
         private XanderUI.XUIButton bPapelera;
         private XanderUI.XUIButton bEliminarForo;
         private XanderUI.XUIButton bAnadirForo;
-        private XanderUI.XUIButton bBaja;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
     }

@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace CampusApS
     public partial class PantallaCursos : Form
     {
 
-        private Usuario usuario;
+         private Usuario usuario;
 
 
         public PantallaCursos(Usuario usuario)
@@ -130,5 +131,13 @@ namespace CampusApS
                 MessageBox.Show("No hay ningún curso seleccionado");
             }
         }
+
+        private void bOpciones_Click(object sender, EventArgs e)
+        {
+            Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
+        }
+
+  
     }
 }

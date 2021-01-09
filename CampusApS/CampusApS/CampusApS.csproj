@@ -203,6 +203,12 @@
     <Compile Include="Vistas\Opciones\CambiarNombre.Designer.cs">
       <DependentUpon>CambiarNombre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Opciones\Mensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Mensajes.Designer.cs">
+      <DependentUpon>Mensajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Opciones\MisActividadesSociales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,12 @@
     </Compile>
     <Compile Include="Vistas\Opciones\Opciones.Designer.cs">
       <DependentUpon>Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\UsuariosConMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\UsuariosConMensajes.Designer.cs">
+      <DependentUpon>UsuariosConMensajes.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
@@ -289,6 +301,9 @@
     <EmbeddedResource Include="Vistas\Opciones\CambiarNombre.resx">
       <DependentUpon>CambiarNombre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\Mensajes.resx">
+      <DependentUpon>Mensajes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Opciones\MisActividadesSociales.resx">
       <DependentUpon>MisActividadesSociales.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Opciones\Opciones.resx">
       <DependentUpon>Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\UsuariosConMensajes.resx">
+      <DependentUpon>UsuariosConMensajes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

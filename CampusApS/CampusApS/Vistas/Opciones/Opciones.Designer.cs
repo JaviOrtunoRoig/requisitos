@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Opciones));
-            this.bcarbiarNombre = new XanderUI.XUIButton();
+            this.bcambiarNombre = new XanderUI.XUIButton();
             this.bDarseDeBaja = new XanderUI.XUIButton();
             this.bInvitarAdminitrador = new XanderUI.XUIButton();
             this.bBandejaEntrada = new XanderUI.XUIButton();
@@ -34,24 +34,25 @@
             // 
             // bcarbiarNombre
             // 
-            this.bcarbiarNombre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bcarbiarNombre.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bcarbiarNombre.ButtonImage")));
-            this.bcarbiarNombre.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.bcarbiarNombre.ButtonText = "Cambiar nombre";
-            this.bcarbiarNombre.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.bcarbiarNombre.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.bcarbiarNombre.CornerRadius = 5;
-            this.bcarbiarNombre.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bcarbiarNombre.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.bcarbiarNombre.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.bcarbiarNombre.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bcarbiarNombre.Location = new System.Drawing.Point(61, 36);
-            this.bcarbiarNombre.Name = "bcarbiarNombre";
-            this.bcarbiarNombre.Size = new System.Drawing.Size(200, 50);
-            this.bcarbiarNombre.TabIndex = 0;
-            this.bcarbiarNombre.TextColor = System.Drawing.Color.DodgerBlue;
-            this.bcarbiarNombre.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bcarbiarNombre.Click += new System.EventHandler(this.bcarbiarNombre_Click);
+            this.bcambiarNombre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bcambiarNombre.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bcarbiarNombre.ButtonImage")));
+            this.bcambiarNombre.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.bcambiarNombre.ButtonText = "Cambiar nombre";
+            this.bcambiarNombre.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.bcambiarNombre.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bcambiarNombre.CornerRadius = 5;
+            this.bcambiarNombre.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bcambiarNombre.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.bcambiarNombre.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bcambiarNombre.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bcambiarNombre.Location = new System.Drawing.Point(81, 44);
+            this.bcambiarNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bcambiarNombre.Name = "bcarbiarNombre";
+            this.bcambiarNombre.Size = new System.Drawing.Size(267, 62);
+            this.bcambiarNombre.TabIndex = 0;
+            this.bcambiarNombre.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bcambiarNombre.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bcambiarNombre.Click += new System.EventHandler(this.bcambiarNombre_Click);
             // 
             // bDarseDeBaja
             // 
@@ -66,9 +67,10 @@
             this.bDarseDeBaja.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bDarseDeBaja.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bDarseDeBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bDarseDeBaja.Location = new System.Drawing.Point(61, 185);
+            this.bDarseDeBaja.Location = new System.Drawing.Point(81, 228);
+            this.bDarseDeBaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bDarseDeBaja.Name = "bDarseDeBaja";
-            this.bDarseDeBaja.Size = new System.Drawing.Size(200, 50);
+            this.bDarseDeBaja.Size = new System.Drawing.Size(267, 62);
             this.bDarseDeBaja.TabIndex = 1;
             this.bDarseDeBaja.TextColor = System.Drawing.Color.DodgerBlue;
             this.bDarseDeBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -87,9 +89,10 @@
             this.bInvitarAdminitrador.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bInvitarAdminitrador.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bInvitarAdminitrador.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bInvitarAdminitrador.Location = new System.Drawing.Point(294, 185);
+            this.bInvitarAdminitrador.Location = new System.Drawing.Point(392, 228);
+            this.bInvitarAdminitrador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bInvitarAdminitrador.Name = "bInvitarAdminitrador";
-            this.bInvitarAdminitrador.Size = new System.Drawing.Size(200, 50);
+            this.bInvitarAdminitrador.Size = new System.Drawing.Size(267, 62);
             this.bInvitarAdminitrador.TabIndex = 2;
             this.bInvitarAdminitrador.TextColor = System.Drawing.Color.DodgerBlue;
             this.bInvitarAdminitrador.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -108,9 +111,10 @@
             this.bBandejaEntrada.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bBandejaEntrada.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bBandejaEntrada.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBandejaEntrada.Location = new System.Drawing.Point(294, 36);
+            this.bBandejaEntrada.Location = new System.Drawing.Point(392, 44);
+            this.bBandejaEntrada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bBandejaEntrada.Name = "bBandejaEntrada";
-            this.bBandejaEntrada.Size = new System.Drawing.Size(200, 50);
+            this.bBandejaEntrada.Size = new System.Drawing.Size(267, 62);
             this.bBandejaEntrada.TabIndex = 3;
             this.bBandejaEntrada.TextColor = System.Drawing.Color.DodgerBlue;
             this.bBandejaEntrada.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -129,9 +133,10 @@
             this.bMisCursos.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bMisCursos.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bMisCursos.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bMisCursos.Location = new System.Drawing.Point(61, 106);
+            this.bMisCursos.Location = new System.Drawing.Point(81, 130);
+            this.bMisCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bMisCursos.Name = "bMisCursos";
-            this.bMisCursos.Size = new System.Drawing.Size(200, 50);
+            this.bMisCursos.Size = new System.Drawing.Size(267, 62);
             this.bMisCursos.TabIndex = 4;
             this.bMisCursos.TextColor = System.Drawing.Color.DodgerBlue;
             this.bMisCursos.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -150,9 +155,10 @@
             this.bMisAS.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bMisAS.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bMisAS.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bMisAS.Location = new System.Drawing.Point(294, 106);
+            this.bMisAS.Location = new System.Drawing.Point(392, 130);
+            this.bMisAS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bMisAS.Name = "bMisAS";
-            this.bMisAS.Size = new System.Drawing.Size(200, 50);
+            this.bMisAS.Size = new System.Drawing.Size(267, 62);
             this.bMisAS.TabIndex = 5;
             this.bMisAS.TextColor = System.Drawing.Color.DodgerBlue;
             this.bMisAS.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -160,26 +166,28 @@
             // 
             // Opciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 303);
+            this.ClientSize = new System.Drawing.Size(713, 373);
             this.Controls.Add(this.bMisAS);
             this.Controls.Add(this.bMisCursos);
             this.Controls.Add(this.bBandejaEntrada);
             this.Controls.Add(this.bInvitarAdminitrador);
             this.Controls.Add(this.bDarseDeBaja);
-            this.Controls.Add(this.bcarbiarNombre);
+            this.Controls.Add(this.bcambiarNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Opciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opciones";
+            this.Load += new System.EventHandler(this.Opciones_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private XanderUI.XUIButton bcarbiarNombre;
+        private XanderUI.XUIButton bcambiarNombre;
         private XanderUI.XUIButton bDarseDeBaja;
         private XanderUI.XUIButton bInvitarAdminitrador;
         private XanderUI.XUIButton bBandejaEntrada;

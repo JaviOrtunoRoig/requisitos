@@ -26,10 +26,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MisActividadesSociales));
             this.bOpciones = new XanderUI.XUIButton();
             this.carta = new XanderUI.XUICard();
-            this.bBaja = new XanderUI.XUIButton();
             this.bPapelera = new XanderUI.XUIButton();
             this.bEliminarAS = new XanderUI.XUIButton();
-            this.bAnadirAS = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.lMisAS = new System.Windows.Forms.ListBox();
@@ -53,12 +51,13 @@
             this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(129, 446);
+            this.bOpciones.Location = new System.Drawing.Point(25, 538);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(69, 62);
             this.bOpciones.TabIndex = 66;
             this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
             // carta
             // 
@@ -74,28 +73,6 @@
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
             this.carta.Text3 = "num expediente";
-            // 
-            // bBaja
-            // 
-            this.bBaja.BackgroundColor = System.Drawing.Color.White;
-            this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
-            this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.bBaja.ButtonText = "Darse de baja";
-            this.bBaja.ClickBackColor = System.Drawing.Color.Black;
-            this.bBaja.ClickTextColor = System.Drawing.Color.Black;
-            this.bBaja.CornerRadius = 5;
-            this.bBaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
-            this.bBaja.HoverTextColor = System.Drawing.Color.White;
-            this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(28, 587);
-            this.bBaja.Name = "bBaja";
-            this.bBaja.Size = new System.Drawing.Size(161, 22);
-            this.bBaja.TabIndex = 64;
-            this.bBaja.TextColor = System.Drawing.Color.Black;
-            this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // bPapelera
             // 
@@ -117,6 +94,7 @@
             this.bPapelera.TabIndex = 63;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bEliminarAS
             // 
@@ -132,33 +110,13 @@
             this.bEliminarAS.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarAS.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarAS.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarAS.Location = new System.Drawing.Point(933, 379);
+            this.bEliminarAS.Location = new System.Drawing.Point(933, 359);
             this.bEliminarAS.Name = "bEliminarAS";
             this.bEliminarAS.Size = new System.Drawing.Size(192, 23);
             this.bEliminarAS.TabIndex = 62;
             this.bEliminarAS.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarAS.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // bAnadirAS
-            // 
-            this.bAnadirAS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bAnadirAS.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirAS.ButtonImage")));
-            this.bAnadirAS.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.bAnadirAS.ButtonText = "Añadir una Actividad social";
-            this.bAnadirAS.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirAS.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirAS.CornerRadius = 5;
-            this.bAnadirAS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bAnadirAS.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bAnadirAS.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirAS.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bAnadirAS.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAnadirAS.Location = new System.Drawing.Point(933, 350);
-            this.bAnadirAS.Name = "bAnadirAS";
-            this.bAnadirAS.Size = new System.Drawing.Size(192, 23);
-            this.bAnadirAS.TabIndex = 61;
-            this.bAnadirAS.TextColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirAS.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarAS.Click += new System.EventHandler(this.bEliminarAS_Click);
             // 
             // label1
             // 
@@ -184,6 +142,7 @@
             this.lMisAS.Name = "lMisAS";
             this.lMisAS.Size = new System.Drawing.Size(479, 303);
             this.lMisAS.TabIndex = 58;
+            this.lMisAS.DoubleClick += new System.EventHandler(this.lMisAS_DoubleClick);
             // 
             // bActSociales
             // 
@@ -194,6 +153,7 @@
             this.bActSociales.TabIndex = 57;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -204,6 +164,7 @@
             this.bCursos.TabIndex = 56;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
+            this.bCursos.Click += new System.EventHandler(this.bCursos_Click);
             // 
             // bForos
             // 
@@ -214,6 +175,7 @@
             this.bForos.TabIndex = 55;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -224,6 +186,7 @@
             this.bNoticias.TabIndex = 54;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // MisActividadesSociales
             // 
@@ -233,10 +196,8 @@
             this.ClientSize = new System.Drawing.Size(1184, 700);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
-            this.Controls.Add(this.bBaja);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarAS);
-            this.Controls.Add(this.bAnadirAS);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.lMisAS);
@@ -248,6 +209,7 @@
             this.Name = "MisActividadesSociales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MisActividadesSociales";
+            this.Load += new System.EventHandler(this.MisActividadesSociales_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,10 +219,8 @@
 
         private XanderUI.XUIButton bOpciones;
         private XanderUI.XUICard carta;
-        private XanderUI.XUIButton bBaja;
         private XanderUI.XUIButton bPapelera;
         private XanderUI.XUIButton bEliminarAS;
-        private XanderUI.XUIButton bAnadirAS;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MonthCalendar calendario;
         private System.Windows.Forms.ListBox lMisAS;

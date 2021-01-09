@@ -26,10 +26,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MisCursos));
             this.bOpciones = new XanderUI.XUIButton();
             this.carta = new XanderUI.XUICard();
-            this.bBaja = new XanderUI.XUIButton();
             this.bPapelera = new XanderUI.XUIButton();
             this.bEliminarCurso = new XanderUI.XUIButton();
-            this.bAnadirCurso = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.lbMisCursos = new System.Windows.Forms.ListBox();
@@ -53,12 +51,13 @@
             this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(139, 446);
+            this.bOpciones.Location = new System.Drawing.Point(25, 538);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(69, 62);
             this.bOpciones.TabIndex = 66;
             this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
             // carta
             // 
@@ -74,28 +73,6 @@
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
             this.carta.Text3 = "num expediente";
-            // 
-            // bBaja
-            // 
-            this.bBaja.BackgroundColor = System.Drawing.Color.White;
-            this.bBaja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bBaja.ButtonImage")));
-            this.bBaja.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.bBaja.ButtonText = "Darse de baja";
-            this.bBaja.ClickBackColor = System.Drawing.Color.Black;
-            this.bBaja.ClickTextColor = System.Drawing.Color.Black;
-            this.bBaja.CornerRadius = 5;
-            this.bBaja.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.bBaja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bBaja.HoverBackgroundColor = System.Drawing.Color.Black;
-            this.bBaja.HoverTextColor = System.Drawing.Color.White;
-            this.bBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bBaja.Location = new System.Drawing.Point(38, 587);
-            this.bBaja.Name = "bBaja";
-            this.bBaja.Size = new System.Drawing.Size(161, 22);
-            this.bBaja.TabIndex = 64;
-            this.bBaja.TextColor = System.Drawing.Color.Black;
-            this.bBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // bPapelera
             // 
@@ -117,6 +94,7 @@
             this.bPapelera.TabIndex = 63;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bEliminarCurso
             // 
@@ -132,33 +110,13 @@
             this.bEliminarCurso.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarCurso.Location = new System.Drawing.Point(943, 379);
+            this.bEliminarCurso.Location = new System.Drawing.Point(943, 359);
             this.bEliminarCurso.Name = "bEliminarCurso";
             this.bEliminarCurso.Size = new System.Drawing.Size(192, 23);
             this.bEliminarCurso.TabIndex = 62;
             this.bEliminarCurso.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // bAnadirCurso
-            // 
-            this.bAnadirCurso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bAnadirCurso.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirCurso.ButtonImage")));
-            this.bAnadirCurso.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.bAnadirCurso.ButtonText = "Añadir un curso";
-            this.bAnadirCurso.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.CornerRadius = 5;
-            this.bAnadirCurso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bAnadirCurso.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bAnadirCurso.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bAnadirCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAnadirCurso.Location = new System.Drawing.Point(943, 350);
-            this.bAnadirCurso.Name = "bAnadirCurso";
-            this.bAnadirCurso.Size = new System.Drawing.Size(192, 23);
-            this.bAnadirCurso.TabIndex = 61;
-            this.bAnadirCurso.TextColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarCurso.Click += new System.EventHandler(this.bEliminarCurso_Click);
             // 
             // label1
             // 
@@ -184,6 +142,7 @@
             this.lbMisCursos.Name = "lbMisCursos";
             this.lbMisCursos.Size = new System.Drawing.Size(479, 303);
             this.lbMisCursos.TabIndex = 58;
+            this.lbMisCursos.DoubleClick += new System.EventHandler(this.lbMisCursos_DoubleClick);
             // 
             // bActSociales
             // 
@@ -194,6 +153,7 @@
             this.bActSociales.TabIndex = 57;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
+            this.bActSociales.Click += new System.EventHandler(this.bActSociales_Click);
             // 
             // bCursos
             // 
@@ -204,6 +164,7 @@
             this.bCursos.TabIndex = 56;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
+            this.bCursos.Click += new System.EventHandler(this.bCursos_Click);
             // 
             // bForos
             // 
@@ -214,6 +175,7 @@
             this.bForos.TabIndex = 55;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
+            this.bForos.Click += new System.EventHandler(this.bForos_Click);
             // 
             // bNoticias
             // 
@@ -224,6 +186,7 @@
             this.bNoticias.TabIndex = 54;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
+            this.bNoticias.Click += new System.EventHandler(this.bNoticias_Click);
             // 
             // MisCursos
             // 
@@ -233,10 +196,8 @@
             this.ClientSize = new System.Drawing.Size(1184, 700);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
-            this.Controls.Add(this.bBaja);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarCurso);
-            this.Controls.Add(this.bAnadirCurso);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.lbMisCursos);
@@ -257,10 +218,8 @@
 
         private XanderUI.XUIButton bOpciones;
         private XanderUI.XUICard carta;
-        private XanderUI.XUIButton bBaja;
         private XanderUI.XUIButton bPapelera;
         private XanderUI.XUIButton bEliminarCurso;
-        private XanderUI.XUIButton bAnadirCurso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MonthCalendar calendario;
         private System.Windows.Forms.ListBox lbMisCursos;
