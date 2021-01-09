@@ -73,6 +73,16 @@ namespace CampusApS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo {
+            get {
+                object obj = ResourceManager.GetObject("Fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IconoAdmin {
             get {
                 object obj = ResourceManager.GetObject("IconoAdmin", resourceCulture);
@@ -133,6 +143,16 @@ namespace CampusApS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap opciones {
+            get {
+                object obj = ResourceManager.GetObject("opciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Papelera {
             get {
                 object obj = ResourceManager.GetObject("Papelera", resourceCulture);
@@ -146,6 +166,16 @@ namespace CampusApS.Properties {
         internal static System.Drawing.Bitmap Registro {
             get {
                 object obj = ResourceManager.GetObject("Registro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Registro1 {
+            get {
+                object obj = ResourceManager.GetObject("Registro1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

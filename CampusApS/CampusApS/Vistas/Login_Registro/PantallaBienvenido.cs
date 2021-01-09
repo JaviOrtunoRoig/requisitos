@@ -36,7 +36,7 @@ namespace CampusApS
 
         private void bLogin_Click(object sender, EventArgs e) {
             PantallaLogin ventana = new PantallaLogin();
-            this.Visible = false;
+            //this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
         }
@@ -44,6 +44,11 @@ namespace CampusApS
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void PantallaBienvenido_Load(object sender, EventArgs e) {
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
         }
     }
 }

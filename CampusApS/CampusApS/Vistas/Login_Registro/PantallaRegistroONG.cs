@@ -22,7 +22,6 @@ namespace CampusApS
 
         private void bConfirmar_Click(object sender, EventArgs e)
         {
-            //TODO: comprobar cuando este la base de datos actualizada con num registro
             string correo = tCorreo.Text;
             string nombre = tNombre.Text;
             string password = tPassword.Text;
