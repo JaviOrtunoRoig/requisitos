@@ -196,6 +196,30 @@
     <Compile Include="Vistas\Apartados\PantallaForos.Designer.cs">
       <DependentUpon>PantallaForos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Opciones\CambiarNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\CambiarNombre.Designer.cs">
+      <DependentUpon>CambiarNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisActividadesSociales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisActividadesSociales.Designer.cs">
+      <DependentUpon>MisActividadesSociales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisCursos.Designer.cs">
+      <DependentUpon>MisCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Opciones.Designer.cs">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +285,18 @@
     <EmbeddedResource Include="Vistas\Apartados\PantallaForos.resx">
       <DependentUpon>PantallaForos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\CambiarNombre.resx">
+      <DependentUpon>CambiarNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\MisActividadesSociales.resx">
+      <DependentUpon>MisActividadesSociales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\MisCursos.resx">
+      <DependentUpon>MisCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\Opciones.resx">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -286,6 +322,8 @@
     <Content Include="Resources\Images\Invitado.png" />
     <Content Include="Resources\Images\Login.png" />
     <None Include="Resources\Images\Papelera.png" />
+    <None Include="Resources\Images\opciones.jpg" />
+    <None Include="Resources\Images\opciones.png" />
     <Content Include="Resources\Images\Registro.jpg" />
     <Content Include="Resources\Images\Registro.png" />
   </ItemGroup>

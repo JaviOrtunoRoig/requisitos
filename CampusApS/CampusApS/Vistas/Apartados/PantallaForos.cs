@@ -77,7 +77,16 @@ namespace CampusApS.Vistas
             this.bEliminarForo.TextColor = Color.White;
 
             ForosQuery BD = new ForosQuery();
-            lbForos.DataSource = BD.getCreadorForoGeneral(usuario.getNombre());
+
+            if(usuario.getRol().Equals("administrador"))
+            {
+                lbForos.DataSource = BD.getAllForoGeneral();
+            }
+            else
+            {
+                lbForos.DataSource = BD.getCreadorForoGeneral(usuario.getNombre());
+            }
+            
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {

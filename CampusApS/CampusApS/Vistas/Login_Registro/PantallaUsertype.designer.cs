@@ -64,7 +64,7 @@
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton1.Location = new System.Drawing.Point(475, 138);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(221, 80);
+            this.xuiButton1.Size = new System.Drawing.Size(280, 80);
             this.xuiButton1.TabIndex = 5;
             this.xuiButton1.TextColor = System.Drawing.Color.Black;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -85,9 +85,9 @@
             this.bProfesor.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bProfesor.HoverTextColor = System.Drawing.Color.White;
             this.bProfesor.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.bProfesor.Location = new System.Drawing.Point(148, 282);
+            this.bProfesor.Location = new System.Drawing.Point(123, 282);
             this.bProfesor.Name = "bProfesor";
-            this.bProfesor.Size = new System.Drawing.Size(219, 80);
+            this.bProfesor.Size = new System.Drawing.Size(280, 80);
             this.bProfesor.TabIndex = 3;
             this.bProfesor.TextColor = System.Drawing.Color.Black;
             this.bProfesor.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -131,9 +131,9 @@
             this.bAdmin.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bAdmin.HoverTextColor = System.Drawing.Color.White;
             this.bAdmin.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.bAdmin.Location = new System.Drawing.Point(119, 127);
+            this.bAdmin.Location = new System.Drawing.Point(123, 138);
             this.bAdmin.Name = "bAdmin";
-            this.bAdmin.Size = new System.Drawing.Size(266, 100);
+            this.bAdmin.Size = new System.Drawing.Size(280, 80);
             this.bAdmin.TabIndex = 0;
             this.bAdmin.TextColor = System.Drawing.Color.Black;
             this.bAdmin.Vertical_Alignment = System.Drawing.StringAlignment.Center;

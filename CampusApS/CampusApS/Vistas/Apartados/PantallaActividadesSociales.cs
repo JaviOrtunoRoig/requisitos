@@ -73,7 +73,15 @@ namespace CampusApS.Vistas
             this.bEliminarAct.TextColor = Color.White;
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
-            lbActSociales.DataSource = BD.getASCreador(usuario.getNombre());
+
+            if(usuario.getRol().Equals("administrador"))
+            {
+                lbActSociales.DataSource = BD.getAllAS();
+            }
+            else
+            {
+                lbActSociales.DataSource = BD.getASCreador(usuario.getNombre());
+            }
         }
 
         private void bPapelera_Click(object sender, EventArgs e)
