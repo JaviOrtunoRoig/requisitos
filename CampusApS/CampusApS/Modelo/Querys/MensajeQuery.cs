@@ -8,12 +8,12 @@ using MySql.Data.MySqlClient;
 
 namespace CampusApS.Modelo.Querys
 {
-    class MensajesQuerys
+    class MensajeQuery
     {
         private static string BD_SERVER = "ingreq2021-mysql.cobadwnzalab.eu-central-1.rds.amazonaws.com";
         private static string BD_NAME = "apsgrupo06";
 
-        public MensajesQuerys()
+        public MensajeQuery()
         {
 
         }
