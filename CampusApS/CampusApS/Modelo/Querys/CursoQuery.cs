@@ -199,7 +199,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombreCurso FROM usuario_curso WHERE nombreUsuario = '" + nomUs + "';");
+            object[] tupla = miBD.Select("SELECT * FROM `apsgrupo06`.`usuario_curso` WHERE nombreUsuario = '" + nomUs + "';");
 
             List<String> list = new List<String>();
 

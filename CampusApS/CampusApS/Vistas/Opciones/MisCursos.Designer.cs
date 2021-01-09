@@ -209,6 +209,7 @@
             this.Name = "MisCursos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MisCursos";
+            this.Load += new System.EventHandler(this.MisCursos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
