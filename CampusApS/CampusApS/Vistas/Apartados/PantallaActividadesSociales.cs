@@ -12,9 +12,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusApS.Vistas.Opciones;
 
 
-namespace CampusApS.Vistas
+namespace CampusApS
 {
     public partial class PantallaActividadesSociales : Form
     {
@@ -129,5 +130,13 @@ namespace CampusApS.Vistas
             ventana.ShowDialog();
             this.Close();
         }
+
+        private void bOpciones_Click(object sender, EventArgs e)
+        {
+            Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
+        }
+
+      
     }
 }

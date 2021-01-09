@@ -120,7 +120,6 @@ E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Deb
 E:\UMA\3º Año\Ingeniería de Requisitos\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroEstudiante.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaActividadesSociales.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaCursos.resources
-C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaActividadesSociales.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaCursos.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CrearCurso.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CrearCurso.resources
@@ -167,4 +166,9 @@ C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\Campu
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearNoticia.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Curso.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Foro.resources
-C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaForos.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.CambiarNombre.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisActividadesSociales.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisCursos.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Opciones.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaForos.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaActividadesSociales.resources
