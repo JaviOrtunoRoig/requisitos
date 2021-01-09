@@ -109,5 +109,10 @@ namespace CampusApS.Vistas {
             ventana.ShowDialog();
             this.Close();
         }
+
+        private void bOpciones_Click(object sender, EventArgs e) {
+            //TODO: Implementar
+
+        }
     }
 }

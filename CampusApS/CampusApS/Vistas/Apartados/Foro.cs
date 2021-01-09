@@ -68,5 +68,9 @@ namespace CampusApS.Vistas
             PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuario);
             ventana.ShowDialog();
         }
+
+        private void bOpciones_Click(object sender, EventArgs e) {
+            //TODO: Implementar
+        }
     }
 }
