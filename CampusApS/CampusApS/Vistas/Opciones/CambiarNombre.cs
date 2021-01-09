@@ -1,4 +1,5 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,9 @@ namespace CampusApS.Vistas.Opciones {
 
         private void bAceptar_Click(object sender, EventArgs e)
         {
-            // TODO : Update Método cambiar nombre
+            UsuarioQuery BD = new UsuarioQuery();
+            BD.updateNombreUsuario(usuario.getNombre(), tNuevoNombre.Text);
+
         }
     }
 }

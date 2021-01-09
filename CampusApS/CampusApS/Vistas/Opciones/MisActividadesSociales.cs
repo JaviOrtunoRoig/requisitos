@@ -34,10 +34,9 @@ namespace CampusApS.Vistas.Opciones {
 
             this.bEliminarAS.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
-            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja();
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
-            // TODO : lMisAS.DataSource = BD.getAllAS();     ACTIVIDADES SOCIALES DE LAS QUE UN USUARIO ESTÁ INSCRITO
+            lMisAS.DataSource = BD.misAS(usuario.getNombre());
         }
 
         private void bNoticias_Click(object sender, EventArgs e)

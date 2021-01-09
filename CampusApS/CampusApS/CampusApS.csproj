@@ -221,17 +221,23 @@
     <Compile Include="Vistas\Opciones\MisCursos.Designer.cs">
       <DependentUpon>MisCursos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Opciones\NuevoMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\NuevoMensaje.Designer.cs">
+      <DependentUpon>NuevoMensaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Opciones\Opciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Opciones\Opciones.Designer.cs">
       <DependentUpon>Opciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Opciones\UsuariosConMensajes.cs">
+    <Compile Include="Vistas\Opciones\Chat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Opciones\UsuariosConMensajes.Designer.cs">
-      <DependentUpon>UsuariosConMensajes.cs</DependentUpon>
+    <Compile Include="Vistas\Opciones\Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
@@ -310,11 +316,14 @@
     <EmbeddedResource Include="Vistas\Opciones\MisCursos.resx">
       <DependentUpon>MisCursos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\NuevoMensaje.resx">
+      <DependentUpon>NuevoMensaje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Opciones\Opciones.resx">
       <DependentUpon>Opciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Opciones\UsuariosConMensajes.resx">
-      <DependentUpon>UsuariosConMensajes.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Opciones\Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
