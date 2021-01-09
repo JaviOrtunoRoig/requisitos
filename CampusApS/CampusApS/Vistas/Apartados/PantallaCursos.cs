@@ -39,7 +39,6 @@ namespace CampusApS
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
-            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja(); ;
             CursoQuery BD = new CursoQuery();
             lbCursos.DataSource = BD.getAllCursos();
         }
