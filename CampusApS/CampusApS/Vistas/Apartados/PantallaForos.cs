@@ -1,6 +1,8 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
+using CampusApS.Vistas;
+using CampusApS.Vistas.Opciones;
 using CampusApS.Vistas.CreacionRecursos;
 using System;
 using System.Collections.Generic;
@@ -12,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS.Vistas
+namespace CampusApS
 {
     public partial class PantallaForos : Form
     {
@@ -111,6 +113,14 @@ namespace CampusApS.Vistas
                 this.Close();
             }
         }
+
+        private void bOpciones_Click(object sender, EventArgs e)
+        {
+            Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
+        }
+
+  
 
     }
 }

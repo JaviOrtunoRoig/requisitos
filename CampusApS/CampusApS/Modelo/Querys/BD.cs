@@ -114,8 +114,29 @@ namespace CampusApS.Modelo.Querys
             }
 
         }
- 
 
+        public void Update(string consulta)
+        {
+
+            try
+            {
+
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+
+                conexionBD.Open();
+
+                comando.ExecuteReader();
+
+                conexionBD.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
 
 
 
