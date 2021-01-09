@@ -68,6 +68,7 @@
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\ForosQuery.cs" />
+    <Compile Include="Modelo\Querys\MensajesQuerys.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
