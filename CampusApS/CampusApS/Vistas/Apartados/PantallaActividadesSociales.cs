@@ -114,7 +114,7 @@ namespace CampusApS
             this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarAct.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
-            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja();
+
             this.bParticiparAct.Visible = false;
 
             ActividadSocialQuery BD = new ActividadSocialQuery();

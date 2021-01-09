@@ -34,9 +34,8 @@ namespace CampusApS.Vistas.Opciones {
 
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
-            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja(); ;
             CursoQuery BD = new CursoQuery();
-            //TODO : lbMisCursos.DataSource = BD.getAllCursos();   MÉTODO MIS CURSOS
+            lbMisCursos.DataSource = BD.misCursos(usuario.getNombre());
         }
 
         private void bAnadirCurso_Click(object sender, EventArgs e)

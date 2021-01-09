@@ -44,7 +44,10 @@ namespace CampusApS.Vistas.Opciones {
         }
 
         private void bBandejaEntrada_Click(object sender, EventArgs e) {
-
+            this.Visible = false;
+            this.Close();
+            Chat ventana = new Chat(usuario);
+            ventana.ShowDialog();
         }
 
         private void bMisCursos_Click(object sender, EventArgs e) {

@@ -34,7 +34,6 @@ namespace CampusApS
             this.bAnadirForo.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarForo.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
-            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja();
             ForosQuery BD = new ForosQuery();
             lbForos.DataSource = BD.getAllForoGeneral();
         }
