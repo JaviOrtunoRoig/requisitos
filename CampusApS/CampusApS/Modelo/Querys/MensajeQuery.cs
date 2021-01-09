@@ -18,6 +18,49 @@ namespace CampusApS.Modelo.Querys
 
         }
 
+        public List<String> getUsuariosEmisores(string nomRe)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT usuarioEmisor FROM mensajes WHERE usuarioReceptor = '" + nomRe + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null && !list.Contains(nombre))
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
         public void setMensaje(string nombreEm, string nombreRe, string men)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
