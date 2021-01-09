@@ -34,7 +34,6 @@ namespace CampusApS.Vistas.Opciones {
 
             this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
-            this.bBaja.Visible = usuario.getPermisos().getPuedeDarseDeBaja(); ;
             CursoQuery BD = new CursoQuery();
             lbMisCursos.DataSource = BD.misCursos(usuario.getNombre());
         }
