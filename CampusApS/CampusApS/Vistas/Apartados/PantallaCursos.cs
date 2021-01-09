@@ -18,7 +18,7 @@ namespace CampusApS
     public partial class PantallaCursos : Form
     {
 
-        private Usuario usuario;
+         private Usuario usuario;
 
 
         public PantallaCursos(Usuario usuario)
