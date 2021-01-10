@@ -108,6 +108,12 @@
     <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
       <DependentUpon>Hilo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.Designer.cs">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Apartados\RealizarTestConocimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
       <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\Noticia.resx">
+      <DependentUpon>Noticia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
       <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
