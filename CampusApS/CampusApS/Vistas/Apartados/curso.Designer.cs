@@ -39,6 +39,8 @@
             this.lDescripcion = new System.Windows.Forms.Label();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
+            this.bTestConocimiento = new XanderUI.XUIButton();
+            this.beliminarUsuario = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // label1
@@ -147,8 +149,7 @@
             this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bPapelera.Location = new System.Drawing.Point(1419, 501);
-            this.bPapelera.Margin = new System.Windows.Forms.Padding(4);
+            this.bPapelera.Location = new System.Drawing.Point(1064, 437);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(59, 52);
             this.bPapelera.TabIndex = 31;
@@ -170,8 +171,7 @@
             this.bEliminarForo.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarForo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarForo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarForo.Location = new System.Drawing.Point(1221, 465);
-            this.bEliminarForo.Margin = new System.Windows.Forms.Padding(4);
+            this.bEliminarForo.Location = new System.Drawing.Point(916, 408);
             this.bEliminarForo.Name = "bEliminarForo";
             this.bEliminarForo.Size = new System.Drawing.Size(256, 28);
             this.bEliminarForo.TabIndex = 30;
@@ -252,12 +252,56 @@
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
+            // bTestConocimiento
+            // 
+            this.bTestConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestConocimiento.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bTestConocimiento.ButtonImage")));
+            this.bTestConocimiento.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bTestConocimiento.ButtonText = "Test de conocimiento";
+            this.bTestConocimiento.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestConocimiento.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestConocimiento.CornerRadius = 5;
+            this.bTestConocimiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bTestConocimiento.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bTestConocimiento.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestConocimiento.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestConocimiento.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bTestConocimiento.Location = new System.Drawing.Point(916, 378);
+            this.bTestConocimiento.Name = "bTestConocimiento";
+            this.bTestConocimiento.Size = new System.Drawing.Size(192, 23);
+            this.bTestConocimiento.TabIndex = 35;
+            this.bTestConocimiento.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestConocimiento.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // beliminarUsuario
+            // 
+            this.beliminarUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.beliminarUsuario.ButtonImage = global::CampusApS.Properties.Resources.x;
+            this.beliminarUsuario.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.beliminarUsuario.ButtonText = "";
+            this.beliminarUsuario.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.beliminarUsuario.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.beliminarUsuario.CornerRadius = 5;
+            this.beliminarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.beliminarUsuario.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.beliminarUsuario.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.beliminarUsuario.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.beliminarUsuario.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.beliminarUsuario.Location = new System.Drawing.Point(995, 437);
+            this.beliminarUsuario.Name = "beliminarUsuario";
+            this.beliminarUsuario.Size = new System.Drawing.Size(44, 42);
+            this.beliminarUsuario.TabIndex = 36;
+            this.beliminarUsuario.TextColor = System.Drawing.Color.DodgerBlue;
+            this.beliminarUsuario.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // Curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1579, 862);
+            this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.Controls.Add(this.beliminarUsuario);
+            this.Controls.Add(this.bTestConocimiento);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.lDescripcion);
@@ -300,5 +344,7 @@
         private System.Windows.Forms.Label lDescripcion;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
+        private XanderUI.XUIButton bTestConocimiento;
+        private XanderUI.XUIButton beliminarUsuario;
     }
 }
