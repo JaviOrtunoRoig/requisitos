@@ -51,9 +51,10 @@
             this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(25, 538);
+            this.bOpciones.Location = new System.Drawing.Point(33, 662);
+            this.bOpciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bOpciones.Name = "bOpciones";
-            this.bOpciones.Size = new System.Drawing.Size(69, 62);
+            this.bOpciones.Size = new System.Drawing.Size(92, 76);
             this.bOpciones.TabIndex = 66;
             this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -65,14 +66,15 @@
             this.carta.Color1 = System.Drawing.Color.Gray;
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
-            this.carta.Location = new System.Drawing.Point(21, 53);
+            this.carta.Location = new System.Drawing.Point(28, 65);
+            this.carta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.carta.Name = "carta";
-            this.carta.Size = new System.Drawing.Size(294, 163);
+            this.carta.Size = new System.Drawing.Size(392, 201);
             this.carta.TabIndex = 65;
             this.carta.Text = "xuiCard1";
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
-            this.carta.Text3 = "num expediente";
+            this.carta.Text3 = "";
             // 
             // bPapelera
             // 
@@ -88,9 +90,10 @@
             this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bPapelera.Location = new System.Drawing.Point(1091, 408);
+            this.bPapelera.Location = new System.Drawing.Point(1455, 502);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bPapelera.Name = "bPapelera";
-            this.bPapelera.Size = new System.Drawing.Size(44, 42);
+            this.bPapelera.Size = new System.Drawing.Size(59, 52);
             this.bPapelera.TabIndex = 63;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -110,9 +113,10 @@
             this.bEliminarCurso.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarCurso.Location = new System.Drawing.Point(943, 359);
+            this.bEliminarCurso.Location = new System.Drawing.Point(1257, 442);
+            this.bEliminarCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bEliminarCurso.Name = "bEliminarCurso";
-            this.bEliminarCurso.Size = new System.Drawing.Size(192, 23);
+            this.bEliminarCurso.Size = new System.Drawing.Size(256, 28);
             this.bEliminarCurso.TabIndex = 62;
             this.bEliminarCurso.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -123,33 +127,38 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(384, 82);
+            this.label1.Location = new System.Drawing.Point(512, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 48);
+            this.label1.Size = new System.Drawing.Size(273, 63);
             this.label1.TabIndex = 60;
             this.label1.Text = "MIS CURSOS";
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(943, 179);
+            this.calendario.Location = new System.Drawing.Point(1257, 220);
+            this.calendario.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 59;
             // 
             // lbMisCursos
             // 
             this.lbMisCursos.FormattingEnabled = true;
-            this.lbMisCursos.Location = new System.Drawing.Point(392, 179);
+            this.lbMisCursos.ItemHeight = 16;
+            this.lbMisCursos.Location = new System.Drawing.Point(523, 220);
+            this.lbMisCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbMisCursos.Name = "lbMisCursos";
-            this.lbMisCursos.Size = new System.Drawing.Size(479, 303);
+            this.lbMisCursos.Size = new System.Drawing.Size(637, 372);
             this.lbMisCursos.TabIndex = 58;
             this.lbMisCursos.DoubleClick += new System.EventHandler(this.lbMisCursos_DoubleClick);
             // 
             // bActSociales
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bActSociales.Location = new System.Drawing.Point(1037, 11);
+            this.bActSociales.Location = new System.Drawing.Point(1383, 14);
+            this.bActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bActSociales.Name = "bActSociales";
-            this.bActSociales.Size = new System.Drawing.Size(138, 23);
+            this.bActSociales.Size = new System.Drawing.Size(184, 28);
             this.bActSociales.TabIndex = 57;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
@@ -158,9 +167,10 @@
             // bCursos
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bCursos.Location = new System.Drawing.Point(915, 11);
+            this.bCursos.Location = new System.Drawing.Point(1220, 14);
+            this.bCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bCursos.Name = "bCursos";
-            this.bCursos.Size = new System.Drawing.Size(126, 23);
+            this.bCursos.Size = new System.Drawing.Size(168, 28);
             this.bCursos.TabIndex = 56;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
@@ -169,9 +179,10 @@
             // bForos
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bForos.Location = new System.Drawing.Point(792, 11);
+            this.bForos.Location = new System.Drawing.Point(1056, 14);
+            this.bForos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bForos.Name = "bForos";
-            this.bForos.Size = new System.Drawing.Size(127, 23);
+            this.bForos.Size = new System.Drawing.Size(169, 28);
             this.bForos.TabIndex = 55;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
@@ -180,9 +191,10 @@
             // bNoticias
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bNoticias.Location = new System.Drawing.Point(671, 11);
+            this.bNoticias.Location = new System.Drawing.Point(895, 14);
+            this.bNoticias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bNoticias.Name = "bNoticias";
-            this.bNoticias.Size = new System.Drawing.Size(127, 23);
+            this.bNoticias.Size = new System.Drawing.Size(169, 28);
             this.bNoticias.TabIndex = 54;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
@@ -190,10 +202,10 @@
             // 
             // MisCursos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.ClientSize = new System.Drawing.Size(1579, 862);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.bPapelera);
@@ -206,6 +218,7 @@
             this.Controls.Add(this.bForos);
             this.Controls.Add(this.bNoticias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MisCursos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MisCursos";

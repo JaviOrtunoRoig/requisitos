@@ -55,6 +55,8 @@
     <Compile Include="Modelo\Logica\Recursos\ActividadSocialRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\CursoRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\ForoRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\Pregunta.cs" />
+    <Compile Include="Modelo\Logica\Recursos\Test.cs" />
     <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Administrador.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Alumno.cs" />
@@ -105,12 +107,6 @@
     </Compile>
     <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
       <DependentUpon>Hilo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Apartados\Noticia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Apartados\Noticia.Designer.cs">
-      <DependentUpon>Noticia.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Apartados\RealizarTestConocimiento.cs">
       <SubType>Form</SubType>
@@ -293,12 +289,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
       <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Apartados\Hilo.resx">
-      <DependentUpon>Hilo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Apartados\Noticia.resx">
-      <DependentUpon>Noticia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
       <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>

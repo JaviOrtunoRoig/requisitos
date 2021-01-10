@@ -1,7 +1,9 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
+using CampusApS.Vistas;
 using CampusApS.Vistas.CreacionRecursos;
+using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS.Vistas {
+namespace CampusApS {
     public partial class Curso : Form {
 
         Usuario usuario;
@@ -57,9 +59,15 @@ namespace CampusApS.Vistas {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+            
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
+
+            if (usuario.getRol().Equals("profesor") || usuario.getRol().Equals("ong"))
+            {
+                UsuarioQuery BDUsuario = new UsuarioQuery();
+                this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
+            }
 
             this.label1.Text = this.cursoRecurso.getNombre();
             this.lDescripcion.Text = this.cursoRecurso.getdescripcion();
@@ -68,7 +76,9 @@ namespace CampusApS.Vistas {
             this.bEliminarForo.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
             ForosQuery BD = new ForosQuery();
-            lbForos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
+            lbCursos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void bAnadirForo_Click(object sender, EventArgs e) {
@@ -110,9 +120,11 @@ namespace CampusApS.Vistas {
             this.Close();
         }
 
-        private void bOpciones_Click(object sender, EventArgs e) {
-            //TODO: Implementar
-
+        private void bOpciones_Click(object sender, EventArgs e)
+        {
+            Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
         }
+
     }
 }

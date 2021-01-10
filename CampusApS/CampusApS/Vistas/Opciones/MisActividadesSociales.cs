@@ -28,15 +28,23 @@ namespace CampusApS.Vistas.Opciones {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+            
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
+
+            if (usuario.getRol().Equals("profesor") || usuario.getRol().Equals("ong"))
+            {
+                UsuarioQuery BDUsuario = new UsuarioQuery();
+                this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
+            }
 
             this.bEliminarAS.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
             lMisAS.DataSource = BD.misAS(usuario.getNombre());
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void bNoticias_Click(object sender, EventArgs e)

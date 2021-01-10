@@ -20,6 +20,8 @@ namespace CampusApS.Vistas.Opciones {
             InitializeComponent();
             this.usuarioReceptor = usuarioReceptor;
             this.usuarioEmisor = usuarioEmisor;
+
+            lTitulo.Text = usuarioEmisor;
         }
 
         private void Mensajes_Load(object sender, EventArgs e)

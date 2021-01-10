@@ -46,6 +46,8 @@ namespace CampusApS.Vistas.Opciones {
         {
             MensajeQuery BD = new MensajeQuery();
             BD.setMensaje(usuarioEmisor.getNombre(), (string)cUsuarios.SelectedItem, tMensaje.Text);
+
+            this.Close();
         }
 
         
