@@ -31,10 +31,9 @@
             // bAceptar
             // 
             this.bAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bAceptar.Location = new System.Drawing.Point(127, 114);
-            this.bAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.bAceptar.Location = new System.Drawing.Point(98, 93);
             this.bAceptar.Name = "bAceptar";
-            this.bAceptar.Size = new System.Drawing.Size(100, 28);
+            this.bAceptar.Size = new System.Drawing.Size(75, 23);
             this.bAceptar.TabIndex = 0;
             this.bAceptar.Text = "Aceptar";
             this.bAceptar.UseVisualStyleBackColor = true;
@@ -43,32 +42,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(64, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 17);
+            this.label1.Size = new System.Drawing.Size(140, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Introduzca tu nuevo nombre";
             // 
             // tNuevoNombre
             // 
             this.tNuevoNombre.BackColor = System.Drawing.SystemColors.Window;
-            this.tNuevoNombre.Location = new System.Drawing.Point(113, 62);
-            this.tNuevoNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.tNuevoNombre.Location = new System.Drawing.Point(85, 50);
             this.tNuevoNombre.Name = "tNuevoNombre";
-            this.tNuevoNombre.Size = new System.Drawing.Size(132, 22);
+            this.tNuevoNombre.Size = new System.Drawing.Size(100, 20);
             this.tNuevoNombre.TabIndex = 2;
             // 
             // CambiarNombre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 158);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
+            this.ClientSize = new System.Drawing.Size(265, 128);
             this.Controls.Add(this.tNuevoNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CambiarNombre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CambiarNombre";
