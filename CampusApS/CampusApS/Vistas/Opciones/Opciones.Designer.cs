@@ -29,6 +29,7 @@
             this.bBandejaEntrada = new XanderUI.XUIButton();
             this.bMisCursos = new XanderUI.XUIButton();
             this.bMisAS = new XanderUI.XUIButton();
+            this.xuiButton1 = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // bcambiarNombre
@@ -157,12 +158,33 @@
             this.bMisAS.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bMisAS.Click += new System.EventHandler(this.bMisAS_Click);
             // 
+            // xuiButton1
+            // 
+            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton1.ButtonImage = global::CampusApS.Properties.Resources.salir;
+            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton1.ButtonText = "Eliminar usuario";
+            this.xuiButton1.ClickBackColor = System.Drawing.Color.Black;
+            this.xuiButton1.ClickTextColor = System.Drawing.Color.Black;
+            this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.Black;
+            this.xuiButton1.HoverTextColor = System.Drawing.Color.White;
+            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton1.Location = new System.Drawing.Point(61, 256);
+            this.xuiButton1.Name = "xuiButton1";
+            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
+            this.xuiButton1.TabIndex = 6;
+            this.xuiButton1.TextColor = System.Drawing.Color.Black;
+            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // Opciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(535, 287);
+            this.ClientSize = new System.Drawing.Size(535, 318);
+            this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.bMisAS);
             this.Controls.Add(this.bMisCursos);
             this.Controls.Add(this.bBandejaEntrada);
@@ -186,6 +208,7 @@
         private XanderUI.XUIButton bBandejaEntrada;
         private XanderUI.XUIButton bMisCursos;
         private XanderUI.XUIButton bMisAS;
+        private XanderUI.XUIButton xuiButton1;
 
     }
 }

@@ -21,6 +21,7 @@ namespace CampusApS.Vistas {
         }
 
         private void bAceptar_Click(object sender, EventArgs e) {
+            //TODO: David leeeme que te intereso :3
             var result = MessageBox.Show("¿Estas seguro?", "Aviso", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes) {
                 UsuarioQuery bd = new UsuarioQuery();
