@@ -141,8 +141,8 @@
             this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bPapelera.Location = new System.Drawing.Point(1064, 461);
-            this.bPapelera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bPapelera.Location = new System.Drawing.Point(1064, 466);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(2);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(44, 42);
             this.bPapelera.TabIndex = 31;
@@ -164,8 +164,8 @@
             this.bEliminarForo.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarForo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarForo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarForo.Location = new System.Drawing.Point(916, 434);
-            this.bEliminarForo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEliminarForo.Location = new System.Drawing.Point(916, 439);
+            this.bEliminarForo.Margin = new System.Windows.Forms.Padding(2);
             this.bEliminarForo.Name = "bEliminarForo";
             this.bEliminarForo.Size = new System.Drawing.Size(192, 23);
             this.bEliminarForo.TabIndex = 30;
@@ -257,7 +257,7 @@
             this.bTestConocimiento.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bTestConocimiento.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bTestConocimiento.Location = new System.Drawing.Point(916, 378);
-            this.bTestConocimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bTestConocimiento.Margin = new System.Windows.Forms.Padding(2);
             this.bTestConocimiento.Name = "bTestConocimiento";
             this.bTestConocimiento.Size = new System.Drawing.Size(192, 23);
             this.bTestConocimiento.TabIndex = 35;
@@ -278,8 +278,8 @@
             this.bEliminarUsuario.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bEliminarUsuario.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bEliminarUsuario.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarUsuario.Location = new System.Drawing.Point(916, 461);
-            this.bEliminarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEliminarUsuario.Location = new System.Drawing.Point(916, 466);
+            this.bEliminarUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.bEliminarUsuario.Name = "bEliminarUsuario";
             this.bEliminarUsuario.Size = new System.Drawing.Size(33, 34);
             this.bEliminarUsuario.TabIndex = 36;
@@ -300,8 +300,8 @@
             this.bTestSatisfaccion.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.bTestSatisfaccion.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bTestSatisfaccion.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bTestSatisfaccion.Location = new System.Drawing.Point(916, 405);
-            this.bTestSatisfaccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bTestSatisfaccion.Location = new System.Drawing.Point(916, 408);
+            this.bTestSatisfaccion.Margin = new System.Windows.Forms.Padding(2);
             this.bTestSatisfaccion.Name = "bTestSatisfaccion";
             this.bTestSatisfaccion.Size = new System.Drawing.Size(192, 25);
             this.bTestSatisfaccion.TabIndex = 37;

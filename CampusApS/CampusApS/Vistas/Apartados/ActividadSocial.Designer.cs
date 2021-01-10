@@ -38,33 +38,31 @@
             this.label1 = new System.Windows.Forms.Label();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
+            this.bTestSatisfaccion = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // lDescripción
             // 
             this.lDescripción.AutoSize = true;
             this.lDescripción.BackColor = System.Drawing.Color.Transparent;
-            this.lDescripción.Location = new System.Drawing.Point(491, 238);
-            this.lDescripción.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lDescripción.Location = new System.Drawing.Point(368, 193);
             this.lDescripción.Name = "lDescripción";
-            this.lDescripción.Size = new System.Drawing.Size(217, 17);
+            this.lDescripción.Size = new System.Drawing.Size(165, 13);
             this.lDescripción.TabIndex = 50;
             this.lDescripción.Text = "Descripción de la actividad social";
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(1225, 222);
-            this.calendario.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
+            this.calendario.Location = new System.Drawing.Point(919, 180);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 47;
             // 
             // bActSociales
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bActSociales.Location = new System.Drawing.Point(1357, 15);
-            this.bActSociales.Margin = new System.Windows.Forms.Padding(4);
+            this.bActSociales.Location = new System.Drawing.Point(1018, 12);
             this.bActSociales.Name = "bActSociales";
-            this.bActSociales.Size = new System.Drawing.Size(184, 28);
+            this.bActSociales.Size = new System.Drawing.Size(138, 23);
             this.bActSociales.TabIndex = 46;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
@@ -73,10 +71,9 @@
             // bCursos
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bCursos.Location = new System.Drawing.Point(1195, 15);
-            this.bCursos.Margin = new System.Windows.Forms.Padding(4);
+            this.bCursos.Location = new System.Drawing.Point(896, 12);
             this.bCursos.Name = "bCursos";
-            this.bCursos.Size = new System.Drawing.Size(168, 28);
+            this.bCursos.Size = new System.Drawing.Size(126, 23);
             this.bCursos.TabIndex = 45;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
@@ -85,10 +82,9 @@
             // bForos
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bForos.Location = new System.Drawing.Point(1031, 15);
-            this.bForos.Margin = new System.Windows.Forms.Padding(4);
+            this.bForos.Location = new System.Drawing.Point(773, 12);
             this.bForos.Name = "bForos";
-            this.bForos.Size = new System.Drawing.Size(169, 28);
+            this.bForos.Size = new System.Drawing.Size(127, 23);
             this.bForos.TabIndex = 44;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
@@ -97,10 +93,9 @@
             // bNoticias
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bNoticias.Location = new System.Drawing.Point(869, 15);
-            this.bNoticias.Margin = new System.Windows.Forms.Padding(4);
+            this.bNoticias.Location = new System.Drawing.Point(652, 12);
             this.bNoticias.Name = "bNoticias";
-            this.bNoticias.Size = new System.Drawing.Size(169, 28);
+            this.bNoticias.Size = new System.Drawing.Size(127, 23);
             this.bNoticias.TabIndex = 43;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
@@ -111,11 +106,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(484, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(363, 101);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(638, 63);
+            this.label1.Size = new System.Drawing.Size(509, 48);
             this.label1.TabIndex = 42;
             this.label1.Text = "TÍTULO DE LA ACTIVIDAD SOCIAL";
             // 
@@ -125,10 +119,9 @@
             this.carta.Color1 = System.Drawing.Color.Gray;
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
-            this.carta.Location = new System.Drawing.Point(16, 74);
-            this.carta.Margin = new System.Windows.Forms.Padding(4);
+            this.carta.Location = new System.Drawing.Point(12, 60);
             this.carta.Name = "carta";
-            this.carta.Size = new System.Drawing.Size(392, 201);
+            this.carta.Size = new System.Drawing.Size(294, 163);
             this.carta.TabIndex = 51;
             this.carta.Text = "xuiCard1";
             this.carta.Text1 = "Tipo de usuario";
@@ -149,21 +142,43 @@
             this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(33, 662);
-            this.bOpciones.Margin = new System.Windows.Forms.Padding(4);
+            this.bOpciones.Location = new System.Drawing.Point(25, 538);
             this.bOpciones.Name = "bOpciones";
-            this.bOpciones.Size = new System.Drawing.Size(92, 76);
+            this.bOpciones.Size = new System.Drawing.Size(69, 62);
             this.bOpciones.TabIndex = 52;
             this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
+            // bTestSatisfaccion
+            // 
+            this.bTestSatisfaccion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestSatisfaccion.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bTestSatisfaccion.ButtonImage")));
+            this.bTestSatisfaccion.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bTestSatisfaccion.ButtonText = "Test de satisfaccion";
+            this.bTestSatisfaccion.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.CornerRadius = 5;
+            this.bTestSatisfaccion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bTestSatisfaccion.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bTestSatisfaccion.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestSatisfaccion.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bTestSatisfaccion.Location = new System.Drawing.Point(919, 353);
+            this.bTestSatisfaccion.Margin = new System.Windows.Forms.Padding(2);
+            this.bTestSatisfaccion.Name = "bTestSatisfaccion";
+            this.bTestSatisfaccion.Size = new System.Drawing.Size(192, 25);
+            this.bTestSatisfaccion.TabIndex = 53;
+            this.bTestSatisfaccion.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // ActividadSocial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1579, 862);
+            this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.Controls.Add(this.bTestSatisfaccion);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.lDescripción);
@@ -175,7 +190,6 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ActividadSocial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
@@ -196,5 +210,6 @@
         private System.Windows.Forms.Label label1;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
+        private XanderUI.XUIButton bTestSatisfaccion;
     }
 }
