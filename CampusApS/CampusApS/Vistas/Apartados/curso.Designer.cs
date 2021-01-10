@@ -31,15 +31,16 @@
             this.bNoticias = new System.Windows.Forms.Button();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbCursos = new System.Windows.Forms.ListBox();
+            this.lbForos = new System.Windows.Forms.ListBox();
             this.bPapelera = new XanderUI.XUIButton();
-            this.bEliminarCurso = new XanderUI.XUIButton();
-            this.bAnadirCurso = new XanderUI.XUIButton();
+            this.bEliminarForo = new XanderUI.XUIButton();
+            this.bAnadirForo = new XanderUI.XUIButton();
             this.lDescripcion = new System.Windows.Forms.Label();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
             this.bTestConocimiento = new XanderUI.XUIButton();
             this.bEliminarUsuario = new XanderUI.XUIButton();
+            this.bTestSatisfaccion = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // label1
@@ -112,18 +113,18 @@
             this.label2.Location = new System.Drawing.Point(365, 243);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(64, 21);
+            this.label2.Size = new System.Drawing.Size(55, 21);
             this.label2.TabIndex = 27;
-            this.label2.Text = "Cursos";
+            this.label2.Text = "Foros";
             // 
-            // lbCursos
+            // lbForos
             // 
-            this.lbCursos.FormattingEnabled = true;
-            this.lbCursos.Location = new System.Drawing.Point(369, 267);
-            this.lbCursos.Name = "lbCursos";
-            this.lbCursos.Size = new System.Drawing.Size(388, 134);
-            this.lbCursos.TabIndex = 28;
-            this.lbCursos.DoubleClick += new System.EventHandler(this.lbForos_DoubleClick);
+            this.lbForos.FormattingEnabled = true;
+            this.lbForos.Location = new System.Drawing.Point(369, 267);
+            this.lbForos.Name = "lbForos";
+            this.lbForos.Size = new System.Drawing.Size(388, 134);
+            this.lbForos.TabIndex = 28;
+            this.lbForos.DoubleClick += new System.EventHandler(this.lbForos_DoubleClick);
             // 
             // bPapelera
             // 
@@ -139,7 +140,7 @@
             this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bPapelera.Location = new System.Drawing.Point(1064, 437);
+            this.bPapelera.Location = new System.Drawing.Point(1064, 465);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(44, 42);
             this.bPapelera.TabIndex = 31;
@@ -147,49 +148,49 @@
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
-            // bEliminarCurso
+            // bEliminarForo
             // 
-            this.bEliminarCurso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bEliminarCurso.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarCurso.ButtonImage")));
-            this.bEliminarCurso.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.bEliminarCurso.ButtonText = "Eliminar un curso";
-            this.bEliminarCurso.ClickBackColor = System.Drawing.Color.Firebrick;
-            this.bEliminarCurso.ClickTextColor = System.Drawing.Color.Firebrick;
-            this.bEliminarCurso.CornerRadius = 5;
-            this.bEliminarCurso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bEliminarCurso.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bEliminarCurso.HoverBackgroundColor = System.Drawing.Color.Firebrick;
-            this.bEliminarCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bEliminarCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarCurso.Location = new System.Drawing.Point(916, 408);
-            this.bEliminarCurso.Name = "bEliminarCurso";
-            this.bEliminarCurso.Size = new System.Drawing.Size(192, 23);
-            this.bEliminarCurso.TabIndex = 30;
-            this.bEliminarCurso.TextColor = System.Drawing.Color.Firebrick;
-            this.bEliminarCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bEliminarCurso.Click += new System.EventHandler(this.bEliminarForo_Click);
+            this.bEliminarForo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarForo.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarForo.ButtonImage")));
+            this.bEliminarForo.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bEliminarForo.ButtonText = "Eliminar un foro";
+            this.bEliminarForo.ClickBackColor = System.Drawing.Color.Firebrick;
+            this.bEliminarForo.ClickTextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarForo.CornerRadius = 5;
+            this.bEliminarForo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bEliminarForo.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarForo.HoverBackgroundColor = System.Drawing.Color.Firebrick;
+            this.bEliminarForo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarForo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bEliminarForo.Location = new System.Drawing.Point(916, 436);
+            this.bEliminarForo.Name = "bEliminarForo";
+            this.bEliminarForo.Size = new System.Drawing.Size(192, 23);
+            this.bEliminarForo.TabIndex = 30;
+            this.bEliminarForo.TextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarForo.Click += new System.EventHandler(this.bEliminarForo_Click);
             // 
-            // bAnadirCurso
+            // bAnadirForo
             // 
-            this.bAnadirCurso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bAnadirCurso.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirCurso.ButtonImage")));
-            this.bAnadirCurso.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.bAnadirCurso.ButtonText = "Añadir una curso";
-            this.bAnadirCurso.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.CornerRadius = 5;
-            this.bAnadirCurso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bAnadirCurso.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bAnadirCurso.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bAnadirCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAnadirCurso.Location = new System.Drawing.Point(916, 349);
-            this.bAnadirCurso.Name = "bAnadirCurso";
-            this.bAnadirCurso.Size = new System.Drawing.Size(192, 23);
-            this.bAnadirCurso.TabIndex = 29;
-            this.bAnadirCurso.TextColor = System.Drawing.Color.DarkSeaGreen;
-            this.bAnadirCurso.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bAnadirCurso.Click += new System.EventHandler(this.bAnadirForo_Click);
+            this.bAnadirForo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirForo.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirForo.ButtonImage")));
+            this.bAnadirForo.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bAnadirForo.ButtonText = "Añadir una foro";
+            this.bAnadirForo.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirForo.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirForo.CornerRadius = 5;
+            this.bAnadirForo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bAnadirForo.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirForo.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirForo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirForo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bAnadirForo.Location = new System.Drawing.Point(916, 349);
+            this.bAnadirForo.Name = "bAnadirForo";
+            this.bAnadirForo.Size = new System.Drawing.Size(192, 23);
+            this.bAnadirForo.TabIndex = 29;
+            this.bAnadirForo.TextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirForo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirForo.Click += new System.EventHandler(this.bAnadirForo_Click);
             // 
             // lDescripcion
             // 
@@ -273,12 +274,33 @@
             this.bEliminarUsuario.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bEliminarUsuario.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bEliminarUsuario.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarUsuario.Location = new System.Drawing.Point(995, 437);
+            this.bEliminarUsuario.Location = new System.Drawing.Point(995, 465);
             this.bEliminarUsuario.Name = "bEliminarUsuario";
             this.bEliminarUsuario.Size = new System.Drawing.Size(44, 42);
             this.bEliminarUsuario.TabIndex = 36;
             this.bEliminarUsuario.TextColor = System.Drawing.Color.DodgerBlue;
             this.bEliminarUsuario.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bTestSatisfaccion
+            // 
+            this.bTestSatisfaccion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestSatisfaccion.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bTestSatisfaccion.ButtonImage")));
+            this.bTestSatisfaccion.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bTestSatisfaccion.ButtonText = "Test de satisfaccion";
+            this.bTestSatisfaccion.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.CornerRadius = 5;
+            this.bTestSatisfaccion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bTestSatisfaccion.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bTestSatisfaccion.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestSatisfaccion.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bTestSatisfaccion.Location = new System.Drawing.Point(916, 407);
+            this.bTestSatisfaccion.Name = "bTestSatisfaccion";
+            this.bTestSatisfaccion.Size = new System.Drawing.Size(192, 23);
+            this.bTestSatisfaccion.TabIndex = 37;
+            this.bTestSatisfaccion.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // Curso
             // 
@@ -286,15 +308,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.Controls.Add(this.bTestSatisfaccion);
             this.Controls.Add(this.bEliminarUsuario);
             this.Controls.Add(this.bTestConocimiento);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.lDescripcion);
             this.Controls.Add(this.bPapelera);
-            this.Controls.Add(this.bEliminarCurso);
-            this.Controls.Add(this.bAnadirCurso);
-            this.Controls.Add(this.lbCursos);
+            this.Controls.Add(this.bEliminarForo);
+            this.Controls.Add(this.bAnadirForo);
+            this.Controls.Add(this.lbForos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.bActSociales);
@@ -322,14 +345,15 @@
         private System.Windows.Forms.Button bNoticias;
         private System.Windows.Forms.MonthCalendar calendario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lbCursos;
+        private System.Windows.Forms.ListBox lbForos;
         private XanderUI.XUIButton bPapelera;
-        private XanderUI.XUIButton bEliminarCurso;
-        private XanderUI.XUIButton bAnadirCurso;
+        private XanderUI.XUIButton bEliminarForo;
+        private XanderUI.XUIButton bAnadirForo;
         private System.Windows.Forms.Label lDescripcion;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
         private XanderUI.XUIButton bTestConocimiento;
         private XanderUI.XUIButton bEliminarUsuario;
+        private XanderUI.XUIButton bTestSatisfaccion;
     }
 }

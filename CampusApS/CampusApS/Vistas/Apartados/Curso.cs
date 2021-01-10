@@ -64,46 +64,46 @@ namespace CampusApS.Vistas {
             this.label1.Text = this.cursoRecurso.getNombre();
             this.lDescripcion.Text = this.cursoRecurso.getdescripcion();
 
-            this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
-            this.bEliminarCurso.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            this.bAnadirForo.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
+            this.bEliminarForo.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
             ForosQuery BD = new ForosQuery();
-            lbCursos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
+            lbForos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
         }
 
         private void bAnadirForo_Click(object sender, EventArgs e) {
             CrearForo ventana = new CrearForo(usuario, cursoRecurso);
             ventana.ShowDialog();
             ForosQuery BD = new ForosQuery();
-            lbCursos.DataSource = BD.getForoCurso(cursoRecurso.getNombre());
+            lbForos.DataSource = BD.getForoCurso(cursoRecurso.getNombre());
         }
 
         private void bEliminarForo_Click(object sender, EventArgs e) {
             this.bPapelera.Visible = true;
-            this.bEliminarCurso.BackgroundColor = Color.Gray;
-            this.bEliminarCurso.TextColor = Color.White;
+            this.bEliminarForo.BackgroundColor = Color.Gray;
+            this.bEliminarForo.TextColor = Color.White;
 
             ForosQuery BD = new ForosQuery();
-            lbCursos.DataSource = BD.getCreadorForoCurso(cursoRecurso.getNombre(), usuario.getNombre());
+            lbForos.DataSource = BD.getCreadorForoCurso(cursoRecurso.getNombre(), usuario.getNombre());
         }
 
         private void bPapelera_Click(object sender, EventArgs e) {
             ForosQuery BD = new ForosQuery();
-            if (lbCursos.SelectedItem != null) {
-                string foro = lbCursos.SelectedItem.ToString();
+            if (lbForos.SelectedItem != null) {
+                string foro = lbForos.SelectedItem.ToString();
                 BD.borrarForoCurso(foro);
             }
 
-            this.bEliminarCurso.TextColor = Color.Firebrick;
-            this.bEliminarCurso.BackgroundColor = Color.White;
-            lbCursos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
+            this.bEliminarForo.TextColor = Color.Firebrick;
+            this.bEliminarForo.BackgroundColor = Color.White;
+            lbForos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
             this.bPapelera.Visible = false;
         }
 
         private void lbForos_DoubleClick(object sender, EventArgs e) {
             ForosQuery query = new ForosQuery();
-            ForoRecurso foroRecurso = new ForoRecurso((string)lbCursos.SelectedItem);
-            foroRecurso.setDescripcion(query.getDescripcionForo((string)lbCursos.SelectedItem));
+            ForoRecurso foroRecurso = new ForoRecurso((string)lbForos.SelectedItem);
+            foroRecurso.setDescripcion(query.getDescripcionForo((string)lbForos.SelectedItem));
             Foro ventana = new Foro(usuario, foroRecurso);
             this.Visible = false;
             ventana.ShowDialog();
