@@ -75,11 +75,48 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RealizarTestConomiento.cs" />
     <Compile Include="Vistas\Apartados\ActividadSocial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Apartados\ActividadSocial.Designer.cs">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearNoticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearNoticia.Designer.cs">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearTestConocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearTestConocimiento.Designer.cs">
+      <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\EliminarUsuarioCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\EliminarUsuarioCurso.Designer.cs">
+      <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Hilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
+      <DependentUpon>Hilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\RealizarTestConocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\RealizarTestConocimiento.Designer.cs">
+      <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestConomientosCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestConomientosCurso.Designer.cs">
+      <DependentUpon>TestConomientosCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\CreacionRecursos\ConfirmarPassword.cs">
       <SubType>Form</SubType>
@@ -203,6 +240,12 @@
     <Compile Include="Vistas\Opciones\CambiarNombre.Designer.cs">
       <DependentUpon>CambiarNombre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Opciones\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Opciones\Mensajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +284,21 @@
     </Compile>
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearNoticia.resx">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearTestConocimiento.resx">
+      <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
+      <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
+      <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\TestConomientosCurso.resx">
+      <DependentUpon>TestConomientosCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\ConfirmarPassword.resx">
       <DependentUpon>ConfirmarPassword.cs</DependentUpon>
@@ -307,6 +365,9 @@
     <EmbeddedResource Include="Vistas\Opciones\CambiarNombre.resx">
       <DependentUpon>CambiarNombre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Opciones\Mensajes.resx">
       <DependentUpon>Mensajes.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +403,7 @@
   <ItemGroup>
     <Content Include="Resources\Fondo.jpg" />
     <Content Include="Resources\Images\ApS.ico" />
+    <None Include="Resources\Images\x.png" />
     <None Include="Resources\Images\salir.png" />
     <None Include="Resources\Images\correo.png" />
     <None Include="Resources\Images\curso.png" />
