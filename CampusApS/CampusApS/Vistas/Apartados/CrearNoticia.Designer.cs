@@ -27,6 +27,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -36,9 +37,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(116, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 31);
+            this.label1.Size = new System.Drawing.Size(224, 62);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Escriba la noticia";
+            this.label1.Text = "Escriba un titulo\r\ny la noticia";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // xuiButton1
             // 
@@ -54,7 +56,7 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(122, 357);
+            this.xuiButton1.Location = new System.Drawing.Point(133, 444);
             this.xuiButton1.Name = "xuiButton1";
             this.xuiButton1.Size = new System.Drawing.Size(200, 50);
             this.xuiButton1.TabIndex = 32;
@@ -63,18 +65,26 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(59, 77);
+            this.textBox1.Location = new System.Drawing.Point(61, 168);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(353, 247);
             this.textBox1.TabIndex = 33;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(61, 117);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(353, 20);
+            this.textBox2.TabIndex = 34;
             // 
             // CrearNoticia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(468, 419);
+            this.ClientSize = new System.Drawing.Size(468, 515);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.label1);
@@ -90,5 +100,6 @@
         private System.Windows.Forms.Label label1;
         private XanderUI.XUIButton xuiButton1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
