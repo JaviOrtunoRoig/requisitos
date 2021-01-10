@@ -76,7 +76,7 @@ namespace CampusApS {
             this.bEliminarForo.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
             ForosQuery BD = new ForosQuery();
-            lbCursos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
+            lbForos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
 
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
