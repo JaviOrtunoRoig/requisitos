@@ -66,14 +66,5 @@ namespace CampusApS.Modelo.Logica.Usuarios {
             return this.nombre;
         }
 
-        public string getNumExp()
-        {
-            return "";
-        }
-
-        public string getNumRegistro()
-        {
-            return "";
-        }
     }
 }

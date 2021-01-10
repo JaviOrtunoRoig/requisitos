@@ -12,12 +12,12 @@ namespace CampusApS.Modelo.Logica.Usuarios {
 
         private string nombre;
         private Permisos permisos;
-        private string numRegistro;
 
-        public ONG(string nombre, string numRegistro) {
+
+        public ONG(string nombre) {
             permisos = new Permisos(false, false, true, true, true, true, false, false, false, true);
             this.nombre = nombre;
-            this.numRegistro = numRegistro;
+
         }
 
         public void crearCurso() {
@@ -68,14 +68,5 @@ namespace CampusApS.Modelo.Logica.Usuarios {
             return this.nombre;
         }
 
-        public string getNumExp()
-        {
-            return "";
-        }
-
-        public string getNumRegistro()
-        {
-            return this.numRegistro;
-        }
     }
 }

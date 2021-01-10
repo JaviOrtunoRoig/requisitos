@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
@@ -62,13 +63,10 @@ namespace CampusApS
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
 
-            if (usuario.getRol().Equals("profesor"))
+            if (usuario.getRol().Equals("profesor") || usuario.getRol().Equals("ong"))
             {
-                this.carta.Text3 = this.usuario.getNumExp();
-            }
-            else if (usuario.getRol().Equals("ong"))
-            {
-                this.carta.Text3 = this.usuario.getNumRegistro();
+                UsuarioQuery BDUsuario = new UsuarioQuery();
+                this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
             }
 
             this.label1.Text = this.AS.getNombre();

@@ -34,9 +34,9 @@ namespace CampusApS
                     } else if (rolUsuario.Equals("alumno")) {
                         usuario = new Alumno(tNombre.Text); 
                     } else if (rolUsuario.Equals("profesor")) {
-                        usuario = new Profesor(tNombre.Text, user.getNumExp(tNombre.Text)); 
+                        usuario = new Profesor(tNombre.Text); 
                     } else {
-                        usuario = new ONG(tNombre.Text, user.getNumRegistro(tNombre.Text)); 
+                        usuario = new ONG(tNombre.Text); 
                     }
 
                     PantallaNoticias ventana = new PantallaNoticias(usuario);
