@@ -342,12 +342,16 @@
   <ItemGroup>
     <Content Include="Resources\Fondo.jpg" />
     <Content Include="Resources\Images\ApS.ico" />
+    <None Include="Resources\Images\salir.png" />
+    <None Include="Resources\Images\correo.png" />
+    <None Include="Resources\Images\curso.png" />
     <Content Include="Resources\Images\Fondo.jpg" />
     <None Include="Resources\Images\IconoAdmin.png" />
     <Content Include="Resources\Images\IconoAlumno.png" />
     <Content Include="Resources\Images\IconoONG.png" />
     <Content Include="Resources\Images\IconoProfesor.png" />
     <Content Include="Resources\Images\Invitado.png" />
+    <None Include="Resources\Images\invitarAdmin.png" />
     <Content Include="Resources\Images\Login.png" />
     <None Include="Resources\Images\Papelera.png" />
     <None Include="Resources\Images\opciones.jpg" />
