@@ -83,7 +83,8 @@ namespace CampusApS.Vistas.Opciones {
 
         private void bRedMs_Click(object sender, EventArgs e)
         {
-            //TODO: VISTA Y INSERTAR EN BD MENSAJE
+            NuevoMensaje ventana = new NuevoMensaje(usuario);
+            ventana.ShowDialog();
         }
 
     
