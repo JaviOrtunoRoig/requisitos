@@ -106,9 +106,18 @@ namespace CampusApS
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+           
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
+
+            if (usuario.getRol().Equals("profesor"))
+            {
+                this.carta.Text3 = this.usuario.getNumExp();
+            }
+            else if (usuario.getRol().Equals("ong"))
+            {
+                this.carta.Text3 = this.usuario.getNumRegistro();
+            }
 
             this.bParticiparAct.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
             this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
@@ -119,6 +128,8 @@ namespace CampusApS
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
             lbActSociales.DataSource = BD.getAllAS();
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void lbActSociales_DoubleClick(object sender, EventArgs e) {

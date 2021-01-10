@@ -31,11 +31,25 @@ namespace CampusApS
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
+            this.carta.Text1 = this.usuario.getRol();
+            this.carta.Text2 = this.usuario.getNombre();
+
+            if (usuario.getRol().Equals("profesor"))
+            {
+                this.carta.Text3 = this.usuario.getNumExp();
+            }
+            else if (usuario.getRol().Equals("ong"))
+            {
+                this.carta.Text3 = this.usuario.getNumRegistro();
+            }
+
             this.bAnadirForo.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
             this.bEliminarForo.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
             ForosQuery BD = new ForosQuery();
             lbForos.DataSource = BD.getAllForoGeneral();
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void bBaja_Click(object sender, EventArgs e) {

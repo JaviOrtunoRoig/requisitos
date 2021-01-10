@@ -31,13 +31,24 @@ namespace CampusApS.Vistas.Opciones {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+            
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
 
+            if (usuario.getRol().Equals("profesor"))
+            {
+                this.carta.Text3 = this.usuario.getNumExp();
+            }
+            else if (usuario.getRol().Equals("ong"))
+            {
+                this.carta.Text3 = this.usuario.getNumRegistro();
+            }
+
 
             MensajeQuery BD = new MensajeQuery();
-            //TODO: USUARIOS QUE ME HAN MANDADO UN MENSAJE lbUsuariosConMensajes.DataSource = BD.
+            lbUsuariosConMensajes.DataSource = BD.getUsuariosEmisores(usuario.getNombre());
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
 
         }
 
@@ -81,11 +92,12 @@ namespace CampusApS.Vistas.Opciones {
             this.Close();
         }
 
-        private void bRedMs_Click(object sender, EventArgs e)
+        private void bRedactarMensaje_Click(object sender, EventArgs e)
         {
             NuevoMensaje ventana = new NuevoMensaje(usuario);
             ventana.ShowDialog();
         }
+
 
     
     }

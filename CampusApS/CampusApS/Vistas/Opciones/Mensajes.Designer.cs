@@ -26,7 +26,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mensajes));
             this.bOpciones = new XanderUI.XUIButton();
             this.carta = new XanderUI.XUICard();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lTitulo = new System.Windows.Forms.Label();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.lbMisMesnajes = new System.Windows.Forms.ListBox();
             this.bActSociales = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
             this.bOpciones.Location = new System.Drawing.Point(21, 663);
-            this.bOpciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bOpciones.Margin = new System.Windows.Forms.Padding(4);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(92, 76);
             this.bOpciones.TabIndex = 77;
@@ -65,26 +65,25 @@
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
             this.carta.Location = new System.Drawing.Point(16, 66);
-            this.carta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carta.Margin = new System.Windows.Forms.Padding(4);
             this.carta.Name = "carta";
             this.carta.Size = new System.Drawing.Size(392, 201);
             this.carta.TabIndex = 76;
             this.carta.Text = "xuiCard1";
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
-            this.carta.Text3 = "num expediente";
+            this.carta.Text3 = "";
             // 
-            // label1
+            // lTitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(500, 102);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 63);
-            this.label1.TabIndex = 73;
-            this.label1.Text = "Los mensajes del usuario:\r\n";
+            this.lTitulo.AutoSize = true;
+            this.lTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lTitulo.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTitulo.Location = new System.Drawing.Point(500, 102);
+            this.lTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lTitulo.Name = "lTitulo";
+            this.lTitulo.Size = new System.Drawing.Size(0, 63);
+            this.lTitulo.TabIndex = 73;
             // 
             // calendario
             // 
@@ -98,7 +97,7 @@
             this.lbMisMesnajes.FormattingEnabled = true;
             this.lbMisMesnajes.ItemHeight = 16;
             this.lbMisMesnajes.Location = new System.Drawing.Point(511, 222);
-            this.lbMisMesnajes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbMisMesnajes.Margin = new System.Windows.Forms.Padding(4);
             this.lbMisMesnajes.Name = "lbMisMesnajes";
             this.lbMisMesnajes.Size = new System.Drawing.Size(637, 372);
             this.lbMisMesnajes.TabIndex = 71;
@@ -107,7 +106,7 @@
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bActSociales.Location = new System.Drawing.Point(1371, 15);
-            this.bActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bActSociales.Margin = new System.Windows.Forms.Padding(4);
             this.bActSociales.Name = "bActSociales";
             this.bActSociales.Size = new System.Drawing.Size(184, 28);
             this.bActSociales.TabIndex = 70;
@@ -119,7 +118,7 @@
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCursos.Location = new System.Drawing.Point(1208, 15);
-            this.bCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bCursos.Margin = new System.Windows.Forms.Padding(4);
             this.bCursos.Name = "bCursos";
             this.bCursos.Size = new System.Drawing.Size(168, 28);
             this.bCursos.TabIndex = 69;
@@ -131,7 +130,7 @@
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bForos.Location = new System.Drawing.Point(1044, 15);
-            this.bForos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bForos.Margin = new System.Windows.Forms.Padding(4);
             this.bForos.Name = "bForos";
             this.bForos.Size = new System.Drawing.Size(169, 28);
             this.bForos.TabIndex = 68;
@@ -143,7 +142,7 @@
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bNoticias.Location = new System.Drawing.Point(883, 15);
-            this.bNoticias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bNoticias.Margin = new System.Windows.Forms.Padding(4);
             this.bNoticias.Name = "bNoticias";
             this.bNoticias.Size = new System.Drawing.Size(169, 28);
             this.bNoticias.TabIndex = 67;
@@ -159,7 +158,7 @@
             this.ClientSize = new System.Drawing.Size(1579, 862);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lTitulo);
             this.Controls.Add(this.calendario);
             this.Controls.Add(this.lbMisMesnajes);
             this.Controls.Add(this.bActSociales);
@@ -167,7 +166,7 @@
             this.Controls.Add(this.bForos);
             this.Controls.Add(this.bNoticias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Mensajes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mensajes";
@@ -181,7 +180,7 @@
 
         private XanderUI.XUIButton bOpciones;
         private XanderUI.XUICard carta;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lTitulo;
         private System.Windows.Forms.MonthCalendar calendario;
         private System.Windows.Forms.ListBox lbMisMesnajes;
         private System.Windows.Forms.Button bActSociales;

@@ -56,13 +56,24 @@ namespace CampusApS
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+           
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
+
+            if (usuario.getRol().Equals("profesor"))
+            {
+                this.carta.Text3 = this.usuario.getNumExp();
+            }
+            else if (usuario.getRol().Equals("ong"))
+            {
+                this.carta.Text3 = this.usuario.getNumRegistro();
+            }
 
             this.bAnadirNoticia.Visible = false;
             this.bEliminarNoticia.Visible = false;
             this.bPapelera.Visible = false;
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void xuiButton1_Click(object sender, EventArgs e) {

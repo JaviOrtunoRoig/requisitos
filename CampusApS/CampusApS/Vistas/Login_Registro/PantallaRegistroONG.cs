@@ -27,7 +27,7 @@ namespace CampusApS
             string password = tPassword.Text;
             string confPassword = tConfPassword.Text;
             string numeroONG = tNumRegONG.Text;
-            Usuario user = new ONG(nombre);
+            Usuario user = new ONG(nombre, numeroONG);
 
             Registrarse registro = new Registrarse(password, confPassword, correo);
             if (registro.getEstadoRegistro())

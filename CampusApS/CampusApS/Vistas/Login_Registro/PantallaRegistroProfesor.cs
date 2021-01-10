@@ -28,7 +28,7 @@ namespace CampusApS
             String password = tPassword.Text;
             String confPassword = tPassword.Text;
             String nExpediente = tNumExp.Text;
-            Usuario user = new Profesor(nombre);
+            Usuario user = new Profesor(nombre, tNumExp.Text);
 
             Registrarse registro = new Registrarse(password, confPassword, correo);
             if (registro.getEstadoRegistro())
