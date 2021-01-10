@@ -106,6 +106,12 @@
     <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
       <DependentUpon>Hilo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.Designer.cs">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Apartados\RealizarTestConocimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,12 +147,6 @@
     </Compile>
     <Compile Include="Vistas\CreacionRecursos\CrearForo.Designer.cs">
       <DependentUpon>CrearForo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.Designer.cs">
-      <DependentUpon>CrearNoticia.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Apartados\Curso.cs">
       <SubType>Form</SubType>
@@ -294,6 +294,12 @@
     <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
       <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\Hilo.resx">
+      <DependentUpon>Hilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\Noticia.resx">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
       <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,9 +317,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\CrearForo.resx">
       <DependentUpon>CrearForo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearNoticia.resx">
-      <DependentUpon>CrearNoticia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>

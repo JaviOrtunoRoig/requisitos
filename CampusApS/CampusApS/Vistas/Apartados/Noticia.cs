@@ -8,12 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS.Vistas.CreacionRecursos
-{
-    public partial class CrearNoticia : Form
-    {
-        public CrearNoticia()
-        {
+namespace CampusApS.Vistas.Apartados {
+    public partial class Noticia : Form {
+        public Noticia() {
             InitializeComponent();
         }
     }
