@@ -128,7 +128,7 @@ namespace CampusApS
             }
             else
             {
-                //TODO: Noticias que ha creado ese usuario lbNoticias.DataSource = BD.getNoticiasCreador(usuario.getNombre());
+                lbNoticias.DataSource = BD.getNoticiasCreador(usuario.getNombre());
             }
 
       
