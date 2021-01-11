@@ -9,10 +9,10 @@ namespace CampusApS.Modelo.Logica.Recursos
     public class Test
     {
         private string nombre;
-        private Pregunta [] preguntas;
+        private List<Pregunta> preguntas;
 
 
-        public Test(string nombre, Pregunta [] preguntas)
+        public Test(string nombre, List<Pregunta> preguntas)
         {
             this.nombre = nombre;
             this.preguntas = preguntas;
@@ -23,7 +23,7 @@ namespace CampusApS.Modelo.Logica.Recursos
             return nombre;
         }
 
-        public Pregunta [] getPreguntas()
+        public List<Pregunta> getPreguntas()
         {
             return preguntas;
         }
