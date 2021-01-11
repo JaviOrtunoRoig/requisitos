@@ -27,7 +27,7 @@ namespace CampusApS.Vistas.Apartados {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            tNombreTest.Text = test.getNombre();
+            tNombreTest.Text = test.getNombreTest();
 
             List<Pregunta> preguntas = test.getPreguntas();
 
