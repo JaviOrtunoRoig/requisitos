@@ -31,6 +31,8 @@ namespace CampusApS.Vistas.Opciones {
             UsuarioQuery BD = new UsuarioQuery();
             BD.updateNombreUsuario(usuario.getNombre(), tNuevoNombre.Text);
 
+            this.Close();
+
         }
     }
 }

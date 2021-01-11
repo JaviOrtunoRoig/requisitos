@@ -47,9 +47,10 @@
             // bActSociales
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bActSociales.Location = new System.Drawing.Point(1013, 12);
+            this.bActSociales.Location = new System.Drawing.Point(1351, 15);
+            this.bActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bActSociales.Name = "bActSociales";
-            this.bActSociales.Size = new System.Drawing.Size(138, 23);
+            this.bActSociales.Size = new System.Drawing.Size(184, 28);
             this.bActSociales.TabIndex = 11;
             this.bActSociales.Text = "Actividades Sociales";
             this.bActSociales.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // bCursos
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bCursos.Location = new System.Drawing.Point(891, 12);
+            this.bCursos.Location = new System.Drawing.Point(1188, 15);
+            this.bCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bCursos.Name = "bCursos";
-            this.bCursos.Size = new System.Drawing.Size(126, 23);
+            this.bCursos.Size = new System.Drawing.Size(168, 28);
             this.bCursos.TabIndex = 10;
             this.bCursos.Text = "Cursos";
             this.bCursos.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             // bForos
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bForos.Location = new System.Drawing.Point(768, 12);
+            this.bForos.Location = new System.Drawing.Point(1024, 15);
+            this.bForos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bForos.Name = "bForos";
-            this.bForos.Size = new System.Drawing.Size(127, 23);
+            this.bForos.Size = new System.Drawing.Size(169, 28);
             this.bForos.TabIndex = 9;
             this.bForos.Text = "Foros";
             this.bForos.UseVisualStyleBackColor = true;
@@ -79,9 +82,10 @@
             // bNoticias
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bNoticias.Location = new System.Drawing.Point(647, 12);
+            this.bNoticias.Location = new System.Drawing.Point(863, 15);
+            this.bNoticias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bNoticias.Name = "bNoticias";
-            this.bNoticias.Size = new System.Drawing.Size(127, 23);
+            this.bNoticias.Size = new System.Drawing.Size(169, 28);
             this.bNoticias.TabIndex = 8;
             this.bNoticias.Text = "Noticias";
             this.bNoticias.UseVisualStyleBackColor = true;
@@ -89,16 +93,19 @@
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(917, 177);
+            this.calendario.Location = new System.Drawing.Point(1223, 218);
+            this.calendario.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 12;
             // 
             // lbActSociales
             // 
             this.lbActSociales.FormattingEnabled = true;
-            this.lbActSociales.Location = new System.Drawing.Point(375, 180);
+            this.lbActSociales.ItemHeight = 16;
+            this.lbActSociales.Location = new System.Drawing.Point(500, 222);
+            this.lbActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbActSociales.Name = "lbActSociales";
-            this.lbActSociales.Size = new System.Drawing.Size(475, 290);
+            this.lbActSociales.Size = new System.Drawing.Size(632, 356);
             this.lbActSociales.TabIndex = 13;
             this.lbActSociales.DoubleClick += new System.EventHandler(this.lbActSociales_DoubleClick);
             // 
@@ -116,9 +123,10 @@
             this.bAnadirAct.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bAnadirAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAnadirAct.Location = new System.Drawing.Point(917, 380);
+            this.bAnadirAct.Location = new System.Drawing.Point(1223, 468);
+            this.bAnadirAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bAnadirAct.Name = "bAnadirAct";
-            this.bAnadirAct.Size = new System.Drawing.Size(192, 23);
+            this.bAnadirAct.Size = new System.Drawing.Size(256, 28);
             this.bAnadirAct.TabIndex = 15;
             this.bAnadirAct.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -138,9 +146,10 @@
             this.bEliminarAct.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarAct.Location = new System.Drawing.Point(917, 409);
+            this.bEliminarAct.Location = new System.Drawing.Point(1223, 503);
+            this.bEliminarAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bEliminarAct.Name = "bEliminarAct";
-            this.bEliminarAct.Size = new System.Drawing.Size(192, 23);
+            this.bEliminarAct.Size = new System.Drawing.Size(256, 28);
             this.bEliminarAct.TabIndex = 16;
             this.bEliminarAct.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -160,9 +169,10 @@
             this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bPapelera.Location = new System.Drawing.Point(1065, 438);
+            this.bPapelera.Location = new System.Drawing.Point(1420, 539);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bPapelera.Name = "bPapelera";
-            this.bPapelera.Size = new System.Drawing.Size(44, 42);
+            this.bPapelera.Size = new System.Drawing.Size(59, 52);
             this.bPapelera.TabIndex = 17;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -182,9 +192,10 @@
             this.bParticiparAct.HoverBackgroundColor = System.Drawing.Color.DimGray;
             this.bParticiparAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bParticiparAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bParticiparAct.Location = new System.Drawing.Point(917, 351);
+            this.bParticiparAct.Location = new System.Drawing.Point(1223, 432);
+            this.bParticiparAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bParticiparAct.Name = "bParticiparAct";
-            this.bParticiparAct.Size = new System.Drawing.Size(192, 23);
+            this.bParticiparAct.Size = new System.Drawing.Size(256, 28);
             this.bParticiparAct.TabIndex = 18;
             this.bParticiparAct.TextColor = System.Drawing.Color.DimGray;
             this.bParticiparAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -195,9 +206,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(367, 81);
+            this.label1.Location = new System.Drawing.Point(489, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 48);
+            this.label1.Size = new System.Drawing.Size(479, 63);
             this.label1.TabIndex = 19;
             this.label1.Text = "ACTIVIDADES SOCIALES";
             // 
@@ -207,14 +219,15 @@
             this.carta.Color1 = System.Drawing.Color.Gray;
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
-            this.carta.Location = new System.Drawing.Point(12, 60);
+            this.carta.Location = new System.Drawing.Point(16, 74);
+            this.carta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.carta.Name = "carta";
-            this.carta.Size = new System.Drawing.Size(294, 163);
+            this.carta.Size = new System.Drawing.Size(392, 201);
             this.carta.TabIndex = 25;
             this.carta.Text = "xuiCard1";
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
-            this.carta.Text3 = "num expediente";
+            this.carta.Text3 = "";
             // 
             // bOpciones
             // 
@@ -230,9 +243,10 @@
             this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(25, 538);
+            this.bOpciones.Location = new System.Drawing.Point(33, 662);
+            this.bOpciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bOpciones.Name = "bOpciones";
-            this.bOpciones.Size = new System.Drawing.Size(69, 62);
+            this.bOpciones.Size = new System.Drawing.Size(92, 76);
             this.bOpciones.TabIndex = 26;
             this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -240,10 +254,10 @@
             // 
             // PantallaActividadesSociales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.ClientSize = new System.Drawing.Size(1579, 862);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.label1);
@@ -259,6 +273,7 @@
             this.Controls.Add(this.bNoticias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PantallaActividadesSociales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";

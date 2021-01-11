@@ -147,6 +147,23 @@ namespace CampusApS.Modelo.Querys
 
         }
 
+
+        public string getNumExp(string nombreUsuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nombreUsuario + "';");
+
+            return (string)((object[])(tupla[0]))[4];
+        }
+
+        public string getNumRegistro(string nombreUsuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nombreUsuario + "';");
+
+            return (string)((object[])(tupla[0]))[4];
+        }
+
         #endregion IniciarSesion
             
         #region DarseDeBaja

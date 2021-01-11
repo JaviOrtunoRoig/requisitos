@@ -1,6 +1,8 @@
-﻿using CampusApS.Modelo.Logica.Usuarios;
+﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Apartados;
 using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
@@ -23,6 +25,8 @@ namespace CampusApS
         {
             InitializeComponent();
             this.usuario = usuario;
+
+            
         }
 
         private void bCursos_Click(object sender, EventArgs e) {
@@ -56,13 +60,25 @@ namespace CampusApS
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+           
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
 
-            this.bAnadirNoticia.Visible = false;
-            this.bEliminarNoticia.Visible = false;
-            this.bPapelera.Visible = false;
+            if (usuario.getRol().Equals("profesor") || usuario.getRol().Equals("ong"))
+            {
+                UsuarioQuery BDUsuario = new UsuarioQuery();
+                this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
+            }
+
+            bPapelera.Visible = false;
+
+            if (!usuario.getRol().Equals("invitado") && !usuario.getRol().Equals("alumno"))
+            {
+                bAnadirNoticia.Visible = true;
+                bEliminarNoticia.Visible = true;
+            }
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void xuiButton1_Click(object sender, EventArgs e) {
@@ -75,5 +91,52 @@ namespace CampusApS
             Opciones ventana = new Opciones(usuario);
             ventana.ShowDialog();
         }
+
+        private void lbNoticias_DoubleClick(object sender, EventArgs e)
+        {
+            //TODO: CREAR BD CursoQuery query = new CursoQuery();
+            NoticiaRecurso noticiaRecurso = new NoticiaRecurso((string)lbNoticias.SelectedItem);
+            //TODO: GET CONTENIDO cursoRecurso.setContenido(query.getContenido((string)lbNoticias.SelectedItem));
+            Noticia ventana = new Noticia(noticiaRecurso.getNombre(), noticiaRecurso.getContenido());
+            ventana.ShowDialog();
+        }
+
+        private void bAnadirNoticia_Click(object sender, EventArgs e)
+        {
+            CrearNoticia ventana = new CrearNoticia(usuario);
+            ventana.ShowDialog();
+
+            //TODO: CREAR BD NoticiaQuery BD = new NoticiaQuery();
+
+            //TODO: AÑADIR NOTICIA lbNoticias.DataSource = BD.getAllNoticias();
+        }
+
+        private void bEliminarNoticia_Click(object sender, EventArgs e)
+        {
+            this.bPapelera.Visible = true;
+            this.bEliminarNoticia.BackgroundColor = Color.Gray;
+            this.bEliminarNoticia.TextColor = Color.White;
+
+            //TODO: MOSTRAR NOTICIAS NoticiaQuery BD = new NoticiaQuery(); AND GETALLNOTICIAS()
+
+      
+        }
+
+        private void bPapelera_Click(object sender, EventArgs e)
+        {
+            //TODO: CREAR BD NoticiaQuery BD = new NoticiaQuery();
+            if (lbNoticias.SelectedItem != null)
+            {
+                string curso = lbNoticias.SelectedItem.ToString();
+                //TODO: ELIMINAR NOTICIA BD.borrarNoticia(lbNoticias.SelectedItem);
+            }
+
+            this.bEliminarNoticia.TextColor = Color.Firebrick;
+            this.bEliminarNoticia.BackgroundColor = Color.White;
+            //TODO: GET ALL NOTICIAS this.lbNoticias.DataSource = BD.getAllNoticias();
+            this.bPapelera.Visible = false;
+        }
+
+ 
     }
 }

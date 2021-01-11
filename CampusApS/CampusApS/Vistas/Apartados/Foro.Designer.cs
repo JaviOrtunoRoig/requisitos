@@ -1,4 +1,4 @@
-﻿namespace CampusApS.Vistas
+﻿namespace CampusApS
 {
     partial class Foro
     {
@@ -40,6 +40,9 @@
             this.lDescripción = new System.Windows.Forms.Label();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
+            this.bPapelera = new XanderUI.XUIButton();
+            this.bEliminarHilo = new XanderUI.XUIButton();
+            this.bAnadirHilo = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // lbHilos
@@ -47,7 +50,7 @@
             this.lbHilos.FormattingEnabled = true;
             this.lbHilos.Location = new System.Drawing.Point(364, 266);
             this.lbHilos.Name = "lbHilos";
-            this.lbHilos.Size = new System.Drawing.Size(389, 134);
+            this.lbHilos.Size = new System.Drawing.Size(503, 264);
             this.lbHilos.TabIndex = 39;
             // 
             // label2
@@ -147,7 +150,7 @@
             this.carta.Text = "xuiCard1";
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
-            this.carta.Text3 = "num expediente";
+            this.carta.Text3 = "";
             // 
             // bOpciones
             // 
@@ -171,12 +174,81 @@
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
+            // bPapelera
+            // 
+            this.bPapelera.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bPapelera.ButtonImage = global::CampusApS.Properties.Resources.Papelera;
+            this.bPapelera.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.bPapelera.ButtonText = "";
+            this.bPapelera.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.bPapelera.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.CornerRadius = 5;
+            this.bPapelera.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bPapelera.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bPapelera.Location = new System.Drawing.Point(1065, 414);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bPapelera.Name = "bPapelera";
+            this.bPapelera.Size = new System.Drawing.Size(44, 43);
+            this.bPapelera.TabIndex = 45;
+            this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
+            this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bEliminarHilo
+            // 
+            this.bEliminarHilo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarHilo.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEliminarHilo.ButtonImage")));
+            this.bEliminarHilo.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bEliminarHilo.ButtonText = "Eliminar un hilo";
+            this.bEliminarHilo.ClickBackColor = System.Drawing.Color.Firebrick;
+            this.bEliminarHilo.ClickTextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarHilo.CornerRadius = 5;
+            this.bEliminarHilo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bEliminarHilo.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarHilo.HoverBackgroundColor = System.Drawing.Color.Firebrick;
+            this.bEliminarHilo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bEliminarHilo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bEliminarHilo.Location = new System.Drawing.Point(917, 382);
+            this.bEliminarHilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEliminarHilo.Name = "bEliminarHilo";
+            this.bEliminarHilo.Size = new System.Drawing.Size(192, 28);
+            this.bEliminarHilo.TabIndex = 44;
+            this.bEliminarHilo.TextColor = System.Drawing.Color.Firebrick;
+            this.bEliminarHilo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // bAnadirHilo
+            // 
+            this.bAnadirHilo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirHilo.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirHilo.ButtonImage")));
+            this.bAnadirHilo.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bAnadirHilo.ButtonText = "Añadir una hilo";
+            this.bAnadirHilo.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirHilo.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirHilo.CornerRadius = 5;
+            this.bAnadirHilo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bAnadirHilo.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirHilo.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirHilo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bAnadirHilo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bAnadirHilo.Location = new System.Drawing.Point(917, 353);
+            this.bAnadirHilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bAnadirHilo.Name = "bAnadirHilo";
+            this.bAnadirHilo.Size = new System.Drawing.Size(192, 25);
+            this.bAnadirHilo.TabIndex = 43;
+            this.bAnadirHilo.TextColor = System.Drawing.Color.DarkSeaGreen;
+            this.bAnadirHilo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // Foro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.Controls.Add(this.bPapelera);
+            this.Controls.Add(this.bEliminarHilo);
+            this.Controls.Add(this.bAnadirHilo);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.lDescripción);
@@ -212,5 +284,8 @@
         private System.Windows.Forms.Label lDescripción;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
+        private XanderUI.XUIButton bPapelera;
+        private XanderUI.XUIButton bEliminarHilo;
+        private XanderUI.XUIButton bAnadirHilo;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
+using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CampusApS.Vistas
+namespace CampusApS
 {
     public partial class Foro : Form
     {
@@ -30,15 +31,23 @@ namespace CampusApS.Vistas
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: Falta cambiar el numero de expediente, num ong, o lo q sea q vaya, depnde del tipo de usuario.
+            
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
+
+            if (usuario.getRol().Equals("profesor") || usuario.getRol().Equals("ong"))
+            {
+                UsuarioQuery BDUsuario = new UsuarioQuery();
+                this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
+            }
 
             ForosQuery query = new ForosQuery();
             this.foroRecurso.setDescripcion(query.getDescripcionForo(foroRecurso.getNombre()));
 
             this.label1.Text = foroRecurso.getNombre();
             this.lDescripción.Text = foroRecurso.getdescripcion();
+
+            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void bNoticias_Click(object sender, EventArgs e) {
@@ -69,8 +78,12 @@ namespace CampusApS.Vistas
             ventana.ShowDialog();
         }
 
-        private void bOpciones_Click(object sender, EventArgs e) {
-            //TODO: Implementar
+        private void bOpciones_Click(object sender, EventArgs e)
+        {
+            Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
         }
+
+       
     }
 }
