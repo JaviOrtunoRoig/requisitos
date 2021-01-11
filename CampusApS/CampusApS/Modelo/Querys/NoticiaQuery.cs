@@ -62,7 +62,7 @@ namespace CampusApS.Modelo.Querys
             contenido = null;
         }
 
-        public List<String> getAllNoticas(string usuario)
+        public List<String> getAllNoticas()
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
