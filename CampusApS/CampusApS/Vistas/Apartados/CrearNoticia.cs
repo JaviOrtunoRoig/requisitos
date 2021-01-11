@@ -36,7 +36,7 @@ namespace CampusApS.Vistas.Apartados {
             }
             else
             {
-                NoticiaQuery BD = new NoticiaQuery(titulo, contenido);
+                NoticiaQuery BD = new NoticiaQuery(titulo, contenido, usuario.getNombre());
 
                 this.Close();
             }
