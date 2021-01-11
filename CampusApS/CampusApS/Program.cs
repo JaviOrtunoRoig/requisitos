@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica;
 using CampusApS.Modelo.Querys;
+using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,6 @@ namespace CampusApS {
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PantallaBienvenido());
             Console.WriteLine("\n\n\n\n\n");
-
-            
            }
     }
 }

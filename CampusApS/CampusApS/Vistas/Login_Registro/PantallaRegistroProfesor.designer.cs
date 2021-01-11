@@ -46,6 +46,7 @@
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
+            this.lbPassword.ForeColor = System.Drawing.Color.White;
             this.lbPassword.Location = new System.Drawing.Point(68, 217);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(61, 13);
@@ -55,6 +56,7 @@
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
+            this.lbUsername.ForeColor = System.Drawing.Color.White;
             this.lbUsername.Location = new System.Drawing.Point(68, 147);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(98, 13);
@@ -64,6 +66,7 @@
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
+            this.lbEmail.ForeColor = System.Drawing.Color.White;
             this.lbEmail.Location = new System.Drawing.Point(68, 74);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(93, 13);
@@ -75,7 +78,7 @@
             this.tNumExp.Location = new System.Drawing.Point(71, 372);
             this.tNumExp.Name = "tNumExp";
             this.tNumExp.Size = new System.Drawing.Size(253, 20);
-            this.tNumExp.TabIndex = 11;
+            this.tNumExp.TabIndex = 12;
             // 
             // tPassword
             // 
@@ -102,6 +105,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(31, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 13);
@@ -110,6 +114,7 @@
             // 
             // bConfirmar
             // 
+            this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bConfirmar.Location = new System.Drawing.Point(314, 432);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
@@ -121,6 +126,7 @@
             // lbNumExp
             // 
             this.lbNumExp.AutoSize = true;
+            this.lbNumExp.ForeColor = System.Drawing.Color.White;
             this.lbNumExp.Location = new System.Drawing.Point(68, 356);
             this.lbNumExp.Name = "lbNumExp";
             this.lbNumExp.Size = new System.Drawing.Size(115, 13);
@@ -133,11 +139,12 @@
             this.tConfPassword.Name = "tConfPassword";
             this.tConfPassword.PasswordChar = '*';
             this.tConfPassword.Size = new System.Drawing.Size(253, 20);
-            this.tConfPassword.TabIndex = 24;
+            this.tConfPassword.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(68, 288);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 13);
@@ -148,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(401, 467);
             this.Controls.Add(this.tConfPassword);
             this.Controls.Add(this.label2);
@@ -161,6 +169,7 @@
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
             this.Controls.Add(this.lbEmail);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaRegistroProfesor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

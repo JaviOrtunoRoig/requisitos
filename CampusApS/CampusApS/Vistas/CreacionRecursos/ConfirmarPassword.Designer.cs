@@ -31,6 +31,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(88, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 13);
@@ -46,6 +47,7 @@
             // 
             // bAceptar
             // 
+            this.bAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bAceptar.Location = new System.Drawing.Point(112, 100);
             this.bAceptar.Name = "bAceptar";
             this.bAceptar.Size = new System.Drawing.Size(75, 23);
@@ -58,10 +60,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(284, 166);
             this.Controls.Add(this.bAceptar);
             this.Controls.Add(this.tPassword);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ConfirmarPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConfirmarPassword";

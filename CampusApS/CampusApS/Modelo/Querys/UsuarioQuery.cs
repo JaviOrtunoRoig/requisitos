@@ -33,8 +33,8 @@ namespace CampusApS.Modelo.Querys
                 if (tupla[0] != null)
                 {
 
-                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
-                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
+                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`, `permiso`) VALUES ('" +
+                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "', '" + cod + "');");
                 }
                 else
                 {
@@ -57,8 +57,8 @@ namespace CampusApS.Modelo.Querys
 
                 if (tupla[0] != null)
                 {
-                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
-                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
+                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`, `permiso`) VALUES ('" +
+                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "', '" + expd + "');");
                 }
                 else
                 {
@@ -81,8 +81,8 @@ namespace CampusApS.Modelo.Querys
 
                 if (tupla[0] != null)
                 {
-                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`) VALUES ('" +
-                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "');");
+                    miBD.Insert("INSERT INTO `apsgrupo06`.`usuario` (`nombre`, `contraseña`, `correo`, `rol`, `permiso`) VALUES ('" +
+                    nomb + "', '" + contr + "', '" + correo + "', '" + us.getRol() + "', '" + reg + "');");
                 }
                 else
                 {
@@ -147,11 +147,28 @@ namespace CampusApS.Modelo.Querys
 
         }
 
+
+        public string getNumExp(string nombreUsuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nombreUsuario + "';");
+
+            return (string)((object[])(tupla[0]))[4];
+        }
+
+        public string getNumRegistro(string nombreUsuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            object[] tupla = miBD.Select("SELECT * FROM usuario WHERE nombre = '" + nombreUsuario + "';");
+
+            return (string)((object[])(tupla[0]))[4];
+        }
+
         #endregion IniciarSesion
             
         #region DarseDeBaja
 
-            public bool existeContraseña(string contr)
+        public bool existeContraseña(string contr)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
@@ -241,6 +258,17 @@ namespace CampusApS.Modelo.Querys
 
         #region OtrosMetodos
 
+        public void updateNombreUsuario(string nom, string newNom)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            if (!permitirNombre(nom))
+            {
+                miBD.Update("UPDATE apsgrupo06.usuario SET nombre = '" + newNom + "' " +
+                "WHERE (nombre = '" + nom + "');");
+            }
+
+        }
+
         public string getUsuario(string nomb)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
@@ -257,6 +285,80 @@ namespace CampusApS.Modelo.Querys
                 return null;
             }
 
+        }
+
+        public List<String> getAllUsuarios()
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombre FROM usuario;");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public string getPermiso(string nomUs)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT permiso FROM usuario WHERE nombre = '" + nomUs + "';");
+            string permiso = "";
+
+            if (tupla[0] != null)
+            {
+                permiso = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Este usuario no existe");
+            }
+
+            return permiso;
+        }
+
+        public void borrarUsuario(string nom)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            if (!permitirNombre(nom))
+            {
+                miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (nombre = '" + nom + "');");
+            }
+            else
+            {
+                MessageBox.Show("Este usuario no existe");
+            }
         }
 
         #endregion OtrosMetodos

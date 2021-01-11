@@ -29,13 +29,13 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
-        public void insertarCurso(string nombreCurso, string nombreUsuario)
+        public void insertarCurso(string nombreCurso, string nombreUsuario, string des)
         {
             if (permitirCurso(nombreCurso))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`) VALUES ('" +
-                nombreCurso + "', '" + nombreUsuario + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`, `descripcion`) VALUES ('" +
+                nombreCurso + "', '" + nombreUsuario + "', '" + des + "');");
 
             }
             else
@@ -166,6 +166,26 @@ namespace CampusApS.Modelo.Querys
             }
         }
 
+
+        public String getDescripcionCurso(string curso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT descripcion FROM curso WHERE nombreCurso = '" + curso + "';");
+            string nombre = ""; 
+
+            if (tupla[0] != null)
+            {
+                nombre = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Curso no disponible");
+            }
+
+            return nombre;
+        }
+
         private bool noInscrito(string nombreUsuario, string nombreCurso)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
@@ -174,5 +194,95 @@ namespace CampusApS.Modelo.Querys
 
             return tupla[0] == null;
         }
+
+        public List<String> misCursos(string nomUs)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT * FROM `apsgrupo06`.`usuario_curso` WHERE nombreUsuario = '" + nomUs + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public List<String> getUsuariosCurso(string nomCurso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombreUsuario FROM `apsgrupo06`.`usuario_curso` WHERE nombreCurso = '" + nomCurso + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public void borrarUsuarioCurso(string nomUs, string nomCurso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            miBD.Delete("DELETE FROM `apsgrupo06`.`usuario_curso` WHERE (nombreUsuario = '" + nomUs + "' AND nombreCurso = '"+ nomCurso + "');");
+        }
+
+       
     }
 }

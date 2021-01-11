@@ -53,7 +53,7 @@ namespace CampusApS
 
         private void bRecuperar_Click(object sender, EventArgs e) {
             PantallaRecuperarContrasena ventana = new PantallaRecuperarContrasena();
-            this.Visible = false;
+            //this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
         }

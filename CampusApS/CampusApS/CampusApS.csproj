@@ -52,7 +52,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo\Logica\Recursos\Foro.cs" />
+    <Compile Include="Modelo\Logica\Recursos\ActividadSocialRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\CursoRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\ForoRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\NoticiaRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\Pregunta.cs" />
+    <Compile Include="Modelo\Logica\Recursos\Test.cs" />
     <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Administrador.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Alumno.cs" />
@@ -66,12 +71,69 @@
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\ForosQuery.cs" />
+    <Compile Include="Modelo\Querys\MensajeQuery.cs" />
+    <Compile Include="Modelo\Querys\NoticiaQuery.cs" />
+    <Compile Include="Modelo\Querys\TestConocimientoQuery.cs" />
+    <Compile Include="Modelo\Querys\TestSatisfaccionQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
-    <Compile Include="Vistas\ActividadSocial.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\ActividadSocial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\ActividadSocial.Designer.cs">
+    <Compile Include="Vistas\Apartados\ActividadSocial.Designer.cs">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearNoticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearNoticia.Designer.cs">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearTestConocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearTestConocimiento.Designer.cs">
+      <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\EliminarUsuarioCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\EliminarUsuarioCurso.Designer.cs">
+      <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Hilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
+      <DependentUpon>Hilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.Designer.cs">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\RealizarTestConocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\RealizarTestConocimiento.Designer.cs">
+      <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestConocimientosCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestConocimientosCurso.Designer.cs">
+      <DependentUpon>TestConocimientosCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestSatisfaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestSatisfaccion.Designer.cs">
+      <DependentUpon>TestSatisfaccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\CreacionRecursos\ConfirmarPassword.cs">
       <SubType>Form</SubType>
@@ -97,34 +159,28 @@
     <Compile Include="Vistas\CreacionRecursos\CrearForo.Designer.cs">
       <DependentUpon>CrearForo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.cs">
+    <Compile Include="Vistas\Apartados\Curso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.Designer.cs">
-      <DependentUpon>CrearNoticia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Curso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Curso.Designer.cs">
+    <Compile Include="Vistas\Apartados\Curso.Designer.cs">
       <DependentUpon>Curso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Foro.cs">
+    <Compile Include="Vistas\Apartados\Foro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Foro.Designer.cs">
+    <Compile Include="Vistas\Apartados\Foro.Designer.cs">
       <DependentUpon>Foro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaActividadesSociales.cs">
+    <Compile Include="Vistas\Apartados\PantallaActividadesSociales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaActividadesSociales.Designer.cs">
+    <Compile Include="Vistas\Apartados\PantallaActividadesSociales.Designer.cs">
       <DependentUpon>PantallaActividadesSociales.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaCursos.cs">
+    <Compile Include="Vistas\Apartados\PantallaCursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaCursos.Designer.cs">
+    <Compile Include="Vistas\Apartados\PantallaCursos.Designer.cs">
       <DependentUpon>PantallaCursos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -141,10 +197,10 @@
     <Compile Include="Vistas\Login_Registro\PantallaLogin.designer.cs">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaNoticias.cs">
+    <Compile Include="Vistas\Apartados\PantallaNoticias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaNoticias.designer.cs">
+    <Compile Include="Vistas\Apartados\PantallaNoticias.designer.cs">
       <DependentUpon>PantallaNoticias.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Login_Registro\PantallaRecuperarContrasena.cs">
@@ -183,14 +239,83 @@
     <Compile Include="Vistas\Login_Registro\PantallaUsertype.designer.cs">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PantallaForos.cs">
+    <Compile Include="Vistas\Apartados\PantallaForos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\PantallaForos.Designer.cs">
+    <Compile Include="Vistas\Apartados\PantallaForos.Designer.cs">
       <DependentUpon>PantallaForos.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\ActividadSocial.resx">
+    <Compile Include="Vistas\Opciones\CambiarNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\CambiarNombre.Designer.cs">
+      <DependentUpon>CambiarNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Mensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Mensajes.Designer.cs">
+      <DependentUpon>Mensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisActividadesSociales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisActividadesSociales.Designer.cs">
+      <DependentUpon>MisActividadesSociales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\MisCursos.Designer.cs">
+      <DependentUpon>MisCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\NuevoMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\NuevoMensaje.Designer.cs">
+      <DependentUpon>NuevoMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Opciones.Designer.cs">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearNoticia.resx">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearTestConocimiento.resx">
+      <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
+      <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\Noticia.resx">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
+      <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\TestConocimientosCurso.resx">
+      <DependentUpon>TestConocimientosCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\TestSatisfaccion.resx">
+      <DependentUpon>TestSatisfaccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\ConfirmarPassword.resx">
       <DependentUpon>ConfirmarPassword.cs</DependentUpon>
@@ -204,38 +329,30 @@
     <EmbeddedResource Include="Vistas\CreacionRecursos\CrearForo.resx">
       <DependentUpon>CrearForo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearNoticia.resx">
-      <DependentUpon>CrearNoticia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Curso.resx">
+    <EmbeddedResource Include="Vistas\Apartados\Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Foro.resx">
+    <EmbeddedResource Include="Vistas\Apartados\Foro.resx">
       <DependentUpon>Foro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaActividadesSociales.resx">
+    <EmbeddedResource Include="Vistas\Apartados\PantallaActividadesSociales.resx">
       <DependentUpon>PantallaActividadesSociales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaCursos.resx">
+    <EmbeddedResource Include="Vistas\Apartados\PantallaCursos.resx">
       <DependentUpon>PantallaCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Vistas\Login_Registro\PantallaBienvenido.resx">
       <DependentUpon>PantallaBienvenido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Login_Registro\PantallaLogin.resx">
       <DependentUpon>PantallaLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaNoticias.resx">
+    <EmbeddedResource Include="Vistas\Apartados\PantallaNoticias.resx">
       <DependentUpon>PantallaNoticias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Login_Registro\PantallaRecuperarContrasena.resx">
@@ -256,8 +373,32 @@
     <EmbeddedResource Include="Vistas\Login_Registro\PantallaUsertype.resx">
       <DependentUpon>PantallaUsertype.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\PantallaForos.resx">
+    <EmbeddedResource Include="Vistas\Apartados\PantallaForos.resx">
       <DependentUpon>PantallaForos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\CambiarNombre.resx">
+      <DependentUpon>CambiarNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\Mensajes.resx">
+      <DependentUpon>Mensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\MisActividadesSociales.resx">
+      <DependentUpon>MisActividadesSociales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\MisCursos.resx">
+      <DependentUpon>MisCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\NuevoMensaje.resx">
+      <DependentUpon>NuevoMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\Opciones.resx">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -274,14 +415,24 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Resources\Fondo.jpg" />
     <Content Include="Resources\Images\ApS.ico" />
-    <Content Include="Resources\Images\IconoAdmin.jpg" />
+    <None Include="Resources\Images\x.png" />
+    <None Include="Resources\Images\salir.png" />
+    <None Include="Resources\Images\correo.png" />
+    <None Include="Resources\Images\curso.png" />
+    <Content Include="Resources\Images\Fondo.jpg" />
+    <None Include="Resources\Images\IconoAdmin.png" />
     <Content Include="Resources\Images\IconoAlumno.png" />
     <Content Include="Resources\Images\IconoONG.png" />
     <Content Include="Resources\Images\IconoProfesor.png" />
     <Content Include="Resources\Images\Invitado.png" />
+    <None Include="Resources\Images\invitarAdmin.png" />
     <Content Include="Resources\Images\Login.png" />
     <None Include="Resources\Images\Papelera.png" />
+    <None Include="Resources\Images\opciones.jpg" />
+    <None Include="Resources\Images\opciones.png" />
+    <Content Include="Resources\Images\Registro.jpg" />
     <Content Include="Resources\Images\Registro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
