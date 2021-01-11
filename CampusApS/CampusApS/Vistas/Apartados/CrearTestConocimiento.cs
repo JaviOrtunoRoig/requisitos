@@ -11,34 +11,144 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class CrearTestConocimiento : Form {
-        public CrearTestConocimiento() {
+
+        private CursoRecurso cursoRecurso;
+
+        public CrearTestConocimiento(CursoRecurso cursoRecurso) {
             InitializeComponent();
+            this.cursoRecurso = cursoRecurso;
         }
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-            /*TODO: COGER OPCIÓN CORRECTA DE LA VISTA Pregunta pregunta1 = new Pregunta(tPregunta1, tRespuesta1A, tRespuesta1B, tRespuesta1C);
-            Pregunta pregunta2 = new Pregunta(tPregunta2, tRespuesta2A, tRespuesta2B, tRespuesta2C);
-            Pregunta pregunta3 = new Pregunta(tPregunta3, tRespuesta3A, tRespuesta3B, tRespuesta3C);
-            Pregunta pregunta4 = new Pregunta(tPregunta4, tRespuesta4A, tRespuesta4B, tRespuesta4C);
-            Pregunta pregunta5 = new Pregunta(tPregunta5, tRespuesta5A, tRespuesta5B, tRespuesta5C);*/
 
-            /* Pregunta [] preguntas = new Pregunta[]
+            List<String> rCorrecta = obtenerRespuestasCorrectas();
 
-            preguntas.add(pregunta1);
-            preguntas.add(pregunta2);
-            preguntas.add(pregunta3);
-            preguntas.add(pregunta4);
-            preguntas.add(pregunta5);
 
-            Test test = new Test(tNombreTest, preguntas);
+            Pregunta pregunta1 = new Pregunta(tPregunta1.Text, tRespuesta1A.Text, tRespuesta1B.Text, tRespuesta1C.Text, rCorrecta[0]);
+            Pregunta pregunta2 = new Pregunta(tPregunta2.Text, tRespuesta2A.Text, tRespuesta2B.Text, tRespuesta2C.Text, rCorrecta[1]);
+            Pregunta pregunta3 = new Pregunta(tPregunta3.Text, tRespuesta3A.Text, tRespuesta3B.Text, tRespuesta3C.Text, rCorrecta[2]);
+            Pregunta pregunta4 = new Pregunta(tPregunta4.Text, tRespuesta4A.Text, tRespuesta4B.Text, tRespuesta4C.Text, rCorrecta[3]);
+            Pregunta pregunta5 = new Pregunta(tPregunta5.Text, tRespuesta5A.Text, tRespuesta5B.Text, tRespuesta5C.Text, rCorrecta[4]);
 
-            */
+            List<Pregunta> preguntas = new List<Pregunta>();
+           
+            preguntas.Add(pregunta1);
+            preguntas.Add(pregunta2);
+            preguntas.Add(pregunta3);
+            preguntas.Add(pregunta4);
+            preguntas.Add(pregunta5);
+
+            Test test = new Test(tNombreTest.Text, cursoRecurso.getNombre(), preguntas);
 
 
 
             //TODO: CREAR BD
             //TODO: INSERTAR OBJETO TEST EN BD
         }
+
+
+        private List<String> obtenerRespuestasCorrectas()
+        {
+            List<String> respuestas = new List<String>();
+
+            string opcion = (string) cSol1.SelectedItem;
+
+            if(opcion.Equals("A"))
+            {
+                respuestas.Add(tRespuesta1A.Text);
+            }
+            else if (opcion.Equals("B"))
+            {
+                respuestas.Add(tRespuesta1B.Text);
+            }
+            else
+            {
+                respuestas.Add(tRespuesta1C.Text);
+            }
+
+            opcion = (string)cSol2.SelectedItem;
+
+            if (opcion.Equals("A"))
+            {
+                respuestas.Add(tRespuesta2A.Text);
+            }
+            else if (opcion.Equals("B"))
+            {
+                respuestas.Add(tRespuesta2B.Text);
+            }
+            else
+            {
+                respuestas.Add(tRespuesta2C.Text);
+            }
+
+            opcion = (string)cSol3.SelectedItem;
+
+            if (opcion.Equals("A"))
+            {
+                respuestas.Add(tRespuesta3A.Text);
+            }
+            else if (opcion.Equals("B"))
+            {
+                respuestas.Add(tRespuesta3B.Text);
+            }
+            else
+            {
+                respuestas.Add(tRespuesta3C.Text);
+            }
+
+            opcion = (string)cSol4.SelectedItem;
+
+            if (opcion.Equals("A"))
+            {
+                respuestas.Add(tRespuesta4A.Text);
+            }
+            else if (opcion.Equals("B"))
+            {
+                respuestas.Add(tRespuesta4B.Text);
+            }
+            else
+            {
+                respuestas.Add(tRespuesta4C.Text);
+            }
+
+            opcion = (string)cSol5.SelectedItem;
+
+            if (opcion.Equals("A"))
+            {
+                respuestas.Add(tRespuesta5A.Text);
+            }
+            else if (opcion.Equals("B"))
+            {
+                respuestas.Add(tRespuesta5B.Text);
+            }
+            else
+            {
+                respuestas.Add(tRespuesta5C.Text);
+            }
+            
+
+            return respuestas;
+        }
+
+        private void CrearTestConocimiento_Load(object sender, EventArgs e)
+        {
+
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
+
+            List<String> Opciones = new List<String>();
+
+            Opciones.Add("A");
+            Opciones.Add("B");
+            Opciones.Add("C");
+
+            cSol1.DataSource = Opciones;
+            cSol2.DataSource = Opciones;
+            cSol3.DataSource = Opciones;
+            cSol4.DataSource = Opciones;
+            cSol5.DataSource = Opciones;
+        }
+
     }
 }

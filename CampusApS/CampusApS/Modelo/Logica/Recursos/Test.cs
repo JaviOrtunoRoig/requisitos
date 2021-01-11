@@ -8,22 +8,28 @@ namespace CampusApS.Modelo.Logica.Recursos
 {
     public class Test
     {
-        private string nombre;
-        private Pregunta [] preguntas;
+        private string nombreTest, nombreCurso;
+        private List<Pregunta> preguntas;
 
 
-        public Test(string nombre, Pregunta [] preguntas)
+        public Test(string nombreTest, string nombreCurso, List<Pregunta> preguntas)
         {
-            this.nombre = nombre;
+            this.nombreTest = nombreTest;
+            this.nombreCurso = nombreCurso;
             this.preguntas = preguntas;
         }
 
-        public string getNombre()
+        public string getNombreTest()
         {
-            return nombre;
+            return nombreTest;
         }
 
-        public Pregunta [] getPreguntas()
+        public string getNombreCurso()
+        {
+            return nombreCurso;
+        }
+
+        public List<Pregunta> getPreguntas()
         {
             return preguntas;
         }
