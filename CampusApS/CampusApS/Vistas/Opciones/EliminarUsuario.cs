@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,23 @@ namespace CampusApS.Vistas.Opciones {
     public partial class EliminarUsuario : Form {
         public EliminarUsuario() {
             InitializeComponent();
+        }
+
+        private void bEliminar_Click(object sender, EventArgs e)
+        {
+            Usuario usuario = (Usuario) cUsuarios.SelectedItem;
+
+            if (usuario != null)
+            {
+                var result = MessageBox.Show("¿Estas seguro?", "Aviso", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    UsuarioQuery bd = new UsuarioQuery();
+                    bd.borrarUsuario(usuario.getNombre());
+                    this.Close();
+                }
+                
+            }
         }
     }
 }

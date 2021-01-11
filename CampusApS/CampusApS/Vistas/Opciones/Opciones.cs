@@ -77,6 +77,11 @@ namespace CampusApS.Vistas.Opciones {
             bd.codigoAdmin();
         }
 
-       
+        private void bEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            EliminarUsuario ventana = new EliminarUsuario();
+            ventana.ShowDialog();
+            this.Close();
+        }
     }
 }

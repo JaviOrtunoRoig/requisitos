@@ -43,42 +43,47 @@
             this.bEliminar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.bEliminar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.bEliminar.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminar.Location = new System.Drawing.Point(67, 129);
+            this.bEliminar.Location = new System.Drawing.Point(89, 159);
+            this.bEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.bEliminar.Name = "bEliminar";
-            this.bEliminar.Size = new System.Drawing.Size(200, 50);
+            this.bEliminar.Size = new System.Drawing.Size(267, 62);
             this.bEliminar.TabIndex = 0;
             this.bEliminar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
             this.bEliminar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminar.Click += new System.EventHandler(this.bEliminar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(16, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 24);
+            this.label1.Size = new System.Drawing.Size(409, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Elija al usuario al que quiere eliminar";
             // 
             // cUsuarios
             // 
             this.cUsuarios.FormattingEnabled = true;
-            this.cUsuarios.Location = new System.Drawing.Point(16, 78);
+            this.cUsuarios.Location = new System.Drawing.Point(21, 96);
+            this.cUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.cUsuarios.Name = "cUsuarios";
-            this.cUsuarios.Size = new System.Drawing.Size(314, 21);
+            this.cUsuarios.Size = new System.Drawing.Size(417, 24);
             this.cUsuarios.TabIndex = 2;
             // 
             // EliminarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(340, 216);
+            this.ClientSize = new System.Drawing.Size(453, 266);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cUsuarios);
             this.Controls.Add(this.bEliminar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EliminarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarUsuario";
