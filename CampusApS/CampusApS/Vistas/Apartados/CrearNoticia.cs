@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CampusApS.Modelo.Logica.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +11,36 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class CrearNoticia : Form {
-        public CrearNoticia() {
+
+        private Usuario usuario;
+
+        public CrearNoticia(Usuario usuario) {
             InitializeComponent();
+            this.usuario = usuario;
         }
+
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+            string titulo = tBoxTitulo.Text;
+
+            string contenido = tBoxContenido.Text;
+
+            if(titulo.Equals(""))
+            {
+                MessageBox.Show("Error, no ha introducido ningún título");
+            }
+            else if(contenido.Equals(""))
+            {
+                MessageBox.Show("Error, no ha introducido ningún contenido");
+            }
+            else
+            {
+                //TODO: CREAR BD
+                //TODO : INSERTAR NOTICIA
+
+                this.Close();
+            }
+        }
+
     }
 }

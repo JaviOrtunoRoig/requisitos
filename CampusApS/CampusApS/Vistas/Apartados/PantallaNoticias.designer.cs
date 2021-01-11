@@ -99,6 +99,7 @@
             this.lbNoticias.Name = "lbNoticias";
             this.lbNoticias.Size = new System.Drawing.Size(632, 356);
             this.lbNoticias.TabIndex = 4;
+            this.lbNoticias.DoubleClick += new System.EventHandler(this.lbNoticias_DoubleClick);
             // 
             // calendario
             // 
@@ -128,6 +129,7 @@
             this.bPapelera.TabIndex = 21;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
             // 
             // bEliminarNoticia
             // 
@@ -150,6 +152,7 @@
             this.bEliminarNoticia.TabIndex = 20;
             this.bEliminarNoticia.TextColor = System.Drawing.Color.Firebrick;
             this.bEliminarNoticia.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminarNoticia.Click += new System.EventHandler(this.bEliminarNoticia_Click);
             // 
             // bAnadirNoticia
             // 
@@ -172,6 +175,7 @@
             this.bAnadirNoticia.TabIndex = 19;
             this.bAnadirNoticia.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirNoticia.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirNoticia.Click += new System.EventHandler(this.bAnadirNoticia_Click);
             // 
             // label1
             // 
