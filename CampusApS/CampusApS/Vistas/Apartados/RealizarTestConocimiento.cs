@@ -29,7 +29,7 @@ namespace CampusApS.Vistas.Apartados {
 
             tNombreTest.Text = test.getNombre();
 
-            Pregunta[] preguntas = test.getPreguntas();
+            List<Pregunta> preguntas = test.getPreguntas();
 
             tPregunta1.Text = preguntas[0].getNombre();
             tPregunta2.Text = preguntas[1].getNombre();
