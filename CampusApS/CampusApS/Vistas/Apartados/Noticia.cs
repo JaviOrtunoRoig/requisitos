@@ -10,8 +10,16 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class Noticia : Form {
-        public Noticia() {
+
+        private string titulo, contenido;
+
+        public Noticia(string titulo, string contenido) {
             InitializeComponent();
+            this.titulo = titulo;
+            this.contenido = contenido;
+
+            lTitulo.Text = titulo;
+            tBoxContenido.Text = contenido;
         }
     }
 }

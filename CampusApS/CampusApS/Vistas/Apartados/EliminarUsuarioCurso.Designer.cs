@@ -34,9 +34,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 37);
+            this.label1.Location = new System.Drawing.Point(15, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 48);
+            this.label1.Size = new System.Drawing.Size(409, 58);
             this.label1.TabIndex = 6;
             this.label1.Text = "Elija al usuario al que quiere eliminar\r\nde este curso";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -44,9 +45,10 @@
             // cUsuarios
             // 
             this.cUsuarios.FormattingEnabled = true;
-            this.cUsuarios.Location = new System.Drawing.Point(15, 101);
+            this.cUsuarios.Location = new System.Drawing.Point(20, 124);
+            this.cUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cUsuarios.Name = "cUsuarios";
-            this.cUsuarios.Size = new System.Drawing.Size(314, 21);
+            this.cUsuarios.Size = new System.Drawing.Size(417, 24);
             this.cUsuarios.TabIndex = 5;
             // 
             // bEliminar
@@ -63,26 +65,30 @@
             this.bEliminar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.bEliminar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.bEliminar.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminar.Location = new System.Drawing.Point(66, 146);
+            this.bEliminar.Location = new System.Drawing.Point(88, 180);
+            this.bEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bEliminar.Name = "bEliminar";
-            this.bEliminar.Size = new System.Drawing.Size(200, 50);
+            this.bEliminar.Size = new System.Drawing.Size(267, 62);
             this.bEliminar.TabIndex = 4;
             this.bEliminar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
             this.bEliminar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminar.Click += new System.EventHandler(this.bEliminar_Click);
             // 
-            // EliminarUsuario
+            // EliminarUsuarioCurso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(340, 216);
+            this.ClientSize = new System.Drawing.Size(453, 266);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cUsuarios);
             this.Controls.Add(this.bEliminar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "EliminarUsuario";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "EliminarUsuarioCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarUsuario";
+            this.Load += new System.EventHandler(this.EliminarUsuarioCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

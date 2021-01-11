@@ -18,12 +18,12 @@ namespace CampusApS.Modelo.Logica.Recursos
             this.preguntas = preguntas;
         }
 
-        private string getNombre()
+        public string getNombre()
         {
             return nombre;
         }
 
-        private Pregunta [] getPreguntas()
+        public Pregunta [] getPreguntas()
         {
             return preguntas;
         }

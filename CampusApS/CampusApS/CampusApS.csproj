@@ -55,6 +55,7 @@
     <Compile Include="Modelo\Logica\Recursos\ActividadSocialRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\CursoRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\ForoRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\NoticiaRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\Pregunta.cs" />
     <Compile Include="Modelo\Logica\Recursos\Test.cs" />
     <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
@@ -120,11 +121,11 @@
     <Compile Include="Vistas\Apartados\RealizarTestConocimiento.Designer.cs">
       <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Apartados\TestConomientosCurso.cs">
+    <Compile Include="Vistas\Apartados\TestConocimientosCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Apartados\TestConomientosCurso.Designer.cs">
-      <DependentUpon>TestConomientosCurso.cs</DependentUpon>
+    <Compile Include="Vistas\Apartados\TestConocimientosCurso.Designer.cs">
+      <DependentUpon>TestConocimientosCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Apartados\TestSatisfaccion.cs">
       <SubType>Form</SubType>
@@ -308,8 +309,8 @@
     <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
       <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Apartados\TestConomientosCurso.resx">
-      <DependentUpon>TestConomientosCurso.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Apartados\TestConocimientosCurso.resx">
+      <DependentUpon>TestConocimientosCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\TestSatisfaccion.resx">
       <DependentUpon>TestSatisfaccion.cs</DependentUpon>

@@ -64,59 +64,66 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 30);
+            this.label1.Location = new System.Drawing.Point(96, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 24);
+            this.label1.Size = new System.Drawing.Size(340, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cree su Test de Conocimiento";
             // 
             // tPregunta1
             // 
-            this.tPregunta1.Location = new System.Drawing.Point(76, 92);
+            this.tPregunta1.Location = new System.Drawing.Point(101, 113);
+            this.tPregunta1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tPregunta1.Multiline = true;
             this.tPregunta1.Name = "tPregunta1";
-            this.tPregunta1.Size = new System.Drawing.Size(262, 40);
+            this.tPregunta1.Size = new System.Drawing.Size(348, 48);
             this.tPregunta1.TabIndex = 1;
             // 
             // tPregunta2
             // 
-            this.tPregunta2.Location = new System.Drawing.Point(76, 163);
+            this.tPregunta2.Location = new System.Drawing.Point(101, 201);
+            this.tPregunta2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tPregunta2.Multiline = true;
             this.tPregunta2.Name = "tPregunta2";
-            this.tPregunta2.Size = new System.Drawing.Size(262, 40);
+            this.tPregunta2.Size = new System.Drawing.Size(348, 48);
             this.tPregunta2.TabIndex = 2;
             // 
             // tPregunta3
             // 
-            this.tPregunta3.Location = new System.Drawing.Point(76, 232);
+            this.tPregunta3.Location = new System.Drawing.Point(101, 286);
+            this.tPregunta3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tPregunta3.Multiline = true;
             this.tPregunta3.Name = "tPregunta3";
-            this.tPregunta3.Size = new System.Drawing.Size(262, 40);
+            this.tPregunta3.Size = new System.Drawing.Size(348, 48);
             this.tPregunta3.TabIndex = 3;
             // 
             // tPregunta4
             // 
-            this.tPregunta4.Location = new System.Drawing.Point(76, 303);
+            this.tPregunta4.Location = new System.Drawing.Point(101, 373);
+            this.tPregunta4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tPregunta4.Multiline = true;
             this.tPregunta4.Name = "tPregunta4";
-            this.tPregunta4.Size = new System.Drawing.Size(262, 40);
+            this.tPregunta4.Size = new System.Drawing.Size(348, 48);
             this.tPregunta4.TabIndex = 4;
             // 
             // tPregunta5
             // 
-            this.tPregunta5.Location = new System.Drawing.Point(76, 376);
+            this.tPregunta5.Location = new System.Drawing.Point(101, 463);
+            this.tPregunta5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tPregunta5.Multiline = true;
             this.tPregunta5.Name = "tPregunta5";
-            this.tPregunta5.Size = new System.Drawing.Size(262, 40);
+            this.tPregunta5.Size = new System.Drawing.Size(348, 48);
             this.tPregunta5.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(73, 76);
+            this.label2.Location = new System.Drawing.Point(97, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(78, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Pregunta 1";
             // 
@@ -124,9 +131,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(73, 147);
+            this.label3.Location = new System.Drawing.Point(97, 181);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(78, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Pregunta 2";
             // 
@@ -134,9 +142,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(73, 216);
+            this.label4.Location = new System.Drawing.Point(97, 266);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.Size = new System.Drawing.Size(78, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Pregunta 3";
             // 
@@ -144,9 +153,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(73, 287);
+            this.label5.Location = new System.Drawing.Point(97, 353);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.Size = new System.Drawing.Size(78, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Pregunta 4";
             // 
@@ -154,9 +164,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(73, 360);
+            this.label6.Location = new System.Drawing.Point(97, 443);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.Size = new System.Drawing.Size(78, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Pregunta 5";
             // 
@@ -165,9 +176,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(610, 30);
+            this.label7.Location = new System.Drawing.Point(813, 37);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 16);
+            this.label7.Size = new System.Drawing.Size(108, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "Respuestas";
             // 
@@ -176,9 +188,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(491, 54);
+            this.label8.Location = new System.Drawing.Point(655, 66);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(17, 16);
+            this.label8.Size = new System.Drawing.Size(20, 20);
             this.label8.TabIndex = 12;
             this.label8.Text = "A";
             // 
@@ -187,9 +200,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(640, 54);
+            this.label9.Location = new System.Drawing.Point(853, 66);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(17, 16);
+            this.label9.Size = new System.Drawing.Size(21, 20);
             this.label9.TabIndex = 13;
             this.label9.Text = "B";
             // 
@@ -198,130 +212,146 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(810, 62);
+            this.label10.Location = new System.Drawing.Point(1080, 76);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 16);
+            this.label10.Size = new System.Drawing.Size(21, 20);
             this.label10.TabIndex = 14;
             this.label10.Text = "C";
             // 
             // tRespuesta1A
             // 
-            this.tRespuesta1A.Location = new System.Drawing.Point(425, 92);
+            this.tRespuesta1A.Location = new System.Drawing.Point(567, 113);
+            this.tRespuesta1A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta1A.Multiline = true;
             this.tRespuesta1A.Name = "tRespuesta1A";
-            this.tRespuesta1A.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta1A.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta1A.TabIndex = 15;
             // 
             // tRespuesta1B
             // 
-            this.tRespuesta1B.Location = new System.Drawing.Point(584, 92);
+            this.tRespuesta1B.Location = new System.Drawing.Point(779, 113);
+            this.tRespuesta1B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta1B.Multiline = true;
             this.tRespuesta1B.Name = "tRespuesta1B";
-            this.tRespuesta1B.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta1B.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta1B.TabIndex = 16;
             // 
             // tRespuesta1C
             // 
-            this.tRespuesta1C.Location = new System.Drawing.Point(746, 92);
+            this.tRespuesta1C.Location = new System.Drawing.Point(995, 113);
+            this.tRespuesta1C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta1C.Multiline = true;
             this.tRespuesta1C.Name = "tRespuesta1C";
-            this.tRespuesta1C.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta1C.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta1C.TabIndex = 17;
             // 
             // tRespuesta2C
             // 
-            this.tRespuesta2C.Location = new System.Drawing.Point(746, 163);
+            this.tRespuesta2C.Location = new System.Drawing.Point(995, 201);
+            this.tRespuesta2C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta2C.Multiline = true;
             this.tRespuesta2C.Name = "tRespuesta2C";
-            this.tRespuesta2C.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta2C.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta2C.TabIndex = 20;
             // 
             // tRespuesta2B
             // 
-            this.tRespuesta2B.Location = new System.Drawing.Point(584, 163);
+            this.tRespuesta2B.Location = new System.Drawing.Point(779, 201);
+            this.tRespuesta2B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta2B.Multiline = true;
             this.tRespuesta2B.Name = "tRespuesta2B";
-            this.tRespuesta2B.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta2B.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta2B.TabIndex = 19;
             // 
             // tRespuesta2A
             // 
-            this.tRespuesta2A.Location = new System.Drawing.Point(425, 163);
+            this.tRespuesta2A.Location = new System.Drawing.Point(567, 201);
+            this.tRespuesta2A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta2A.Multiline = true;
             this.tRespuesta2A.Name = "tRespuesta2A";
-            this.tRespuesta2A.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta2A.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta2A.TabIndex = 18;
             // 
             // tRespuesta3C
             // 
-            this.tRespuesta3C.Location = new System.Drawing.Point(746, 232);
+            this.tRespuesta3C.Location = new System.Drawing.Point(995, 286);
+            this.tRespuesta3C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta3C.Multiline = true;
             this.tRespuesta3C.Name = "tRespuesta3C";
-            this.tRespuesta3C.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta3C.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta3C.TabIndex = 23;
             // 
             // tRespuesta3B
             // 
-            this.tRespuesta3B.Location = new System.Drawing.Point(584, 232);
+            this.tRespuesta3B.Location = new System.Drawing.Point(779, 286);
+            this.tRespuesta3B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta3B.Multiline = true;
             this.tRespuesta3B.Name = "tRespuesta3B";
-            this.tRespuesta3B.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta3B.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta3B.TabIndex = 22;
             // 
             // tRespuesta3A
             // 
-            this.tRespuesta3A.Location = new System.Drawing.Point(425, 232);
+            this.tRespuesta3A.Location = new System.Drawing.Point(567, 286);
+            this.tRespuesta3A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta3A.Multiline = true;
             this.tRespuesta3A.Name = "tRespuesta3A";
-            this.tRespuesta3A.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta3A.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta3A.TabIndex = 21;
             // 
             // tRespuesta4C
             // 
-            this.tRespuesta4C.Location = new System.Drawing.Point(746, 303);
+            this.tRespuesta4C.Location = new System.Drawing.Point(995, 373);
+            this.tRespuesta4C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta4C.Multiline = true;
             this.tRespuesta4C.Name = "tRespuesta4C";
-            this.tRespuesta4C.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta4C.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta4C.TabIndex = 26;
             // 
             // tRespuesta4B
             // 
-            this.tRespuesta4B.Location = new System.Drawing.Point(584, 303);
+            this.tRespuesta4B.Location = new System.Drawing.Point(779, 373);
+            this.tRespuesta4B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta4B.Multiline = true;
             this.tRespuesta4B.Name = "tRespuesta4B";
-            this.tRespuesta4B.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta4B.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta4B.TabIndex = 25;
             // 
             // tRespuesta4A
             // 
-            this.tRespuesta4A.Location = new System.Drawing.Point(425, 303);
+            this.tRespuesta4A.Location = new System.Drawing.Point(567, 373);
+            this.tRespuesta4A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta4A.Multiline = true;
             this.tRespuesta4A.Name = "tRespuesta4A";
-            this.tRespuesta4A.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta4A.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta4A.TabIndex = 24;
             // 
             // tRespuesta5C
             // 
-            this.tRespuesta5C.Location = new System.Drawing.Point(746, 376);
+            this.tRespuesta5C.Location = new System.Drawing.Point(995, 463);
+            this.tRespuesta5C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta5C.Multiline = true;
             this.tRespuesta5C.Name = "tRespuesta5C";
-            this.tRespuesta5C.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta5C.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta5C.TabIndex = 29;
             // 
             // tRespuesta5B
             // 
-            this.tRespuesta5B.Location = new System.Drawing.Point(584, 376);
+            this.tRespuesta5B.Location = new System.Drawing.Point(779, 463);
+            this.tRespuesta5B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta5B.Multiline = true;
             this.tRespuesta5B.Name = "tRespuesta5B";
-            this.tRespuesta5B.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta5B.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta5B.TabIndex = 28;
             // 
             // tRespuesta5A
             // 
-            this.tRespuesta5A.Location = new System.Drawing.Point(425, 376);
+            this.tRespuesta5A.Location = new System.Drawing.Point(567, 463);
+            this.tRespuesta5A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tRespuesta5A.Multiline = true;
             this.tRespuesta5A.Name = "tRespuesta5A";
-            this.tRespuesta5A.Size = new System.Drawing.Size(143, 40);
+            this.tRespuesta5A.Size = new System.Drawing.Size(189, 48);
             this.tRespuesta5A.TabIndex = 27;
             // 
             // xuiButton1
@@ -338,37 +368,41 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(563, 449);
+            this.xuiButton1.Location = new System.Drawing.Point(751, 553);
+            this.xuiButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
+            this.xuiButton1.Size = new System.Drawing.Size(267, 62);
             this.xuiButton1.TabIndex = 30;
             this.xuiButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(96, 465);
+            this.label11.Location = new System.Drawing.Point(128, 572);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 16);
+            this.label11.Size = new System.Drawing.Size(148, 20);
             this.label11.TabIndex = 31;
             this.label11.Text = "Nombre del Test";
             // 
             // tNombreTest
             // 
-            this.tNombreTest.Location = new System.Drawing.Point(260, 465);
+            this.tNombreTest.Location = new System.Drawing.Point(347, 572);
+            this.tNombreTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tNombreTest.Name = "tNombreTest";
-            this.tNombreTest.Size = new System.Drawing.Size(184, 20);
+            this.tNombreTest.Size = new System.Drawing.Size(244, 22);
             this.tNombreTest.TabIndex = 32;
             // 
             // CrearTestConocimiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(928, 528);
+            this.ClientSize = new System.Drawing.Size(1237, 650);
             this.Controls.Add(this.tNombreTest);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.xuiButton1);
@@ -402,6 +436,7 @@
             this.Controls.Add(this.tPregunta2);
             this.Controls.Add(this.tPregunta1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CrearTestConocimiento";
             this.Text = "CrearTestConocimiento";
             this.ResumeLayout(false);
