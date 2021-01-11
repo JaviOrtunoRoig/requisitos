@@ -159,11 +159,15 @@
     <Compile Include="Vistas\Apartados\TestSatisfaccion.Designer.cs">
       <DependentUpon>TestSatisfaccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Apartados\VerHilos.cs" />
+    <Compile Include="Vistas\Apartados\VerHilos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vistas\Apartados\VerHilos.Designer.cs">
       <DependentUpon>VerHilos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Apartados\VerRespuestaHilo.cs" />
+    <Compile Include="Vistas\Apartados\VerRespuestaHilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Vistas\Apartados\VerRespuestaHilo.Designer.cs">
       <DependentUpon>VerRespuestaHilo.cs</DependentUpon>
     </Compile>
