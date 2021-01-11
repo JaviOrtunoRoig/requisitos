@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CampusApS.Modelo.Logica.Recursos
 {
-    class Pregunta
+    public class Pregunta
     {
         private string nombrePregunta, opcionA, opcionB, opcionC, opcionCorrecta;
 
