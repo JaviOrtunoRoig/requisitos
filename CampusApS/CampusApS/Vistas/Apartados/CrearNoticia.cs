@@ -1,4 +1,5 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,8 +36,7 @@ namespace CampusApS.Vistas.Apartados {
             }
             else
             {
-                //TODO: CREAR BD
-                //TODO : INSERTAR NOTICIA
+                NoticiaQuery BD = new NoticiaQuery(titulo, contenido);
 
                 this.Close();
             }

@@ -17,6 +17,11 @@ namespace CampusApS.Modelo.Querys
         private string nombre;
         private string contenido;
 
+        public NoticiaQuery()
+        {
+
+        }
+
         public NoticiaQuery(string nom, string cont)
         {
             nombre = nom;
@@ -33,11 +38,11 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT contenidoNoticia FROM noticia WHERE tituloNoticia = '" + nom + "';");
+            object[] tupla = miBD.Select("SELECT * FROM noticia WHERE tituloNoticia = '" + nom + "';");
 
             if (tupla[0] != null)
             {
-                contenido = (string) tupla[0];
+                contenido = (string)((object[])(tupla[0]))[1];
                 nombre = nom;
             }
             else
@@ -57,12 +62,12 @@ namespace CampusApS.Modelo.Querys
         public void borrarNoticia(string nom){
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            miBD.Delete("DELETE FROM `apsgrupo06`.`noticia` WHERE (nombreTitulo = '" + nom + "');");
+            miBD.Delete("DELETE FROM `apsgrupo06`.`noticia` WHERE (tituloNoticia = '" + nom + "');");
             nombre = null;
             contenido = null;
         }
 
-        public List<String> getAllNoticas(string usuario)
+        public List<String> getAllNoticas()
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
