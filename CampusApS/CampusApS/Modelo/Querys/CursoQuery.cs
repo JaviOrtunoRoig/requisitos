@@ -236,6 +236,53 @@ namespace CampusApS.Modelo.Querys
             return list;
         }
 
+        public List<String> getUsuariosCurso(string nomCurso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombreUsuario FROM `apsgrupo06`.`usuario_curso` WHERE nombreCurso = '" + nomCurso + "';");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public void borrarUsuarioCurso(string nomUs, string nomCurso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+            miBD.Delete("DELETE FROM `apsgrupo06`.`usuario_curso` WHERE (nombreUsuario = '" + nomUs + "' AND nombreCurso = '"+ nomCurso + "');");
+        }
+
        
     }
 }
