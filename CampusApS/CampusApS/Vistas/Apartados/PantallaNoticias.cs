@@ -97,8 +97,8 @@ namespace CampusApS
             //TODO: CREAR BD CursoQuery query = new CursoQuery();
             NoticiaRecurso noticiaRecurso = new NoticiaRecurso((string)lbNoticias.SelectedItem);
             //TODO: GET CONTENIDO cursoRecurso.setContenido(query.getContenido((string)lbNoticias.SelectedItem));
-            NoticiaQuery ventana = new NoticiaQuery(noticiaRecurso.getNombre(), noticiaRecurso.getContenido());
-            ventana.ShowDialog();
+            //TODO: NoticiaQuery ventana = new NoticiaQuery(noticiaRecurso.getNombre(), noticiaRecurso.getContenido());
+            //TODO: ventana.ShowDialog();
         }
 
         private void bAnadirNoticia_Click(object sender, EventArgs e)
