@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Apartados;
 using CampusApS.Vistas.CreacionRecursos;
 using CampusApS.Vistas.Opciones;
 using System;
@@ -55,11 +56,12 @@ namespace CampusApS {
             ventana.ShowDialog();
         }
 
-        private void Curso_Load(object sender, EventArgs e) {
+        private void Curso_Load(object sender, EventArgs e)
+        {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            
+
             this.carta.Text1 = this.usuario.getRol();
             this.carta.Text2 = this.usuario.getNombre();
 
@@ -76,9 +78,14 @@ namespace CampusApS {
             this.bEliminarForo.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
             this.bPapelera.Visible = false;
             ForosQuery BD = new ForosQuery();
-            lbCursos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
+            lbForos.DataSource = BD.getForoCurso(this.cursoRecurso.getNombre());
 
-            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
+            if (usuario.getRol().Equals("invitado"))
+            {
+                bOpciones.Visible = false;
+                bTestSatisfaccion.Visible = false;
+                bTestConocimiento.Visible = false;
+            }
         }
 
         private void bAnadirForo_Click(object sender, EventArgs e) {
@@ -123,6 +130,20 @@ namespace CampusApS {
         private void bOpciones_Click(object sender, EventArgs e)
         {
             Opciones ventana = new Opciones(usuario);
+            ventana.ShowDialog();
+        }
+
+        private void bTestConocimiento_Click(object sender, EventArgs e)
+        {
+            TestConocimientosCurso ventana = new TestConocimientosCurso(usuario, cursoRecurso);
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Close();
+        }
+
+        private void bEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            EliminarUsuarioCurso ventana = new EliminarUsuarioCurso(usuario, cursoRecurso);
             ventana.ShowDialog();
         }
 

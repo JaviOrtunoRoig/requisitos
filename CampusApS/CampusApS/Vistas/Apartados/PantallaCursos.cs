@@ -40,6 +40,8 @@ namespace CampusApS
                 UsuarioQuery BDUsuario = new UsuarioQuery();
                 this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
             }
+            
+            
 
             this.bParticiparCurso.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
             this.bAnadirCurso.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
