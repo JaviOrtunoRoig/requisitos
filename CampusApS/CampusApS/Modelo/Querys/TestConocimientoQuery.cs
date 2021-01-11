@@ -30,10 +30,7 @@ namespace CampusApS.Modelo.Querys
 
 
             miBD.Insert("INSERT INTO `apsgrupo06`.`testSatisfaccion` (`nombreTest`, `curso`, `pregunta1`, `pregunta2`, " +
-                "`pregunta3`, `pregunta4`, `pregunta5`, `pregunta6`, `pregunta7`, `pregunta8`, " +
-                "`pregunta9`, `pregunta10`, `pregunta11`, `pregunta12`, `pregunta13`, `pregunta14`, " +
-                "`pregunta15`, `pregunta16`, `pregunta17`, `pregunta18`, `pregunta19`, `pregunta20`) VALUES('" + test.getNombre() + 
-                "', '" + nomCurso + sb.ToString() + "')");
+                "`pregunta3`, `pregunta4`, `pregunta5`) VALUES('" + test.getNombreTest() + "', '" + nomCurso + sb.ToString() + "')");
 
         }
     }

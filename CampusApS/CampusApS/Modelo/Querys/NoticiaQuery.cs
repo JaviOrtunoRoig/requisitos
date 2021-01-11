@@ -31,14 +31,14 @@ namespace CampusApS.Modelo.Querys
 
         public NoticiaQuery(string nom)
         {
-            nombre = nom;
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT contenidoNoticia FROM noticia WHERE tituloNoticia = '" + nombre + "';");
+            object[] tupla = miBD.Select("SELECT contenidoNoticia FROM noticia WHERE tituloNoticia = '" + nom + "';");
 
             if (tupla[0] != null)
             {
                 contenido = (string) tupla[0];
+                nombre = nom;
             }
             else
             {
