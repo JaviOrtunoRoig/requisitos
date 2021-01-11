@@ -21,5 +21,6 @@ namespace CampusApS.Vistas.Apartados {
             lTitulo.Text = titulo;
             tBoxContenido.Text = contenido;
         }
+
     }
 }
