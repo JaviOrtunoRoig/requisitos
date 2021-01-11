@@ -189,7 +189,7 @@
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bPapelera.Location = new System.Drawing.Point(1065, 414);
-            this.bPapelera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(2);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(44, 43);
             this.bPapelera.TabIndex = 45;
@@ -211,7 +211,7 @@
             this.bEliminarHilo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarHilo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bEliminarHilo.Location = new System.Drawing.Point(917, 382);
-            this.bEliminarHilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEliminarHilo.Margin = new System.Windows.Forms.Padding(2);
             this.bEliminarHilo.Name = "bEliminarHilo";
             this.bEliminarHilo.Size = new System.Drawing.Size(192, 28);
             this.bEliminarHilo.TabIndex = 44;
@@ -233,12 +233,13 @@
             this.bAnadirHilo.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bAnadirHilo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bAnadirHilo.Location = new System.Drawing.Point(917, 353);
-            this.bAnadirHilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bAnadirHilo.Margin = new System.Windows.Forms.Padding(2);
             this.bAnadirHilo.Name = "bAnadirHilo";
             this.bAnadirHilo.Size = new System.Drawing.Size(192, 25);
             this.bAnadirHilo.TabIndex = 43;
             this.bAnadirHilo.TextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirHilo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bAnadirHilo.Click += new System.EventHandler(this.bAnadirHilo_Click);
             // 
             // Foro
             // 

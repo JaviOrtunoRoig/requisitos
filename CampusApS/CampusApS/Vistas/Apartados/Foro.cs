@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas.Opciones;
+using CampusApS.Vistas.Apartados;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -84,6 +85,9 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
-       
+        private void bAnadirHilo_Click(object sender, EventArgs e)
+        {
+            Hilo hilo = new Hilo();
+        }
     }
 }

@@ -16,9 +16,16 @@ namespace CampusApS.Vistas.Opciones {
             InitializeComponent();
         }
 
+        private void EliminarUsuario_Load(object sender, EventArgs e)
+        {
+            UsuarioQuery BD = new UsuarioQuery();
+
+            cUsuarios.DataSource = BD.getAllUsuarios();
+        }
+
         private void bEliminar_Click(object sender, EventArgs e)
         {
-            Usuario usuario = (Usuario) cUsuarios.SelectedItem;
+            string usuario =  (string) cUsuarios.SelectedItem;
 
             if (usuario != null)
             {
@@ -26,11 +33,13 @@ namespace CampusApS.Vistas.Opciones {
                 if (result == DialogResult.Yes)
                 {
                     UsuarioQuery bd = new UsuarioQuery();
-                    bd.borrarUsuario(usuario.getNombre());
+                    bd.borrarUsuario(usuario);
                     this.Close();
                 }
                 
             }
         }
+
+       
     }
 }

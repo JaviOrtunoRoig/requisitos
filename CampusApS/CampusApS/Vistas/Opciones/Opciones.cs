@@ -30,10 +30,12 @@ namespace CampusApS.Vistas.Opciones {
             if(usuario.getRol().Equals("administrador"))
             {
                 this.bInvitarAdminitrador.Visible = true;
+                this.bEliminarUsuario.Visible = true;
             }
             else
             {
                 this.bInvitarAdminitrador.Visible = false;
+                this.bEliminarUsuario.Visible = false;
             }
 
         }
