@@ -55,6 +55,9 @@
     <Compile Include="Modelo\Logica\Recursos\ActividadSocialRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\CursoRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\ForoRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\NoticiaRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\Pregunta.cs" />
+    <Compile Include="Modelo\Logica\Recursos\Test.cs" />
     <Compile Include="Modelo\Logica\Registro_InicioSesion\Registrarse.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Administrador.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Alumno.cs" />
@@ -81,6 +84,54 @@
     <Compile Include="Vistas\Apartados\ActividadSocial.Designer.cs">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Apartados\CrearNoticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearNoticia.Designer.cs">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearTestConocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearTestConocimiento.Designer.cs">
+      <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\EliminarUsuarioCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\EliminarUsuarioCurso.Designer.cs">
+      <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Hilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
+      <DependentUpon>Hilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\Noticia.Designer.cs">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\RealizarTestConocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\RealizarTestConocimiento.Designer.cs">
+      <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestConocimientosCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestConocimientosCurso.Designer.cs">
+      <DependentUpon>TestConocimientosCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestSatisfaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\TestSatisfaccion.Designer.cs">
+      <DependentUpon>TestSatisfaccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\CreacionRecursos\ConfirmarPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,12 +155,6 @@
     </Compile>
     <Compile Include="Vistas\CreacionRecursos\CrearForo.Designer.cs">
       <DependentUpon>CrearForo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\CreacionRecursos\CrearNoticia.Designer.cs">
-      <DependentUpon>CrearNoticia.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Apartados\Curso.cs">
       <SubType>Form</SubType>
@@ -203,6 +248,12 @@
     <Compile Include="Vistas\Opciones\CambiarNombre.Designer.cs">
       <DependentUpon>CambiarNombre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Opciones\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Opciones\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Opciones\Mensajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +293,27 @@
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearNoticia.resx">
+      <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearTestConocimiento.resx">
+      <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
+      <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\Noticia.resx">
+      <DependentUpon>Noticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\RealizarTestConocimiento.resx">
+      <DependentUpon>RealizarTestConocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\TestConocimientosCurso.resx">
+      <DependentUpon>TestConocimientosCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\TestSatisfaccion.resx">
+      <DependentUpon>TestSatisfaccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\ConfirmarPassword.resx">
       <DependentUpon>ConfirmarPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,9 +325,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\CrearForo.resx">
       <DependentUpon>CrearForo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\CreacionRecursos\CrearNoticia.resx">
-      <DependentUpon>CrearNoticia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
@@ -307,6 +376,9 @@
     <EmbeddedResource Include="Vistas\Opciones\CambiarNombre.resx">
       <DependentUpon>CambiarNombre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Opciones\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Opciones\Mensajes.resx">
       <DependentUpon>Mensajes.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,12 +414,17 @@
   <ItemGroup>
     <Content Include="Resources\Fondo.jpg" />
     <Content Include="Resources\Images\ApS.ico" />
+    <None Include="Resources\Images\x.png" />
+    <None Include="Resources\Images\salir.png" />
+    <None Include="Resources\Images\correo.png" />
+    <None Include="Resources\Images\curso.png" />
     <Content Include="Resources\Images\Fondo.jpg" />
     <None Include="Resources\Images\IconoAdmin.png" />
     <Content Include="Resources\Images\IconoAlumno.png" />
     <Content Include="Resources\Images\IconoONG.png" />
     <Content Include="Resources\Images\IconoProfesor.png" />
     <Content Include="Resources\Images\Invitado.png" />
+    <None Include="Resources\Images\invitarAdmin.png" />
     <Content Include="Resources\Images\Login.png" />
     <None Include="Resources\Images\Papelera.png" />
     <None Include="Resources\Images\opciones.jpg" />

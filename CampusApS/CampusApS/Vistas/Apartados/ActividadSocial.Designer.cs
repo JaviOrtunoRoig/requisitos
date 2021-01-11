@@ -1,4 +1,4 @@
-﻿namespace CampusApS.Vistas
+﻿namespace CampusApS
 {
     partial class ActividadSocial
     {
@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
+            this.bTestSatisfaccion = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // lDescripción
@@ -125,7 +126,7 @@
             this.carta.Text = "xuiCard1";
             this.carta.Text1 = "Tipo de usuario";
             this.carta.Text2 = "Nombre del usuario";
-            this.carta.Text3 = "num expediente";
+            this.carta.Text3 = "";
             // 
             // bOpciones
             // 
@@ -149,12 +150,35 @@
             this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bOpciones.Click += new System.EventHandler(this.bOpciones_Click);
             // 
+            // bTestSatisfaccion
+            // 
+            this.bTestSatisfaccion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestSatisfaccion.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bTestSatisfaccion.ButtonImage")));
+            this.bTestSatisfaccion.ButtonStyle = XanderUI.XUIButton.Style.Invert;
+            this.bTestSatisfaccion.ButtonText = "Test de satisfaccion";
+            this.bTestSatisfaccion.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.CornerRadius = 5;
+            this.bTestSatisfaccion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bTestSatisfaccion.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bTestSatisfaccion.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bTestSatisfaccion.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bTestSatisfaccion.Location = new System.Drawing.Point(919, 353);
+            this.bTestSatisfaccion.Margin = new System.Windows.Forms.Padding(2);
+            this.bTestSatisfaccion.Name = "bTestSatisfaccion";
+            this.bTestSatisfaccion.Size = new System.Drawing.Size(192, 25);
+            this.bTestSatisfaccion.TabIndex = 53;
+            this.bTestSatisfaccion.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bTestSatisfaccion.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // ActividadSocial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1184, 700);
+            this.Controls.Add(this.bTestSatisfaccion);
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.lDescripción);
@@ -186,5 +210,6 @@
         private System.Windows.Forms.Label label1;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
+        private XanderUI.XUIButton bTestSatisfaccion;
     }
 }
