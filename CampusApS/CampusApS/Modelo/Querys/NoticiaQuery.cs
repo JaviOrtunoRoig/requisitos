@@ -16,21 +16,23 @@ namespace CampusApS.Modelo.Querys
 
         private string nombre;
         private string contenido;
+        private string creador;
 
         public NoticiaQuery()
         {
 
         }
 
-        public NoticiaQuery(string nom, string cont)
+        public NoticiaQuery(string nom, string cont, string nomUsuario)
         {
             nombre = nom;
             contenido = cont;
+            creador = nomUsuario;
 
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            miBD.Insert("INSERT INTO `apsgrupo06`.`noticia` (`tituloNoticia`, `contenidoNoticia`) VALUES ('" +
-                nombre + "', '" + contenido + "');");
+            miBD.Insert("INSERT INTO `apsgrupo06`.`noticia` (`tituloNoticia`, `contenidoNoticia`, `creador`) VALUES ('" +
+                nombre + "', '" + contenido + "', '" + creador + "');");
 
         }
 
@@ -44,11 +46,17 @@ namespace CampusApS.Modelo.Querys
             {
                 contenido = (string)((object[])(tupla[0]))[1];
                 nombre = nom;
+                creador = (string)((object[])(tupla[0]))[2];
             }
             else
             {
                 MessageBox.Show("Esta noticia no existe");
             }
+        }
+
+        public string getCreador()
+        {
+            return creador;
         }
 
         public string getContenido(){
@@ -72,6 +80,48 @@ namespace CampusApS.Modelo.Querys
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
             object[] tupla = miBD.Select("SELECT tituloNoticia FROM noticia");
+
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string nombre = (string)((object[])(tupla[cont]))[0];
+
+                        if (nombre != null)
+                        {
+                            list.Add(nombre);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+        }
+
+        public List<String> getNoticiasCreador(string usuario)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT tituloNoticia FROM noticia WHERE creador = '" + usuario + "';");
 
             List<String> list = new List<String>();
 
