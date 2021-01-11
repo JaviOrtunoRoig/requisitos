@@ -79,6 +79,10 @@ namespace CampusApS
             }
 
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
+
+
+            NoticiaQuery BD = new NoticiaQuery();
+            lbNoticias.DataSource = BD.getAllNoticas();
         }
 
         private void xuiButton1_Click(object sender, EventArgs e) {
@@ -94,11 +98,9 @@ namespace CampusApS
 
         private void lbNoticias_DoubleClick(object sender, EventArgs e)
         {
-            //TODO: CREAR BD CursoQuery query = new CursoQuery();
-            NoticiaRecurso noticiaRecurso = new NoticiaRecurso((string)lbNoticias.SelectedItem);
-            //TODO: GET CONTENIDO cursoRecurso.setContenido(query.getContenido((string)lbNoticias.SelectedItem));
-            //TODO: NoticiaQuery ventana = new NoticiaQuery(noticiaRecurso.getNombre(), noticiaRecurso.getContenido());
-            //TODO: ventana.ShowDialog();
+            NoticiaQuery BD = new NoticiaQuery((string)lbNoticias.SelectedItem);
+            Noticia ventana = new Noticia(BD.getTitulo(), BD.getContenido());
+            ventana.ShowDialog();
         }
 
         private void bAnadirNoticia_Click(object sender, EventArgs e)
@@ -106,9 +108,9 @@ namespace CampusApS
             CrearNoticia ventana = new CrearNoticia(usuario);
             ventana.ShowDialog();
 
-            //TODO: CREAR BD NoticiaQuery BD = new NoticiaQuery();
+            NoticiaQuery BD = new NoticiaQuery();
 
-            //TODO: AÑADIR NOTICIA lbNoticias.DataSource = BD.getAllNoticias();
+            lbNoticias.DataSource = BD.getAllNoticas();
         }
 
         private void bEliminarNoticia_Click(object sender, EventArgs e)
@@ -117,23 +119,37 @@ namespace CampusApS
             this.bEliminarNoticia.BackgroundColor = Color.Gray;
             this.bEliminarNoticia.TextColor = Color.White;
 
-            //TODO: MOSTRAR NOTICIAS NoticiaQuery BD = new NoticiaQuery(); AND GETALLNOTICIAS()
+            NoticiaQuery BD = new NoticiaQuery();
+
+
+            if (usuario.getRol().Equals("administrador"))
+            {
+                lbNoticias.DataSource = BD.getAllNoticas();
+            }
+            else
+            {
+                //TODO: Noticias que ha creado ese usuario lbNoticias.DataSource = BD.getNoticiasCreador(usuario.getNombre());
+            }
 
       
         }
 
         private void bPapelera_Click(object sender, EventArgs e)
         {
-            //TODO: CREAR BD NoticiaQuery BD = new NoticiaQuery();
+            NoticiaQuery BD = new NoticiaQuery();
             if (lbNoticias.SelectedItem != null)
             {
-                string curso = lbNoticias.SelectedItem.ToString();
-                //TODO: ELIMINAR NOTICIA BD.borrarNoticia(lbNoticias.SelectedItem);
+                string noticia = lbNoticias.SelectedItem.ToString();
+                BD.borrarNoticia(noticia);
             }
 
             this.bEliminarNoticia.TextColor = Color.Firebrick;
             this.bEliminarNoticia.BackgroundColor = Color.White;
-            //TODO: GET ALL NOTICIAS this.lbNoticias.DataSource = BD.getAllNoticias();
+
+
+            lbNoticias.DataSource = BD.getAllNoticas();
+
+
             this.bPapelera.Visible = false;
         }
 
