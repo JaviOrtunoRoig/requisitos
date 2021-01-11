@@ -168,7 +168,7 @@ namespace CampusApS.Modelo.Querys
             
         #region DarseDeBaja
 
-            public bool existeContraseña(string contr)
+        public bool existeContraseña(string contr)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
@@ -261,8 +261,12 @@ namespace CampusApS.Modelo.Querys
         public void updateNombreUsuario(string nom, string newNom)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
-            miBD.Update("UPDATE apsgrupo06.usuario SET nombre = '" + newNom + "' " +
-            "WHERE (nombre = '" + nom + "');");
+            if (!permitirNombre(nom))
+            {
+                miBD.Update("UPDATE apsgrupo06.usuario SET nombre = '" + newNom + "' " +
+                "WHERE (nombre = '" + nom + "');");
+            }
+
         }
 
         public string getUsuario(string nomb)
@@ -341,6 +345,20 @@ namespace CampusApS.Modelo.Querys
             }
 
             return permiso;
+        }
+
+        public void borrarUsuario(string nom)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            if (!permitirNombre(nom))
+            {
+                miBD.Delete("DELETE FROM `apsgrupo06`.`usuario` WHERE (nombre = '" + nom + "');");
+            }
+            else
+            {
+                MessageBox.Show("Este usuario no existe");
+            }
         }
 
         #endregion OtrosMetodos
