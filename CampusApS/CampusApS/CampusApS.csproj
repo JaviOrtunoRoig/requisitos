@@ -72,6 +72,9 @@
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
     <Compile Include="Modelo\Querys\ForosQuery.cs" />
     <Compile Include="Modelo\Querys\MensajeQuery.cs" />
+    <Compile Include="Modelo\Querys\NoticiaQuery.cs" />
+    <Compile Include="Modelo\Querys\TestConocimientoQuery.cs" />
+    <Compile Include="Modelo\Querys\TestSatisfaccionQuery.cs" />
     <Compile Include="Modelo\Querys\UsuarioQuery.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
