@@ -42,7 +42,7 @@ namespace CampusApS.Vistas.Apartados {
 
         private void bAnadirTest_Click(object sender, EventArgs e)
         {
-            CrearTestConocimiento ventana = new CrearTestConocimiento();
+            CrearTestConocimiento ventana = new CrearTestConocimiento(cursoRecurso);
             ventana.ShowDialog();
             //TODO: CREAR BD CursoQuery BD = new CursoQuery();
             //TODO: RECUPERAR TODOS LOS TESTSS lbTests.DataSource = BD.getAllTests();
@@ -51,7 +51,7 @@ namespace CampusApS.Vistas.Apartados {
         private void lbTests_DoubleClick(object sender, EventArgs e)
         {
             //TODO: Crear BD CursoQuery query = new CursoQuery();
-            //TODO: Crear Test Test test = new test()
+            //TODO: Crear Test Test test = new test() (Query pedir test)
             //TODO: Pasar objeto test RealizarTestConocimiento ventana = new RealizarTestConocimiento(usuario, test);
             //TODO: Crear ventana ventana.ShowDialog();
 

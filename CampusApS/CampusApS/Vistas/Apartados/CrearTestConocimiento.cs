@@ -11,8 +11,12 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class CrearTestConocimiento : Form {
-        public CrearTestConocimiento() {
+
+        private CursoRecurso cursoRecurso;
+
+        public CrearTestConocimiento(CursoRecurso cursoRecurso) {
             InitializeComponent();
+            this.cursoRecurso = cursoRecurso;
         }
 
         private void xuiButton1_Click(object sender, EventArgs e)
@@ -35,7 +39,7 @@ namespace CampusApS.Vistas.Apartados {
             preguntas.Add(pregunta4);
             preguntas.Add(pregunta5);
 
-            Test test = new Test(tNombreTest.Text, preguntas);
+            Test test = new Test(tNombreTest.Text, cursoRecurso.getNombre(), preguntas);
 
 
 
