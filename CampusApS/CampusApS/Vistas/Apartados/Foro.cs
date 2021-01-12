@@ -92,14 +92,14 @@ namespace CampusApS
 
         private void bAnadirHilo_Click(object sender, EventArgs e)
         {
-            CrearHilo ventana = new CrearHilo();
+            CrearHilo ventana = new CrearHilo(usuario, foroRecurso);
             ventana.ShowDialog();
             this.Close();
         }
 
         private void lbHilos_DoubleClick(object sender, EventArgs e)
         {
-            Hilo ventana = new Hilo(foroRecurso);
+            Hilo ventana = new Hilo();
         }
 
     }
