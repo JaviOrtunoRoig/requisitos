@@ -10,8 +10,17 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class VerRespuestaHilo : Form {
-        public VerRespuestaHilo() {
+
+        string mensaje;
+
+        public VerRespuestaHilo(string mensaje) {
             InitializeComponent();
+            this.mensaje = mensaje;
+        }
+
+        private void VerRespuestaHilo_Load(object sender, EventArgs e)
+        {
+            this.textBox1.Text = mensaje;
         }
     }
 }
