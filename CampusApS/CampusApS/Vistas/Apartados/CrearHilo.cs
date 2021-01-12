@@ -13,5 +13,19 @@ namespace CampusApS.Vistas.Apartados {
         public CrearHilo() {
             InitializeComponent();
         }
+
+        private void bCrear_Click(object sender, EventArgs e)
+        {
+            string titulo = this.textBox1.Text;
+            string cuerpo = this.textBox2.Text;
+
+            if(titulo!=null)
+            {
+                // TODO: INSERT HILO EN LA BD  [ anadirHilo(string foro) ]
+                // this.Close();
+            }
+
+
+        }
     }
 }

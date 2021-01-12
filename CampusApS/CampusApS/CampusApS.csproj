@@ -81,18 +81,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="VerHilos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VerHilos.Designer.cs">
-      <DependentUpon>VerHilos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VerRespuestaHilo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VerRespuestaHilo.designer.cs">
-      <DependentUpon>VerRespuestaHilo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\Apartados\ActividadSocial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,12 +317,6 @@
     <Compile Include="Vistas\Opciones\Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VerHilos.resx">
-      <DependentUpon>VerHilos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VerRespuestaHilo.resx">
-      <DependentUpon>VerRespuestaHilo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
     </EmbeddedResource>

@@ -35,7 +35,7 @@
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.bEnviarTest = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // lPregunta1
@@ -163,25 +163,25 @@
             this.checkedListBox5.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox5.TabIndex = 10;
             // 
-            // xuiButton1
+            // bEnviarTest
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
-            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.Dark;
-            this.xuiButton1.ButtonText = "Enviar Test";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(294, 511);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
-            this.xuiButton1.TabIndex = 11;
-            this.xuiButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEnviarTest.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
+            this.bEnviarTest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEnviarTest.ButtonImage")));
+            this.bEnviarTest.ButtonStyle = XanderUI.XUIButton.Style.Dark;
+            this.bEnviarTest.ButtonText = "Enviar Test";
+            this.bEnviarTest.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
+            this.bEnviarTest.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.bEnviarTest.CornerRadius = 5;
+            this.bEnviarTest.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEnviarTest.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.bEnviarTest.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
+            this.bEnviarTest.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bEnviarTest.Location = new System.Drawing.Point(294, 511);
+            this.bEnviarTest.Name = "bEnviarTest";
+            this.bEnviarTest.Size = new System.Drawing.Size(200, 50);
+            this.bEnviarTest.TabIndex = 11;
+            this.bEnviarTest.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
+            this.bEnviarTest.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // TestSatisfaccion
             // 
@@ -189,7 +189,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(557, 625);
-            this.Controls.Add(this.xuiButton1);
+            this.Controls.Add(this.bEnviarTest);
             this.Controls.Add(this.checkedListBox5);
             this.Controls.Add(this.checkedListBox4);
             this.Controls.Add(this.checkedListBox3);
@@ -222,6 +222,6 @@
         private System.Windows.Forms.CheckedListBox checkedListBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox4;
         private System.Windows.Forms.CheckedListBox checkedListBox5;
-        private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton bEnviarTest;
     }
 }
