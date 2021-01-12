@@ -24,30 +24,31 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearRespuestaDeUnHilo));
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.bEnviar = new XanderUI.XUIButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // xuiButton1
+            // bEnviar
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
-            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.Dark;
-            this.xuiButton1.ButtonText = "Enviar";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(109, 256);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
-            this.xuiButton1.TabIndex = 7;
-            this.xuiButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEnviar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
+            this.bEnviar.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bEnviar.ButtonImage")));
+            this.bEnviar.ButtonStyle = XanderUI.XUIButton.Style.Dark;
+            this.bEnviar.ButtonText = "Enviar";
+            this.bEnviar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
+            this.bEnviar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.bEnviar.CornerRadius = 5;
+            this.bEnviar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEnviar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.bEnviar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
+            this.bEnviar.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bEnviar.Location = new System.Drawing.Point(109, 256);
+            this.bEnviar.Name = "bEnviar";
+            this.bEnviar.Size = new System.Drawing.Size(200, 50);
+            this.bEnviar.TabIndex = 7;
+            this.bEnviar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
+            this.bEnviar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEnviar.Click += new System.EventHandler(this.bEnviar_Click);
             // 
             // textBox2
             // 
@@ -73,7 +74,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(415, 346);
-            this.Controls.Add(this.xuiButton1);
+            this.Controls.Add(this.bEnviar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
@@ -81,6 +82,7 @@
             this.Name = "CrearRespuestaDeUnHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RespuestaDeUnHilo";
+            this.Load += new System.EventHandler(this.CrearRespuestaDeUnHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,7 +90,7 @@
 
         #endregion
 
-        private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton bEnviar;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
     }

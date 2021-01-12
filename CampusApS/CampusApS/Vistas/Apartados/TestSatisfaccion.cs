@@ -16,6 +16,12 @@ namespace CampusApS.Vistas.Apartados {
         {
             InitializeComponent();
         }
+
+        private void TestSatisfaccion_Load(object sender, EventArgs e)
+        {
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
+        }
     }
       
 }

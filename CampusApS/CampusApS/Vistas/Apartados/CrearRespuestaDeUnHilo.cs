@@ -7,11 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
+using CampusApS.Modelo.Logica.Recursos;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class CrearRespuestaDeUnHilo : Form {
-        public CrearRespuestaDeUnHilo() {
+
+        HiloRecurso hilo;
+        Usuario usuario;
+
+        public CrearRespuestaDeUnHilo(Usuario usuario, HiloRecurso hiloRecursos) {
             InitializeComponent();
+            this.usuario = usuario;
+            this.hilo = hiloRecursos;
+        }
+
+        private void bEnviar_Click(object sender, EventArgs e)
+        {
+            string mensaje = textBox2.Text;
+            /*
+            if (mensaje != null)
+            {
+                HilosQuerys bd = new HilosQuerys();
+                bd.responderHilo(usuario.getNombre(), hilo.getNombre(), mensaje,  nombre creador);
+                this.Close();
+            }
+            */
+        }
+
+        private void CrearRespuestaDeUnHilo_Load(object sender, EventArgs e)
+        {
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
+
         }
     }
 }

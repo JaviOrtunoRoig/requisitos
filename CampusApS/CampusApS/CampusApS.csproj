@@ -55,6 +55,7 @@
     <Compile Include="Modelo\Logica\Recursos\ActividadSocialRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\CursoRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\ForoRecurso.cs" />
+    <Compile Include="Modelo\Logica\Recursos\HiloRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\NoticiaRecurso.cs" />
     <Compile Include="Modelo\Logica\Recursos\Pregunta.cs" />
     <Compile Include="Modelo\Logica\Recursos\Test.cs" />
