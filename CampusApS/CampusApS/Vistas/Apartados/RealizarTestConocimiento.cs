@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,7 +38,25 @@ namespace CampusApS.Vistas.Apartados {
             tPregunta4.Text = preguntas[3].getNombre();
             tPregunta5.Text = preguntas[4].getNombre();
 
-            //TODO: RELLENAR CHECKLISTBOX
+            clPregunta1.Items.Add(preguntas[0].getOpcionA());
+            clPregunta1.Items.Add(preguntas[0].getOpcionB());
+            clPregunta1.Items.Add(preguntas[0].getOpcionC());
+
+            clPregunta2.Items.Add(preguntas[1].getOpcionA());
+            clPregunta2.Items.Add(preguntas[1].getOpcionB());
+            clPregunta2.Items.Add(preguntas[1].getOpcionC());
+
+            clPregunta3.Items.Add(preguntas[2].getOpcionA());
+            clPregunta3.Items.Add(preguntas[2].getOpcionB());
+            clPregunta3.Items.Add(preguntas[2].getOpcionC());
+
+            clPregunta4.Items.Add(preguntas[3].getOpcionA());
+            clPregunta4.Items.Add(preguntas[3].getOpcionB());
+            clPregunta4.Items.Add(preguntas[3].getOpcionC());
+
+            clPregunta5.Items.Add(preguntas[4].getOpcionA());
+            clPregunta5.Items.Add(preguntas[4].getOpcionB());
+            clPregunta5.Items.Add(preguntas[4].getOpcionC());
 
 
         }
@@ -45,12 +64,46 @@ namespace CampusApS.Vistas.Apartados {
         private void xuiButton1_Click(object sender, EventArgs e)
         {
 
-            //OBTENER RESPUESTAS
+            //TODO: OBTENER RESPUESTAS
 
-            //TODO: CREAR BD
-            //TODO: CALCULO NOTA PASANDO RESPUESTAS Y MOSTRAR POR MESSAGE BOX
+            TestConocimientoQuery BD = new TestConocimientoQuery();
+
+            //TODO: OBTENER RESPUESTAS int puntuacion = BD.getPuntuacion(respuestas, test.getNombreTest());
+
+            //TODO: OBTENER RESPUESTAS MessageBox.Show("Puntuacion obtenida : " + puntuacion);
 
             this.Close();
         }
+
+        private void clPregunta1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < clPregunta1.Items.Count; ++ix)
+                if (ix != e.Index) clPregunta1.SetItemChecked(ix, false);
+        }
+
+        private void clPregunta2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < clPregunta2.Items.Count; ++ix)
+                if (ix != e.Index) clPregunta2.SetItemChecked(ix, false);
+        }
+
+        private void clPregunta3_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < clPregunta3.Items.Count; ++ix)
+                if (ix != e.Index) clPregunta3.SetItemChecked(ix, false); 
+        }
+
+        private void clPregunta4_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < clPregunta4.Items.Count; ++ix)
+                if (ix != e.Index) clPregunta4.SetItemChecked(ix, false);
+        }
+
+        private void clPregunta5_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < clPregunta5.Items.Count; ++ix)
+                if (ix != e.Index) clPregunta5.SetItemChecked(ix, false);
+        }
+   
     }
 }
