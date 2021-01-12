@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
@@ -34,8 +35,8 @@ namespace CampusApS.Vistas.Apartados {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            //TODO: CREAR BD CursoQuery BD = new CursoQuery();
-            //TODO: RECUPERAR TODOS LOS TESTSS lbTests.DataSource = BD.getAllTests();
+            TestConocimientoQuery BD = new TestConocimientoQuery();
+            lbTests.DataSource = BD.getAllTests(cursoRecurso.getNombre());
 
             if (usuario.getRol().Equals("alumno")) bAnadirTest.Visible = false;
         }
@@ -44,16 +45,17 @@ namespace CampusApS.Vistas.Apartados {
         {
             CrearTestConocimiento ventana = new CrearTestConocimiento(cursoRecurso);
             ventana.ShowDialog();
-            //TODO: CREAR BD CursoQuery BD = new CursoQuery();
-            //TODO: RECUPERAR TODOS LOS TESTSS lbTests.DataSource = BD.getAllTests();
+            TestConocimientoQuery BD = new TestConocimientoQuery();
+            lbTests.DataSource = BD.getAllTests(cursoRecurso.getNombre());
         }
 
         private void lbTests_DoubleClick(object sender, EventArgs e)
         {
-            //TODO: Crear BD CursoQuery query = new CursoQuery();
-            //TODO: Crear Test Test test = new test() (Query pedir test)
-            //TODO: Pasar objeto test RealizarTestConocimiento ventana = new RealizarTestConocimiento(usuario, test);
-            //TODO: Crear ventana ventana.ShowDialog();
+            TestConocimientoQuery BD = new TestConocimientoQuery();
+            Test test = BD.getTestConocimiento((string)lbTests.SelectedItem);
+
+            RealizarTestConocimiento ventana = new RealizarTestConocimiento(usuario, test);
+            ventana.ShowDialog();
 
         }
 

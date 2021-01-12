@@ -1,4 +1,5 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,8 +44,11 @@ namespace CampusApS.Vistas.Apartados {
 
 
 
-            //TODO: CREAR BD
-            //TODO: INSERTAR OBJETO TEST EN BD
+            TestConocimientoQuery BD = new TestConocimientoQuery();
+
+            BD.insertarTest(test, cursoRecurso.getNombre());
+
+            this.Close();
         }
 
 
@@ -137,17 +141,38 @@ namespace CampusApS.Vistas.Apartados {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            List<String> Opciones = new List<String>();
+            List<String> Opciones1 = new List<String>();
+            List<String> Opciones2 = new List<String>();
+            List<String> Opciones3 = new List<String>();
+            List<String> Opciones4 = new List<String>();
+            List<String> Opciones5 = new List<String>();
 
-            Opciones.Add("A");
-            Opciones.Add("B");
-            Opciones.Add("C");
 
-            cSol1.DataSource = Opciones;
-            cSol2.DataSource = Opciones;
-            cSol3.DataSource = Opciones;
-            cSol4.DataSource = Opciones;
-            cSol5.DataSource = Opciones;
+            Opciones1.Add("A");
+            Opciones1.Add("B");
+            Opciones1.Add("C");
+
+            Opciones2.Add("A");
+            Opciones2.Add("B");
+            Opciones2.Add("C");
+
+            Opciones3.Add("A");
+            Opciones3.Add("B");
+            Opciones3.Add("C");
+
+            Opciones4.Add("A");
+            Opciones4.Add("B");
+            Opciones4.Add("C");
+
+            Opciones5.Add("A");
+            Opciones5.Add("B");
+            Opciones5.Add("C");
+
+            cSol1.DataSource = Opciones1;
+            cSol2.DataSource = Opciones2;
+            cSol3.DataSource = Opciones3;
+            cSol4.DataSource = Opciones4;
+            cSol5.DataSource = Opciones5;
         }
 
     }

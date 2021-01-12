@@ -43,7 +43,7 @@
             this.tNombreTest.AutoSize = true;
             this.tNombreTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tNombreTest.ForeColor = System.Drawing.Color.White;
-            this.tNombreTest.Location = new System.Drawing.Point(83, 58);
+            this.tNombreTest.Location = new System.Drawing.Point(83, 9);
             this.tNombreTest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tNombreTest.Name = "tNombreTest";
             this.tNombreTest.Size = new System.Drawing.Size(54, 24);
@@ -55,7 +55,7 @@
             this.tPregunta1.AutoSize = true;
             this.tPregunta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPregunta1.ForeColor = System.Drawing.Color.White;
-            this.tPregunta1.Location = new System.Drawing.Point(83, 111);
+            this.tPregunta1.Location = new System.Drawing.Point(83, 46);
             this.tPregunta1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tPregunta1.Name = "tPregunta1";
             this.tPregunta1.Size = new System.Drawing.Size(46, 18);
@@ -67,7 +67,7 @@
             this.tPregunta2.AutoSize = true;
             this.tPregunta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPregunta2.ForeColor = System.Drawing.Color.White;
-            this.tPregunta2.Location = new System.Drawing.Point(83, 262);
+            this.tPregunta2.Location = new System.Drawing.Point(83, 197);
             this.tPregunta2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tPregunta2.Name = "tPregunta2";
             this.tPregunta2.Size = new System.Drawing.Size(46, 18);
@@ -79,7 +79,7 @@
             this.tPregunta3.AutoSize = true;
             this.tPregunta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPregunta3.ForeColor = System.Drawing.Color.White;
-            this.tPregunta3.Location = new System.Drawing.Point(83, 402);
+            this.tPregunta3.Location = new System.Drawing.Point(83, 337);
             this.tPregunta3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tPregunta3.Name = "tPregunta3";
             this.tPregunta3.Size = new System.Drawing.Size(46, 18);
@@ -91,7 +91,7 @@
             this.tPregunta4.AutoSize = true;
             this.tPregunta4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPregunta4.ForeColor = System.Drawing.Color.White;
-            this.tPregunta4.Location = new System.Drawing.Point(80, 558);
+            this.tPregunta4.Location = new System.Drawing.Point(80, 493);
             this.tPregunta4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tPregunta4.Name = "tPregunta4";
             this.tPregunta4.Size = new System.Drawing.Size(46, 18);
@@ -103,7 +103,7 @@
             this.tPregunta5.AutoSize = true;
             this.tPregunta5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tPregunta5.ForeColor = System.Drawing.Color.White;
-            this.tPregunta5.Location = new System.Drawing.Point(80, 719);
+            this.tPregunta5.Location = new System.Drawing.Point(81, 638);
             this.tPregunta5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tPregunta5.Name = "tPregunta5";
             this.tPregunta5.Size = new System.Drawing.Size(46, 18);
@@ -113,57 +113,67 @@
             // clPregunta1
             // 
             this.clPregunta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
+            this.clPregunta1.CheckOnClick = true;
             this.clPregunta1.ForeColor = System.Drawing.Color.White;
             this.clPregunta1.FormattingEnabled = true;
-            this.clPregunta1.Location = new System.Drawing.Point(87, 148);
-            this.clPregunta1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clPregunta1.Location = new System.Drawing.Point(87, 83);
+            this.clPregunta1.Margin = new System.Windows.Forms.Padding(4);
             this.clPregunta1.Name = "clPregunta1";
             this.clPregunta1.Size = new System.Drawing.Size(633, 89);
             this.clPregunta1.TabIndex = 12;
+            this.clPregunta1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clPregunta1_ItemCheck);
             // 
             // clPregunta2
             // 
             this.clPregunta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
+            this.clPregunta2.CheckOnClick = true;
             this.clPregunta2.ForeColor = System.Drawing.Color.White;
             this.clPregunta2.FormattingEnabled = true;
-            this.clPregunta2.Location = new System.Drawing.Point(84, 300);
-            this.clPregunta2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clPregunta2.Location = new System.Drawing.Point(84, 235);
+            this.clPregunta2.Margin = new System.Windows.Forms.Padding(4);
             this.clPregunta2.Name = "clPregunta2";
             this.clPregunta2.Size = new System.Drawing.Size(633, 89);
             this.clPregunta2.TabIndex = 13;
+            this.clPregunta2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clPregunta2_ItemCheck);
             // 
             // clPregunta3
             // 
             this.clPregunta3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
+            this.clPregunta3.CheckOnClick = true;
             this.clPregunta3.ForeColor = System.Drawing.Color.White;
             this.clPregunta3.FormattingEnabled = true;
-            this.clPregunta3.Location = new System.Drawing.Point(84, 439);
-            this.clPregunta3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clPregunta3.Location = new System.Drawing.Point(84, 374);
+            this.clPregunta3.Margin = new System.Windows.Forms.Padding(4);
             this.clPregunta3.Name = "clPregunta3";
             this.clPregunta3.Size = new System.Drawing.Size(633, 89);
             this.clPregunta3.TabIndex = 14;
+            this.clPregunta3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clPregunta3_ItemCheck);
             // 
             // clPregunta4
             // 
             this.clPregunta4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
+            this.clPregunta4.CheckOnClick = true;
             this.clPregunta4.ForeColor = System.Drawing.Color.White;
             this.clPregunta4.FormattingEnabled = true;
-            this.clPregunta4.Location = new System.Drawing.Point(84, 597);
-            this.clPregunta4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clPregunta4.Location = new System.Drawing.Point(84, 532);
+            this.clPregunta4.Margin = new System.Windows.Forms.Padding(4);
             this.clPregunta4.Name = "clPregunta4";
             this.clPregunta4.Size = new System.Drawing.Size(633, 89);
             this.clPregunta4.TabIndex = 15;
+            this.clPregunta4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clPregunta4_ItemCheck);
             // 
             // clPregunta5
             // 
             this.clPregunta5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
+            this.clPregunta5.CheckOnClick = true;
             this.clPregunta5.ForeColor = System.Drawing.Color.White;
             this.clPregunta5.FormattingEnabled = true;
-            this.clPregunta5.Location = new System.Drawing.Point(84, 757);
-            this.clPregunta5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clPregunta5.Location = new System.Drawing.Point(83, 660);
+            this.clPregunta5.Margin = new System.Windows.Forms.Padding(4);
             this.clPregunta5.Name = "clPregunta5";
             this.clPregunta5.Size = new System.Drawing.Size(633, 89);
             this.clPregunta5.TabIndex = 16;
+            this.clPregunta5.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clPregunta5_ItemCheck);
             // 
             // xuiButton1
             // 
@@ -179,8 +189,8 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(245, 884);
-            this.xuiButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xuiButton1.Location = new System.Drawing.Point(244, 757);
+            this.xuiButton1.Margin = new System.Windows.Forms.Padding(4);
             this.xuiButton1.Name = "xuiButton1";
             this.xuiButton1.Size = new System.Drawing.Size(267, 62);
             this.xuiButton1.TabIndex = 31;
@@ -193,7 +203,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(804, 960);
+            this.ClientSize = new System.Drawing.Size(804, 1055);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.clPregunta5);
             this.Controls.Add(this.clPregunta4);
@@ -207,7 +217,7 @@
             this.Controls.Add(this.tPregunta1);
             this.Controls.Add(this.tNombreTest);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RealizarTestConocimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RealizarTestConocimiento";
