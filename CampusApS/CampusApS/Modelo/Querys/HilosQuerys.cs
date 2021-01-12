@@ -60,12 +60,85 @@ namespace CampusApS.Modelo.Querys
 
         public List<String> getHilosForo(string nombreForo)
         {
-            //buscar en BD foros_hilos;
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT nombreHilo FROM foro_hilo WHERE nombreForo = '" + nombreForo + "';");
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string hilo = (string)((object[])(tupla[cont]))[0];
+
+                        if (hilo != null)
+                        {
+                            list.Add(hilo);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
+
         }
 
         public List<String> getMensajes(string tituloHilo)
         {
-            //buscar en BD hilos_mensajes;
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensaje WHERE nombreHilo = " + tituloHilo + ";");
+            List<String> list = new List<String>();
+
+            if (tupla[0] != null)
+            {
+
+                int cont = 0;
+                bool stop = false;
+
+                while (!stop && cont < tupla.Length)
+                {
+
+                    if (tupla[cont] != null)
+                    {
+                        string mensaje = (string)((object[])(tupla[cont]))[0];
+
+                        if (mensaje != null)
+                        {
+                            list.Add(mensaje);
+                            cont++;
+                        }
+                        else
+                        {
+                            stop = true;
+                        }
+                    }
+                    else
+                    {
+                        stop = true;
+                    }
+
+                }
+            }
+
+            return list;
         }
         
     }
