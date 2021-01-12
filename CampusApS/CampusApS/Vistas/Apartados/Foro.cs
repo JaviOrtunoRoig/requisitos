@@ -106,7 +106,6 @@ namespace CampusApS
                 HilosQuerys bd = new HilosQuerys();
                 string titulo = (string)lbHilos.SelectedItem;
                 string cuerpo = bd.getMensaje(titulo);
-                Console.WriteLine(cuerpo);
                 HiloRecurso hiloRec = new HiloRecurso(titulo, cuerpo);
                 Hilo ventana = new Hilo(foroRecurso, hiloRec, usuario);
                 // this.Visible = false;
