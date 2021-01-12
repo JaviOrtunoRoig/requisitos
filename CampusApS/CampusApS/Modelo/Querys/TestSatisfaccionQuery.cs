@@ -19,6 +19,7 @@ namespace CampusApS.Modelo.Querys
         public TestSatisfaccionQuery(string nomProf)
         {
             profesor = nomProf;
+            testSatisfaccion = new List<string>();
             testSatisfaccion.Add("Las respuesta de este test se realizan de forma anónima, es decir, en la base de datos no se " +
                 "guardan vuestros nombres, tan solo sus respuestas, recordad que las puntuaciones van del 1 al 5. Gracias");
 
@@ -40,6 +41,11 @@ namespace CampusApS.Modelo.Querys
                 "`pregunta3`, `pregunta4`, `pregunta5`, `pregunta6`, `pregunta7`, `pregunta8`) VALUES ('" +
                 profesor + "', '" + res[0] + "', '" + res[1] + "', '" + res[2] + "', '" + res[3] + "', '" + 
                 res[4] + "', '" + res[5] + "', '" + res[6] + "', '" + res[7] + "');");
+        }
+
+        public List<string> getTestSatisfaccion()
+        {
+            return testSatisfaccion;
         }
     }
 }
