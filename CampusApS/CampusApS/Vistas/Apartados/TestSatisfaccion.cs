@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusApS.Modelo.Querys;
 
 namespace CampusApS.Vistas.Apartados {
-    public partial class TestSatisfaccion : Form {
-        public TestSatisfaccion() {
+    public partial class TestSatisfaccion : Form
+    {
+        public TestSatisfaccion()
+        {
             InitializeComponent();
         }
     }
+      
 }
