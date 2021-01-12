@@ -27,6 +27,8 @@ namespace CampusApS.Vistas.Apartados {
         {
             CursoQuery BD = new CursoQuery();
             BD.borrarUsuarioCurso((string)cUsuarios.SelectedItem, cursoRecurso.getNombre());
+
+            this.Close();
         }
 
         private void EliminarUsuarioCurso_Load(object sender, EventArgs e)
