@@ -99,7 +99,7 @@ namespace CampusApS
 
         private void lbHilos_DoubleClick(object sender, EventArgs e)
         {
-            Hilo ventana = new Hilo();
+            Hilo ventana = new Hilo(foroRecurso);
         }
 
     }
