@@ -328,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1579, 862);
+            this.ClientSize = new System.Drawing.Size(1540, 846);
             this.Controls.Add(this.bTestSatisfaccion);
             this.Controls.Add(this.bEliminarUsuario);
             this.Controls.Add(this.bTestConocimiento);

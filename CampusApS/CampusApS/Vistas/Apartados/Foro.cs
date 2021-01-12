@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas.Opciones;
+using CampusApS.Vistas.Apartados;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,7 +48,12 @@ namespace CampusApS
             this.label1.Text = foroRecurso.getNombre();
             this.lDescripción.Text = foroRecurso.getdescripcion();
 
-            if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
+            if (usuario.getRol().Equals("invitado"))
+            {
+                bOpciones.Visible = false;
+                bAnadirHilo.Visible = false;
+                bEliminarHilo.Visible = false;
+            }
         }
 
         private void bNoticias_Click(object sender, EventArgs e) {
@@ -84,6 +90,17 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
-       
+        private void bAnadirHilo_Click(object sender, EventArgs e)
+        {
+            CrearHilo ventana = new CrearHilo();
+            ventana.ShowDialog();
+            this.Close();
+        }
+
+        private void lbHilos_DoubleClick(object sender, EventArgs e)
+        {
+            Hilo ventana = new Hilo();
+        }
+
     }
 }

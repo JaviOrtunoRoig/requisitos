@@ -87,11 +87,23 @@
     <Compile Include="Vistas\Apartados\ActividadSocial.Designer.cs">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Apartados\CrearHilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearHilo.Designer.cs">
+      <DependentUpon>CrearHilo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Apartados\CrearNoticia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Apartados\CrearNoticia.Designer.cs">
       <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearRespuestaDeUnHilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\CrearRespuestaDeUnHilo.Designer.cs">
+      <DependentUpon>CrearRespuestaDeUnHilo.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Apartados\CrearTestConocimiento.cs">
       <SubType>Form</SubType>
@@ -134,6 +146,18 @@
     </Compile>
     <Compile Include="Vistas\Apartados\TestSatisfaccion.Designer.cs">
       <DependentUpon>TestSatisfaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\VerHilos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\VerHilos.Designer.cs">
+      <DependentUpon>VerHilos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Apartados\VerRespuestaHilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Apartados\VerRespuestaHilo.Designer.cs">
+      <DependentUpon>VerRespuestaHilo.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\CreacionRecursos\ConfirmarPassword.cs">
       <SubType>Form</SubType>
@@ -296,14 +320,23 @@
     <EmbeddedResource Include="Vistas\Apartados\ActividadSocial.resx">
       <DependentUpon>ActividadSocial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearHilo.resx">
+      <DependentUpon>CrearHilo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\CrearNoticia.resx">
       <DependentUpon>CrearNoticia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\CrearRespuestaDeUnHilo.resx">
+      <DependentUpon>CrearRespuestaDeUnHilo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\CrearTestConocimiento.resx">
       <DependentUpon>CrearTestConocimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\EliminarUsuarioCurso.resx">
       <DependentUpon>EliminarUsuarioCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\Hilo.resx">
+      <DependentUpon>Hilo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\Noticia.resx">
       <DependentUpon>Noticia.cs</DependentUpon>
@@ -316,6 +349,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Apartados\TestSatisfaccion.resx">
       <DependentUpon>TestSatisfaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\VerHilos.resx">
+      <DependentUpon>VerHilos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Apartados\VerRespuestaHilo.resx">
+      <DependentUpon>VerRespuestaHilo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CreacionRecursos\ConfirmarPassword.resx">
       <DependentUpon>ConfirmarPassword.cs</DependentUpon>
