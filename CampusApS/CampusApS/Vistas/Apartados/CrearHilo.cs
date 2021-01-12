@@ -7,22 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusApS.Modelo.Querys;
+using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Logica.Recursos;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class CrearHilo : Form {
-        public CrearHilo() {
+
+        Usuario usuario;
+        ForoRecurso foro;
+
+        public CrearHilo(Usuario usuario, ForoRecurso foro) {
             InitializeComponent();
+            this.usuario = usuario;
+            this.foro = foro;
         }
 
         private void bCrear_Click(object sender, EventArgs e)
         {
             string titulo = this.textBox1.Text;
             string cuerpo = this.textBox2.Text;
+            
 
-            if(titulo!=null)
+            if(titulo!=null && cuerpo!=null)
             {
-                // TODO: INSERT HILO EN LA BD  [ anadirHilo(string foro) ]
-                // this.Close();
+                HilosQuerys bd = new HilosQuerys();
+                bd.insertarHilos(titulo, usuario.getNombre(), cuerpo, foro.getNombre());
+                this.Close();
+
             }
 
 
