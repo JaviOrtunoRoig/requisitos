@@ -28,27 +28,25 @@
             this.lRespuestas = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ltitulo
             // 
             this.ltitulo.AutoSize = true;
             this.ltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltitulo.Location = new System.Drawing.Point(49, 34);
-            this.ltitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ltitulo.Location = new System.Drawing.Point(37, 28);
             this.ltitulo.Name = "ltitulo";
-            this.ltitulo.Size = new System.Drawing.Size(62, 24);
+            this.ltitulo.Size = new System.Drawing.Size(50, 18);
             this.ltitulo.TabIndex = 0;
             this.ltitulo.Text = "Titulo";
             // 
             // lRespuestas
             // 
             this.lRespuestas.FormattingEnabled = true;
-            this.lRespuestas.ItemHeight = 16;
-            this.lRespuestas.Location = new System.Drawing.Point(53, 126);
-            this.lRespuestas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lRespuestas.Location = new System.Drawing.Point(40, 185);
             this.lRespuestas.Name = "lRespuestas";
-            this.lRespuestas.Size = new System.Drawing.Size(349, 212);
+            this.lRespuestas.Size = new System.Drawing.Size(263, 173);
             this.lRespuestas.TabIndex = 1;
             this.lRespuestas.DoubleClick += new System.EventHandler(this.lRespuestas_DoubleClick);
             // 
@@ -56,10 +54,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 100);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(37, 164);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 24);
+            this.label1.Size = new System.Drawing.Size(97, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Respuestas";
             // 
@@ -76,27 +73,35 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(89, 374);
-            this.xuiButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xuiButton1.Location = new System.Drawing.Point(67, 387);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(267, 62);
+            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
             this.xuiButton1.TabIndex = 3;
             this.xuiButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(40, 64);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(263, 97);
+            this.textBox1.TabIndex = 4;
+            // 
             // Hilo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(460, 450);
+            this.ClientSize = new System.Drawing.Size(345, 493);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lRespuestas);
             this.Controls.Add(this.ltitulo);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Hilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hilo";
@@ -112,5 +117,6 @@
         private System.Windows.Forms.ListBox lRespuestas;
         private System.Windows.Forms.Label label1;
         private XanderUI.XUIButton xuiButton1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
