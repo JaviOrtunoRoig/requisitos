@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace CampusApS.Modelo.Querys
 {
-    class getMensaje
+    class HilosQuerys
     {
         private static string BD_SERVER = "ingreq2021-mysql.cobadwnzalab.eu-central-1.rds.amazonaws.com";
         private static string BD_NAME = "apsgrupo06";
 
-        public getMensaje()
+        public HilosQuerys()
         {
 
         }
@@ -58,6 +58,15 @@ namespace CampusApS.Modelo.Querys
             "('" + usuario + "', '" + creadorHilo + "', '" + respuesta + "');");
         }
 
-        public vo
+        public List<String> getHilosForo(string nombreForo)
+        {
+            //buscar en BD foros_hilos;
+        }
+
+        public List<String> getMensajes(string tituloHilo)
+        {
+            //buscar en BD hilos_mensajes;
+        }
+        
     }
 }
