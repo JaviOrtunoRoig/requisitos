@@ -27,7 +27,7 @@
             this.ltitulo = new System.Windows.Forms.Label();
             this.lRespuestas = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.bResponder = new XanderUI.XUIButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -60,25 +60,26 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Respuestas";
             // 
-            // xuiButton1
+            // bResponder
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
-            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.Dark;
-            this.xuiButton1.ButtonText = "Responder";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(67, 387);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
-            this.xuiButton1.TabIndex = 3;
-            this.xuiButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bResponder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
+            this.bResponder.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bResponder.ButtonImage")));
+            this.bResponder.ButtonStyle = XanderUI.XUIButton.Style.Dark;
+            this.bResponder.ButtonText = "Responder";
+            this.bResponder.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
+            this.bResponder.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.bResponder.CornerRadius = 5;
+            this.bResponder.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bResponder.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.bResponder.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
+            this.bResponder.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bResponder.Location = new System.Drawing.Point(67, 387);
+            this.bResponder.Name = "bResponder";
+            this.bResponder.Size = new System.Drawing.Size(200, 50);
+            this.bResponder.TabIndex = 3;
+            this.bResponder.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
+            this.bResponder.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bResponder.Click += new System.EventHandler(this.bResponder_Click);
             // 
             // textBox1
             // 
@@ -96,7 +97,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(345, 493);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.xuiButton1);
+            this.Controls.Add(this.bResponder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lRespuestas);
             this.Controls.Add(this.ltitulo);
@@ -116,7 +117,7 @@
         private System.Windows.Forms.Label ltitulo;
         private System.Windows.Forms.ListBox lRespuestas;
         private System.Windows.Forms.Label label1;
-        private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton bResponder;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

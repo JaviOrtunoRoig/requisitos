@@ -55,11 +55,11 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT mensaje FROM hilo WHERE nombreHilo = " + titulo + ";");
+            object[] tupla = miBD.Select("SELECT mensaje FROM hilo WHERE titulo = '" + titulo + "';");
 
             if (tupla[0] != null)
             {
-                return (string)tupla[0];
+                return (string)((object[])(tupla[0]))[0];
             }
             else
             {
@@ -128,7 +128,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensajes WHERE nombreHilo = " + tituloHilo + ";");
+            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensajes WHERE nombreHilo = '" + tituloHilo + "';");
             List<String> list = new List<String>();
 
             if (tupla[0] != null)
