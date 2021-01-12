@@ -64,13 +64,20 @@ namespace CampusApS.Vistas.Apartados {
         private void xuiButton1_Click(object sender, EventArgs e)
         {
 
-            //TODO: OBTENER RESPUESTAS
+            String[] respuestas = new String[5];
+
+            respuestas[0] = ((string)clPregunta1.SelectedItem);
+            respuestas[1] = ((string)clPregunta2.SelectedItem);
+            respuestas[2] = ((string)clPregunta3.SelectedItem);
+            respuestas[3] = ((string)clPregunta4.SelectedItem);
+            respuestas[4] = ((string)clPregunta5.SelectedItem);
+
 
             TestConocimientoQuery BD = new TestConocimientoQuery();
 
-            //TODO: OBTENER RESPUESTAS int puntuacion = BD.getPuntuacion(respuestas, test.getNombreTest());
+            double puntuacion = BD.getPuntuacion(respuestas, test.getNombreTest());
 
-            //TODO: OBTENER RESPUESTAS MessageBox.Show("Puntuacion obtenida : " + puntuacion);
+            MessageBox.Show("Puntuacion obtenida : " + puntuacion);
 
             this.Close();
         }
