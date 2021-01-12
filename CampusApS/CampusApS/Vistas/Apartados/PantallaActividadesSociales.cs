@@ -116,9 +116,9 @@ namespace CampusApS
                 this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
             }
 
-            this.bParticiparAct.Visible = this.usuario.getPermisos().getPuedeParticiparCurso();
-            this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearCurso();
-            this.bEliminarAct.Visible = this.usuario.getPermisos().getPuedeBorrarCurso();
+            this.bParticiparAct.Visible = this.usuario.getPermisos().getPuedeParticiparActividadSocial();
+            this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearActividadSocial();
+            this.bEliminarAct.Visible = this.usuario.getPermisos().getPuedeBorrarActividadSocial();
             this.bPapelera.Visible = false;
 
             this.bParticiparAct.Visible = false;
@@ -126,10 +126,14 @@ namespace CampusApS
             ActividadSocialQuery BD = new ActividadSocialQuery();
             lbActSociales.DataSource = BD.getAllAS();
 
+
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }
 
         private void lbActSociales_DoubleClick(object sender, EventArgs e) {
+
+            /*
+             
             ActividadSocialQuery query = new ActividadSocialQuery();
             ActividadSocialRecurso ASRecurso = new ActividadSocialRecurso((string)lbActSociales.SelectedItem);
             ASRecurso.setDescripcion(query.getDescripcionAS((string)lbActSociales.SelectedItem));
@@ -137,6 +141,10 @@ namespace CampusApS
             this.Visible = false;
             ventana.ShowDialog();
             this.Close();
+            */
+        
+            // SE ACCEDE POR MIS ACTIVIDADES SOCIALES
+
         }
 
         private void bOpciones_Click(object sender, EventArgs e)

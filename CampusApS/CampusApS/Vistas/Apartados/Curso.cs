@@ -86,6 +86,8 @@ namespace CampusApS {
                 bTestSatisfaccion.Visible = false;
                 bTestConocimiento.Visible = false;
             }
+
+            if (!usuario.getRol().Equals("profesor")) bEliminarUsuario.Visible = false;
         }
 
         private void bAnadirForo_Click(object sender, EventArgs e) {
