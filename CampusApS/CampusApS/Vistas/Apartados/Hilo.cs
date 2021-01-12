@@ -14,18 +14,24 @@ namespace CampusApS.Vistas.Apartados {
     public partial class Hilo : Form {
 
         ForoRecurso foro;
+        HiloRecurso hilo;
 
-        public Hilo(ForoRecurso foro) {
+        public Hilo(ForoRecurso foro, HiloRecurso hilo)
+        {
             InitializeComponent();
             this.foro = foro;
-            
+            this.hilo = hilo;
         }
+      
 
         private void Hilo_Load(object sender, EventArgs e)
         {
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
+
             HilosQuerys bd = new HilosQuerys();
-            lRespuestas.DataSource = bd.getMensajes(foro.getNombre());
-            this.ltitulo.Text = foro.getNombre();
+            lRespuestas.DataSource = bd.getMensajes(hilo.getNombre());
+            this.ltitulo.Text = hilo.getNombre();
         }
 
         private void lRespuestas_DoubleClick(object sender, EventArgs e)
@@ -36,3 +42,4 @@ namespace CampusApS.Vistas.Apartados {
         }
     }
 }
+

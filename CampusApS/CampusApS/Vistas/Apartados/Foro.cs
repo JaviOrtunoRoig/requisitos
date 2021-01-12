@@ -42,17 +42,20 @@ namespace CampusApS
                 this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
             }
 
+            HilosQuerys queryHilos = new HilosQuerys();
             ForosQuery query = new ForosQuery();
             this.foroRecurso.setDescripcion(query.getDescripcionForo(foroRecurso.getNombre()));
 
             this.label1.Text = foroRecurso.getNombre();
             this.lDescripción.Text = foroRecurso.getdescripcion();
+            this.lbHilos.DataSource = queryHilos.getHilosForo(foroRecurso.getNombre());
 
             if (usuario.getRol().Equals("invitado"))
             {
                 bOpciones.Visible = false;
                 bAnadirHilo.Visible = false;
                 bEliminarHilo.Visible = false;
+                bPapelera.Visible = false;
             }
         }
 
@@ -94,12 +97,18 @@ namespace CampusApS
         {
             CrearHilo ventana = new CrearHilo(usuario, foroRecurso);
             ventana.ShowDialog();
-            this.Close();
         }
 
         private void lbHilos_DoubleClick(object sender, EventArgs e)
-        {
-            Hilo ventana = new Hilo();
+        { 
+            if(lbHilos.SelectedItem != null)
+            {
+                HiloRecurso hiloRec = new HiloRecurso((string)lbHilos.SelectedItem);
+                Hilo ventana = new Hilo(foroRecurso, hiloRec);
+                // this.Visible = false;
+                ventana.ShowDialog();
+            }
+            
         }
 
     }

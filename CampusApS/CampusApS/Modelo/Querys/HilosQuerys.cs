@@ -128,7 +128,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensaje WHERE nombreHilo = " + tituloHilo + ";");
+            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensajes WHERE nombreHilo = " + tituloHilo + ";");
             List<String> list = new List<String>();
 
             if (tupla[0] != null)
