@@ -17,14 +17,17 @@ namespace CampusApS.Vistas.Apartados {
         Usuario usuario;
         ForoRecurso foro;
 
-        public CrearHilo() {
+        public CrearHilo(Usuario usuario, ForoRecurso foro) {
             InitializeComponent();
+            this.usuario = usuario;
+            this.foro = foro;
         }
 
         private void bCrear_Click(object sender, EventArgs e)
         {
             string titulo = this.textBox1.Text;
             string cuerpo = this.textBox2.Text;
+            
 
             if(titulo!=null && cuerpo!=null)
             {
