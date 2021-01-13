@@ -49,6 +49,7 @@
             this.bEliminar.TabIndex = 0;
             this.bEliminar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
             this.bEliminar.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bEliminar.Click += new System.EventHandler(this.bEliminar_Click);
             // 
             // label1
             // 
@@ -63,6 +64,7 @@
             // 
             // cUsuarios
             // 
+            this.cUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cUsuarios.FormattingEnabled = true;
             this.cUsuarios.Location = new System.Drawing.Point(16, 78);
             this.cUsuarios.Name = "cUsuarios";
@@ -82,6 +84,7 @@
             this.Name = "EliminarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarUsuario";
+            this.Load += new System.EventHandler(this.EliminarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,7 +28,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.bCrear = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // label1
@@ -66,25 +66,26 @@
             this.textBox2.Size = new System.Drawing.Size(262, 115);
             this.textBox2.TabIndex = 3;
             // 
-            // xuiButton1
+            // bCrear
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
-            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.Dark;
-            this.xuiButton1.ButtonText = "Crear";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(69, 267);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
-            this.xuiButton1.TabIndex = 4;
-            this.xuiButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bCrear.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
+            this.bCrear.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bCrear.ButtonImage")));
+            this.bCrear.ButtonStyle = XanderUI.XUIButton.Style.Dark;
+            this.bCrear.ButtonText = "Crear";
+            this.bCrear.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
+            this.bCrear.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
+            this.bCrear.CornerRadius = 5;
+            this.bCrear.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.bCrear.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
+            this.bCrear.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
+            this.bCrear.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.bCrear.Location = new System.Drawing.Point(69, 267);
+            this.bCrear.Name = "bCrear";
+            this.bCrear.Size = new System.Drawing.Size(200, 50);
+            this.bCrear.TabIndex = 4;
+            this.bCrear.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
+            this.bCrear.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.bCrear.Click += new System.EventHandler(this.bCrear_Click);
             // 
             // CrearHilo
             // 
@@ -92,7 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(341, 329);
-            this.Controls.Add(this.xuiButton1);
+            this.Controls.Add(this.bCrear);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -101,6 +102,7 @@
             this.Name = "CrearHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearHilo";
+            this.Load += new System.EventHandler(this.CrearHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,6 +114,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton bCrear;
     }
 }

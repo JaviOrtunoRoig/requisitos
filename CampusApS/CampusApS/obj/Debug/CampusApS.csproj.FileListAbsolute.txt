@@ -137,20 +137,10 @@ C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\Campus
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearActividadSocial.resources
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CrearCurso.resources
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearForo.resources
-C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearNoticia.resources
-C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaActividadesSociales.resources
 C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaCursos.resources
-C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.PantallaForos.resources
-C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ActividadSocial.resources
-C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Curso.resources
-C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Foro.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ActividadSocial.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ConfirmarPassword.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearActividadSocial.resources
 C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearForo.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearNoticia.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Curso.resources
-C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Foro.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ConfirmarPassword.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearActividadSocial.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearForo.resources
@@ -203,3 +193,114 @@ D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\Ca
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestSatisfaccion.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Curso.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Foro.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe.config
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.exe
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\CampusApS.pdb
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\MySql.Data.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\Google.Protobuf.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\Zstandard.Net.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\Renci.SshNet.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\System.Buffers.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\System.Memory.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\MySql.Data.xml
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csprojAssemblyReference.cache
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.ActividadSocial.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearNoticia.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearTestConocimiento.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.EliminarUsuarioCurso.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Noticia.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.RealizarTestConocimiento.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestConocimientosCurso.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestSatisfaccion.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.ConfirmarPassword.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearActividadSocial.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CrearCurso.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.CreacionRecursos.CrearForo.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Curso.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Foro.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaActividadesSociales.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaCursos.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Properties.Resources.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaBienvenido.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaLogin.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaNoticias.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRecuperarContrasena.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroAdmin.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroEstudiante.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroONG.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaRegistroProfesor.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaUsertype.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaForos.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.CambiarNombre.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.EliminarUsuario.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Mensajes.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisActividadesSociales.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisCursos.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.NuevoMensaje.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Opciones.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Chat.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.GenerateResource.cache
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.CoreCompileInputs.cache
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.csproj.CopyComplete
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.exe
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.pdb
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearHilo.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearRespuestaDeUnHilo.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Hilo.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\bin\Debug\System.Memory.dll
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.ActividadSocial.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearHilo.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearNoticia.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearRespuestaDeUnHilo.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearTestConocimiento.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.EliminarUsuarioCurso.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Hilo.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Noticia.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.RealizarTestConocimiento.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestConocimientosCurso.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestSatisfaccion.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Curso.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Foro.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaActividadesSociales.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.PantallaForos.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.CambiarNombre.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.EliminarUsuario.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Mensajes.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisActividadesSociales.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.MisCursos.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.NuevoMensaje.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Opciones.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.Chat.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\bin\Debug\System.Memory.dll
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.ActividadSocial.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearHilo.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearNoticia.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearRespuestaDeUnHilo.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearTestConocimiento.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.EliminarUsuarioCurso.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Hilo.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Noticia.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.RealizarTestConocimiento.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestConocimientosCurso.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.TestSatisfaccion.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Curso.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Foro.resources
+C:\Users\alexr\OneDrive\Escritorio\Alex\D-D\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Opciones.EliminarUsuario.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearHilo.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearRespuestaDeUnHilo.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Hilo.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\System.Memory.dll

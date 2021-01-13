@@ -30,10 +30,12 @@ namespace CampusApS.Vistas.Opciones {
             if(usuario.getRol().Equals("administrador"))
             {
                 this.bInvitarAdminitrador.Visible = true;
+                this.bEliminarUsuario.Visible = true;
             }
             else
             {
                 this.bInvitarAdminitrador.Visible = false;
+                this.bEliminarUsuario.Visible = false;
             }
 
         }
@@ -77,6 +79,11 @@ namespace CampusApS.Vistas.Opciones {
             bd.codigoAdmin();
         }
 
-       
+        private void bEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            EliminarUsuario ventana = new EliminarUsuario();
+            ventana.ShowDialog();
+            this.Close();
+        }
     }
 }

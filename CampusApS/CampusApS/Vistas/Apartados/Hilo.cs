@@ -7,11 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusApS.Modelo.Querys;
+using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class Hilo : Form {
-        public Hilo() {
+
+        ForoRecurso foro;
+        HiloRecurso hilo;
+        Usuario usuario;
+
+        public Hilo(ForoRecurso foro, HiloRecurso hilo, Usuario usuario)
+        {
             InitializeComponent();
+            this.foro = foro;
+            this.hilo = hilo;
+            this.usuario = usuario;
+        }
+      
+
+        private void Hilo_Load(object sender, EventArgs e)
+        {
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
+
+            HilosQuerys bd = new HilosQuerys();
+            lRespuestas.DataSource = bd.getMensajes(hilo.getNombre());
+            this.ltitulo.Text = hilo.getNombre();
+            this.textBox1.Text = hilo.getMensaje();
+        }
+
+        private void lRespuestas_DoubleClick(object sender, EventArgs e)
+        {
+            VerRespuestaHilo ventana = new VerRespuestaHilo((string) lRespuestas.SelectedItem);
+            ventana.ShowDialog();
+            this.Close();
+        }
+
+        private void bResponder_Click(object sender, EventArgs e)
+        {
+            CrearRespuestaDeUnHilo ventana = new CrearRespuestaDeUnHilo(usuario, hilo);
+            ventana.ShowDialog();
         }
     }
 }
+

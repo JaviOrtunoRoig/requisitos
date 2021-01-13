@@ -1,5 +1,6 @@
 ﻿using CampusApS.Modelo.Logica.Recursos;
 using CampusApS.Modelo.Logica.Usuarios;
+using CampusApS.Modelo.Querys;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,8 +25,10 @@ namespace CampusApS.Vistas.Apartados {
 
         private void bEliminar_Click(object sender, EventArgs e)
         {
-            //TODO : CREAR BD
-            // TODO : ELIMINAR USUARIO DEL CURSO 
+            CursoQuery BD = new CursoQuery();
+            BD.borrarUsuarioCurso((string)cUsuarios.SelectedItem, cursoRecurso.getNombre());
+
+            this.Close();
         }
 
         private void EliminarUsuarioCurso_Load(object sender, EventArgs e)
@@ -33,7 +36,10 @@ namespace CampusApS.Vistas.Apartados {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
 
-            // TODO: USUARIOS DE UN CURSO cUsuarios.DataSource = getUsuariosCurso(cursoRecurso.getNombre());
+            CursoQuery BD = new CursoQuery();
+
+            cUsuarios.DataSource = BD.getUsuariosCurso(cursoRecurso.getNombre());
+
         }
     }
 }
