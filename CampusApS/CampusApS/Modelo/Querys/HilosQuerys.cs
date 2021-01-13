@@ -127,7 +127,7 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public List<String> getMensajes(string tituloHilo)
+        public List<String> getMensajesHilo(string tituloHilo)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
