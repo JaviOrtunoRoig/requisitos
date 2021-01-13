@@ -29,9 +29,6 @@ namespace CampusApS.Vistas.Apartados {
 
         private void Hilo_Load(object sender, EventArgs e)
         {
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
-
             HilosQuerys bd = new HilosQuerys();
             lRespuestas.DataSource = bd.getMensajes(hilo.getNombre());
             this.ltitulo.Text = hilo.getNombre();
