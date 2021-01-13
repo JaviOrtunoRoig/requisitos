@@ -151,19 +151,10 @@ namespace CampusApS {
 
         private void bTestSatisfaccion_Click(object sender, EventArgs e)
         {
-            TestSatisfaccionQuery bd = new TestSatisfaccionQuery(cursoRecurso.getNombre());
-            TestSatisfaccion ventana = new TestSatisfaccion();
-
+            TestSatisfaccion ventana = new TestSatisfaccion(cursoRecurso);
+            ventana.ShowDialog();
 
         }
 
-
-
-        /*  private void bTestSatisfaccion_Click(object sender, EventArgs e)
-          {
-              TestSatisfaccion test = new TestSatisfaccion(this.usuario);
-              test.ShowDialog();
-              this.Close();
-          }*/
     }
 }
