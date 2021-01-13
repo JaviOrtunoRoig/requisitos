@@ -68,6 +68,7 @@
     <Compile Include="Modelo\Logica\Usuarios\Profesor.cs" />
     <Compile Include="Modelo\Querys\ActividadSocialQuery.cs" />
     <Compile Include="Modelo\Querys\BD.cs" />
+    <Compile Include="Modelo\Querys\CalendarioQuery.cs" />
     <Compile Include="Modelo\Querys\CursoQuery.cs" />
     <Compile Include="Modelo\Querys\Error.cs" />
     <Compile Include="Modelo\Logica\Usuarios\Usuario.cs" />
