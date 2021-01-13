@@ -29,13 +29,13 @@ namespace CampusApS.Modelo.Querys
             return tupla[0] == null;
         }
 
-        public void insertarCurso(string nombreCurso, string nombreUsuario, string des)
+        public void insertarCurso(string nombreCurso, string nombreUsuario, string des, string fecha)
         {
             if (permitirCurso(nombreCurso))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`, `descripcion`) VALUES ('" +
-                nombreCurso + "', '" + nombreUsuario + "', '" + des + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`curso` (`nombreCurso`, `usuario`, `descripcion`, `fechaCreacion`) VALUES ('" +
+                nombreCurso + "', '" + nombreUsuario + "', '" + des + "', '" + fecha + "');");
 
             }
             else

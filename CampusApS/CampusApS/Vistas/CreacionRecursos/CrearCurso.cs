@@ -22,8 +22,14 @@ namespace CampusApS.Vistas {
 
         private void bConfirmar_Click(object sender, EventArgs e) {
             CursoQuery BD = new CursoQuery();
-            BD.insertarCurso(tNombreCurso.Text, usuario.getNombre(), tDescripcion.Text);
+            string fecha = dateTimePicker1.Value.ToString();
+            BD.insertarCurso(tNombreCurso.Text, usuario.getNombre(), tDescripcion.Text, fecha);
             this.Close();
+        }
+
+        private void CrearCurso_Load(object sender, EventArgs e)
+        {
+            this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
         }
     }
 }
