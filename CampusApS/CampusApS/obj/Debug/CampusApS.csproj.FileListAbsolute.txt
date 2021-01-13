@@ -304,3 +304,9 @@ C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\Campu
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources
 C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\bin\Debug\System.Memory.dll
+D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\bin\Debug\System.Memory.dll
+D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearHilo.resources
+D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.CrearRespuestaDeUnHilo.resources
+D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Hilo.resources
+D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
+D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources

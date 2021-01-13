@@ -97,6 +97,9 @@ namespace CampusApS
         {
             CrearHilo ventana = new CrearHilo(usuario, foroRecurso);
             ventana.ShowDialog();
+
+            Foro ventanaRecargada = new Foro(usuario, foroRecurso);
+            ventanaRecargada.ShowDialog();
         }
 
         private void lbHilos_DoubleClick(object sender, EventArgs e)
@@ -108,7 +111,6 @@ namespace CampusApS
                 string cuerpo = bd.getMensaje(titulo);
                 HiloRecurso hiloRec = new HiloRecurso(titulo, cuerpo);
                 Hilo ventana = new Hilo(foroRecurso, hiloRec, usuario);
-                // this.Visible = false;
                 ventana.ShowDialog();
             }
             
