@@ -164,6 +164,22 @@ namespace CampusApS.Modelo.Querys
 
             return list;
         }
+
+        public string getCreador(string titulo){
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT creador FROM hilo WHERE titulo = '" + titulo + "';");
+
+            if (tupla[0] != null)
+            {
+                return (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Este hilo no existe");
+                return null;
+            }
+        }
         
     }
 }
