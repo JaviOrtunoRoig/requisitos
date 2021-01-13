@@ -30,7 +30,7 @@ namespace CampusApS.Vistas.Apartados {
         private void Hilo_Load(object sender, EventArgs e)
         {
             HilosQuerys bd = new HilosQuerys();
-            lRespuestas.DataSource = bd.getMensajes(hilo.getNombre());
+            lRespuestas.DataSource = bd.getMensajesHilo(hilo.getNombre());
             this.ltitulo.Text = hilo.getNombre();
             this.textBox1.Text = hilo.getMensaje();
         }
