@@ -6,6 +6,7 @@ using CampusApS.Vistas.CreacionRecursos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using CampusApS.Vistas.Apartados;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -135,6 +136,13 @@ namespace CampusApS.Vistas.Opciones {
             this.bEliminarAS.BackgroundColor = Color.White;
             this.lMisAS.DataSource = BD.getAllCursos();
             this.bPapelera.Visible = false;
+        }
+
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 9));
+            ventana.ShowDialog();
+            this.Close();
         }
 
     

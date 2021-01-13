@@ -19,5 +19,12 @@ namespace CampusApS.Vistas.Apartados {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = System.Drawing.Color.Transparent;
         }
+
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 9));
+            ventana.ShowDialog();
+            this.Close();
+        }
     }
 }

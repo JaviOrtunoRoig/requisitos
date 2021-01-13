@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Apartados;
 using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
@@ -160,6 +161,12 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 9));
+            ventana.ShowDialog();
+            this.Close();
+        }
     
     }
 }
