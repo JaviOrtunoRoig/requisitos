@@ -72,10 +72,10 @@ namespace CampusApS
 
             bPapelera.Visible = false;
 
-            if (!usuario.getRol().Equals("invitado") && !usuario.getRol().Equals("alumno"))
+            if (usuario.getRol().Equals("invitado") || usuario.getRol().Equals("alumno"))
             {
-                bAnadirNoticia.Visible = true;
-                bEliminarNoticia.Visible = true;
+                bAnadirNoticia.Visible = false;
+                bEliminarNoticia.Visible = false;
             }
 
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;

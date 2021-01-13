@@ -145,7 +145,7 @@ namespace CampusApS.Modelo.Querys
 
                     if (tupla[cont] != null)
                     {
-                        int id = (int)((object[])(tupla[0]))[0];
+                        int id = (int)((object[])(tupla[cont]))[0];
                         string mensaje = getRespuesta(id);
 
                         if (mensaje != null)
