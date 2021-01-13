@@ -26,20 +26,18 @@ namespace CampusApS.Vistas.Apartados {
         private void bEnviar_Click(object sender, EventArgs e)
         {
             string mensaje = textBox2.Text;
-            /*
+            
             if (mensaje != null)
             {
                 HilosQuerys bd = new HilosQuerys();
-                bd.responderHilo(usuario.getNombre(), hilo.getNombre(), mensaje,  nombre creador);
+                bd.responderHilo(usuario.getNombre(), hilo.getNombre(), mensaje, bd.getCreador(hilo.getNombre()));
                 this.Close();
             }
-            */
+            
         }
 
         private void CrearRespuestaDeUnHilo_Load(object sender, EventArgs e)
         {
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
 
         }
     }
