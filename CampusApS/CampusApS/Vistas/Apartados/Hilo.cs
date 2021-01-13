@@ -46,6 +46,9 @@ namespace CampusApS.Vistas.Apartados {
         {
             CrearRespuestaDeUnHilo ventana = new CrearRespuestaDeUnHilo(usuario, hilo);
             ventana.ShowDialog();
+
+            Hilo ventanaRecargada = new Hilo(foro, hilo, usuario);
+            ventanaRecargada.ShowDialog();
         }
     }
 }

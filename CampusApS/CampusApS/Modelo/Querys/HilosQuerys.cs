@@ -41,7 +41,8 @@ namespace CampusApS.Modelo.Querys
 
             if (tupla[0] != null)
             {
-                return (string) tupla[0];
+                string respuesta = (string)((object[])(tupla[0]))[0];
+                return respuesta;
 
             }
             else
@@ -76,8 +77,10 @@ namespace CampusApS.Modelo.Querys
             "('" + usuario + "', '" + creadorHilo + "', '" + respuesta + "');");
 
             object[] tupla = miBD.Select("SELECT MAX(idm) AS id FROM mensaje");
+            int id = (int)((object[])(tupla[0]))[0];
+                
 
-            miBD.Insert("INSERT INTO `apsgrupo06`.`hilo_mensajes` (`nombreHilo`, `mensaje`) VALUES ('" + titulo + "', '" + (int) tupla[0] + "');");
+            miBD.Insert("INSERT INTO `apsgrupo06`.`hilo_mensajes` (`nombreHilo`, `mensaje`) VALUES ('" + titulo + "', '" + id + "');");
 
 
         }
@@ -142,7 +145,8 @@ namespace CampusApS.Modelo.Querys
 
                     if (tupla[cont] != null)
                     {
-                        string mensaje = getRespuesta((int) tupla[0]);
+                        int id = (int)((object[])(tupla[0]))[0];
+                        string mensaje = getRespuesta(id);
 
                         if (mensaje != null)
                         {
