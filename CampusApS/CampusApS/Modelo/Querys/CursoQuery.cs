@@ -159,6 +159,8 @@ namespace CampusApS.Modelo.Querys
                 miBD.Insert("INSERT INTO `apsgrupo06`.`usuario_curso` (`nombreCurso`, `nombreUsuario`) VALUES ('" +
                 nombreCurso + "', '" + nombreUsuario + "');");
 
+                MessageBox.Show("Te has inscrito con éxito!");
+
             }
             else
             {
