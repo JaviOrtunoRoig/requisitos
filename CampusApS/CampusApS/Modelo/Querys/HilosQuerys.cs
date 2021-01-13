@@ -41,7 +41,8 @@ namespace CampusApS.Modelo.Querys
 
             if (tupla[0] != null)
             {
-                return (string) tupla[0];
+                string respuesta = (string)((object[])(tupla[0]))[0];
+                return respuesta;
 
             }
             else
@@ -55,11 +56,11 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT mensaje FROM hilo WHERE nombreHilo = " + titulo + ";");
+            object[] tupla = miBD.Select("SELECT mensaje FROM hilo WHERE titulo = '" + titulo + "';");
 
             if (tupla[0] != null)
             {
-                return (string)tupla[0];
+                return (string)((object[])(tupla[0]))[0];
             }
             else
             {
@@ -76,8 +77,10 @@ namespace CampusApS.Modelo.Querys
             "('" + usuario + "', '" + creadorHilo + "', '" + respuesta + "');");
 
             object[] tupla = miBD.Select("SELECT MAX(idm) AS id FROM mensaje");
+            int id = (int)((object[])(tupla[0]))[0];
+                
 
-            miBD.Insert("INSERT INTO `apsgrupo06`.`hilo_mensajes` (`nombreHilo`, `mensaje`) VALUES ('" + titulo + "', '" + (int) tupla[0] + "');");
+            miBD.Insert("INSERT INTO `apsgrupo06`.`hilo_mensajes` (`nombreHilo`, `mensaje`) VALUES ('" + titulo + "', '" + id + "');");
 
 
         }
@@ -124,11 +127,11 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public List<String> getMensajes(string tituloHilo)
+        public List<String> getMensajesHilo(string tituloHilo)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensaje WHERE nombreHilo = " + tituloHilo + ";");
+            object[] tupla = miBD.Select("SELECT mensaje FROM hilo_mensajes WHERE nombreHilo = '" + tituloHilo + "';");
             List<String> list = new List<String>();
 
             if (tupla[0] != null)
@@ -142,7 +145,8 @@ namespace CampusApS.Modelo.Querys
 
                     if (tupla[cont] != null)
                     {
-                        string mensaje = getRespuesta((int) tupla[0]);
+                        int id = (int)((object[])(tupla[cont]))[0];
+                        string mensaje = getRespuesta(id);
 
                         if (mensaje != null)
                         {
@@ -163,6 +167,22 @@ namespace CampusApS.Modelo.Querys
             }
 
             return list;
+        }
+
+        public string getCreador(string titulo){
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT creador FROM hilo WHERE titulo = '" + titulo + "';");
+
+            if (tupla[0] != null)
+            {
+                return (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Este hilo no existe");
+                return null;
+            }
         }
         
     }

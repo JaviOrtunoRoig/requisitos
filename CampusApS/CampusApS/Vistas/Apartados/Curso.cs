@@ -149,13 +149,12 @@ namespace CampusApS {
             ventana.ShowDialog();
         }
 
-   
+        private void bTestSatisfaccion_Click(object sender, EventArgs e)
+        {
+            TestSatisfaccion ventana = new TestSatisfaccion(cursoRecurso);
+            ventana.ShowDialog();
 
-        /*  private void bTestSatisfaccion_Click(object sender, EventArgs e)
-          {
-              TestSatisfaccion test = new TestSatisfaccion(this.usuario);
-              test.ShowDialog();
-              this.Close();
-          }*/
+        }
+
     }
 }

@@ -31,8 +31,6 @@ namespace CampusApS.Vistas.CreacionRecursos
         }
 
         private void CrearActividadSocial_Load(object sender, EventArgs e) {
-            this.label3.Visible = false;
-            this.dateTimePicker1.Visible = false;
         }
     }
 }
