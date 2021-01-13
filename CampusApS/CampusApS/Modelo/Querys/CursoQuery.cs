@@ -283,6 +283,24 @@ namespace CampusApS.Modelo.Querys
             miBD.Delete("DELETE FROM `apsgrupo06`.`usuario_curso` WHERE (nombreUsuario = '" + nomUs + "' AND nombreCurso = '"+ nomCurso + "');");
         }
 
+        public string getProfesor(string curso)
+        {
+            BD miBD = new BD(BD_SERVER, BD_NAME);
+
+            object[] tupla = miBD.Select("SELECT usuario FROM curso WHERE nombreCurso = '" + curso + "';");
+            string nombre = "";
+
+            if (tupla[0] != null)
+            {
+                nombre = (string)((object[])(tupla[0]))[0];
+            }
+            else
+            {
+                MessageBox.Show("Curso no disponible");
+            }
+
+            return nombre;
+        }
        
     }
 }
