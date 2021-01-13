@@ -86,6 +86,8 @@ namespace CampusApS {
                 bTestSatisfaccion.Visible = false;
                 bTestConocimiento.Visible = false;
             }
+
+            if (!usuario.getRol().Equals("profesor")) bEliminarUsuario.Visible = false;
         }
 
         private void bAnadirForo_Click(object sender, EventArgs e) {
@@ -147,13 +149,12 @@ namespace CampusApS {
             ventana.ShowDialog();
         }
 
-   
+        private void bTestSatisfaccion_Click(object sender, EventArgs e)
+        {
+            TestSatisfaccion ventana = new TestSatisfaccion(cursoRecurso);
+            ventana.ShowDialog();
 
-        /*  private void bTestSatisfaccion_Click(object sender, EventArgs e)
-          {
-              TestSatisfaccion test = new TestSatisfaccion(this.usuario);
-              test.ShowDialog();
-              this.Close();
-          }*/
+        }
+
     }
 }

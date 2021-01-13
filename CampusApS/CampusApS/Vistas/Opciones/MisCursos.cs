@@ -43,7 +43,15 @@ namespace CampusApS.Vistas.Opciones {
             this.bPapelera.Visible = false;
 
             CursoQuery BD = new CursoQuery();
-            lbMisCursos.DataSource = BD.misCursos(usuario.getNombre());
+
+            if(!usuario.getRol().Equals("profesor"))
+            {
+                lbMisCursos.DataSource = BD.misCursos(usuario.getNombre());
+            }
+            else
+            {
+                lbMisCursos.DataSource = BD.getCursosCreador(usuario.getNombre());
+            }
 
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }

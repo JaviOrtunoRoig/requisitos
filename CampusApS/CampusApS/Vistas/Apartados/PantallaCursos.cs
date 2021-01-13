@@ -119,13 +119,16 @@ namespace CampusApS
         }
 
         private void lbCursos_DoubleClick(object sender, EventArgs e) {
-            CursoQuery query = new CursoQuery();
+            /*CursoQuery query = new CursoQuery();
             CursoRecurso cursoRecurso = new CursoRecurso((string) lbCursos.SelectedItem);
             cursoRecurso.setDescripcion(query.getDescripcionCurso((string) lbCursos.SelectedItem));
             Curso ventana = new Curso(usuario, cursoRecurso);
             this.Visible = false;
             ventana.ShowDialog();
             this.Close();
+            */
+
+            // SE ACCEDE POR MIS CURSOS
         }
 
         private void bParticiparCurso_Click(object sender, EventArgs e) {

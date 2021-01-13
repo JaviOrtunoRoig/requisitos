@@ -29,6 +29,8 @@
             this.bConfirmar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tDescripcion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +53,7 @@
             // bConfirmar
             // 
             this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bConfirmar.Location = new System.Drawing.Point(206, 215);
+            this.bConfirmar.Location = new System.Drawing.Point(206, 285);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
             this.bConfirmar.TabIndex = 2;
@@ -77,12 +79,31 @@
             this.tDescripcion.Size = new System.Drawing.Size(252, 73);
             this.tDescripcion.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(26, 224);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Fecha de creación";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(29, 240);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 51;
+            // 
             // CrearCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(311, 262);
+            this.ClientSize = new System.Drawing.Size(311, 343);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.tDescripcion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bConfirmar);
@@ -105,5 +126,7 @@
         private System.Windows.Forms.Button bConfirmar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tDescripcion;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

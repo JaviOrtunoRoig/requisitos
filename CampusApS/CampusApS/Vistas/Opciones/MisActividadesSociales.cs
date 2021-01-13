@@ -42,7 +42,15 @@ namespace CampusApS.Vistas.Opciones {
             this.bPapelera.Visible = false;
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
-            lMisAS.DataSource = BD.misAS(usuario.getNombre());
+
+            if (!usuario.getRol().Equals("profesor") && !usuario.getRol().Equals("ong"))
+            {
+                lMisAS.DataSource = BD.misAS(usuario.getNombre());
+            }
+            else
+            {
+                lMisAS.DataSource = BD.getASCreador(usuario.getNombre());
+            }
 
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
         }

@@ -9,23 +9,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CampusApS.Modelo.Querys;
 using CampusApS.Modelo.Logica.Recursos;
+using CampusApS.Modelo.Logica.Usuarios;
 
 namespace CampusApS.Vistas.Apartados {
     public partial class Hilo : Form {
 
         ForoRecurso foro;
+        HiloRecurso hilo;
+        Usuario usuario;
 
-        public Hilo(ForoRecurso foro) {
+        public Hilo(ForoRecurso foro, HiloRecurso hilo, Usuario usuario)
+        {
             InitializeComponent();
             this.foro = foro;
-            
+            this.hilo = hilo;
+            this.usuario = usuario;
         }
+      
 
         private void Hilo_Load(object sender, EventArgs e)
         {
             HilosQuerys bd = new HilosQuerys();
-            lRespuestas.DataSource = bd.getMensajes(foro.getNombre());
-            this.ltitulo.Text = foro.getNombre();
+            lRespuestas.DataSource = bd.getMensajesHilo(hilo.getNombre());
+            this.ltitulo.Text = hilo.getNombre();
+            this.textBox1.Text = hilo.getMensaje();
+
+            if (usuario.getRol() == "invitado")
+            {
+                bResponder.Visible = false;
+            }
         }
 
         private void lRespuestas_DoubleClick(object sender, EventArgs e)
@@ -34,5 +46,17 @@ namespace CampusApS.Vistas.Apartados {
             ventana.ShowDialog();
             this.Close();
         }
+
+        private void bResponder_Click(object sender, EventArgs e)
+        {
+            CrearRespuestaDeUnHilo ventana = new CrearRespuestaDeUnHilo(usuario, hilo);
+            ventana.ShowDialog();
+            this.Visible = false;
+            this.Close();  
+           
+            Hilo ventanaRecargada = new Hilo(foro, hilo, usuario);
+            ventanaRecargada.ShowDialog();
+        }
     }
 }
+

@@ -39,5 +39,10 @@ namespace CampusApS.Vistas.Apartados {
 
 
         }
+
+        private void CrearHilo_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

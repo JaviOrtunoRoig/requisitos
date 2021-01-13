@@ -38,11 +38,11 @@ namespace CampusApS.Modelo.Querys
                 aux.Append("', '" + p.getOpcionC());
                 aux.Append("', '" + p.getOpcionCorrecta());
 
-                miBD.Insert("INSERT INTO `apsgrupo06`.`testConocimiento` (`nombreTest`, `pregunta`, `opcionA`, `opcionB`, " +
+                miBD.Insert("INSERT INTO `apsgrupo06`.`preguntas` (`nombreTest`, `pregunta`, `opcionA`, `opcionB`, " +
                 "`opcionC`, `opcionCorrecta`) VALUES('" + nombreTest + "', '" + p.getNombre() + aux.ToString() + "')");
             }
 
-            miBD.Insert("INSERT INTO `apsgrupo06`.`testSatisfaccion` (`nombreTest`, `curso`, `pregunta1`, `pregunta2`, " +
+            miBD.Insert("INSERT INTO `apsgrupo06`.`testConocimiento` (`nombreTest`, `curso`, `pregunta1`, `pregunta2`, " +
             "`pregunta3`, `pregunta4`, `pregunta5`) VALUES('" + nombreTest + "', '" + nomCurso + sb.ToString() + "')");
         }
 
@@ -99,13 +99,13 @@ namespace CampusApS.Modelo.Querys
             if (tupla[0] != null)
             {
                 string nombre = nombreTest;
-                string curso = (string) tupla[1];
+                string curso = (string)((object[])(tupla[0]))[1];
 
                 for(int i = 2; i < 7; i++){
-                    object[] aux = miBD.Select("SELECT * FROM pregunta WHERE nombreTest = '" + nombreTest + "' AND pregunta = '" + 
-                    (string) tupla[i] + "' ;");
+                    object[] aux = miBD.Select("SELECT * FROM preguntas WHERE nombreTest = '" + nombreTest + "' AND pregunta = '" +
+                    (string)((object[])(tupla[0]))[i] + "' ;");
 
-                    Pregunta p = new Pregunta((string) aux[1], (string) aux[2], (string) aux[3], (string) aux[4], (string) aux[5]);
+                    Pregunta p = new Pregunta((string)((object[])(aux[0]))[1], (string)((object[])(aux[0]))[2], (string)((object[])(aux[0]))[3], (string)((object[])(aux[0]))[4], (string)((object[])(aux[0]))[5]);
                     lista.Add(p);
                 }
 
