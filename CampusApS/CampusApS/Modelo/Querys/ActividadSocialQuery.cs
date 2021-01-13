@@ -38,13 +38,13 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public void insertarAS(string nombreAS, string nombreUsuario, string des)
+        public void insertarAS(string nombreAS, string nombreUsuario, string des, string fecha)
         {
             if (permitirAS(nombreAS))
             {
                 BD miBD = new BD(BD_SERVER, BD_NAME);
-                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`, `descripcion`) VALUES ('" +
-                nombreAS + "', '" + nombreUsuario + "', '" + des + "');");
+                miBD.Insert("INSERT INTO `apsgrupo06`.`actividadsocial` (`nombreAS`, `usuario`, `descripcion`, `fechaCreacion`) VALUES ('" +
+                nombreAS + "', '" + nombreUsuario + "', '" + des + "', '" + fecha + "');");
 
             }
             else

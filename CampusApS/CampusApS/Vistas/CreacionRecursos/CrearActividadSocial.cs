@@ -26,11 +26,13 @@ namespace CampusApS.Vistas.CreacionRecursos
         private void bConfirmar_Click_1(object sender, EventArgs e)
         {
             ActividadSocialQuery BD = new ActividadSocialQuery();
-            BD.insertarAS(tNombreActSocial.Text, usuario.getNombre(), tDescActSocial.Text);
+            string fecha = dateTimePicker1.Value.ToString();
+            BD.insertarAS(tNombreActSocial.Text, usuario.getNombre(), tDescActSocial.Text, fecha);
             this.Close();
         }
 
         private void CrearActividadSocial_Load(object sender, EventArgs e) {
+            this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
         }
     }
 }
