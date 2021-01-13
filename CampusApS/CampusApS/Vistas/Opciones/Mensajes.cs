@@ -79,7 +79,9 @@ namespace CampusApS.Vistas.Opciones {
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
             ventana.ShowDialog();
+            this.Visible = false;
             this.Close();
+            this.Visible = true;
         }
 
         
