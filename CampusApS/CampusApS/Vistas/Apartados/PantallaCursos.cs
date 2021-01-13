@@ -134,11 +134,21 @@ namespace CampusApS
         private void bParticiparCurso_Click(object sender, EventArgs e) {
             CursoQuery BD = new CursoQuery();
             if (lbCursos.SelectedItem != null) {
-                BD.inscribirseCurso(this.usuario.getNombre(), (string) lbCursos.SelectedItem);
-                this.Visible = false;
-                PantallaCursos ventana = new PantallaCursos(usuario);
-                ventana.ShowDialog();
-                this.Visible = true;
+
+                try
+                {
+
+                    BD.inscribirseCurso(this.usuario.getNombre(), (string)lbCursos.SelectedItem);
+
+
+                    lbCursos.DataSource = BD.getAllCursos();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
             } else {
                 MessageBox.Show("No hay ningún curso seleccionado");
             }
@@ -150,6 +160,6 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
-  
+    
     }
 }

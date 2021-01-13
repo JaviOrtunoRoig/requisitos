@@ -54,10 +54,6 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
-        private void bParticiparAct_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void bAnadirAct_Click(object sender, EventArgs e)
         {
@@ -116,12 +112,10 @@ namespace CampusApS
                 this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
             }
 
-            this.bParticiparAct.Visible = this.usuario.getPermisos().getPuedeParticiparActividadSocial();
             this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearActividadSocial();
             this.bEliminarAct.Visible = this.usuario.getPermisos().getPuedeBorrarActividadSocial();
             this.bPapelera.Visible = false;
 
-            this.bParticiparAct.Visible = false;
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
             lbActSociales.DataSource = BD.getAllAS();

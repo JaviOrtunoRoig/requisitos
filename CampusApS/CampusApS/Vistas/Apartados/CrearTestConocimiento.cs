@@ -23,6 +23,9 @@ namespace CampusApS.Vistas.Apartados {
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             string fecha = dateTimePicker1.Value.ToString();
+
+            fecha = fecha.Substring(0, 10);
+
             List<String> rCorrecta = obtenerRespuestasCorrectas();
 
 
