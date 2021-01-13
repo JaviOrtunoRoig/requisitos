@@ -33,6 +33,11 @@ namespace CampusApS.Vistas.Apartados {
             lRespuestas.DataSource = bd.getMensajesHilo(hilo.getNombre());
             this.ltitulo.Text = hilo.getNombre();
             this.textBox1.Text = hilo.getMensaje();
+
+            if (usuario.getRol() == "invitado")
+            {
+                bResponder.Visible = false;
+            }
         }
 
         private void lRespuestas_DoubleClick(object sender, EventArgs e)
@@ -46,7 +51,9 @@ namespace CampusApS.Vistas.Apartados {
         {
             CrearRespuestaDeUnHilo ventana = new CrearRespuestaDeUnHilo(usuario, hilo);
             ventana.ShowDialog();
-
+            this.Visible = false;
+            this.Close();  
+           
             Hilo ventanaRecargada = new Hilo(foro, hilo, usuario);
             ventanaRecargada.ShowDialog();
         }
