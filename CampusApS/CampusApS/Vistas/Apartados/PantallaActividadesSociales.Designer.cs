@@ -38,7 +38,6 @@
             this.bAnadirAct = new XanderUI.XUIButton();
             this.bEliminarAct = new XanderUI.XUIButton();
             this.bPapelera = new XanderUI.XUIButton();
-            this.bParticiparAct = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
             this.carta = new XanderUI.XUICard();
             this.bOpciones = new XanderUI.XUIButton();
@@ -48,7 +47,7 @@
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bActSociales.Location = new System.Drawing.Point(1351, 15);
-            this.bActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bActSociales.Margin = new System.Windows.Forms.Padding(4);
             this.bActSociales.Name = "bActSociales";
             this.bActSociales.Size = new System.Drawing.Size(184, 28);
             this.bActSociales.TabIndex = 11;
@@ -59,7 +58,7 @@
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCursos.Location = new System.Drawing.Point(1188, 15);
-            this.bCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bCursos.Margin = new System.Windows.Forms.Padding(4);
             this.bCursos.Name = "bCursos";
             this.bCursos.Size = new System.Drawing.Size(168, 28);
             this.bCursos.TabIndex = 10;
@@ -71,7 +70,7 @@
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bForos.Location = new System.Drawing.Point(1024, 15);
-            this.bForos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bForos.Margin = new System.Windows.Forms.Padding(4);
             this.bForos.Name = "bForos";
             this.bForos.Size = new System.Drawing.Size(169, 28);
             this.bForos.TabIndex = 9;
@@ -83,7 +82,7 @@
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bNoticias.Location = new System.Drawing.Point(863, 15);
-            this.bNoticias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bNoticias.Margin = new System.Windows.Forms.Padding(4);
             this.bNoticias.Name = "bNoticias";
             this.bNoticias.Size = new System.Drawing.Size(169, 28);
             this.bNoticias.TabIndex = 8;
@@ -103,7 +102,7 @@
             this.lbActSociales.FormattingEnabled = true;
             this.lbActSociales.ItemHeight = 16;
             this.lbActSociales.Location = new System.Drawing.Point(500, 222);
-            this.lbActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbActSociales.Margin = new System.Windows.Forms.Padding(4);
             this.lbActSociales.Name = "lbActSociales";
             this.lbActSociales.Size = new System.Drawing.Size(632, 356);
             this.lbActSociales.TabIndex = 13;
@@ -123,8 +122,8 @@
             this.bAnadirAct.HoverBackgroundColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bAnadirAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bAnadirAct.Location = new System.Drawing.Point(1223, 468);
-            this.bAnadirAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bAnadirAct.Location = new System.Drawing.Point(1223, 440);
+            this.bAnadirAct.Margin = new System.Windows.Forms.Padding(4);
             this.bAnadirAct.Name = "bAnadirAct";
             this.bAnadirAct.Size = new System.Drawing.Size(256, 28);
             this.bAnadirAct.TabIndex = 15;
@@ -146,8 +145,8 @@
             this.bEliminarAct.HoverBackgroundColor = System.Drawing.Color.Firebrick;
             this.bEliminarAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bEliminarAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarAct.Location = new System.Drawing.Point(1223, 503);
-            this.bEliminarAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEliminarAct.Location = new System.Drawing.Point(1223, 476);
+            this.bEliminarAct.Margin = new System.Windows.Forms.Padding(4);
             this.bEliminarAct.Name = "bEliminarAct";
             this.bEliminarAct.Size = new System.Drawing.Size(256, 28);
             this.bEliminarAct.TabIndex = 16;
@@ -170,36 +169,13 @@
             this.bPapelera.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bPapelera.Location = new System.Drawing.Point(1420, 539);
-            this.bPapelera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(4);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(59, 52);
             this.bPapelera.TabIndex = 17;
             this.bPapelera.TextColor = System.Drawing.Color.DodgerBlue;
             this.bPapelera.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bPapelera.Click += new System.EventHandler(this.bPapelera_Click);
-            // 
-            // bParticiparAct
-            // 
-            this.bParticiparAct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bParticiparAct.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bParticiparAct.ButtonImage")));
-            this.bParticiparAct.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.bParticiparAct.ButtonText = "Participar en una actividad social";
-            this.bParticiparAct.ClickBackColor = System.Drawing.Color.DimGray;
-            this.bParticiparAct.ClickTextColor = System.Drawing.Color.DimGray;
-            this.bParticiparAct.CornerRadius = 5;
-            this.bParticiparAct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bParticiparAct.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bParticiparAct.HoverBackgroundColor = System.Drawing.Color.DimGray;
-            this.bParticiparAct.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bParticiparAct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bParticiparAct.Location = new System.Drawing.Point(1223, 432);
-            this.bParticiparAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bParticiparAct.Name = "bParticiparAct";
-            this.bParticiparAct.Size = new System.Drawing.Size(256, 28);
-            this.bParticiparAct.TabIndex = 18;
-            this.bParticiparAct.TextColor = System.Drawing.Color.DimGray;
-            this.bParticiparAct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.bParticiparAct.Click += new System.EventHandler(this.bParticiparAct_Click);
             // 
             // label1
             // 
@@ -220,7 +196,7 @@
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
             this.carta.Location = new System.Drawing.Point(16, 74);
-            this.carta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carta.Margin = new System.Windows.Forms.Padding(4);
             this.carta.Name = "carta";
             this.carta.Size = new System.Drawing.Size(392, 201);
             this.carta.TabIndex = 25;
@@ -244,7 +220,7 @@
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
             this.bOpciones.Location = new System.Drawing.Point(33, 662);
-            this.bOpciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bOpciones.Margin = new System.Windows.Forms.Padding(4);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(92, 76);
             this.bOpciones.TabIndex = 26;
@@ -261,7 +237,6 @@
             this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bParticiparAct);
             this.Controls.Add(this.bPapelera);
             this.Controls.Add(this.bEliminarAct);
             this.Controls.Add(this.bAnadirAct);
@@ -273,7 +248,7 @@
             this.Controls.Add(this.bNoticias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PantallaActividadesSociales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
@@ -294,7 +269,6 @@
         private XanderUI.XUIButton bAnadirAct;
         private XanderUI.XUIButton bEliminarAct;
         private XanderUI.XUIButton bPapelera;
-        private XanderUI.XUIButton bParticiparAct;
         private System.Windows.Forms.Label label1;
         private XanderUI.XUICard carta;
         private XanderUI.XUIButton bOpciones;
