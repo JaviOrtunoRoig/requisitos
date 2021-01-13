@@ -121,6 +121,7 @@
             this.Name = "CrearNoticia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearNoticia";
+            this.Load += new System.EventHandler(this.CrearNoticia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

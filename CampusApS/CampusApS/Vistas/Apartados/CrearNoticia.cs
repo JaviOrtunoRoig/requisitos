@@ -23,7 +23,7 @@ namespace CampusApS.Vistas.Apartados {
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             string titulo = tBoxTitulo.Text;
-
+            string fecha = dateTimePicker1.Value.ToString();
             string contenido = tBoxContenido.Text;
 
             if(titulo.Equals(""))
@@ -36,12 +36,17 @@ namespace CampusApS.Vistas.Apartados {
             }
             else
             {
-                NoticiaQuery BD = new NoticiaQuery(titulo, contenido, usuario.getNombre());
+                NoticiaQuery BD = new NoticiaQuery(titulo, contenido, usuario.getNombre(),fecha);
 
                 this.Close();
             }
         }
 
+
+        private void CrearNoticia_Load(object sender, EventArgs e)
+        {
+            this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
+        }
 
     }
 }
