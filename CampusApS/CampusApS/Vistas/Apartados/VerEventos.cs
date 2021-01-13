@@ -11,9 +11,13 @@ using CampusApS.Modelo.Querys;
 
 namespace CampusApS.Vistas.Apartados {
 
-    private string fecha; 
-
     public partial class VerEventos : Form {
+
+        private string fecha;
+        private string List<Curso> listaCursos;
+
+
+
         public VerEventos(string fecha) {
             InitializeComponent();
             this.fecha = fecha;
@@ -23,7 +27,7 @@ namespace CampusApS.Vistas.Apartados {
         {
             CalendarioQuery bd = new CalendarioQuery();
             listBox1.DataSource = // Query para los eventos 
-            lTitulo.Text = 
+            lTitulo.Text = "Eventos programados para: " + fecha;
         }
     }
 }
