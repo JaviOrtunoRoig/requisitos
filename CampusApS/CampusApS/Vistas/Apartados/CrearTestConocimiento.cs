@@ -22,7 +22,7 @@ namespace CampusApS.Vistas.Apartados {
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-
+            string fecha = dateTimePicker1.Value.ToString();
             List<String> rCorrecta = obtenerRespuestasCorrectas();
 
 
@@ -46,7 +46,7 @@ namespace CampusApS.Vistas.Apartados {
 
             TestConocimientoQuery BD = new TestConocimientoQuery();
 
-            BD.insertarTest(test, cursoRecurso.getNombre());
+            BD.insertarTest(test, cursoRecurso.getNombre(),fecha);
 
             this.Close();
         }
@@ -137,9 +137,8 @@ namespace CampusApS.Vistas.Apartados {
 
         private void CrearTestConocimiento_Load(object sender, EventArgs e)
         {
-
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
+            
 
             List<String> Opciones1 = new List<String>();
             List<String> Opciones2 = new List<String>();
