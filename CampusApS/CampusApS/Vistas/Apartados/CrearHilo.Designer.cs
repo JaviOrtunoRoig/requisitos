@@ -29,6 +29,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.bCrear = new XanderUI.XUIButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +81,7 @@
             this.bCrear.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.bCrear.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.bCrear.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bCrear.Location = new System.Drawing.Point(69, 267);
+            this.bCrear.Location = new System.Drawing.Point(70, 340);
             this.bCrear.Name = "bCrear";
             this.bCrear.Size = new System.Drawing.Size(200, 50);
             this.bCrear.TabIndex = 4;
@@ -87,12 +89,31 @@
             this.bCrear.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.bCrear.Click += new System.EventHandler(this.bCrear_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(35, 276);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Fecha de creación";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(38, 292);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 51;
+            // 
             // CrearHilo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(341, 329);
+            this.ClientSize = new System.Drawing.Size(341, 424);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.bCrear);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -115,5 +136,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private XanderUI.XUIButton bCrear;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -97,9 +97,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(27, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 13);
+            this.label3.Size = new System.Drawing.Size(96, 13);
             this.label3.TabIndex = 50;
-            this.label3.Text = "Asocia la actividad social a una fecha";
+            this.label3.Text = "Fecha de creación";
             // 
             // CrearActividadSocial
             // 
