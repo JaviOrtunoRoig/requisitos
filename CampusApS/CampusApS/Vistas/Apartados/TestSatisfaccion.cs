@@ -16,17 +16,19 @@ namespace CampusApS.Vistas.Apartados {
 
         private CursoRecurso curso;
 
-        public TestSatisfaccion()
+        public TestSatisfaccion(CursoRecurso curso)
         {
             InitializeComponent();
+            this.curso = curso;
         }
 
         private void TestSatisfaccion_Load(object sender, EventArgs e)
         {
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
 
-            TestSatisfaccionQuery bd = new TestSatisfaccionQuery(profesor); // Falta Query que devuelva el profesor de un curso dado su titulo
+            CursoQuery bdCursos = new CursoQuery();
+            string profesor = bdCursos.getProfesor(curso.getNombre());
+
+            TestSatisfaccionQuery bd = new TestSatisfaccionQuery(profesor); 
             List<string> testSatisfaccion = bd.getTestSatisfaccion();
 
             label1.Text = testSatisfaccion.ElementAt(0);
@@ -48,8 +50,19 @@ namespace CampusApS.Vistas.Apartados {
 
             if (respuesta1!=null && respuesta2!=null && respuesta3!=null && respuesta4!=null && respuesta5!=null)
             {
-                TestSatisfaccionQuery bd = new TestConocimientoQuery();
-                bd.insertarResultado(profesor, respuesta1, respuesta2, respuesta3, respuesta4, respuesta5); // Cambiar el método SQL (solo hay 5 preguntas)
+
+                CursoQuery bdCursos = new CursoQuery();
+                string profesor = bdCursos.getProfesor(curso.getNombre());
+
+                TestSatisfaccionQuery bd = new TestSatisfaccionQuery(profesor);
+                int[] respuestas = new int[6];
+                respuestas[0] = respuesta1;
+                respuestas[1] = respuesta2;
+                respuestas[2] = respuesta3;
+                respuestas[3] = respuesta4;
+                respuestas[4] = respuesta5;
+
+                bd.insertarResultado(respuestas); 
 
                 MessageBox.Show("Test de Satisfacción enviado correctamente");
                 this.Close();
