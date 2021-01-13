@@ -48,7 +48,7 @@
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bActSociales.Location = new System.Drawing.Point(1348, 15);
-            this.bActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bActSociales.Margin = new System.Windows.Forms.Padding(4);
             this.bActSociales.Name = "bActSociales";
             this.bActSociales.Size = new System.Drawing.Size(184, 28);
             this.bActSociales.TabIndex = 7;
@@ -60,7 +60,7 @@
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCursos.Location = new System.Drawing.Point(1185, 15);
-            this.bCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bCursos.Margin = new System.Windows.Forms.Padding(4);
             this.bCursos.Name = "bCursos";
             this.bCursos.Size = new System.Drawing.Size(168, 28);
             this.bCursos.TabIndex = 6;
@@ -71,7 +71,7 @@
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bForos.Location = new System.Drawing.Point(1021, 15);
-            this.bForos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bForos.Margin = new System.Windows.Forms.Padding(4);
             this.bForos.Name = "bForos";
             this.bForos.Size = new System.Drawing.Size(169, 28);
             this.bForos.TabIndex = 5;
@@ -83,7 +83,7 @@
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bNoticias.Location = new System.Drawing.Point(860, 15);
-            this.bNoticias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bNoticias.Margin = new System.Windows.Forms.Padding(4);
             this.bNoticias.Name = "bNoticias";
             this.bNoticias.Size = new System.Drawing.Size(169, 28);
             this.bNoticias.TabIndex = 4;
@@ -103,7 +103,7 @@
             this.lbCursos.FormattingEnabled = true;
             this.lbCursos.ItemHeight = 16;
             this.lbCursos.Location = new System.Drawing.Point(500, 222);
-            this.lbCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbCursos.Margin = new System.Windows.Forms.Padding(4);
             this.lbCursos.Name = "lbCursos";
             this.lbCursos.Size = new System.Drawing.Size(632, 356);
             this.lbCursos.TabIndex = 9;
@@ -136,7 +136,7 @@
             this.bParticiparCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bParticiparCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bParticiparCurso.Location = new System.Drawing.Point(1224, 434);
-            this.bParticiparCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bParticiparCurso.Margin = new System.Windows.Forms.Padding(4);
             this.bParticiparCurso.Name = "bParticiparCurso";
             this.bParticiparCurso.Size = new System.Drawing.Size(256, 28);
             this.bParticiparCurso.TabIndex = 24;
@@ -159,7 +159,7 @@
             this.bPapelera.HoverTextColor = System.Drawing.Color.Transparent;
             this.bPapelera.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bPapelera.Location = new System.Drawing.Point(1421, 542);
-            this.bPapelera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bPapelera.Margin = new System.Windows.Forms.Padding(4);
             this.bPapelera.Name = "bPapelera";
             this.bPapelera.Size = new System.Drawing.Size(59, 52);
             this.bPapelera.TabIndex = 23;
@@ -182,7 +182,7 @@
             this.bEliminarCurso.HoverTextColor = System.Drawing.Color.White;
             this.bEliminarCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bEliminarCurso.Location = new System.Drawing.Point(1224, 506);
-            this.bEliminarCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEliminarCurso.Margin = new System.Windows.Forms.Padding(4);
             this.bEliminarCurso.Name = "bEliminarCurso";
             this.bEliminarCurso.Size = new System.Drawing.Size(256, 28);
             this.bEliminarCurso.TabIndex = 22;
@@ -205,7 +205,7 @@
             this.bAnadirCurso.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bAnadirCurso.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bAnadirCurso.Location = new System.Drawing.Point(1224, 470);
-            this.bAnadirCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bAnadirCurso.Margin = new System.Windows.Forms.Padding(4);
             this.bAnadirCurso.Name = "bAnadirCurso";
             this.bAnadirCurso.Size = new System.Drawing.Size(256, 28);
             this.bAnadirCurso.TabIndex = 21;
@@ -220,7 +220,7 @@
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
             this.carta.Location = new System.Drawing.Point(16, 74);
-            this.carta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carta.Margin = new System.Windows.Forms.Padding(4);
             this.carta.Name = "carta";
             this.carta.Size = new System.Drawing.Size(392, 201);
             this.carta.TabIndex = 25;
@@ -244,7 +244,7 @@
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
             this.bOpciones.Location = new System.Drawing.Point(33, 662);
-            this.bOpciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bOpciones.Margin = new System.Windows.Forms.Padding(4);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(92, 76);
             this.bOpciones.TabIndex = 26;
@@ -273,7 +273,7 @@
             this.Controls.Add(this.bNoticias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PantallaCursos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";
