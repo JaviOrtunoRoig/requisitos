@@ -13,5 +13,11 @@ namespace CampusApS.Vistas.Apartados {
         public VerHilos() {
             InitializeComponent();
         }
+
+        private void VerHilos_Load(object sender, EventArgs e)
+        {
+            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = System.Drawing.Color.Transparent;
+        }
     }
 }

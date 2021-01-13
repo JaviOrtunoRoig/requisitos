@@ -251,6 +251,7 @@
             this.Name = "VerHilos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hilo";
+            this.Load += new System.EventHandler(this.VerHilos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

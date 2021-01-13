@@ -204,6 +204,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "TestSatisfaccion";
             this.Text = "TestSatisfaccion";
+            this.Load += new System.EventHandler(this.TestSatisfaccion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

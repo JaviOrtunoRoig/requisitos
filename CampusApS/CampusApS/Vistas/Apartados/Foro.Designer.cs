@@ -54,6 +54,7 @@
             this.lbHilos.Name = "lbHilos";
             this.lbHilos.Size = new System.Drawing.Size(669, 324);
             this.lbHilos.TabIndex = 39;
+            this.lbHilos.DoubleClick += new System.EventHandler(this.lbHilos_DoubleClick);
             // 
             // label2
             // 
