@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CampusApS.Vistas.Opciones;
+using CampusApS.Vistas.Apartados;
+
 
 
 namespace CampusApS
@@ -149,7 +151,7 @@ namespace CampusApS
 
         private void calendario_DateSelected(object sender, EventArgs e)
         {
-            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 9));
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
             ventana.ShowDialog();
             this.Close();
         }
