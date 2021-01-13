@@ -14,7 +14,10 @@ namespace CampusApS.Vistas.Apartados {
     public partial class VerEventos : Form {
 
         private string fecha;
-        private string List<Curso> listaCursos;
+        private List<Curso> listaCursos;
+        private List<Noticia> listaNoticias;
+        private List<ActividadSocial> listaAS;
+        private List<CrearTestConocimiento> listaTests;
 
 
 
@@ -25,8 +28,8 @@ namespace CampusApS.Vistas.Apartados {
 
         private void VerEventos_Load(object sender, EventArgs e)
         {
-            CalendarioQuery bd = new CalendarioQuery();
-            listBox1.DataSource = // Query para los eventos 
+            // CalendarioQuery bd = new CalendarioQuery();
+            // listBox1.DataSource = // Query para los eventos 
             lTitulo.Text = "Eventos programados para: " + fecha;
         }
     }

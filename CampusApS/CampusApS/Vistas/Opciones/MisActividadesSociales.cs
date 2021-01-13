@@ -43,7 +43,7 @@ namespace CampusApS.Vistas.Opciones {
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
 
-            if (!usuario.getRol().Equals("profesor") && !usuario.getRol().Equals("ong"))
+            if (!usuario.getRol().Equals("profesor") && !usuario.getRol().Equals("ong") && !usuario.getRol().Equals("administrador"))
             {
                 lMisAS.DataSource = BD.misAS(usuario.getNombre());
             }
