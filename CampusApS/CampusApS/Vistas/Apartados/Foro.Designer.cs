@@ -50,7 +50,7 @@
             this.lbHilos.FormattingEnabled = true;
             this.lbHilos.ItemHeight = 16;
             this.lbHilos.Location = new System.Drawing.Point(485, 327);
-            this.lbHilos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbHilos.Margin = new System.Windows.Forms.Padding(4);
             this.lbHilos.Name = "lbHilos";
             this.lbHilos.Size = new System.Drawing.Size(669, 324);
             this.lbHilos.TabIndex = 39;
@@ -75,12 +75,13 @@
             this.calendario.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 37;
+            this.calendario.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.calendario_DateSelected);
             // 
             // bActSociales
             // 
             this.bActSociales.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bActSociales.Location = new System.Drawing.Point(1355, 15);
-            this.bActSociales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bActSociales.Margin = new System.Windows.Forms.Padding(4);
             this.bActSociales.Name = "bActSociales";
             this.bActSociales.Size = new System.Drawing.Size(184, 28);
             this.bActSociales.TabIndex = 36;
@@ -92,7 +93,7 @@
             // 
             this.bCursos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCursos.Location = new System.Drawing.Point(1192, 15);
-            this.bCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bCursos.Margin = new System.Windows.Forms.Padding(4);
             this.bCursos.Name = "bCursos";
             this.bCursos.Size = new System.Drawing.Size(168, 28);
             this.bCursos.TabIndex = 35;
@@ -104,7 +105,7 @@
             // 
             this.bForos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bForos.Location = new System.Drawing.Point(1028, 15);
-            this.bForos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bForos.Margin = new System.Windows.Forms.Padding(4);
             this.bForos.Name = "bForos";
             this.bForos.Size = new System.Drawing.Size(169, 28);
             this.bForos.TabIndex = 34;
@@ -116,7 +117,7 @@
             // 
             this.bNoticias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bNoticias.Location = new System.Drawing.Point(867, 15);
-            this.bNoticias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bNoticias.Margin = new System.Windows.Forms.Padding(4);
             this.bNoticias.Name = "bNoticias";
             this.bNoticias.Size = new System.Drawing.Size(169, 28);
             this.bNoticias.TabIndex = 33;
@@ -155,7 +156,7 @@
             this.carta.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.carta.ForeColor = System.Drawing.Color.White;
             this.carta.Location = new System.Drawing.Point(16, 74);
-            this.carta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carta.Margin = new System.Windows.Forms.Padding(4);
             this.carta.Name = "carta";
             this.carta.Size = new System.Drawing.Size(392, 201);
             this.carta.TabIndex = 41;
@@ -179,7 +180,7 @@
             this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
             this.bOpciones.Location = new System.Drawing.Point(33, 662);
-            this.bOpciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bOpciones.Margin = new System.Windows.Forms.Padding(4);
             this.bOpciones.Name = "bOpciones";
             this.bOpciones.Size = new System.Drawing.Size(92, 76);
             this.bOpciones.TabIndex = 42;
@@ -276,7 +277,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Foro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";

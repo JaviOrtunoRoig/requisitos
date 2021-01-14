@@ -153,6 +153,15 @@ namespace CampusApS
             this.bPapelera.Visible = false;
         }
 
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+            
+        }
+
  
     }
 }

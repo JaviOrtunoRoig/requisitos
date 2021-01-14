@@ -42,6 +42,7 @@ namespace CampusApS.Vistas.Apartados {
             }
         }
 
+
         private void CrearNoticia_Load(object sender, EventArgs e)
         {
             this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
