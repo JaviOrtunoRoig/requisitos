@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Opciones));
             this.bcambiarNombre = new XanderUI.XUIButton();
             this.bDarseDeBaja = new XanderUI.XUIButton();
             this.bInvitarAdminitrador = new XanderUI.XUIButton();
@@ -45,10 +46,9 @@
             this.bcambiarNombre.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bcambiarNombre.HoverTextColor = System.Drawing.Color.White;
             this.bcambiarNombre.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bcambiarNombre.Location = new System.Drawing.Point(81, 44);
-            this.bcambiarNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bcambiarNombre.Location = new System.Drawing.Point(61, 36);
             this.bcambiarNombre.Name = "bcambiarNombre";
-            this.bcambiarNombre.Size = new System.Drawing.Size(267, 62);
+            this.bcambiarNombre.Size = new System.Drawing.Size(200, 50);
             this.bcambiarNombre.TabIndex = 0;
             this.bcambiarNombre.TextColor = System.Drawing.Color.Black;
             this.bcambiarNombre.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -67,10 +67,9 @@
             this.bDarseDeBaja.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bDarseDeBaja.HoverTextColor = System.Drawing.Color.White;
             this.bDarseDeBaja.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bDarseDeBaja.Location = new System.Drawing.Point(81, 228);
-            this.bDarseDeBaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bDarseDeBaja.Location = new System.Drawing.Point(61, 185);
             this.bDarseDeBaja.Name = "bDarseDeBaja";
-            this.bDarseDeBaja.Size = new System.Drawing.Size(267, 62);
+            this.bDarseDeBaja.Size = new System.Drawing.Size(200, 50);
             this.bDarseDeBaja.TabIndex = 1;
             this.bDarseDeBaja.TextColor = System.Drawing.Color.Black;
             this.bDarseDeBaja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -89,10 +88,9 @@
             this.bInvitarAdminitrador.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bInvitarAdminitrador.HoverTextColor = System.Drawing.Color.White;
             this.bInvitarAdminitrador.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.bInvitarAdminitrador.Location = new System.Drawing.Point(392, 228);
-            this.bInvitarAdminitrador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bInvitarAdminitrador.Location = new System.Drawing.Point(294, 185);
             this.bInvitarAdminitrador.Name = "bInvitarAdminitrador";
-            this.bInvitarAdminitrador.Size = new System.Drawing.Size(267, 62);
+            this.bInvitarAdminitrador.Size = new System.Drawing.Size(200, 50);
             this.bInvitarAdminitrador.TabIndex = 2;
             this.bInvitarAdminitrador.TextColor = System.Drawing.Color.Black;
             this.bInvitarAdminitrador.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -111,10 +109,9 @@
             this.bBandejaEntrada.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bBandejaEntrada.HoverTextColor = System.Drawing.Color.White;
             this.bBandejaEntrada.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.bBandejaEntrada.Location = new System.Drawing.Point(392, 44);
-            this.bBandejaEntrada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bBandejaEntrada.Location = new System.Drawing.Point(294, 36);
             this.bBandejaEntrada.Name = "bBandejaEntrada";
-            this.bBandejaEntrada.Size = new System.Drawing.Size(267, 62);
+            this.bBandejaEntrada.Size = new System.Drawing.Size(200, 50);
             this.bBandejaEntrada.TabIndex = 3;
             this.bBandejaEntrada.TextColor = System.Drawing.Color.Black;
             this.bBandejaEntrada.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -133,10 +130,9 @@
             this.bMisCursos.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bMisCursos.HoverTextColor = System.Drawing.Color.White;
             this.bMisCursos.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bMisCursos.Location = new System.Drawing.Point(81, 130);
-            this.bMisCursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bMisCursos.Location = new System.Drawing.Point(61, 106);
             this.bMisCursos.Name = "bMisCursos";
-            this.bMisCursos.Size = new System.Drawing.Size(267, 62);
+            this.bMisCursos.Size = new System.Drawing.Size(200, 50);
             this.bMisCursos.TabIndex = 4;
             this.bMisCursos.TextColor = System.Drawing.Color.Black;
             this.bMisCursos.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -155,10 +151,9 @@
             this.bMisAS.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bMisAS.HoverTextColor = System.Drawing.Color.White;
             this.bMisAS.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.bMisAS.Location = new System.Drawing.Point(392, 130);
-            this.bMisAS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bMisAS.Location = new System.Drawing.Point(294, 106);
             this.bMisAS.Name = "bMisAS";
-            this.bMisAS.Size = new System.Drawing.Size(267, 62);
+            this.bMisAS.Size = new System.Drawing.Size(200, 50);
             this.bMisAS.TabIndex = 5;
             this.bMisAS.TextColor = System.Drawing.Color.Black;
             this.bMisAS.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -177,10 +172,9 @@
             this.bEliminarUsuario.HoverBackgroundColor = System.Drawing.Color.Black;
             this.bEliminarUsuario.HoverTextColor = System.Drawing.Color.White;
             this.bEliminarUsuario.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEliminarUsuario.Location = new System.Drawing.Point(81, 315);
-            this.bEliminarUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEliminarUsuario.Location = new System.Drawing.Point(61, 256);
             this.bEliminarUsuario.Name = "bEliminarUsuario";
-            this.bEliminarUsuario.Size = new System.Drawing.Size(267, 62);
+            this.bEliminarUsuario.Size = new System.Drawing.Size(200, 50);
             this.bEliminarUsuario.TabIndex = 6;
             this.bEliminarUsuario.TextColor = System.Drawing.Color.Black;
             this.bEliminarUsuario.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -188,10 +182,10 @@
             // 
             // Opciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(713, 391);
+            this.ClientSize = new System.Drawing.Size(535, 318);
             this.Controls.Add(this.bEliminarUsuario);
             this.Controls.Add(this.bMisAS);
             this.Controls.Add(this.bMisCursos);
@@ -200,7 +194,7 @@
             this.Controls.Add(this.bDarseDeBaja);
             this.Controls.Add(this.bcambiarNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Opciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opciones";
