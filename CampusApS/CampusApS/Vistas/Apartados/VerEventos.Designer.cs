@@ -135,9 +135,10 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "VerEventos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VerEventos";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.VerEventos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

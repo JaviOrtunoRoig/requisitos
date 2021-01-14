@@ -57,7 +57,7 @@
             // bDarseDeBaja
             // 
             this.bDarseDeBaja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bDarseDeBaja.ButtonImage = global::CampusApS.Properties.Resources.salir;
+            this.bDarseDeBaja.ButtonImage = global::CampusApS.Properties.Resources.salir2;
             this.bDarseDeBaja.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bDarseDeBaja.ButtonText = "Darse de baja";
             this.bDarseDeBaja.ClickBackColor = System.Drawing.Color.Black;
@@ -78,7 +78,7 @@
             // bInvitarAdminitrador
             // 
             this.bInvitarAdminitrador.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bInvitarAdminitrador.ButtonImage = global::CampusApS.Properties.Resources.invitarAdmin;
+            this.bInvitarAdminitrador.ButtonImage = global::CampusApS.Properties.Resources.invitarAdmin2;
             this.bInvitarAdminitrador.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bInvitarAdminitrador.ButtonText = "Invitar a un administrador";
             this.bInvitarAdminitrador.ClickBackColor = System.Drawing.Color.Black;
@@ -99,7 +99,7 @@
             // bBandejaEntrada
             // 
             this.bBandejaEntrada.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bBandejaEntrada.ButtonImage = global::CampusApS.Properties.Resources.correo;
+            this.bBandejaEntrada.ButtonImage = global::CampusApS.Properties.Resources.correo2;
             this.bBandejaEntrada.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bBandejaEntrada.ButtonText = "Bandeja de entrada";
             this.bBandejaEntrada.ClickBackColor = System.Drawing.Color.Black;
@@ -120,7 +120,7 @@
             // bMisCursos
             // 
             this.bMisCursos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bMisCursos.ButtonImage = global::CampusApS.Properties.Resources.curso;
+            this.bMisCursos.ButtonImage = global::CampusApS.Properties.Resources.curso2;
             this.bMisCursos.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bMisCursos.ButtonText = "Mis cursos";
             this.bMisCursos.ClickBackColor = System.Drawing.Color.Black;
@@ -141,7 +141,7 @@
             // bMisAS
             // 
             this.bMisAS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bMisAS.ButtonImage = global::CampusApS.Properties.Resources.curso;
+            this.bMisAS.ButtonImage = global::CampusApS.Properties.Resources.curso2;
             this.bMisAS.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bMisAS.ButtonText = "Mis actividades sociales";
             this.bMisAS.ClickBackColor = System.Drawing.Color.Black;
@@ -162,7 +162,7 @@
             // bEliminarUsuario
             // 
             this.bEliminarUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bEliminarUsuario.ButtonImage = global::CampusApS.Properties.Resources.salir;
+            this.bEliminarUsuario.ButtonImage = global::CampusApS.Properties.Resources.salir2;
             this.bEliminarUsuario.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.bEliminarUsuario.ButtonText = "Eliminar usuario";
             this.bEliminarUsuario.ClickBackColor = System.Drawing.Color.Black;
@@ -195,9 +195,10 @@
             this.Controls.Add(this.bcambiarNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Opciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Opciones";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.Opciones_Load);
             this.ResumeLayout(false);
 

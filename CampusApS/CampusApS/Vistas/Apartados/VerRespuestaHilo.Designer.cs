@@ -45,9 +45,10 @@
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "VerRespuestaHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VerRespuestaHilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.VerRespuestaHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

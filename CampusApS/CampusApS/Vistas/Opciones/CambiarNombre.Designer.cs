@@ -69,9 +69,10 @@
             this.Controls.Add(this.bAceptar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CambiarNombre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CambiarNombre";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CambiarNombre_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

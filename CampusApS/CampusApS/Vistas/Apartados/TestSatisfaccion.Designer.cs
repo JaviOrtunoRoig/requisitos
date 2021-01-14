@@ -204,9 +204,10 @@
             this.Controls.Add(this.lPregunta1);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "TestSatisfaccion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TestSatisfaccion";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.TestSatisfaccion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
