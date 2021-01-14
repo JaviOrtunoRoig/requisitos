@@ -79,9 +79,11 @@
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CrearRespuestaDeUnHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RespuestaDeUnHilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CrearRespuestaDeUnHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

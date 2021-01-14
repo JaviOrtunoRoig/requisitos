@@ -174,6 +174,7 @@
             this.calendario.Location = new System.Drawing.Point(935, 180);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 42;
+            this.calendario.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.calendario_DateSelected);
             // 
             // bActSociales
             // 
@@ -248,9 +249,11 @@
             this.Controls.Add(this.bNoticias);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "VerHilos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.VerHilos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

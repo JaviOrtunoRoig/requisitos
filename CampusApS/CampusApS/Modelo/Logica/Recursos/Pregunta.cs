@@ -40,6 +40,12 @@ namespace CampusApS.Modelo.Logica.Recursos
         {
             return opcionCorrecta;
         }
+
+
+        public override string ToString()
+        {
+            return this.nombrePregunta;
+        }
     
     }
 }

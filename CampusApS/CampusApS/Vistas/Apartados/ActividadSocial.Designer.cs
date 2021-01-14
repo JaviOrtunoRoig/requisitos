@@ -56,6 +56,7 @@
             this.calendario.Location = new System.Drawing.Point(919, 180);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 47;
+            this.calendario.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.calendario_DateSelected);
             // 
             // bActSociales
             // 
@@ -165,7 +166,7 @@
             this.bTestSatisfaccion.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bTestSatisfaccion.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.bTestSatisfaccion.Location = new System.Drawing.Point(919, 353);
-            this.bTestSatisfaccion.Margin = new System.Windows.Forms.Padding(2);
+            this.bTestSatisfaccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bTestSatisfaccion.Name = "bTestSatisfaccion";
             this.bTestSatisfaccion.Size = new System.Drawing.Size(192, 25);
             this.bTestSatisfaccion.TabIndex = 53;
@@ -190,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ActividadSocial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampusApS";

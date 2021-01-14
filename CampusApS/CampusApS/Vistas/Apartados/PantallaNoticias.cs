@@ -72,10 +72,10 @@ namespace CampusApS
 
             bPapelera.Visible = false;
 
-            if (!usuario.getRol().Equals("invitado") && !usuario.getRol().Equals("alumno"))
+            if (usuario.getRol().Equals("invitado") || usuario.getRol().Equals("alumno"))
             {
-                bAnadirNoticia.Visible = true;
-                bEliminarNoticia.Visible = true;
+                bAnadirNoticia.Visible = false;
+                bEliminarNoticia.Visible = false;
             }
 
             if (usuario.getRol().Equals("invitado")) bOpciones.Visible = false;
@@ -151,6 +151,15 @@ namespace CampusApS
 
 
             this.bPapelera.Visible = false;
+        }
+
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+            
         }
 
  

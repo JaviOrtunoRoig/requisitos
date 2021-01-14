@@ -120,9 +120,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CrearHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CrearHilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CrearHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

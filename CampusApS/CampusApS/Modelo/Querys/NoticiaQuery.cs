@@ -17,22 +17,24 @@ namespace CampusApS.Modelo.Querys
         private string nombre;
         private string contenido;
         private string creador;
+        private string fecha;
 
         public NoticiaQuery()
         {
 
         }
 
-        public NoticiaQuery(string nom, string cont, string nomUsuario)
+        public NoticiaQuery(string nom, string cont, string nomUsuario, string f)
         {
             nombre = nom;
             contenido = cont;
             creador = nomUsuario;
+            fecha = f;
 
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            miBD.Insert("INSERT INTO `apsgrupo06`.`noticia` (`tituloNoticia`, `contenidoNoticia`, `creador`) VALUES ('" +
-                nombre + "', '" + contenido + "', '" + creador + "');");
+            miBD.Insert("INSERT INTO `apsgrupo06`.`noticia` (`tituloNoticia`, `contenidoNoticia`, `creador`, `fechaCreacion`) VALUES ('" +
+                nombre + "', '" + contenido + "', '" + creador + "', '" + fecha + "');");
 
         }
 

@@ -1,6 +1,7 @@
 ﻿using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using System;
+using CampusApS.Vistas.Apartados;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,6 +73,15 @@ namespace CampusApS.Vistas.Opciones {
             this.Close();
             PantallaActividadesSociales ventana = new PantallaActividadesSociales(usuarioReceptor);
             ventana.ShowDialog();
+        }
+
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            ventana.ShowDialog();
+            this.Visible = false;
+            this.Close();
+            this.Visible = true;
         }
 
         

@@ -513,8 +513,11 @@
             this.Controls.Add(this.tPregunta2);
             this.Controls.Add(this.tPregunta1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CrearTestConocimiento";
-            this.Text = "CrearTestConocimiento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CrearTestConocimiento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
