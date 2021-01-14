@@ -98,7 +98,7 @@ namespace CampusApS
             this.bPapelera.Visible = false;
         }
 
-    
+        
 
         private void PantallaActividadesSociales_Load(object sender, EventArgs e) {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);

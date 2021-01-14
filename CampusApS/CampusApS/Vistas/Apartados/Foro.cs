@@ -54,7 +54,6 @@ namespace CampusApS
             {
                 bOpciones.Visible = false;
                 bAnadirHilo.Visible = false;
-                bEliminarHilo.Visible = false;
                 bPapelera.Visible = false;
             }
         }
