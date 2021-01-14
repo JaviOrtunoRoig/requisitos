@@ -21,5 +21,6 @@ namespace CampusApS.Modelo.Logica.Usuarios {
         string getRol();
         Permisos getPermisos();
         string getNombre();
+        void setNombre(string nombre);
     }
 }
