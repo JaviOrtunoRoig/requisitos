@@ -68,5 +68,10 @@ namespace CampusApS.Modelo.Logica.Usuarios {
             return this.nombre;
         }
 
+        public void setNombre(string nombre)
+        {
+            this.nombre = nombre;
+        }
+
     }
 }

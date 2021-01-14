@@ -85,7 +85,7 @@
             this.MaximizeBox = false;
             this.Name = "EliminarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EliminarUsuario";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.EliminarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

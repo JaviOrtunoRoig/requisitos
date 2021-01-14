@@ -76,7 +76,7 @@
             this.MaximizeBox = false;
             this.Name = "PantallaRecuperarContrasena";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recuperar Contraseña";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

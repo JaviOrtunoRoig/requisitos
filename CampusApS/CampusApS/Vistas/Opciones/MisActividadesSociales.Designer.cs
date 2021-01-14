@@ -211,7 +211,7 @@
             this.MaximizeBox = false;
             this.Name = "MisActividadesSociales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MisActividadesSociales";
+            this.Text = "CampusAps";
             this.Load += new System.EventHandler(this.MisActividadesSociales_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

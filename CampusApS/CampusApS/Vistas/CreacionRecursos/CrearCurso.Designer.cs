@@ -114,7 +114,7 @@
             this.MaximizeBox = false;
             this.Name = "CrearCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Crear Curso";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CrearCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
