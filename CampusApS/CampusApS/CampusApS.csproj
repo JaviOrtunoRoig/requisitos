@@ -160,6 +160,7 @@
     <Compile Include="Vistas\Apartados\Hilo.Designer.cs">
       <DependentUpon>Hilo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Apartados\VistaGrande.cs" />
     <Compile Include="Vistas\Apartados\Noticia.cs">
       <SubType>Form</SubType>
     </Compile>

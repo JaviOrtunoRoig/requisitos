@@ -16,7 +16,7 @@ using System.Windows.Forms;
 
 namespace CampusApS
 {
-    public partial class PantallaCursos : Form
+    public partial class PantallaCursos : Form, VistaGrande
     {
 
          private Usuario usuario;
@@ -157,7 +157,7 @@ namespace CampusApS
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -169,6 +169,9 @@ namespace CampusApS
             this.Visible = true;
            
         }
-    
+
+        public void cerrar() {
+            this.Close();
+        }
     }
 }
