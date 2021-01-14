@@ -287,11 +287,11 @@ namespace CampusApS.Modelo.Querys
 
         }
 
-        public List<String> getAllUsuarios()
+        public List<String> getAllUsuarios(string us)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombre FROM usuario;");
+            object[] tupla = miBD.Select("SELECT nombre FROM usuario WHERE nombre <> '" + us + "';");
 
             List<String> list = new List<String>();
 
