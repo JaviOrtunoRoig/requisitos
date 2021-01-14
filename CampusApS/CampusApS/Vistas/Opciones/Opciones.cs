@@ -24,8 +24,6 @@ namespace CampusApS.Vistas.Opciones {
 
         private void Opciones_Load(object sender, EventArgs e)
         {
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
 
             if(usuario.getRol().Equals("administrador"))
             {
