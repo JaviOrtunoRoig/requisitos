@@ -57,6 +57,7 @@
             this.Controls.Add(this.tBoxContenido);
             this.Controls.Add(this.lTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Noticia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Noticia";
