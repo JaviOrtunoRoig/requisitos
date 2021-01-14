@@ -161,7 +161,7 @@
             this.MaximizeBox = false;
             this.Name = "Mensajes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mensajes";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.Mensajes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

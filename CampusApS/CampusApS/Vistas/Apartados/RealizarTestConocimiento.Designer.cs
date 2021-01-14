@@ -209,7 +209,7 @@
             this.MaximizeBox = false;
             this.Name = "RealizarTestConocimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RealizarTestConocimiento";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.RealizarTestConocimiento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

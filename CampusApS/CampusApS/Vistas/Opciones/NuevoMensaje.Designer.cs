@@ -103,7 +103,7 @@
             this.MaximizeBox = false;
             this.Name = "NuevoMensaje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NuevoMensaje";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.NuevoMensaje_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

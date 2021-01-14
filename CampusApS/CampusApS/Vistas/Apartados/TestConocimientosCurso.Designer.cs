@@ -188,7 +188,7 @@
             this.MaximizeBox = false;
             this.Name = "TestConocimientosCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TestConomientosCurso";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.TestConocimientosCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

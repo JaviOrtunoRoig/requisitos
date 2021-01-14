@@ -48,7 +48,7 @@
             this.MaximizeBox = false;
             this.Name = "VerRespuestaHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VerRespuestaHilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.VerRespuestaHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

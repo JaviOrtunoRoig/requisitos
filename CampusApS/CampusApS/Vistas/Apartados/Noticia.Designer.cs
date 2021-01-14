@@ -60,7 +60,7 @@
             this.MaximizeBox = false;
             this.Name = "Noticia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Noticia";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 
