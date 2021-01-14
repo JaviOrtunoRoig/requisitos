@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Opciones {
-    public partial class Mensajes : Form {
+    public partial class Mensajes : Form, VistaGrande {
 
         private Usuario usuarioReceptor;
         private String usuarioEmisor;
@@ -38,7 +38,7 @@ namespace CampusApS.Vistas.Opciones {
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuarioReceptor);
+            Opciones ventana = new Opciones(usuarioReceptor, this);
             ventana.ShowDialog();
 
         }
@@ -82,6 +82,10 @@ namespace CampusApS.Vistas.Opciones {
             this.Visible = false;
             this.Close();
             this.Visible = true;
+        }
+
+        public void cerrar() {
+            this.Close();
         }
 
         
