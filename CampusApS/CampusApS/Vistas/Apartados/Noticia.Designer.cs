@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Noticia));
             this.lTitulo = new System.Windows.Forms.Label();
             this.tBoxContenido = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -55,9 +56,11 @@
             this.ClientSize = new System.Drawing.Size(766, 441);
             this.Controls.Add(this.tBoxContenido);
             this.Controls.Add(this.lTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Noticia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Noticia";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

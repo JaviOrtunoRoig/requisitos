@@ -22,7 +22,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT usuarioEmisor FROM mensajes WHERE usuarioReceptor = '" + nomRe + "';");
+            object[] tupla = miBD.Select("SELECT usuarioEmisor FROM mensaje WHERE usuarioReceptor = '" + nomRe + "';");
 
             List<String> list = new List<String>();
 
@@ -64,7 +64,7 @@ namespace CampusApS.Modelo.Querys
         public void setMensaje(string nombreEm, string nombreRe, string men)
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
-            miBD.Insert("INSERT INTO `apsgrupo06`.`mensajes` (`usuarioEmisor`, `usuarioReceptor`, `mensaje`) VALUES ('" +
+            miBD.Insert("INSERT INTO `apsgrupo06`.`mensaje` (`usuarioEmisor`, `usuarioReceptor`, `mensaje`) VALUES ('" +
                 nombreEm + "', '" + nombreRe + "', '" + men + "');");
         }
 
@@ -72,7 +72,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT mensaje FROM mensajes WHERE usuarioEmisor = '" + nomEm + "' AND usuarioReceptor = '" + nomRe + "';");
+            object[] tupla = miBD.Select("SELECT mensaje FROM mensaje WHERE usuarioEmisor = '" + nomEm + "' AND usuarioReceptor = '" + nomRe + "';");
 
             List<String> list = new List<String>();
 

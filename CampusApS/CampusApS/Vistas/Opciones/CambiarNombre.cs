@@ -22,14 +22,14 @@ namespace CampusApS.Vistas.Opciones {
 
         private void CambiarNombre_Load(object sender, EventArgs e)
         {
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
         }
 
         private void bAceptar_Click(object sender, EventArgs e)
         {
             UsuarioQuery BD = new UsuarioQuery();
             BD.updateNombreUsuario(usuario.getNombre(), tNuevoNombre.Text);
+
+            usuario.setNombre(tNuevoNombre.Text);
 
             this.Close();
 

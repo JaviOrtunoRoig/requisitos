@@ -171,9 +171,10 @@
             this.Controls.Add(this.lbEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PantallaRegistroONG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro usuario de ONG";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 
