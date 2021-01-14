@@ -24,7 +24,6 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerHilos));
-            this.bOpciones = new XanderUI.XUIButton();
             this.carta = new XanderUI.XUICard();
             this.lDescripcion = new System.Windows.Forms.Label();
             this.bPapelera = new XanderUI.XUIButton();
@@ -39,27 +38,6 @@
             this.bNoticias = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // bOpciones
-            // 
-            this.bOpciones.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bOpciones.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bOpciones.ButtonImage")));
-            this.bOpciones.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.bOpciones.ButtonText = "";
-            this.bOpciones.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.bOpciones.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.bOpciones.CornerRadius = 5;
-            this.bOpciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bOpciones.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.bOpciones.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.bOpciones.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.bOpciones.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.bOpciones.Location = new System.Drawing.Point(44, 538);
-            this.bOpciones.Name = "bOpciones";
-            this.bOpciones.Size = new System.Drawing.Size(69, 62);
-            this.bOpciones.TabIndex = 50;
-            this.bOpciones.TextColor = System.Drawing.Color.DodgerBlue;
-            this.bOpciones.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // carta
             // 
@@ -234,7 +212,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CampusApS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1184, 700);
-            this.Controls.Add(this.bOpciones);
             this.Controls.Add(this.carta);
             this.Controls.Add(this.lDescripcion);
             this.Controls.Add(this.bPapelera);
@@ -262,7 +239,6 @@
 
         #endregion
 
-        private XanderUI.XUIButton bOpciones;
         private XanderUI.XUICard carta;
         private System.Windows.Forms.Label lDescripcion;
         private XanderUI.XUIButton bPapelera;

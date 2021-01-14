@@ -153,14 +153,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CampusApS.exe" size="12690944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CampusApS.exe" size="12640768">
       <assemblyIdentity name="CampusApS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PUmHOyf+/gphKVIiqI+60KWb6yzZxZpk8JfpCfEi5X4=</dsig:DigestValue>
+        <dsig:DigestValue>36e6vjkb4rhn/OWWJgwVzvgBIpN8nYcpq2k6FOnCR3I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Opciones {
-    public partial class MisActividadesSociales : Form {
+    public partial class MisActividadesSociales : Form, VistaGrande {
 
         private Usuario usuario;
 
@@ -108,7 +108,7 @@ namespace CampusApS.Vistas.Opciones {
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -146,7 +146,9 @@ namespace CampusApS.Vistas.Opciones {
             this.Visible = true;
         }
 
-    
+        public void cerrar() {
+            this.Close();
+        }
 
 
     }

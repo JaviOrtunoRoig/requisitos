@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
-    public partial class VerHilos : Form {
+    public partial class VerHilos : Form{
         public VerHilos() {
             InitializeComponent();
         }

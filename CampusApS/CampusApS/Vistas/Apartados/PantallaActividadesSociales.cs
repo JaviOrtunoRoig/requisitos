@@ -19,7 +19,7 @@ using CampusApS.Vistas.Apartados;
 
 namespace CampusApS
 {
-    public partial class PantallaActividadesSociales : Form
+    public partial class PantallaActividadesSociales : Form, VistaGrande
     {
 
         Usuario usuario;
@@ -98,7 +98,7 @@ namespace CampusApS
             this.bPapelera.Visible = false;
         }
 
-    
+        
 
         private void PantallaActividadesSociales_Load(object sender, EventArgs e) {
             this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
@@ -145,7 +145,7 @@ namespace CampusApS
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -158,6 +158,8 @@ namespace CampusApS
           
         }
 
-      
+        public void cerrar() {
+            this.Close();
+        }
     }
 }
