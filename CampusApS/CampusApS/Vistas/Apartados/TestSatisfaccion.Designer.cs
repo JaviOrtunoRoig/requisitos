@@ -41,50 +41,45 @@
             // lPregunta1
             // 
             this.lPregunta1.AutoSize = true;
-            this.lPregunta1.Location = new System.Drawing.Point(109, 158);
-            this.lPregunta1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lPregunta1.Location = new System.Drawing.Point(82, 128);
             this.lPregunta1.Name = "lPregunta1";
-            this.lPregunta1.Size = new System.Drawing.Size(78, 17);
+            this.lPregunta1.Size = new System.Drawing.Size(59, 13);
             this.lPregunta1.TabIndex = 0;
             this.lPregunta1.Text = "Pregunta 1";
             // 
             // lPregunta2
             // 
             this.lPregunta2.AutoSize = true;
-            this.lPregunta2.Location = new System.Drawing.Point(543, 158);
-            this.lPregunta2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lPregunta2.Location = new System.Drawing.Point(407, 128);
             this.lPregunta2.Name = "lPregunta2";
-            this.lPregunta2.Size = new System.Drawing.Size(78, 17);
+            this.lPregunta2.Size = new System.Drawing.Size(59, 13);
             this.lPregunta2.TabIndex = 1;
             this.lPregunta2.Text = "Pregunta 1";
             // 
             // lPregunta3
             // 
             this.lPregunta3.AutoSize = true;
-            this.lPregunta3.Location = new System.Drawing.Point(109, 351);
-            this.lPregunta3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lPregunta3.Location = new System.Drawing.Point(82, 285);
             this.lPregunta3.Name = "lPregunta3";
-            this.lPregunta3.Size = new System.Drawing.Size(78, 17);
+            this.lPregunta3.Size = new System.Drawing.Size(59, 13);
             this.lPregunta3.TabIndex = 2;
             this.lPregunta3.Text = "Pregunta 1";
             // 
             // lPregunta4
             // 
             this.lPregunta4.AutoSize = true;
-            this.lPregunta4.Location = new System.Drawing.Point(543, 351);
-            this.lPregunta4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lPregunta4.Location = new System.Drawing.Point(407, 285);
             this.lPregunta4.Name = "lPregunta4";
-            this.lPregunta4.Size = new System.Drawing.Size(78, 17);
+            this.lPregunta4.Size = new System.Drawing.Size(59, 13);
             this.lPregunta4.TabIndex = 3;
             this.lPregunta4.Text = "Pregunta 1";
             // 
             // lPregunta5
             // 
             this.lPregunta5.AutoSize = true;
-            this.lPregunta5.Location = new System.Drawing.Point(109, 556);
-            this.lPregunta5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lPregunta5.Location = new System.Drawing.Point(82, 452);
             this.lPregunta5.Name = "lPregunta5";
-            this.lPregunta5.Size = new System.Drawing.Size(78, 17);
+            this.lPregunta5.Size = new System.Drawing.Size(59, 13);
             this.lPregunta5.TabIndex = 4;
             this.lPregunta5.Text = "Pregunta 1";
             // 
@@ -92,10 +87,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(220, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(165, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 31);
+            this.label1.Size = new System.Drawing.Size(224, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Test de satisfacción";
             // 
@@ -108,10 +102,9 @@
             "3",
             "4",
             "5"});
-            this.checkedListBox1.Location = new System.Drawing.Point(79, 192);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox1.Location = new System.Drawing.Point(59, 156);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(159, 106);
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox1.TabIndex = 6;
             // 
             // checkedListBox2
@@ -123,10 +116,9 @@
             "3",
             "4",
             "5"});
-            this.checkedListBox2.Location = new System.Drawing.Point(499, 192);
-            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox2.Location = new System.Drawing.Point(374, 156);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(159, 106);
+            this.checkedListBox2.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox2.TabIndex = 7;
             // 
             // checkedListBox3
@@ -138,10 +130,9 @@
             "3",
             "4",
             "5"});
-            this.checkedListBox3.Location = new System.Drawing.Point(79, 394);
-            this.checkedListBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox3.Location = new System.Drawing.Point(59, 320);
             this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(159, 106);
+            this.checkedListBox3.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox3.TabIndex = 8;
             // 
             // checkedListBox4
@@ -153,10 +144,9 @@
             "3",
             "4",
             "5"});
-            this.checkedListBox4.Location = new System.Drawing.Point(499, 406);
-            this.checkedListBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox4.Location = new System.Drawing.Point(374, 330);
             this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(159, 106);
+            this.checkedListBox4.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox4.TabIndex = 9;
             // 
             // checkedListBox5
@@ -168,10 +158,9 @@
             "3",
             "4",
             "5"});
-            this.checkedListBox5.Location = new System.Drawing.Point(79, 597);
-            this.checkedListBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox5.Location = new System.Drawing.Point(59, 485);
             this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(159, 106);
+            this.checkedListBox5.Size = new System.Drawing.Size(120, 79);
             this.checkedListBox5.TabIndex = 10;
             // 
             // bEnviarTest
@@ -187,10 +176,9 @@
             this.bEnviarTest.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.bEnviarTest.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
             this.bEnviarTest.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.bEnviarTest.Location = new System.Drawing.Point(392, 629);
-            this.bEnviarTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEnviarTest.Location = new System.Drawing.Point(294, 511);
             this.bEnviarTest.Name = "bEnviarTest";
-            this.bEnviarTest.Size = new System.Drawing.Size(267, 62);
+            this.bEnviarTest.Size = new System.Drawing.Size(200, 50);
             this.bEnviarTest.TabIndex = 11;
             this.bEnviarTest.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
             this.bEnviarTest.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -198,10 +186,10 @@
             // 
             // TestSatisfaccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(743, 769);
+            this.ClientSize = new System.Drawing.Size(557, 625);
             this.Controls.Add(this.bEnviarTest);
             this.Controls.Add(this.checkedListBox5);
             this.Controls.Add(this.checkedListBox4);
@@ -215,8 +203,9 @@
             this.Controls.Add(this.lPregunta2);
             this.Controls.Add(this.lPregunta1);
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TestSatisfaccion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TestSatisfaccion";
             this.Load += new System.EventHandler(this.TestSatisfaccion_Load);
             this.ResumeLayout(false);
