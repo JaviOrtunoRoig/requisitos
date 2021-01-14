@@ -11,35 +11,39 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Opciones {
-    public partial class EliminarUsuario : Form {
-        public EliminarUsuario() {
-            InitializeComponent();
-        }
+    public partial class EliminarUsuario : Form {
+
+        Usuario usuario;
 
-        private void EliminarUsuario_Load(object sender, EventArgs e)
-        {
-            UsuarioQuery BD = new UsuarioQuery();
-
-            cUsuarios.DataSource = BD.getAllUsuarios();
-        }
-
-        private void bEliminar_Click(object sender, EventArgs e)
-        {
-            string usuario =  (string) cUsuarios.SelectedItem;
-
-            if (usuario != null)
-            {
-                var result = MessageBox.Show("¿Estas seguro?", "Aviso", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    UsuarioQuery bd = new UsuarioQuery();
-                    bd.borrarUsuario(usuario);
-                    this.Close();
-                }
-                
-            }
-        }
-
-       
+        public EliminarUsuario(Usuario usuario) {
+            InitializeComponent();
+            this.usuario = usuario;
+        }
+
+        private void EliminarUsuario_Load(object sender, EventArgs e)
+        {
+            UsuarioQuery BD = new UsuarioQuery();
+
+            cUsuarios.DataSource = BD.getAllUsuarios(this.usuario.getNombre());
+        }
+
+        private void bEliminar_Click(object sender, EventArgs e)
+        {
+            string usuario =  (string) cUsuarios.SelectedItem;
+
+            if (usuario != null)
+            {
+                var result = MessageBox.Show("¿Estas seguro?", "Aviso", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    UsuarioQuery bd = new UsuarioQuery();
+                    bd.borrarUsuario(usuario);
+                    this.Close();
+                }
+                
+            }
+        }
+
+       
     }
 }

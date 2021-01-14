@@ -27,7 +27,7 @@ namespace CampusApS.Vistas.Opciones {
 
             UsuarioQuery BD = new UsuarioQuery();
 
-            cUsuarios.DataSource = BD.getAllUsuarios();
+            cUsuarios.DataSource = BD.getAllUsuarios(usuarioEmisor.getNombre());
         }
 
         private void bEnviar_MouseHover(object sender, EventArgs e) {
