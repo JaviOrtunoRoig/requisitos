@@ -111,6 +111,7 @@
             this.calendario.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 25;
+            this.calendario.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.calendario_DateSelected);
             // 
             // label2
             // 
@@ -187,7 +188,7 @@
             this.bAnadirForo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bAnadirForo.ButtonImage = ((System.Drawing.Image)(resources.GetObject("bAnadirForo.ButtonImage")));
             this.bAnadirForo.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.bAnadirForo.ButtonText = "Añadir una foro";
+            this.bAnadirForo.ButtonText = "Añadir un foro";
             this.bAnadirForo.ClickBackColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirForo.ClickTextColor = System.Drawing.Color.DarkSeaGreen;
             this.bAnadirForo.CornerRadius = 5;

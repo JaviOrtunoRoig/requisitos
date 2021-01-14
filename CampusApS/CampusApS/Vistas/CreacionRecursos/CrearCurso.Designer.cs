@@ -37,25 +37,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 32);
+            this.label1.Location = new System.Drawing.Point(35, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
+            this.label1.Size = new System.Drawing.Size(184, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Escriba el nombre del curso";
             // 
             // tNombreCurso
             // 
-            this.tNombreCurso.Location = new System.Drawing.Point(29, 48);
+            this.tNombreCurso.Location = new System.Drawing.Point(39, 59);
+            this.tNombreCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tNombreCurso.Name = "tNombreCurso";
-            this.tNombreCurso.Size = new System.Drawing.Size(252, 20);
+            this.tNombreCurso.Size = new System.Drawing.Size(335, 22);
             this.tNombreCurso.TabIndex = 1;
             // 
             // bConfirmar
             // 
             this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bConfirmar.Location = new System.Drawing.Point(206, 285);
+            this.bConfirmar.Location = new System.Drawing.Point(275, 351);
+            this.bConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bConfirmar.Name = "bConfirmar";
-            this.bConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.bConfirmar.Size = new System.Drawing.Size(100, 28);
             this.bConfirmar.TabIndex = 2;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
@@ -65,43 +68,47 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(26, 94);
+            this.label2.Location = new System.Drawing.Point(35, 116);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 13);
+            this.label2.Size = new System.Drawing.Size(246, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Escriba una descripcion para el curso";
             // 
             // tDescripcion
             // 
-            this.tDescripcion.Location = new System.Drawing.Point(29, 125);
+            this.tDescripcion.Location = new System.Drawing.Point(39, 154);
+            this.tDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tDescripcion.Multiline = true;
             this.tDescripcion.Name = "tDescripcion";
-            this.tDescripcion.Size = new System.Drawing.Size(252, 73);
+            this.tDescripcion.Size = new System.Drawing.Size(335, 89);
             this.tDescripcion.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(26, 224);
+            this.label3.Location = new System.Drawing.Point(35, 276);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.Size = new System.Drawing.Size(125, 17);
             this.label3.TabIndex = 52;
             this.label3.Text = "Fecha de creación";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(29, 240);
+            this.dateTimePicker1.Location = new System.Drawing.Point(39, 295);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 51;
             // 
             // CrearCurso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(311, 343);
+            this.ClientSize = new System.Drawing.Size(415, 422);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.tDescripcion);
@@ -111,9 +118,11 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CrearCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Curso";
+            this.Load += new System.EventHandler(this.CrearCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

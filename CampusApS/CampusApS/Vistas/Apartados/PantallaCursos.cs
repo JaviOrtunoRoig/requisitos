@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Apartados;
 using CampusApS.Vistas.Opciones;
 using System;
 using System.Collections.Generic;
@@ -134,11 +135,21 @@ namespace CampusApS
         private void bParticiparCurso_Click(object sender, EventArgs e) {
             CursoQuery BD = new CursoQuery();
             if (lbCursos.SelectedItem != null) {
-                BD.inscribirseCurso(this.usuario.getNombre(), (string) lbCursos.SelectedItem);
-                this.Visible = false;
-                PantallaCursos ventana = new PantallaCursos(usuario);
-                ventana.ShowDialog();
-                this.Visible = true;
+
+                try
+                {
+
+                    BD.inscribirseCurso(this.usuario.getNombre(), (string)lbCursos.SelectedItem);
+
+
+                    lbCursos.DataSource = BD.getAllCursos();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
             } else {
                 MessageBox.Show("No hay ningún curso seleccionado");
             }
@@ -150,6 +161,14 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
-  
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+           
+        }
+    
     }
 }

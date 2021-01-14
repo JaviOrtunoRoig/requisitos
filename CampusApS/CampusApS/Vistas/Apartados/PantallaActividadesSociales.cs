@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CampusApS.Vistas.Opciones;
+using CampusApS.Vistas.Apartados;
+
 
 
 namespace CampusApS
@@ -54,10 +56,6 @@ namespace CampusApS
             ventana.ShowDialog();
         }
 
-        private void bParticiparAct_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void bAnadirAct_Click(object sender, EventArgs e)
         {
@@ -116,12 +114,10 @@ namespace CampusApS
                 this.carta.Text3 = BDUsuario.getPermiso(this.usuario.getNombre());
             }
 
-            this.bParticiparAct.Visible = this.usuario.getPermisos().getPuedeParticiparActividadSocial();
             this.bAnadirAct.Visible = this.usuario.getPermisos().getPuedeCrearActividadSocial();
             this.bEliminarAct.Visible = this.usuario.getPermisos().getPuedeBorrarActividadSocial();
             this.bPapelera.Visible = false;
 
-            this.bParticiparAct.Visible = false;
 
             ActividadSocialQuery BD = new ActividadSocialQuery();
             lbActSociales.DataSource = BD.getAllAS();
@@ -151,6 +147,15 @@ namespace CampusApS
         {
             Opciones ventana = new Opciones(usuario);
             ventana.ShowDialog();
+        }
+
+        private void calendario_DateSelected(object sender, EventArgs e)
+        {
+            VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+          
         }
 
       

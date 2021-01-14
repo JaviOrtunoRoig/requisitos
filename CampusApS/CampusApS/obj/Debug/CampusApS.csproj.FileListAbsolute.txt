@@ -310,3 +310,6 @@ D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\Ca
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.Hilo.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerHilos.resources
 D:\Universidad\3 - Anualidad\Ingeniería de Requisitos\Trabajo\App\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerRespuestaHilo.resources
+C:\Users\pacoa\OneDrive\Documentos\3_CURSO\1_CUATRI\REQUISITOS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerEventos.resources
+C:\Users\David\OneDrive\Desktop\UMA\3º\1ºCuatri\Ingenieria de Requisitos\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerEventos.resources
+C:\Users\Propietario\Documents\CampusApS\requisitos\CampusApS\CampusApS\obj\Debug\CampusApS.Vistas.Apartados.VerEventos.resources
