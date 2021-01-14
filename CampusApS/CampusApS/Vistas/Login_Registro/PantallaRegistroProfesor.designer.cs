@@ -174,7 +174,7 @@
             this.MaximizeBox = false;
             this.Name = "PantallaRegistroProfesor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Registro profesor";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

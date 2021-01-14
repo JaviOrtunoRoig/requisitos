@@ -83,7 +83,7 @@
             this.MaximizeBox = false;
             this.Name = "CrearRespuestaDeUnHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RespuestaDeUnHilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CrearRespuestaDeUnHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

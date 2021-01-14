@@ -174,7 +174,7 @@
             this.MaximizeBox = false;
             this.Name = "PantallaRegistroONG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro usuario de ONG";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

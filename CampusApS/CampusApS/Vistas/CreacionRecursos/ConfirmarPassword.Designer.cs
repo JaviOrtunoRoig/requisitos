@@ -71,7 +71,7 @@
             this.MaximizeBox = false;
             this.Name = "ConfirmarPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ConfirmarPassword";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

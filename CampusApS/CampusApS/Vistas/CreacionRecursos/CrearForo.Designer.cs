@@ -119,7 +119,7 @@
             this.MaximizeBox = false;
             this.Name = "CrearForo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Crear Foro";
+            this.Text = "CampusApS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

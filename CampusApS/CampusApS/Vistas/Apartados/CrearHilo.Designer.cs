@@ -124,7 +124,7 @@
             this.MaximizeBox = false;
             this.Name = "CrearHilo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CrearHilo";
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.CrearHilo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
