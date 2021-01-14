@@ -84,6 +84,11 @@ namespace CampusApS.Vistas.Opciones {
             this.Visible = true;
         }
 
+        private void lbMisMesnajes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

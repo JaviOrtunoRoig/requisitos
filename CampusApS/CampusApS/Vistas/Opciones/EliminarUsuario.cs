@@ -12,15 +12,19 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Opciones {
     public partial class EliminarUsuario : Form {
-        public EliminarUsuario() {
+
+        Usuario usuario;
+
+        public EliminarUsuario(Usuario usuario) {
             InitializeComponent();
+            this.usuario = usuario;
         }
 
         private void EliminarUsuario_Load(object sender, EventArgs e)
         {
             UsuarioQuery BD = new UsuarioQuery();
 
-            cUsuarios.DataSource = BD.getAllUsuarios();
+            cUsuarios.DataSource = BD.getAllUsuarios(this.usuario.getNombre());
         }
 
         private void bEliminar_Click(object sender, EventArgs e)
