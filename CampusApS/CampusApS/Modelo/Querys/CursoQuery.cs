@@ -112,7 +112,7 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            object[] tupla = miBD.Select("SELECT nombreCurso FROM curso ;");
+            object[] tupla = miBD.Select("SELECT nombreCurso, fechaCreacion FROM curso ;");
 
             List<String> list = new List<String>();
 
@@ -124,7 +124,12 @@ namespace CampusApS.Modelo.Querys
 
                 while (!stop && cont < tupla.Length)
                 {
-                    if (tupla[cont] != null)
+                    string fecha = (string)((object[])(tupla[cont]))[1];
+
+                    DateTime d1 = DateTime.Now;
+                    DateTime d2 = DateTime.Parse(fecha);
+
+                    if (tupla[cont] != null && (d1 - d2).Days >= 0)
                     {
                         string nombre = (string)((object[])(tupla[cont]))[0];
 

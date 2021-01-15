@@ -40,18 +40,20 @@
             // 
             // tTituloForo
             // 
-            this.tTituloForo.Location = new System.Drawing.Point(27, 48);
+            this.tTituloForo.Location = new System.Drawing.Point(36, 59);
+            this.tTituloForo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tTituloForo.Name = "tTituloForo";
-            this.tTituloForo.Size = new System.Drawing.Size(252, 20);
+            this.tTituloForo.Size = new System.Drawing.Size(335, 22);
             this.tTituloForo.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 32);
+            this.label1.Location = new System.Drawing.Point(32, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 13);
+            this.label1.Size = new System.Drawing.Size(156, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Escriba el título del foro";
             // 
@@ -59,26 +61,29 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(24, 98);
+            this.label2.Location = new System.Drawing.Point(32, 121);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 13);
+            this.label2.Size = new System.Drawing.Size(230, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Añade una descripción para el foro";
             // 
             // tDescForo
             // 
-            this.tDescForo.Location = new System.Drawing.Point(27, 114);
+            this.tDescForo.Location = new System.Drawing.Point(36, 140);
+            this.tDescForo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tDescForo.Multiline = true;
             this.tDescForo.Name = "tDescForo";
-            this.tDescForo.Size = new System.Drawing.Size(252, 76);
+            this.tDescForo.Size = new System.Drawing.Size(335, 93);
             this.tDescForo.TabIndex = 5;
             // 
             // bConfirmar
             // 
             this.bConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bConfirmar.Location = new System.Drawing.Point(227, 293);
+            this.bConfirmar.Location = new System.Drawing.Point(303, 361);
+            this.bConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bConfirmar.Name = "bConfirmar";
-            this.bConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.bConfirmar.Size = new System.Drawing.Size(100, 28);
             this.bConfirmar.TabIndex = 6;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
@@ -88,25 +93,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(24, 217);
+            this.label3.Location = new System.Drawing.Point(32, 267);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.Size = new System.Drawing.Size(125, 17);
             this.label3.TabIndex = 52;
             this.label3.Text = "Fecha de creación";
+            this.label3.Visible = false;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(27, 233);
+            this.dateTimePicker1.Location = new System.Drawing.Point(36, 287);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 51;
+            this.dateTimePicker1.Visible = false;
             // 
             // CrearForo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(173)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(314, 328);
+            this.ClientSize = new System.Drawing.Size(419, 404);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.bConfirmar);
@@ -116,6 +125,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "CrearForo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

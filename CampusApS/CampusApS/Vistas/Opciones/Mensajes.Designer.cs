@@ -102,7 +102,7 @@
             this.lbMisMesnajes.Name = "lbMisMesnajes";
             this.lbMisMesnajes.Size = new System.Drawing.Size(637, 372);
             this.lbMisMesnajes.TabIndex = 71;
-            //TODO: this.lbMisMesnajes.SelectedIndexChanged += new System.EventHandler(this.lbMisMesnajes_SelectedIndexChanged);
+
             // 
             // bActSociales
             // 
