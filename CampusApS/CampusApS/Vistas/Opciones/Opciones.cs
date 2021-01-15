@@ -2,6 +2,7 @@
 using CampusApS.Modelo.Logica.Usuarios;
 using CampusApS.Modelo.Querys;
 using CampusApS.Vistas;
+using CampusApS.Vistas.Apartados;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,16 +17,16 @@ namespace CampusApS.Vistas.Opciones {
     public partial class Opciones : Form {
 
         private Usuario usuario;
+        private VistaGrande vistaAnterior;
 
-        public Opciones(Usuario usuario) {
+        public Opciones(Usuario usuario, VistaGrande vistaAnterior) {
             this.usuario = usuario;
+            this.vistaAnterior = vistaAnterior;
             InitializeComponent();
         }
 
         private void Opciones_Load(object sender, EventArgs e)
         {
-            this.SetStyle(System.Windows.Forms.ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = System.Drawing.Color.Transparent;
 
             if(usuario.getRol().Equals("administrador"))
             {
@@ -48,12 +49,14 @@ namespace CampusApS.Vistas.Opciones {
         private void bBandejaEntrada_Click(object sender, EventArgs e) {
             this.Visible = false;
             this.Close();
+            this.vistaAnterior.cerrar();
             Chat ventana = new Chat(usuario);
             ventana.ShowDialog();
         }
 
         private void bMisCursos_Click(object sender, EventArgs e) {
             this.Visible = false;
+            this.vistaAnterior.cerrar();
             this.Close();
             MisCursos ventana = new MisCursos(usuario);
             ventana.ShowDialog();
@@ -62,6 +65,7 @@ namespace CampusApS.Vistas.Opciones {
         private void bMisAS_Click(object sender, EventArgs e) {
             this.Visible = false;
             this.Close();
+            this.vistaAnterior.cerrar();
             MisActividadesSociales ventana = new MisActividadesSociales(usuario);
             ventana.ShowDialog();
         }
@@ -81,7 +85,7 @@ namespace CampusApS.Vistas.Opciones {
 
         private void bEliminarUsuario_Click(object sender, EventArgs e)
         {
-            EliminarUsuario ventana = new EliminarUsuario();
+            EliminarUsuario ventana = new EliminarUsuario(this.usuario);
             ventana.ShowDialog();
             this.Close();
         }

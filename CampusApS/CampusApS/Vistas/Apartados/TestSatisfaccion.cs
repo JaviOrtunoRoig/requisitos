@@ -42,11 +42,11 @@ namespace CampusApS.Vistas.Apartados {
         private void bEnviarTest_Click(object sender, EventArgs e)
         {
 
-            int respuesta1 = (int)checkedListBox1.SelectedItem;
-            int respuesta2 = (int)checkedListBox2.SelectedItem;
-            int respuesta3 = (int)checkedListBox3.SelectedItem;
-            int respuesta4 = (int)checkedListBox4.SelectedItem;
-            int respuesta5 = (int)checkedListBox5.SelectedItem;
+            int respuesta1 = int.Parse(checkedListBox1.SelectedItem.ToString());
+            int respuesta2 = int.Parse(checkedListBox2.SelectedItem.ToString());
+            int respuesta3 = int.Parse(checkedListBox3.SelectedItem.ToString());
+            int respuesta4 = int.Parse(checkedListBox4.SelectedItem.ToString());
+            int respuesta5 = int.Parse(checkedListBox5.SelectedItem.ToString());
 
             if (respuesta1!=null && respuesta2!=null && respuesta3!=null && respuesta4!=null && respuesta5!=null)
             {
@@ -68,6 +68,36 @@ namespace CampusApS.Vistas.Apartados {
                 this.Close();
                 
             }
+        }
+
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < checkedListBox1.Items.Count; ++ix)
+                if (ix != e.Index) checkedListBox1.SetItemChecked(ix, false);
+        }
+
+        private void checkedListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < checkedListBox2.Items.Count; ++ix)
+                if (ix != e.Index) checkedListBox2.SetItemChecked(ix, false);
+        }
+
+        private void checkedListBox3_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < checkedListBox3.Items.Count; ++ix)
+                if (ix != e.Index) checkedListBox3.SetItemChecked(ix, false);
+        }
+
+        private void checkedListBox4_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < checkedListBox4.Items.Count; ++ix)
+                if (ix != e.Index) checkedListBox4.SetItemChecked(ix, false);
+        }
+
+        private void checkedListBox5_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < checkedListBox5.Items.Count; ++ix)
+                if (ix != e.Index) checkedListBox5.SetItemChecked(ix, false);
         }
     }
       

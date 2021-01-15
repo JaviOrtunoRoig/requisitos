@@ -101,6 +101,7 @@
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.CheckOnClick = true;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "1",
@@ -113,9 +114,11 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(159, 106);
             this.checkedListBox1.TabIndex = 6;
+            this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox1_ItemCheck);
             // 
             // checkedListBox2
             // 
+            this.checkedListBox2.CheckOnClick = true;
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
             "1",
@@ -128,9 +131,11 @@
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(159, 106);
             this.checkedListBox2.TabIndex = 7;
+            this.checkedListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox2_ItemCheck);
             // 
             // checkedListBox3
             // 
+            this.checkedListBox3.CheckOnClick = true;
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
             "1",
@@ -141,11 +146,13 @@
             this.checkedListBox3.Location = new System.Drawing.Point(79, 394);
             this.checkedListBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(159, 106);
+            this.checkedListBox3.Size = new System.Drawing.Size(159, 123);
             this.checkedListBox3.TabIndex = 8;
+            this.checkedListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox3_ItemCheck);
             // 
             // checkedListBox4
             // 
+            this.checkedListBox4.CheckOnClick = true;
             this.checkedListBox4.FormattingEnabled = true;
             this.checkedListBox4.Items.AddRange(new object[] {
             "1",
@@ -158,9 +165,11 @@
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.Size = new System.Drawing.Size(159, 106);
             this.checkedListBox4.TabIndex = 9;
+            this.checkedListBox4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox4_ItemCheck);
             // 
             // checkedListBox5
             // 
+            this.checkedListBox5.CheckOnClick = true;
             this.checkedListBox5.FormattingEnabled = true;
             this.checkedListBox5.Items.AddRange(new object[] {
             "1",
@@ -173,6 +182,7 @@
             this.checkedListBox5.Name = "checkedListBox5";
             this.checkedListBox5.Size = new System.Drawing.Size(159, 106);
             this.checkedListBox5.TabIndex = 10;
+            this.checkedListBox5.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox5_ItemCheck);
             // 
             // bEnviarTest
             // 
@@ -215,9 +225,12 @@
             this.Controls.Add(this.lPregunta2);
             this.Controls.Add(this.lPregunta1);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "TestSatisfaccion";
-            this.Text = "TestSatisfaccion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CampusApS";
             this.Load += new System.EventHandler(this.TestSatisfaccion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

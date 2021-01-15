@@ -15,7 +15,7 @@ namespace CampusApS.Modelo.Logica.Usuarios {
 
 
         public Profesor(string nombre) {
-            permisos = new Permisos(true, true, true, true, true, true, false, false, false, true);
+            permisos = new Permisos(true, true, true, true, false, false, false, false, false, true);
             this.nombre = nombre;
         }
 
@@ -66,6 +66,11 @@ namespace CampusApS.Modelo.Logica.Usuarios {
 
         public string getNombre() {
             return this.nombre;
+        }
+
+        public void setNombre(string nombre)
+        {
+            this.nombre = nombre;
         }
     }
 }

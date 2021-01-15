@@ -15,7 +15,7 @@ using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Opciones {
 
-    public partial class MisCursos : Form {
+    public partial class MisCursos : Form, VistaGrande {
 
         private Usuario usuario;
 
@@ -134,7 +134,7 @@ namespace CampusApS.Vistas.Opciones {
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -143,16 +143,24 @@ namespace CampusApS.Vistas.Opciones {
             CursoQuery query = new CursoQuery();
             CursoRecurso cursoRecurso = new CursoRecurso((string)lbMisCursos.SelectedItem);
             cursoRecurso.setDescripcion(query.getDescripcionCurso((string)lbMisCursos.SelectedItem));
-            Curso ventana = new Curso(usuario, cursoRecurso);
-            this.Visible = false;
-            ventana.ShowDialog();
-            this.Close();
+
+            if (cursoRecurso.getdescripcion() != null && cursoRecurso.getNombre() != null) {
+                Curso ventana = new Curso(usuario, cursoRecurso);
+                this.Visible = false;
+                ventana.ShowDialog();
+                this.Close();
+            }
         }
 
         private void calendario_DateSelected(object sender, EventArgs e)
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
             ventana.ShowDialog();
+            this.Visible = true;
+        }
+
+        public void cerrar() {
             this.Close();
         }
     }

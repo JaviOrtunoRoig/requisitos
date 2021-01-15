@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
-    public partial class VerHilos : Form {
+    public partial class VerHilos : Form{
         public VerHilos() {
             InitializeComponent();
         }
@@ -23,8 +23,10 @@ namespace CampusApS.Vistas.Apartados {
         private void calendario_DateSelected(object sender, EventArgs e)
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
             ventana.ShowDialog();
-            this.Close();
+            this.Visible = true;
+            
         }
     }
 }

@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS {
-    public partial class Curso : Form {
+    public partial class Curso : Form, VistaGrande{
 
         Usuario usuario;
         CursoRecurso cursoRecurso; 
@@ -131,7 +131,7 @@ namespace CampusApS {
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -159,9 +159,14 @@ namespace CampusApS {
         private void calendario_DateSelected(object sender, DateRangeEventArgs e)
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
             ventana.ShowDialog();
-            this.Close();
+            this.Visible = true;
+           
         }
 
+        public void cerrar() {
+            this.Close();
+        }
     }
 }

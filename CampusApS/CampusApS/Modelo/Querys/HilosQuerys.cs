@@ -73,8 +73,8 @@ namespace CampusApS.Modelo.Querys
         {
             BD miBD = new BD(BD_SERVER, BD_NAME);
 
-            miBD.Insert("INSERT INTO `apsgrupo06`.`mensaje` (`usuarioEmisor`, `usuarioReceptor`, `mensaje`) VALUES " +
-            "('" + usuario + "', '" + creadorHilo + "', '" + respuesta + "');");
+            miBD.Insert("INSERT INTO `apsgrupo06`.`mensaje` (`usuarioEmisor`, `usuarioReceptor`, `mensaje`, `pertenecerHilo`) VALUES " +
+            "('" + usuario + "', '" + creadorHilo + "', '" + respuesta + "', b'1');");
 
             object[] tupla = miBD.Select("SELECT MAX(idm) AS id FROM mensaje");
             int id = (int)((object[])(tupla[0]))[0];

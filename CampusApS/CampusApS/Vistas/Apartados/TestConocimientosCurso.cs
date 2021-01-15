@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CampusApS.Vistas.Apartados {
-    public partial class TestConocimientosCurso : Form {
+    public partial class TestConocimientosCurso : Form, VistaGrande {
 
         private Usuario usuario;
         private CursoRecurso cursoRecurso;
@@ -26,7 +26,7 @@ namespace CampusApS.Vistas.Apartados {
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            CampusApS.Vistas.Opciones.Opciones ventana = new CampusApS.Vistas.Opciones.Opciones(usuario);
+            CampusApS.Vistas.Opciones.Opciones ventana = new CampusApS.Vistas.Opciones.Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -94,7 +94,12 @@ namespace CampusApS.Vistas.Apartados {
         private void calendario_DateSelected(object sender, EventArgs e)
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
             ventana.ShowDialog();
+            this.Visible = true;
+        }
+
+        public void cerrar() {
             this.Close();
         }
     }

@@ -17,7 +17,7 @@ using System.Windows.Forms;
 
 namespace CampusApS
 {
-    public partial class PantallaForos : Form
+    public partial class PantallaForos : Form, VistaGrande
     {
 
         Usuario usuario;
@@ -127,18 +127,20 @@ namespace CampusApS
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
         private void calendario_DateSelected(object sender, EventArgs e)
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
             ventana.ShowDialog();
+            this.Visible = false;
+            
+        }
+        public void cerrar() {
             this.Close();
         }
-
-  
-
     }
 }

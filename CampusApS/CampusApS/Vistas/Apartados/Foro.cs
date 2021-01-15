@@ -15,7 +15,7 @@ using System.Windows.Forms;
 
 namespace CampusApS
 {
-    public partial class Foro : Form
+    public partial class Foro : Form, VistaGrande
     {
 
         ForoRecurso foroRecurso;
@@ -54,7 +54,6 @@ namespace CampusApS
             {
                 bOpciones.Visible = false;
                 bAnadirHilo.Visible = false;
-                bEliminarHilo.Visible = false;
                 bPapelera.Visible = false;
             }
         }
@@ -89,7 +88,7 @@ namespace CampusApS
 
         private void bOpciones_Click(object sender, EventArgs e)
         {
-            Opciones ventana = new Opciones(usuario);
+            Opciones ventana = new Opciones(usuario, this);
             ventana.ShowDialog();
         }
 
@@ -119,9 +118,13 @@ namespace CampusApS
         private void calendario_DateSelected(object sender, EventArgs e)
         {
             VerEventos ventana = new VerEventos(calendario.SelectionStart.ToString().Substring(0, 10));
+            this.Visible = false;
             ventana.ShowDialog();
+            this.Visible = true;
+        }
+        
+        public void cerrar() {
             this.Close();
         }
-
     }
 }
