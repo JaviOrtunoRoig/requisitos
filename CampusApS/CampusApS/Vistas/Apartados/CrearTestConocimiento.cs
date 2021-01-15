@@ -24,34 +24,42 @@ namespace CampusApS.Vistas.Apartados {
         {
             string fecha = dateTimePicker1.Value.ToString();
 
-            fecha = fecha.Substring(0, 10);
+            var result = MessageBox.Show("Una vez que se cree el test \n no se podrá modificar hasta el: \n " + fecha.Substring(0, 10), "Aviso", MessageBoxButtons.YesNo);
 
-            List<String> rCorrecta = obtenerRespuestasCorrectas();
-
-
-            Pregunta pregunta1 = new Pregunta(tPregunta1.Text, tRespuesta1A.Text, tRespuesta1B.Text, tRespuesta1C.Text, rCorrecta[0]);
-            Pregunta pregunta2 = new Pregunta(tPregunta2.Text, tRespuesta2A.Text, tRespuesta2B.Text, tRespuesta2C.Text, rCorrecta[1]);
-            Pregunta pregunta3 = new Pregunta(tPregunta3.Text, tRespuesta3A.Text, tRespuesta3B.Text, tRespuesta3C.Text, rCorrecta[2]);
-            Pregunta pregunta4 = new Pregunta(tPregunta4.Text, tRespuesta4A.Text, tRespuesta4B.Text, tRespuesta4C.Text, rCorrecta[3]);
-            Pregunta pregunta5 = new Pregunta(tPregunta5.Text, tRespuesta5A.Text, tRespuesta5B.Text, tRespuesta5C.Text, rCorrecta[4]);
-
-            List<Pregunta> preguntas = new List<Pregunta>();
-           
-            preguntas.Add(pregunta1);
-            preguntas.Add(pregunta2);
-            preguntas.Add(pregunta3);
-            preguntas.Add(pregunta4);
-            preguntas.Add(pregunta5);
-
-            Test test = new Test(tNombreTest.Text, cursoRecurso.getNombre(), preguntas);
+            if (result == DialogResult.Yes)
+            {
 
 
+                fecha = fecha.Substring(0, 10);
 
-            TestConocimientoQuery BD = new TestConocimientoQuery();
+                List<String> rCorrecta = obtenerRespuestasCorrectas();
 
-            BD.insertarTest(test, cursoRecurso.getNombre(),fecha);
 
-            this.Close();
+                Pregunta pregunta1 = new Pregunta(tPregunta1.Text, tRespuesta1A.Text, tRespuesta1B.Text, tRespuesta1C.Text, rCorrecta[0]);
+                Pregunta pregunta2 = new Pregunta(tPregunta2.Text, tRespuesta2A.Text, tRespuesta2B.Text, tRespuesta2C.Text, rCorrecta[1]);
+                Pregunta pregunta3 = new Pregunta(tPregunta3.Text, tRespuesta3A.Text, tRespuesta3B.Text, tRespuesta3C.Text, rCorrecta[2]);
+                Pregunta pregunta4 = new Pregunta(tPregunta4.Text, tRespuesta4A.Text, tRespuesta4B.Text, tRespuesta4C.Text, rCorrecta[3]);
+                Pregunta pregunta5 = new Pregunta(tPregunta5.Text, tRespuesta5A.Text, tRespuesta5B.Text, tRespuesta5C.Text, rCorrecta[4]);
+
+                List<Pregunta> preguntas = new List<Pregunta>();
+
+                preguntas.Add(pregunta1);
+                preguntas.Add(pregunta2);
+                preguntas.Add(pregunta3);
+                preguntas.Add(pregunta4);
+                preguntas.Add(pregunta5);
+
+                Test test = new Test(tNombreTest.Text, cursoRecurso.getNombre(), preguntas);
+
+
+
+                TestConocimientoQuery BD = new TestConocimientoQuery();
+
+                BD.insertarTest(test, cursoRecurso.getNombre(), fecha);
+
+                this.Close();
+            }
+
         }
 
 
