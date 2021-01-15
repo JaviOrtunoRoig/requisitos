@@ -93,32 +93,40 @@ namespace CampusApS.Modelo.Querys
 
                 while (!stop && cont < tupla.Length)
                 {
-                    string fecha = (string)((object[])(tupla[cont]))[1];
 
-                    DateTime d1 = DateTime.Now;
-                    DateTime d2 = DateTime.Parse(fecha);
-
-
-                    if (tupla[cont] != null && (d1 - d2).Days >= 0)
+                    if (tupla[cont] != null)
                     {
-                        string nombre = (string)((object[])(tupla[cont]))[0];
+                        string fecha = (string)((object[])(tupla[cont]))[1];
 
-                        if (nombre != null)
+                        DateTime d1 = DateTime.Now;
+                        DateTime d2 = DateTime.Parse(fecha);
+
+
+
+                        if ((d1 - d2).Days >= 0)
                         {
-                            list.Add(nombre);
-                            cont++;
+                            string nombre = (string)((object[])(tupla[cont]))[0];
+
+                            if (nombre != null)
+                            {
+                                list.Add(nombre);
+                                cont++;
+                            }
+                            else
+                            {
+                                stop = true;
+                            }
                         }
-                        else
-                        {
-                            stop = true;
-                        }
+
+
                     }
                     else
                     {
                         stop = true;
                     }
-
                 }
+
+
             }
 
             return list;
